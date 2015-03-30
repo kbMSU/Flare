@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="FlareBackend-android-endpoints">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/FlareBackend/build/libs/FlareBackend-android-endpoints.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

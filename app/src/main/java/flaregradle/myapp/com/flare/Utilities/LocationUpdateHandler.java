@@ -1,0 +1,40 @@
+package flaregradle.myapp.com.flare.Utilities;
+
+import android.location.Location;
+import android.location.LocationListener;
+import android.os.Bundle;
+
+import flaregradle.myapp.com.flare.FlareHome;
+
+/**
+ * Created by Karthik on 9/14/2014.
+ */
+public class LocationUpdateHandler implements LocationListener {
+
+    private FlareHome _parent;
+
+    public LocationUpdateHandler(FlareHome parent)
+    {
+        _parent = parent;
+    }
+
+    @Override
+    public void onLocationChanged(Location location) {
+        _parent.GetLocationUpdate(location);
+    }
+
+    @Override
+    public void onStatusChanged(String provider, int status, Bundle extras) {
+
+    }
+
+    @Override
+    public void onProviderEnabled(String provider) {
+
+    }
+
+    @Override
+    public void onProviderDisabled(String provider) {
+
+    }
+}

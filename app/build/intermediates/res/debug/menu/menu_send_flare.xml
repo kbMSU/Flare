@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:flare="http://schemas.android.com/apk/res-auto"
+    tools:context="flaregradle.myapp.com.flare.SendFlareActivity">
+
+    <item android:id="@id/createGroup"
+        android:icon="@android:drawable/ic_input_add"
+        android:title="@string/addToGroup"
+        flare:showAsAction="always"/>
+
+</menu>
+<!-- From: file:/D:/Startup/FlareApp/app/src/main/res/menu/menu_send_flare.xml -->

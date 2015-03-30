@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="grey">#2F2F2F</color>
+    <color name="greyDark">#212121</color>
+    <color name="greyLight">#808080</color>
+    <color name="green">#00B200</color>
+    <color name="colorPrimary">#ff2335</color>
+    <color name="colorPrimaryDark">#9F2335</color>
+    <color name="colorAccent">#ffffff</color>
+    <color name="windowBackground">#2F2F2F</color>
+    <color name="blue">#2339FF</color>
+
+    <color name="fabColor">#424242</color>
+
+</resources>

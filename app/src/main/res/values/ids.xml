@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="location" type="id">Location</item>
+
+    <item name="latitude" type="id">Latitude</item>
+
+    <item name="longitude" type="id">Longitude</item>
+
+    <item name="map" type="id">Map</item>
+
+    <item name="phone" type="id">Phone</item>
+
+    <item name="send_flare" type="id">Fire</item>
+
+    <item name="broadcast" type="id">Broadcast</item>
+
+    <item name="settings" type="id">Settings</item>
+
+    <item name="whats_new" type="id">What\'s new</item>
+
+    <item name="help" type="id">Help</item>
+
+    <item name="feedback" type="id">Feedback</item>
+
+    <item name="clear_contacts" type="id">Clear Contacts</item>
+
+    <item name="contact_name" type="id">contact name</item>
+    <item name="contact_phone" type="id">contact phone</item>
+    <item name="contact_image" type="id">contact image</item>
+
+    <item name="sosSortText" type="id">sos sort text</item>
+
+    <item name="contactItem" type="id">contact item</item>
+    <item name="contactsHome" type="id">contacts home</item>
+
+    <item name="sendFlareLayout" type="id">send flare layout</item>
+    <item name="sendFlareScreen" type="id">send flare screen</item>
+
+    <item name="clearFlare" type="id">clear flare text</item>
+
+    <item name="contact_selected" type="id">contact selected</item>
+
+    <item name="busyIndicator" type="id">busy indicator</item>
+    <item name="loading" type="id">loading</item>
+
+    <item name="send_text_response" type="id">send text response</item>
+    <item name="send_text_toggle" type="id">send text toggle</item>
+
+    <item name="default_decline_textview" type="id">default decline textview</item>
+    <item name="default_decline_edittext" type="id">default decline edittext</item>
+    <item name="default_accept_textview" type="id">default accept textview</item>
+    <item name="default_accept_edittext" type="id">default accept edittext</item>
+
+    <item name="searchLocationText" type="id">search location text</item>
+
+    <item name="createGroup" type="id">create group</item>
+    <item name="saveGroup" type="id">save group</item>
+    <item name="groupName" type="id">group name</item>
+    <item name="editGroup" type="id">edit group</item>
+    <item name="deleteGroup" type="id">delete group</item>
+    <item name="sendGroupFlare" type="id">send group flare</item>
+
+    <item name="overlay" type="id">overlay</item>
+
+    <item name="groups_list" type="id">groups list</item>
+    <item name="group_item" type="id">group item</item>
+    <item name="group_name" type="id">group name</item>
+    <item name="group_count" type="id">group count</item>
+
+    <item name="fab" type="id">floating action button</item>
+    <item name="fabSendFlare" type="id">fab send flare</item>
+    <item name="fabGroups" type="id">fab groups</item>
+
+    <item name="writeMessage" type="id">write message</item>
+    <item name="writeMessageLayout" type="id">write message layout</item>
+    <item name="allContacts" type="id">Contacts List</item>
+
+</resources>

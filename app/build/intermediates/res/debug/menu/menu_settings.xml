@@ -1,0 +1,5 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="flaregradle.myapp.com.flare.SettingsActivity">
+</menu>
+<!-- From: file:/D:/Startup/FlareApp/app/src/main/res/menu/menu_settings.xml -->

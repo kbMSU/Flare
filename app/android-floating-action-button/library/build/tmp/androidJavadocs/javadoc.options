@@ -1,0 +1,8 @@
+-classpath 'D:\\Android SDK\\sdk\\platforms\\android-21\\android.jar'
+-d 'D:\\Startup\\Flare\\app\\android-floating-action-button\\library\\build\\docs\\javadoc'
+-doctitle 'library API'
+-quiet 
+-windowtitle 'library API'
+'D:\\Startup\\Flare\\app\\android-floating-action-button\\library\\src\\main\\java\\com\\getbase\\floatingactionbutton\\AddFloatingActionButton.java'
+'D:\\Startup\\Flare\\app\\android-floating-action-button\\library\\src\\main\\java\\com\\getbase\\floatingactionbutton\\FloatingActionButton.java'
+'D:\\Startup\\Flare\\app\\android-floating-action-button\\library\\src\\main\\java\\com\\getbase\\floatingactionbutton\\FloatingActionsMenu.java'

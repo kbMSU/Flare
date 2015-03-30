@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:flare="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@id/editGroup"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:title="@string/edit_group"
+        flare:showAsAction="always"/>
+
+    <item android:id="@id/deleteGroup"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:title="@string/delete_group"
+        flare:showAsAction="always"/>
+
+    <item android:id="@id/sendGroupFlare"
+        android:icon="@drawable/send_reg_icon_transparent"
+        android:title="@string/send"
+        flare:showAsAction="always"/>
+
+</menu>
