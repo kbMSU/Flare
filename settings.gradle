@@ -1,1 +1,1 @@
-include ':app', ':FlareBackend'
+include ':app'

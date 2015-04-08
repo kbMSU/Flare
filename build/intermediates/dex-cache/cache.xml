@@ -2,291 +2,81 @@
 <items version="2" >
 
     <item
-        jar="D:\Startup\FlareApp\app\libs\notifications-1.0.1.jar"
+        jar="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/libs/mobileservices-2.0.1-beta.jar"
         jumboMode="false"
-        revision="20.0.0"
-        sha1="d2498fce7adbdb5ebd37dafc56d8056db60f51fe">
-        <dex dex="D:\Startup\FlareApp\app\build\intermediates\pre-dexed\debug\notifications-1.0.1-067a109b71407276362718ebc612cab49953bdc1.jar" />
-    </item>
-    <item
-        jar="D:\Eclipse\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
-        jumboMode="false"
-        revision="21.1.1"
-        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
-        <dex dex="D:\Startup\FlareApp\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-7302615e1dc37f32011fb57b2a1453d7f0596bc6.jar" />
-    </item>
-    <item
-        jar="D:\Startup\FlareApp\app\libs\mobileservices-2.0.1-beta.jar"
-        jumboMode="false"
-        revision="21.1.1"
+        revision="22.0.1"
         sha1="f225d9c34f93107ee9f5e53f329ce3bb0438545c">
-        <dex dex="D:\Startup\FlareApp\app\build\intermediates\pre-dexed\debug\mobileservices-2.0.1-beta-bcc4f1ca8fbe50775b3f20db9a9c63ed10ddca6d.jar" />
+        <dex dex="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/pre-dexed/debug/mobileservices-2.0.1-beta-44956fcd4d6fca7a4fc10df2b9dad0e85bdad9d8.jar" />
     </item>
     <item
-        jar="D:\Startup\FlareApp\FlareBackend\build\libs\FlareBackend-android-endpoints.jar"
+        jar="/Users/Karthik/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar"
         jumboMode="false"
-        revision="20.0.0"
-        sha1="b48055345bb455c1a754b5f865eb70c8475d3e0f">
-        <dex dex="D:\Startup\FlareApp\app\build\intermediates\pre-dexed\debug\FlareBackend-android-endpoints-dd489ff8656deedd959f7fd1ec58629ce8f086d8.jar" />
+        revision="22.0.1"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/pre-dexed/debug/support-annotations-22.0.0-e9d5048d4ad68b8b6a9194a32caaa22a55624f37.jar" />
     </item>
     <item
-        jar="D:\Startup\FlareApp\app\libs\gson-2.3.1.jar"
+        jar="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/classes.jar"
         jumboMode="false"
-        revision="20.0.0"
-        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
-        <dex dex="D:\Startup\FlareApp\app\build\intermediates\pre-dexed\debug\gson-2.3.1-42d5eeac4a4224702838019e35d91eb1c49d5fa2.jar" />
+        revision="22.0.1"
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/pre-dexed/debug/classes-e0f3fa9085432c6d77bdec15bc3a7f323ee9ea8c.jar" />
     </item>
     <item
-        jar="D:\Startup\FlareApp\app\libs\notification-hubs-0.3.jar"
+        jar="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/libs/notifications-1.0.1.jar"
         jumboMode="false"
-        revision="20.0.0"
-        sha1="5665f8e79e2d89a83af0f915e5fcc93b9ae6747b">
-        <dex dex="D:\Startup\FlareApp\app\build\intermediates\pre-dexed\debug\notification-hubs-0.3-e8e6f2d0481b5219d4daa8c96de52aa5f786a562.jar" />
-    </item>
-    <item
-        jar="D:\Startup\FlareApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
-        jumboMode="false"
-        revision="21.1.1"
-        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
-        <dex dex="D:\Startup\FlareApp\app\build\intermediates\pre-dexed\debug\classes-33b6611bfd3b23bf459a1449928f332991036582.jar" />
-    </item>
-    <item
-        jar="C:\Users\Karthik\.gradle\caches\modules-2\files-2.1\com.google.oauth-client\google-oauth-client\1.19.0\d473a8962e14a707a3716637e4898bb2dd9643f2\google-oauth-client-1.19.0.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="d473a8962e14a707a3716637e4898bb2dd9643f2">
-        <dex dex="D:\Startup\FlareApp\app\build\intermediates\pre-dexed\debug\google-oauth-client-1.19.0-5bd65fd5b86215807219993fd0d4d3e6f2e42ce8.jar" />
-    </item>
-    <item
-        jar="D:\Startup\FlareApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\libs\internal_impl-21.0.3.jar"
-        jumboMode="false"
-        revision="21.1.1"
-        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
-        <dex dex="D:\Startup\FlareApp\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-399b530474ed5d83e20fe155ba4a5eb11a08af17.jar" />
-    </item>
-    <item
-        jar="C:\Users\Karthik\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\1.3.9\40719ea6961c0cb6afaeb6a921eaa1f6afd4cfdf\jsr305-1.3.9.jar"
-        jumboMode="false"
-        revision="21.1.1"
-        sha1="40719ea6961c0cb6afaeb6a921eaa1f6afd4cfdf">
-        <dex dex="D:\Startup\FlareApp\app\build\intermediates\pre-dexed\debug\jsr305-1.3.9-71d1ee0a6d86f78c376d60a423346dc593670771.jar" />
-    </item>
-    <item
-        jar="C:\Users\Karthik\.gradle\caches\modules-2\files-2.1\com.google.http-client\google-http-client\1.19.0\cdca49ad0977c040f603478aa2e16b2775c8fec6\google-http-client-1.19.0.jar"
-        jumboMode="false"
-        revision="21.1.1"
-        sha1="cdca49ad0977c040f603478aa2e16b2775c8fec6">
-        <dex dex="D:\Startup\FlareApp\app\build\intermediates\pre-dexed\debug\google-http-client-1.19.0-b49f1b661541e5b3f260240bf0a32e9f6905c54b.jar" />
-    </item>
-    <item
-        jar="C:\Users\Karthik\.gradle\caches\modules-2\files-2.1\com.google.guava\guava-jdk5\13.0\381ae6c8add7c98e9bcddb1e0b898400cd6fc3f7\guava-jdk5-13.0.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="381ae6c8add7c98e9bcddb1e0b898400cd6fc3f7">
-        <dex dex="D:\Startup\FlareApp\app\build\intermediates\pre-dexed\debug\guava-jdk5-13.0-df9a5650bd02ad87c464ebe2b697600d1ff6c6b2.jar" />
-    </item>
-    <item
-        jar="D:\Startup\FlareApp\app\libs\mobileservices-2.0.1-beta-javadoc.jar"
-        jumboMode="false"
-        revision="21.1.1"
-        sha1="1b76c16589dbfd546bc92a5e2cce2ced0e962de3">
-        <dex dex="D:\Startup\FlareApp\app\build\intermediates\pre-dexed\debug\mobileservices-2.0.1-beta-javadoc-bf584bc386e74208470c4085ac4230ac7980e83c.jar" />
-    </item>
-    <item
-        jar="C:\Users\Karthik\.gradle\caches\modules-2\files-2.1\com.google.http-client\google-http-client-jackson2\1.19.0\81dbf9795d387d5e80e55346582d5f2fb81a42eb\google-http-client-jackson2-1.19.0.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="81dbf9795d387d5e80e55346582d5f2fb81a42eb">
-        <dex dex="D:\Startup\FlareApp\app\build\intermediates\pre-dexed\debug\google-http-client-jackson2-1.19.0-46b1c8031bbbb52d7bfa1f660476c2b313b493cd.jar" />
-    </item>
-    <item
-        jar="D:\Startup\FlareApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.5.87\classes.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="dd9247ea0fabe8ee479638c4b4a23e93752be256">
-        <dex dex="D:\Startup\FlareApp\app\build\intermediates\pre-dexed\debug\classes-d90c583842cbb27f70a25da554ea525c6ea95fd9.jar" />
-    </item>
-    <item
-        jar="D:\Startup\FlareApp\app\libs\notification-hubs-0.3.jar"
-        jumboMode="false"
-        revision="21.1.1"
-        sha1="5665f8e79e2d89a83af0f915e5fcc93b9ae6747b">
-        <dex dex="D:\Startup\FlareApp\app\build\intermediates\pre-dexed\debug\notification-hubs-0.3-e8e6f2d0481b5219d4daa8c96de52aa5f786a562.jar" />
-    </item>
-    <item
-        jar="C:\Users\Karthik\.gradle\caches\modules-2\files-2.1\com.google.api-client\google-api-client\1.19.0\6a21277d9bebe267b7ddee028b241eebc756c040\google-api-client-1.19.0.jar"
-        jumboMode="false"
-        revision="21.1.1"
-        sha1="6a21277d9bebe267b7ddee028b241eebc756c040">
-        <dex dex="D:\Startup\FlareApp\app\build\intermediates\pre-dexed\debug\google-api-client-1.19.0-9792ee9a13e1a8c806efbb659c771482953ffe05.jar" />
-    </item>
-    <item
-        jar="C:\Users\Karthik\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-core\2.1.3\f6c3aed1cdfa21b5c1737c915186ea93a95a58bd\jackson-core-2.1.3.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="f6c3aed1cdfa21b5c1737c915186ea93a95a58bd">
-        <dex dex="D:\Startup\FlareApp\app\build\intermediates\pre-dexed\debug\jackson-core-2.1.3-8a1184b15e7dee69043cfbb0fda942ee890d56ca.jar" />
-    </item>
-    <item
-        jar="D:\Startup\FlareApp\app\build\intermediates\exploded-aar\com.getbase\floatingactionbutton\1.1.0\classes.jar"
-        jumboMode="false"
-        revision="21.1.1"
-        sha1="6530bce64dfbde38a6beceaf1cca8a0257516f51">
-        <dex dex="D:\Startup\FlareApp\app\build\intermediates\pre-dexed\debug\classes-9fc942be297e80b7e22d8ee20492c8e45446ec60.jar" />
-    </item>
-    <item
-        jar="D:\Startup\FlareApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.5.87\classes.jar"
-        jumboMode="false"
-        revision="21.1.1"
-        sha1="dd9247ea0fabe8ee479638c4b4a23e93752be256">
-        <dex dex="D:\Startup\FlareApp\app\build\intermediates\pre-dexed\debug\classes-d90c583842cbb27f70a25da554ea525c6ea95fd9.jar" />
-    </item>
-    <item
-        jar="D:\Startup\FlareApp\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\classes.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
-        <dex dex="D:\Startup\FlareApp\app\build\intermediates\pre-dexed\debug\classes-de1346e6736638086513a258e84bbe916257a751.jar" />
-    </item>
-    <item
-        jar="C:\Users\Karthik\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\1.3.9\40719ea6961c0cb6afaeb6a921eaa1f6afd4cfdf\jsr305-1.3.9.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="40719ea6961c0cb6afaeb6a921eaa1f6afd4cfdf">
-        <dex dex="D:\Startup\FlareApp\app\build\intermediates\pre-dexed\debug\jsr305-1.3.9-71d1ee0a6d86f78c376d60a423346dc593670771.jar" />
-    </item>
-    <item
-        jar="C:\Users\Karthik\.gradle\caches\modules-2\files-2.1\com.google.guava\guava-jdk5\13.0\381ae6c8add7c98e9bcddb1e0b898400cd6fc3f7\guava-jdk5-13.0.jar"
-        jumboMode="false"
-        revision="21.1.1"
-        sha1="381ae6c8add7c98e9bcddb1e0b898400cd6fc3f7">
-        <dex dex="D:\Startup\FlareApp\app\build\intermediates\pre-dexed\debug\guava-jdk5-13.0-df9a5650bd02ad87c464ebe2b697600d1ff6c6b2.jar" />
-    </item>
-    <item
-        jar="D:\Startup\FlareApp\app\build\intermediates\exploded-aar\com.getbase\floatingactionbutton\1.1.0\classes.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="6530bce64dfbde38a6beceaf1cca8a0257516f51">
-        <dex dex="D:\Startup\FlareApp\app\build\intermediates\pre-dexed\debug\classes-9fc942be297e80b7e22d8ee20492c8e45446ec60.jar" />
-    </item>
-    <item
-        jar="D:\Eclipse\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
-        <dex dex="D:\Startup\FlareApp\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-7302615e1dc37f32011fb57b2a1453d7f0596bc6.jar" />
-    </item>
-    <item
-        jar="D:\Startup\FlareApp\app\libs\notifications-1.0.1.jar"
-        jumboMode="false"
-        revision="21.1.1"
+        revision="22.0.1"
         sha1="d2498fce7adbdb5ebd37dafc56d8056db60f51fe">
-        <dex dex="D:\Startup\FlareApp\app\build\intermediates\pre-dexed\debug\notifications-1.0.1-067a109b71407276362718ebc612cab49953bdc1.jar" />
+        <dex dex="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/pre-dexed/debug/notifications-1.0.1-399ac377d7b0a21d679abed0e3406af6abca5c3b.jar" />
     </item>
     <item
-        jar="C:\Users\Karthik\.gradle\caches\modules-2\files-2.1\com.google.api-client\google-api-client\1.19.0\6a21277d9bebe267b7ddee028b241eebc756c040\google-api-client-1.19.0.jar"
+        jar="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/libs/gson-2.3.1.jar"
         jumboMode="false"
-        revision="20.0.0"
-        sha1="6a21277d9bebe267b7ddee028b241eebc756c040">
-        <dex dex="D:\Startup\FlareApp\app\build\intermediates\pre-dexed\debug\google-api-client-1.19.0-9792ee9a13e1a8c806efbb659c771482953ffe05.jar" />
-    </item>
-    <item
-        jar="C:\Users\Karthik\.gradle\caches\modules-2\files-2.1\com.google.api-client\google-api-client-android\1.19.0\ba2aafb867f6af469f936ae76426cf0a280094bd\google-api-client-android-1.19.0.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="ba2aafb867f6af469f936ae76426cf0a280094bd">
-        <dex dex="D:\Startup\FlareApp\app\build\intermediates\pre-dexed\debug\google-api-client-android-1.19.0-614b6bd3b56e13a9f204ebaf9a1cfefa9cd36a26.jar" />
-    </item>
-    <item
-        jar="D:\Startup\FlareApp\app\libs\mobileservices-2.0.1-beta.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="f225d9c34f93107ee9f5e53f329ce3bb0438545c">
-        <dex dex="D:\Startup\FlareApp\app\build\intermediates\pre-dexed\debug\mobileservices-2.0.1-beta-bcc4f1ca8fbe50775b3f20db9a9c63ed10ddca6d.jar" />
-    </item>
-    <item
-        jar="D:\Startup\FlareApp\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\classes.jar"
-        jumboMode="false"
-        revision="21.1.1"
-        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
-        <dex dex="D:\Startup\FlareApp\app\build\intermediates\pre-dexed\debug\classes-de1346e6736638086513a258e84bbe916257a751.jar" />
-    </item>
-    <item
-        jar="C:\Users\Karthik\.gradle\caches\modules-2\files-2.1\com.google.http-client\google-http-client-android\1.19.0\e3f11020c2c812112803d252d1392872d3f619c8\google-http-client-android-1.19.0.jar"
-        jumboMode="false"
-        revision="21.1.1"
-        sha1="e3f11020c2c812112803d252d1392872d3f619c8">
-        <dex dex="D:\Startup\FlareApp\app\build\intermediates\pre-dexed\debug\google-http-client-android-1.19.0-5c20fe8c63ef739d144f8d25a707a712882919a2.jar" />
-    </item>
-    <item
-        jar="C:\Users\Karthik\.gradle\caches\modules-2\files-2.1\com.google.http-client\google-http-client-android\1.19.0\e3f11020c2c812112803d252d1392872d3f619c8\google-http-client-android-1.19.0.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="e3f11020c2c812112803d252d1392872d3f619c8">
-        <dex dex="D:\Startup\FlareApp\app\build\intermediates\pre-dexed\debug\google-http-client-android-1.19.0-5c20fe8c63ef739d144f8d25a707a712882919a2.jar" />
-    </item>
-    <item
-        jar="C:\Users\Karthik\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-core\2.1.3\f6c3aed1cdfa21b5c1737c915186ea93a95a58bd\jackson-core-2.1.3.jar"
-        jumboMode="false"
-        revision="21.1.1"
-        sha1="f6c3aed1cdfa21b5c1737c915186ea93a95a58bd">
-        <dex dex="D:\Startup\FlareApp\app\build\intermediates\pre-dexed\debug\jackson-core-2.1.3-8a1184b15e7dee69043cfbb0fda942ee890d56ca.jar" />
-    </item>
-    <item
-        jar="D:\Startup\FlareApp\app\libs\gson-2.3.1.jar"
-        jumboMode="false"
-        revision="21.1.1"
+        revision="22.0.1"
         sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
-        <dex dex="D:\Startup\FlareApp\app\build\intermediates\pre-dexed\debug\gson-2.3.1-42d5eeac4a4224702838019e35d91eb1c49d5fa2.jar" />
+        <dex dex="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/pre-dexed/debug/gson-2.3.1-b67c0df2ad81d13e2194df7ca606786f594f963b.jar" />
     </item>
     <item
-        jar="C:\Users\Karthik\.gradle\caches\modules-2\files-2.1\com.google.http-client\google-http-client\1.19.0\cdca49ad0977c040f603478aa2e16b2775c8fec6\google-http-client-1.19.0.jar"
+        jar="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.getbase/floatingactionbutton/1.1.0/classes.jar"
         jumboMode="false"
-        revision="20.0.0"
-        sha1="cdca49ad0977c040f603478aa2e16b2775c8fec6">
-        <dex dex="D:\Startup\FlareApp\app\build\intermediates\pre-dexed\debug\google-http-client-1.19.0-b49f1b661541e5b3f260240bf0a32e9f6905c54b.jar" />
+        revision="22.0.1"
+        sha1="6530bce64dfbde38a6beceaf1cca8a0257516f51">
+        <dex dex="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/pre-dexed/debug/classes-f0db0b2114a94756ef7fd51c7236cc810c9c52e2.jar" />
     </item>
     <item
-        jar="D:\Startup\FlareApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\libs\internal_impl-21.0.3.jar"
+        jar="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/classes.jar"
         jumboMode="false"
-        revision="20.0.0"
-        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
-        <dex dex="D:\Startup\FlareApp\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-399b530474ed5d83e20fe155ba4a5eb11a08af17.jar" />
+        revision="22.0.1"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/pre-dexed/debug/classes-ced641d6306e67ec17fde508b885bfd9035ebdcd.jar" />
     </item>
     <item
-        jar="C:\Users\Karthik\.gradle\caches\modules-2\files-2.1\com.google.http-client\google-http-client-jackson2\1.19.0\81dbf9795d387d5e80e55346582d5f2fb81a42eb\google-http-client-jackson2-1.19.0.jar"
+        jar="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/classes.jar"
         jumboMode="false"
-        revision="21.1.1"
-        sha1="81dbf9795d387d5e80e55346582d5f2fb81a42eb">
-        <dex dex="D:\Startup\FlareApp\app\build\intermediates\pre-dexed\debug\google-http-client-jackson2-1.19.0-46b1c8031bbbb52d7bfa1f660476c2b313b493cd.jar" />
+        revision="22.0.1"
+        sha1="dd9247ea0fabe8ee479638c4b4a23e93752be256">
+        <dex dex="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/pre-dexed/debug/classes-ab587d35fa890ac5c922ac9c237cfbf174fece87.jar" />
     </item>
     <item
-        jar="C:\Users\Karthik\.gradle\caches\modules-2\files-2.1\com.google.api-client\google-api-client-android\1.19.0\ba2aafb867f6af469f936ae76426cf0a280094bd\google-api-client-android-1.19.0.jar"
+        jar="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/libs/notification-hubs-0.3.jar"
         jumboMode="false"
-        revision="21.1.1"
-        sha1="ba2aafb867f6af469f936ae76426cf0a280094bd">
-        <dex dex="D:\Startup\FlareApp\app\build\intermediates\pre-dexed\debug\google-api-client-android-1.19.0-614b6bd3b56e13a9f204ebaf9a1cfefa9cd36a26.jar" />
+        revision="22.0.1"
+        sha1="5665f8e79e2d89a83af0f915e5fcc93b9ae6747b">
+        <dex dex="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/pre-dexed/debug/notification-hubs-0.3-ad36049f8a1933351ce7547b438d21ddedd8323b.jar" />
     </item>
     <item
-        jar="D:\Startup\FlareApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
+        jar="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/libs/guava-17.0.jar"
         jumboMode="false"
-        revision="20.0.0"
-        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
-        <dex dex="D:\Startup\FlareApp\app\build\intermediates\pre-dexed\debug\classes-33b6611bfd3b23bf459a1449928f332991036582.jar" />
+        revision="22.0.1"
+        sha1="9c6ef172e8de35fd8d4d8783e4821e57cdef7445">
+        <dex dex="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/pre-dexed/debug/guava-17.0-e0260889d6b8c3fa8c0ede505e4378f9b095c206.jar" />
     </item>
     <item
-        jar="C:\Users\Karthik\.gradle\caches\modules-2\files-2.1\com.google.oauth-client\google-oauth-client\1.19.0\d473a8962e14a707a3716637e4898bb2dd9643f2\google-oauth-client-1.19.0.jar"
+        jar="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/libs/internal_impl-22.0.0.jar"
         jumboMode="false"
-        revision="21.1.1"
-        sha1="d473a8962e14a707a3716637e4898bb2dd9643f2">
-        <dex dex="D:\Startup\FlareApp\app\build\intermediates\pre-dexed\debug\google-oauth-client-1.19.0-5bd65fd5b86215807219993fd0d4d3e6f2e42ce8.jar" />
-    </item>
-    <item
-        jar="D:\Startup\FlareApp\FlareBackend\build\libs\FlareBackend-android-endpoints.jar"
-        jumboMode="false"
-        revision="21.1.1"
-        sha1="b48055345bb455c1a754b5f865eb70c8475d3e0f">
-        <dex dex="D:\Startup\FlareApp\app\build\intermediates\pre-dexed\debug\FlareBackend-android-endpoints-dd489ff8656deedd959f7fd1ec58629ce8f086d8.jar" />
+        revision="22.0.1"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-c918c50a850d662132827fad9ed36d335cad3135.jar" />
     </item>
 
 </items>

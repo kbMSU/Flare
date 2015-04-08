@@ -6,9 +6,6 @@ import android.os.Bundle;
 
 import flaregradle.myapp.com.flare.FlareHome;
 
-/**
- * Created by Karthik on 9/14/2014.
- */
 public class LocationUpdateHandler implements LocationListener {
 
     private FlareHome _parent;

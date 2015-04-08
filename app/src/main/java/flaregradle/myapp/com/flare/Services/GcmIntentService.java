@@ -16,8 +16,6 @@ import com.google.android.gms.gcm.GoogleCloudMessaging;
 
 import flaregradle.myapp.com.flare.DataItems.Contact;
 import flaregradle.myapp.com.flare.GcmBroadcastReceiver;
-import flaregradle.myapp.com.flare.Services.NotificationAcceptService;
-import flaregradle.myapp.com.flare.Services.NotificationDeclineService;
 import flaregradle.myapp.com.flare.Utilities.DataStorageHandler;
 
 public class GcmIntentService extends IntentService {

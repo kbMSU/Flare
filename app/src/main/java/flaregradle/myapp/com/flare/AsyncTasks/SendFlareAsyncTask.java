@@ -9,29 +9,21 @@ import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
-import com.google.api.client.extensions.android.http.AndroidHttp;
-import com.google.api.client.extensions.android.json.AndroidJsonFactory;
 import com.microsoft.windowsazure.mobileservices.MobileServiceClient;
 import com.microsoft.windowsazure.mobileservices.MobileServiceList;
 import com.microsoft.windowsazure.mobileservices.table.MobileServiceTable;
-import com.myapp.flarebackend.sendflare.Sendflare;
-import com.myapp.flarebackend.sendflare.model.RegisteredDevice;
 
 import org.apache.http.HttpResponse;
-import org.apache.http.HttpStatus;
-import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.client.methods.HttpUriRequest;
 import org.apache.http.impl.client.DefaultHttpClient;
 
-import java.io.IOException;
 import java.util.ArrayList;
 
 import flaregradle.myapp.com.flare.BackendItems.DeviceItem;
 import flaregradle.myapp.com.flare.Utilities.DataStorageHandler;
 
 public class SendFlareAsyncTask extends AsyncTask<Context,Void,String> {
-    private static Sendflare _sendFlareService = null;
     private Context context;
 
     private String _latitude;
@@ -64,11 +56,6 @@ public class SendFlareAsyncTask extends AsyncTask<Context,Void,String> {
 
     @Override
     protected String doInBackground(Context... params) {
-        // Create the Flare Service
-        if (_sendFlareService == null) {
-            Sendflare.Builder builder = new Sendflare.Builder(AndroidHttp.newCompatibleTransport(), new AndroidJsonFactory(), null);
-            _sendFlareService = builder.build();
-        }
 
         context = params[0];
         String msg = "";
@@ -125,17 +112,6 @@ public class SendFlareAsyncTask extends AsyncTask<Context,Void,String> {
                         }
                     }
                     msg = "Message Sent";
-
-                /*RegisteredDevice device = _sendFlareService.findDevice(finalPhone).execute();
-                if(device == null) {
-                    SmsManager m = SmsManager.getDefault();
-                    m.sendTextMessage(_phoneNumber,null,_message+" http://maps.google.com/?q="+_latitude+","+_longitude+" "
-                                      +"  "+"Sent from Flare",null,null);
-                    msg = "Message Sent";
-                } else {
-                    _sendFlareService.sendFlare(DataStorageHandler.getInstance().registrationId,finalPhone,_latitude,_longitude,_message).execute();
-                    msg = "Message Sent";
-                }*/
             }
 
         } catch (Exception e) {

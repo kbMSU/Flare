@@ -3,8 +3,6 @@ package flaregradle.myapp.com.flare.DataItems;
 import java.io.Serializable;
 import java.util.ArrayList;
 
-import flaregradle.myapp.com.flare.DataItems.Contact;
-
 /**
  * Created by Karthik on 12/27/2014.
  */

@@ -24,10 +24,10 @@ import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-import org.w3c.dom.Text;
-
 import java.util.List;
 import java.util.Locale;
+
+import flaregradle.myapp.com.flare.Utilities.LocationUpdateHandler;
 
 public class FlareHome extends ActionBarActivity {
 
@@ -59,8 +59,8 @@ public class FlareHome extends ActionBarActivity {
         try {
             _locationManager = (LocationManager)getSystemService(LOCATION_SERVICE);
             _provider = _locationManager.getBestProvider(new Criteria(), false);
-            //_locationListener = new LocationUpdateHandler(this);
-            //_locationManager.requestLocationUpdates(_provider, 1000,5, _locationListener);
+            _locationListener = new LocationUpdateHandler(this);
+            //_locationManager.requestLocationUpdates(_provider, 1000*60,5, _locationListener);
         } catch (Exception ex) {
             showMessage("Fatal Error : Could not get location service");
             try {
@@ -121,7 +121,7 @@ public class FlareHome extends ActionBarActivity {
     }
 
     public void onUpdateLocationClick(View v) {
-        updateLocation();
+        _locationManager.requestLocationUpdates(_provider, 0,0, _locationListener);
     }
 
     private void updateLocation() {
@@ -201,6 +201,7 @@ public class FlareHome extends ActionBarActivity {
 
     public void GetLocationUpdate(Location location){
         _location = location;
+        _locationManager.removeUpdates(_locationListener);
         setLocation();
     }
 }

@@ -54,7 +54,6 @@ public class DataStorageHandler {
         _notificationId = Preferences.getInt("notificationId",1);
 
         String json = Preferences.getString("SavedContactGroups",null);
-        //Preferences.edit().putString("SavedContactGroups",null).commit();
         if(json != null) {
             Gson gson = new Gson();
             HashMap<String,Group> groups = gson.fromJson(json,new TypeToken<HashMap<String,Group>>(){}.getType());

@@ -5,26 +5,22 @@ import android.os.AsyncTask;
 import android.widget.Toast;
 
 import com.google.android.gms.gcm.GoogleCloudMessaging;
-import com.google.api.client.extensions.android.http.AndroidHttp;
-import com.google.api.client.extensions.android.json.AndroidJsonFactory;
 import com.microsoft.windowsazure.messaging.NotificationHub;
 import com.microsoft.windowsazure.mobileservices.MobileServiceClient;
 import com.microsoft.windowsazure.mobileservices.MobileServiceList;
 import com.microsoft.windowsazure.mobileservices.table.MobileServiceTable;
 import com.microsoft.windowsazure.notifications.NotificationsManager;
-import com.myapp.flarebackend.deviceregistration.Deviceregistration;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import flaregradle.myapp.com.flare.AzureNotificationsHandler;
 import flaregradle.myapp.com.flare.BackendItems.DeviceItem;
-import flaregradle.myapp.com.flare.BackendItems.ToDoItem;
 import flaregradle.myapp.com.flare.Utilities.DataStorageHandler;
 import flaregradle.myapp.com.flare.LoadScreen;
 
 public class GcmRegistrationAsyncTask extends AsyncTask<Context, Void, String> {
-    private static Deviceregistration regService = null;
+
     private GoogleCloudMessaging gcm;
     private Context context;
 
@@ -44,10 +40,6 @@ public class GcmRegistrationAsyncTask extends AsyncTask<Context, Void, String> {
 
     @Override
     protected String doInBackground(Context... params) {
-        if (regService == null) {
-            Deviceregistration.Builder builder = new Deviceregistration.Builder(AndroidHttp.newCompatibleTransport(), new AndroidJsonFactory(), null);
-            regService = builder.build();
-        }
 
         context = params[0];
 
@@ -82,16 +74,7 @@ public class GcmRegistrationAsyncTask extends AsyncTask<Context, Void, String> {
                     "vAymygcCyvnOQrDzLOEjyOQGIxIJMm78",
                     context);
 
-            /*MobileServiceTable<ToDoItem> test = client.getTable(ToDoItem.class);
-            MobileServiceList<ToDoItem> items = test.execute().get();*/
-
             MobileServiceTable<DeviceItem> devices = client.getTable(DeviceItem.class);
-            /*DeviceItem item = new DeviceItem();
-            item.regId = regId;
-            item.fullPhone = phoneNumber;
-            item.deviceType = "android";
-            devices.insert(item);
-            MobileServiceList<DeviceItem> deviceItems = devices.execute().get();*/
 
             MobileServiceList<DeviceItem> phoneItems = devices.where().field("FullPhone").eq(phoneNumber).execute().get();
             MobileServiceList<DeviceItem> regItems = devices.where().field("RegId").eq(regId).execute().get();
