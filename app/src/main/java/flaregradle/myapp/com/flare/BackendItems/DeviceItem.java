@@ -1,4 +1,4 @@
-package flaregradle.myapp.com.flare.BackendItems;
+package flaregradle.myapp.com.Flare.BackendItems;
 
 
 public class DeviceItem {

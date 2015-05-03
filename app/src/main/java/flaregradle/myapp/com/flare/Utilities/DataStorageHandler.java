@@ -1,6 +1,7 @@
-package flaregradle.myapp.com.flare.Utilities;
+package flaregradle.myapp.com.Flare.Utilities;
 
 import android.content.SharedPreferences;
+import android.location.Location;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -9,8 +10,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.TreeMap;
 
-import flaregradle.myapp.com.flare.DataItems.Contact;
-import flaregradle.myapp.com.flare.DataItems.Group;
+import flaregradle.myapp.com.Flare.DataItems.Contact;
+import flaregradle.myapp.com.Flare.DataItems.Group;
 
 public class DataStorageHandler {
     private static DataStorageHandler instance = null;
@@ -32,6 +33,7 @@ public class DataStorageHandler {
     public String registrationId;
     public String thisPhone;
     public static HashMap<String,Group> SavedContactGroups;
+    public Location CurrentLocation;
 
     public static Contact findContact(String phoneNumber) {
         for(Contact contact : getInstance().AllContacts.values()) {

@@ -1,4 +1,4 @@
-package flaregradle.myapp.com.flare.util;
+package flaregradle.myapp.com.Flare.util;
 
 import android.app.Activity;
 import android.os.Build;

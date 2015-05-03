@@ -1,4 +1,4 @@
-package flaregradle.myapp.com.flare;
+package flaregradle.myapp.com.Flare;
 
 import android.content.Intent;
 import android.location.Address;
@@ -27,7 +27,8 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import java.util.List;
 import java.util.Locale;
 
-import flaregradle.myapp.com.flare.Utilities.LocationUpdateHandler;
+import flaregradle.myapp.com.Flare.Utilities.DataStorageHandler;
+import flaregradle.myapp.com.Flare.Utilities.LocationUpdateHandler;
 
 public class FlareHome extends ActionBarActivity {
 
@@ -54,13 +55,15 @@ public class FlareHome extends ActionBarActivity {
         _map.getUiSettings().setZoomControlsEnabled(false);
         _map.setMyLocationEnabled(false);
         _map.getUiSettings().setMyLocationButtonEnabled(false);
+        _map.getUiSettings().setMapToolbarEnabled(false);
 
         // Set the initial location and location updates
         try {
             _locationManager = (LocationManager)getSystemService(LOCATION_SERVICE);
             _provider = _locationManager.getBestProvider(new Criteria(), false);
             _locationListener = new LocationUpdateHandler(this);
-            //_locationManager.requestLocationUpdates(_provider, 1000*60,5, _locationListener);
+            _locationManager.requestLocationUpdates(_provider,5,10, _locationListener);
+            _locationManager.requestSingleUpdate(_provider,_locationListener,null);
         } catch (Exception ex) {
             showMessage("Fatal Error : Could not get location service");
             try {
@@ -121,7 +124,7 @@ public class FlareHome extends ActionBarActivity {
     }
 
     public void onUpdateLocationClick(View v) {
-        _locationManager.requestLocationUpdates(_provider, 0,0, _locationListener);
+        _locationManager.requestSingleUpdate(_provider,_locationListener,null);
     }
 
     private void updateLocation() {
@@ -163,6 +166,8 @@ public class FlareHome extends ActionBarActivity {
         if(_location == null)
             return;
 
+        DataStorageHandler.getInstance().CurrentLocation = _location;
+
         MarkerOptions currentLocationMarker = new MarkerOptions().position(new LatLng(_location.getLatitude(),_location.getLongitude()));
 
         try
@@ -201,7 +206,8 @@ public class FlareHome extends ActionBarActivity {
 
     public void GetLocationUpdate(Location location){
         _location = location;
-        _locationManager.removeUpdates(_locationListener);
         setLocation();
+        moveMapToLocation();
+        animateMapToLocation();
     }
 }

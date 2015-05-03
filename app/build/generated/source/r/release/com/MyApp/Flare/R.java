@@ -22,15 +22,15 @@ public final class R {
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int actionBarDivider=0x7f01007a;
+        public static final int actionBarDivider=0x7f01007b;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int actionBarItemBackground=0x7f01007b;
+        public static final int actionBarItemBackground=0x7f01007c;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int actionBarPopupTheme=0x7f010074;
+        public static final int actionBarPopupTheme=0x7f010075;
         /** <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -48,117 +48,117 @@ containing a value of this type.
 <tr><td><code>wrap_content</code></td><td>0</td><td></td></tr>
 </table>
          */
-        public static final int actionBarSize=0x7f010079;
+        public static final int actionBarSize=0x7f01007a;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int actionBarSplitStyle=0x7f010076;
+        public static final int actionBarSplitStyle=0x7f010077;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int actionBarStyle=0x7f010075;
+        public static final int actionBarStyle=0x7f010076;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int actionBarTabBarStyle=0x7f010070;
+        public static final int actionBarTabBarStyle=0x7f010071;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int actionBarTabStyle=0x7f01006f;
+        public static final int actionBarTabStyle=0x7f010070;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int actionBarTabTextStyle=0x7f010071;
+        public static final int actionBarTabTextStyle=0x7f010072;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int actionBarTheme=0x7f010077;
+        public static final int actionBarTheme=0x7f010078;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int actionBarWidgetTheme=0x7f010078;
+        public static final int actionBarWidgetTheme=0x7f010079;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int actionButtonStyle=0x7f010092;
+        public static final int actionButtonStyle=0x7f010093;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int actionDropDownStyle=0x7f01008d;
+        public static final int actionDropDownStyle=0x7f01008e;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int actionLayout=0x7f01004c;
+        public static final int actionLayout=0x7f01004d;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int actionMenuTextAppearance=0x7f01007c;
+        public static final int actionMenuTextAppearance=0x7f01007d;
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
          */
-        public static final int actionMenuTextColor=0x7f01007d;
+        public static final int actionMenuTextColor=0x7f01007e;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int actionModeBackground=0x7f010080;
+        public static final int actionModeBackground=0x7f010081;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int actionModeCloseButtonStyle=0x7f01007f;
+        public static final int actionModeCloseButtonStyle=0x7f010080;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int actionModeCloseDrawable=0x7f010082;
+        public static final int actionModeCloseDrawable=0x7f010083;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int actionModeCopyDrawable=0x7f010084;
+        public static final int actionModeCopyDrawable=0x7f010085;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int actionModeCutDrawable=0x7f010083;
+        public static final int actionModeCutDrawable=0x7f010084;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int actionModeFindDrawable=0x7f010088;
+        public static final int actionModeFindDrawable=0x7f010089;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int actionModePasteDrawable=0x7f010085;
+        public static final int actionModePasteDrawable=0x7f010086;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int actionModePopupWindowStyle=0x7f01008a;
+        public static final int actionModePopupWindowStyle=0x7f01008b;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int actionModeSelectAllDrawable=0x7f010086;
+        public static final int actionModeSelectAllDrawable=0x7f010087;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int actionModeShareDrawable=0x7f010087;
+        public static final int actionModeShareDrawable=0x7f010088;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int actionModeSplitBackground=0x7f010081;
+        public static final int actionModeSplitBackground=0x7f010082;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int actionModeStyle=0x7f01007e;
+        public static final int actionModeStyle=0x7f01007f;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int actionModeWebSearchDrawable=0x7f010089;
+        public static final int actionModeWebSearchDrawable=0x7f01008a;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int actionOverflowButtonStyle=0x7f010072;
+        public static final int actionOverflowButtonStyle=0x7f010073;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int actionOverflowMenuStyle=0x7f010073;
+        public static final int actionOverflowMenuStyle=0x7f010074;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -166,7 +166,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int actionProviderClass=0x7f01004e;
+        public static final int actionProviderClass=0x7f01004f;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -174,11 +174,11 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int actionViewClass=0x7f01004d;
+        public static final int actionViewClass=0x7f01004e;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int activityChooserViewStyle=0x7f010099;
+        public static final int activityChooserViewStyle=0x7f01009a;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -213,7 +213,7 @@ containing a value of this type.
 <tr><td><code>holo_light</code></td><td>1</td><td></td></tr>
 </table>
          */
-        public static final int appTheme=0x7f0100c9;
+        public static final int appTheme=0x7f0100ca;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -239,15 +239,15 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int barSize=0x7f01002c;
+        public static final int barSize=0x7f01002d;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int buttonBarButtonStyle=0x7f010094;
+        public static final int buttonBarButtonStyle=0x7f010095;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int buttonBarStyle=0x7f010093;
+        public static final int buttonBarStyle=0x7f010094;
         /** <p>Must be one of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -259,7 +259,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>monochrome</code></td><td>3</td><td></td></tr>
 </table>
          */
-        public static final int buyButtonAppearance=0x7f0100d0;
+        public static final int buyButtonAppearance=0x7f0100d1;
         /** <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -278,7 +278,7 @@ containing a value of this type.
 <tr><td><code>wrap_content</code></td><td>-2</td><td></td></tr>
 </table>
          */
-        public static final int buyButtonHeight=0x7f0100cd;
+        public static final int buyButtonHeight=0x7f0100ce;
         /** <p>Must be one of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -291,7 +291,7 @@ containing a value of this type.
 <tr><td><code>donate_with_google</code></td><td>4</td><td></td></tr>
 </table>
          */
-        public static final int buyButtonText=0x7f0100cf;
+        public static final int buyButtonText=0x7f0100d0;
         /** <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -310,7 +310,7 @@ containing a value of this type.
 <tr><td><code>wrap_content</code></td><td>-2</td><td></td></tr>
 </table>
          */
-        public static final int buyButtonWidth=0x7f0100ce;
+        public static final int buyButtonWidth=0x7f0100cf;
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -318,7 +318,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int cameraBearing=0x7f01003c;
+        public static final int cameraBearing=0x7f01003d;
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -326,7 +326,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int cameraTargetLat=0x7f01003d;
+        public static final int cameraTargetLat=0x7f01003e;
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -334,7 +334,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int cameraTargetLng=0x7f01003e;
+        public static final int cameraTargetLng=0x7f01003f;
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -342,7 +342,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int cameraTilt=0x7f01003f;
+        public static final int cameraTilt=0x7f010040;
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -350,7 +350,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int cameraZoom=0x7f010040;
+        public static final int cameraZoom=0x7f010041;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -358,11 +358,11 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int circleCrop=0x7f01003a;
+        public static final int circleCrop=0x7f01003b;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int closeIcon=0x7f010055;
+        public static final int closeIcon=0x7f010056;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -374,11 +374,11 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int collapseContentDescription=0x7f0100c4;
+        public static final int collapseContentDescription=0x7f0100c5;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int collapseIcon=0x7f0100c3;
+        public static final int collapseIcon=0x7f0100c4;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -387,7 +387,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int color=0x7f010026;
+        public static final int color=0x7f010027;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -396,7 +396,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int colorAccent=0x7f0100b4;
+        public static final int colorAccent=0x7f0100b5;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -405,7 +405,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int colorButtonNormal=0x7f0100b8;
+        public static final int colorButtonNormal=0x7f0100b9;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -414,7 +414,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int colorControlActivated=0x7f0100b6;
+        public static final int colorControlActivated=0x7f0100b7;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -423,7 +423,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int colorControlHighlight=0x7f0100b7;
+        public static final int colorControlHighlight=0x7f0100b8;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -432,7 +432,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int colorControlNormal=0x7f0100b5;
+        public static final int colorControlNormal=0x7f0100b6;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -441,7 +441,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int colorPrimary=0x7f0100b2;
+        public static final int colorPrimary=0x7f0100b3;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -450,7 +450,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int colorPrimaryDark=0x7f0100b3;
+        public static final int colorPrimaryDark=0x7f0100b4;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -459,11 +459,11 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int colorSwitchThumbNormal=0x7f0100b9;
+        public static final int colorSwitchThumbNormal=0x7f0100ba;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int commitIcon=0x7f010059;
+        public static final int commitIcon=0x7f01005a;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -515,7 +515,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int disableChildrenWhenDisabled=0x7f010060;
+        public static final int disableChildrenWhenDisabled=0x7f010061;
         /** <p>Must be one or more (separated by '|') of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -539,7 +539,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int dividerHorizontal=0x7f010098;
+        public static final int dividerHorizontal=0x7f010099;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -549,11 +549,11 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int dividerPadding=0x7f010037;
+        public static final int dividerPadding=0x7f010038;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int dividerVertical=0x7f010097;
+        public static final int dividerVertical=0x7f010098;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -563,7 +563,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int drawableSize=0x7f010028;
+        public static final int drawableSize=0x7f010029;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -571,7 +571,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int dropDownListViewStyle=0x7f0100aa;
+        public static final int dropDownListViewStyle=0x7f0100ab;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -581,17 +581,17 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int dropdownListPreferredItemHeight=0x7f01008e;
+        public static final int dropdownListPreferredItemHeight=0x7f01008f;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int editTextBackground=0x7f01009f;
+        public static final int editTextBackground=0x7f0100a0;
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
          */
-        public static final int editTextColor=0x7f01009e;
+        public static final int editTextColor=0x7f01009f;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -613,7 +613,7 @@ containing a value of this type.
 <tr><td><code>strict_sandbox</code></td><td>2</td><td></td></tr>
 </table>
          */
-        public static final int environment=0x7f0100ca;
+        public static final int environment=0x7f0100cb;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -626,7 +626,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int fab_addButtonColorNormal=0x7f010033;
+        public static final int fab_addButtonColorNormal=0x7f010034;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -635,7 +635,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int fab_addButtonColorPressed=0x7f010032;
+        public static final int fab_addButtonColorPressed=0x7f010033;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -644,7 +644,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int fab_addButtonPlusIconColor=0x7f010034;
+        public static final int fab_addButtonPlusIconColor=0x7f010035;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -653,7 +653,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int fab_colorNormal=0x7f01002f;
+        public static final int fab_colorNormal=0x7f010030;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -662,11 +662,11 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int fab_colorPressed=0x7f01002e;
+        public static final int fab_colorPressed=0x7f01002f;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int fab_icon=0x7f010030;
+        public static final int fab_icon=0x7f010031;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -686,7 +686,7 @@ containing a value of this type.
 <tr><td><code>mini</code></td><td>1</td><td></td></tr>
 </table>
          */
-        public static final int fab_size=0x7f010031;
+        public static final int fab_size=0x7f010032;
         /** <p>Must be one of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -697,11 +697,11 @@ containing a value of this type.
 <tr><td><code>selectionDetails</code></td><td>2</td><td></td></tr>
 </table>
          */
-        public static final int fragmentMode=0x7f0100cc;
+        public static final int fragmentMode=0x7f0100cd;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int fragmentStyle=0x7f0100cb;
+        public static final int fragmentStyle=0x7f0100cc;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -711,11 +711,11 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int gapBetweenBars=0x7f010029;
+        public static final int gapBetweenBars=0x7f01002a;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int goIcon=0x7f010056;
+        public static final int goIcon=0x7f010057;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -737,7 +737,7 @@ containing a value of this type.
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int homeAsUpIndicator=0x7f010091;
+        public static final int homeAsUpIndicator=0x7f010092;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -753,7 +753,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int iconifiedByDefault=0x7f010053;
+        public static final int iconifiedByDefault=0x7f010054;
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -761,7 +761,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int imageAspectRatio=0x7f010039;
+        public static final int imageAspectRatio=0x7f01003a;
         /** <p>Must be one of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -773,7 +773,7 @@ containing a value of this type.
 <tr><td><code>adjust_height</code></td><td>2</td><td></td></tr>
 </table>
          */
-        public static final int imageAspectRatioAdjust=0x7f010038;
+        public static final int imageAspectRatioAdjust=0x7f010039;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -807,15 +807,15 @@ containing a value of this type.
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int layout=0x7f010052;
+        public static final int layout=0x7f010053;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int listChoiceBackgroundIndicator=0x7f0100b1;
+        public static final int listChoiceBackgroundIndicator=0x7f0100b2;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int listPopupWindowStyle=0x7f0100ab;
+        public static final int listPopupWindowStyle=0x7f0100ac;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -825,7 +825,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int listPreferredItemHeight=0x7f0100a5;
+        public static final int listPreferredItemHeight=0x7f0100a6;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -835,7 +835,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int listPreferredItemHeightLarge=0x7f0100a7;
+        public static final int listPreferredItemHeightLarge=0x7f0100a8;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -845,7 +845,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int listPreferredItemHeightSmall=0x7f0100a6;
+        public static final int listPreferredItemHeightSmall=0x7f0100a7;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -855,7 +855,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int listPreferredItemPaddingLeft=0x7f0100a8;
+        public static final int listPreferredItemPaddingLeft=0x7f0100a9;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -865,7 +865,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int listPreferredItemPaddingRight=0x7f0100a9;
+        public static final int listPreferredItemPaddingRight=0x7f0100aa;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -873,7 +873,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int liteMode=0x7f010041;
+        public static final int liteMode=0x7f010042;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -891,27 +891,27 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>hybrid</code></td><td>4</td><td></td></tr>
 </table>
          */
-        public static final int mapType=0x7f01003b;
+        public static final int mapType=0x7f01003c;
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
          */
-        public static final int maskedWalletDetailsBackground=0x7f0100d3;
+        public static final int maskedWalletDetailsBackground=0x7f0100d4;
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
          */
-        public static final int maskedWalletDetailsButtonBackground=0x7f0100d5;
+        public static final int maskedWalletDetailsButtonBackground=0x7f0100d6;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int maskedWalletDetailsButtonTextAppearance=0x7f0100d4;
+        public static final int maskedWalletDetailsButtonTextAppearance=0x7f0100d5;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int maskedWalletDetailsHeaderTextAppearance=0x7f0100d2;
+        public static final int maskedWalletDetailsHeaderTextAppearance=0x7f0100d3;
         /** <p>Must be one of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -922,7 +922,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>monochrome</code></td><td>2</td><td></td></tr>
 </table>
          */
-        public static final int maskedWalletDetailsLogoImageType=0x7f0100d7;
+        public static final int maskedWalletDetailsLogoImageType=0x7f0100d8;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -931,11 +931,11 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int maskedWalletDetailsLogoTextColor=0x7f0100d6;
+        public static final int maskedWalletDetailsLogoTextColor=0x7f0100d7;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int maskedWalletDetailsTextAppearance=0x7f0100d1;
+        public static final int maskedWalletDetailsTextAppearance=0x7f0100d2;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -945,7 +945,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int maxButtonHeight=0x7f0100c1;
+        public static final int maxButtonHeight=0x7f0100c2;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -953,7 +953,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int measureWithLargestChild=0x7f010035;
+        public static final int measureWithLargestChild=0x7f010036;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -971,7 +971,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int middleBarArrowSize=0x7f01002b;
+        public static final int middleBarArrowSize=0x7f01002c;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -979,11 +979,11 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int navigationContentDescription=0x7f0100c6;
+        public static final int navigationContentDescription=0x7f0100c7;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int navigationIcon=0x7f0100c5;
+        public static final int navigationIcon=0x7f0100c6;
         /** <p>Must be one of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -1003,7 +1003,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int overlapAnchor=0x7f010050;
+        public static final int overlapAnchor=0x7f010051;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -1013,7 +1013,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int paddingEnd=0x7f0100c8;
+        public static final int paddingEnd=0x7f0100c9;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -1023,15 +1023,15 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int paddingStart=0x7f0100c7;
+        public static final int paddingStart=0x7f0100c8;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int panelBackground=0x7f0100ae;
+        public static final int panelBackground=0x7f0100af;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int panelMenuListTheme=0x7f0100b0;
+        public static final int panelMenuListTheme=0x7f0100b1;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -1041,15 +1041,15 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int panelMenuListWidth=0x7f0100af;
+        public static final int panelMenuListWidth=0x7f0100b0;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int popupMenuStyle=0x7f01009c;
+        public static final int popupMenuStyle=0x7f01009d;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int popupPromptView=0x7f01005f;
+        public static final int popupPromptView=0x7f010060;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -1057,7 +1057,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int popupWindowStyle=0x7f01009d;
+        public static final int popupWindowStyle=0x7f01009e;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -1065,7 +1065,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int preserveIconSpacing=0x7f01004f;
+        public static final int preserveIconSpacing=0x7f010050;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -1083,11 +1083,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int prompt=0x7f01005d;
+        public static final int prompt=0x7f01005e;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int queryBackground=0x7f01005b;
+        public static final int queryBackground=0x7f01005c;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -1095,23 +1095,23 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int queryHint=0x7f010054;
+        public static final int queryHint=0x7f010055;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int searchIcon=0x7f010057;
+        public static final int searchIcon=0x7f010058;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int searchViewStyle=0x7f0100a4;
+        public static final int searchViewStyle=0x7f0100a5;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int selectableItemBackground=0x7f010095;
+        public static final int selectableItemBackground=0x7f010096;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int selectableItemBackgroundBorderless=0x7f010096;
+        public static final int selectableItemBackgroundBorderless=0x7f010097;
         /** <p>Must be one or more (separated by '|') of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -1125,7 +1125,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>collapseActionView</code></td><td>8</td><td></td></tr>
 </table>
          */
-        public static final int showAsAction=0x7f01004b;
+        public static final int showAsAction=0x7f01004c;
         /** <p>Must be one or more (separated by '|') of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -1138,7 +1138,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>end</code></td><td>4</td><td></td></tr>
 </table>
          */
-        public static final int showDividers=0x7f010036;
+        public static final int showDividers=0x7f010037;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -1146,7 +1146,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int showText=0x7f010067;
+        public static final int showText=0x7f010068;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -1154,11 +1154,11 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int spinBars=0x7f010027;
+        public static final int spinBars=0x7f010028;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int spinnerDropDownItemStyle=0x7f010090;
+        public static final int spinnerDropDownItemStyle=0x7f010091;
         /** <p>Must be one of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -1169,11 +1169,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>dropdown</code></td><td>1</td><td></td></tr>
 </table>
          */
-        public static final int spinnerMode=0x7f01005e;
+        public static final int spinnerMode=0x7f01005f;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int spinnerStyle=0x7f01008f;
+        public static final int spinnerStyle=0x7f010090;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -1181,7 +1181,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int splitTrack=0x7f010066;
+        public static final int splitTrack=0x7f010067;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -1189,11 +1189,11 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int state_above_anchor=0x7f010051;
+        public static final int state_above_anchor=0x7f010052;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int submitBackground=0x7f01005c;
+        public static final int submitBackground=0x7f01005d;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -1205,7 +1205,7 @@ containing a value of this type.
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int subtitleTextAppearance=0x7f0100bb;
+        public static final int subtitleTextAppearance=0x7f0100bc;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -1213,7 +1213,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int suggestionRowLayout=0x7f01005a;
+        public static final int suggestionRowLayout=0x7f01005b;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -1223,7 +1223,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int switchMinWidth=0x7f010064;
+        public static final int switchMinWidth=0x7f010065;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -1233,15 +1233,15 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int switchPadding=0x7f010065;
+        public static final int switchPadding=0x7f010066;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int switchStyle=0x7f0100a0;
+        public static final int switchStyle=0x7f0100a1;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int switchTextAppearance=0x7f010063;
+        public static final int switchTextAppearance=0x7f010064;
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
@@ -1250,37 +1250,37 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int textAppearanceLargePopupMenu=0x7f01008b;
+        public static final int textAppearanceLargePopupMenu=0x7f01008c;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int textAppearanceListItem=0x7f0100ac;
+        public static final int textAppearanceListItem=0x7f0100ad;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int textAppearanceListItemSmall=0x7f0100ad;
+        public static final int textAppearanceListItemSmall=0x7f0100ae;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int textAppearanceSearchResultSubtitle=0x7f0100a2;
+        public static final int textAppearanceSearchResultSubtitle=0x7f0100a3;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int textAppearanceSearchResultTitle=0x7f0100a1;
+        public static final int textAppearanceSearchResultTitle=0x7f0100a2;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int textAppearanceSmallPopupMenu=0x7f01008c;
+        public static final int textAppearanceSmallPopupMenu=0x7f01008d;
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
          */
-        public static final int textColorSearchUrl=0x7f0100a3;
+        public static final int textColorSearchUrl=0x7f0100a4;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int theme=0x7f0100c2;
+        public static final int theme=0x7f0100c3;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -1290,7 +1290,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int thickness=0x7f01002d;
+        public static final int thickness=0x7f01002e;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -1300,7 +1300,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int thumbTextPadding=0x7f010062;
+        public static final int thumbTextPadding=0x7f010063;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -1318,7 +1318,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int titleMarginBottom=0x7f0100c0;
+        public static final int titleMarginBottom=0x7f0100c1;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -1328,7 +1328,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int titleMarginEnd=0x7f0100be;
+        public static final int titleMarginEnd=0x7f0100bf;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -1338,7 +1338,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int titleMarginStart=0x7f0100bd;
+        public static final int titleMarginStart=0x7f0100be;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -1348,7 +1348,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int titleMarginTop=0x7f0100bf;
+        public static final int titleMarginTop=0x7f0100c0;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -1358,11 +1358,11 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int titleMargins=0x7f0100bc;
+        public static final int titleMargins=0x7f0100bd;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int titleTextAppearance=0x7f0100ba;
+        public static final int titleTextAppearance=0x7f0100bb;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -1370,11 +1370,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int toolbarNavigationButtonStyle=0x7f01009b;
+        public static final int toolbarNavigationButtonStyle=0x7f01009c;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int toolbarStyle=0x7f01009a;
+        public static final int toolbarStyle=0x7f01009b;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -1384,11 +1384,11 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int topBottomBarArrowSize=0x7f01002a;
+        public static final int topBottomBarArrowSize=0x7f01002b;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int track=0x7f010061;
+        public static final int track=0x7f010062;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -1396,7 +1396,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int uiCompass=0x7f010042;
+        public static final int uiCompass=0x7f010043;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -1404,7 +1404,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int uiMapToolbar=0x7f01004a;
+        public static final int uiMapToolbar=0x7f01004b;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -1412,7 +1412,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int uiRotateGestures=0x7f010043;
+        public static final int uiRotateGestures=0x7f010044;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -1420,7 +1420,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int uiScrollGestures=0x7f010044;
+        public static final int uiScrollGestures=0x7f010045;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -1428,7 +1428,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int uiTiltGestures=0x7f010045;
+        public static final int uiTiltGestures=0x7f010046;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -1436,7 +1436,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int uiZoomControls=0x7f010046;
+        public static final int uiZoomControls=0x7f010047;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -1444,7 +1444,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int uiZoomGestures=0x7f010047;
+        public static final int uiZoomGestures=0x7f010048;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -1452,11 +1452,11 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int useViewLifecycle=0x7f010048;
+        public static final int useViewLifecycle=0x7f010049;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int voiceIcon=0x7f010058;
+        public static final int voiceIcon=0x7f010059;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -1464,7 +1464,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int windowActionBar=0x7f010068;
+        public static final int windowActionBar=0x7f010069;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -1472,7 +1472,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int windowActionBarOverlay=0x7f010069;
+        public static final int windowActionBarOverlay=0x7f01006a;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -1480,7 +1480,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int windowActionModeOverlay=0x7f01006a;
+        public static final int windowActionModeOverlay=0x7f01006b;
         /** <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -1493,7 +1493,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int windowFixedHeightMajor=0x7f01006e;
+        public static final int windowFixedHeightMajor=0x7f01006f;
         /** <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -1506,7 +1506,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int windowFixedHeightMinor=0x7f01006c;
+        public static final int windowFixedHeightMinor=0x7f01006d;
         /** <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -1519,7 +1519,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int windowFixedWidthMajor=0x7f01006b;
+        public static final int windowFixedWidthMajor=0x7f01006c;
         /** <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -1532,7 +1532,18 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int windowFixedWidthMinor=0x7f01006d;
+        public static final int windowFixedWidthMinor=0x7f01006e;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>slide</code></td><td>1</td><td></td></tr>
+<tr><td><code>none</code></td><td>2</td><td></td></tr>
+</table>
+         */
+        public static final int windowTransitionStyle=0x7f010026;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -1540,7 +1551,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int zOrderOnTop=0x7f010049;
+        public static final int zOrderOnTop=0x7f01004a;
     }
     public static final class bool {
         public static final int abc_action_bar_embed_tabs=0x7f060000;
@@ -1828,36 +1839,36 @@ containing a value of this type.
         public static final int write_icon=0x7f020072;
     }
     public static final class id {
-        public static final int action_bar=0x7f090077;
+        public static final int action_bar=0x7f090079;
         public static final int action_bar_activity_content=0x7f090000;
-        public static final int action_bar_container=0x7f090076;
-        public static final int action_bar_root=0x7f090072;
+        public static final int action_bar_container=0x7f090078;
+        public static final int action_bar_root=0x7f090074;
         public static final int action_bar_spinner=0x7f090001;
-        public static final int action_bar_subtitle=0x7f090065;
-        public static final int action_bar_title=0x7f090064;
-        public static final int action_context_bar=0x7f090078;
+        public static final int action_bar_subtitle=0x7f090067;
+        public static final int action_bar_title=0x7f090066;
+        public static final int action_context_bar=0x7f09007a;
         public static final int action_menu_divider=0x7f090002;
         public static final int action_menu_presenter=0x7f090003;
-        public static final int action_mode_bar=0x7f090074;
-        public static final int action_mode_bar_stub=0x7f090073;
-        public static final int action_mode_close_button=0x7f090066;
-        public static final int activity_chooser_view_content=0x7f090067;
-        public static final int adjust_height=0x7f090048;
-        public static final int adjust_width=0x7f090049;
+        public static final int action_mode_bar=0x7f090076;
+        public static final int action_mode_bar_stub=0x7f090075;
+        public static final int action_mode_close_button=0x7f090068;
+        public static final int activity_chooser_view_content=0x7f090069;
+        public static final int adjust_height=0x7f09004a;
+        public static final int adjust_width=0x7f09004b;
         public static final int allContacts=0x7f090004;
-        public static final int always=0x7f09004d;
-        public static final int beginning=0x7f090045;
-        public static final int book_now=0x7f09005d;
+        public static final int always=0x7f09004f;
+        public static final int beginning=0x7f090047;
+        public static final int book_now=0x7f09005f;
         public static final int broadcast=0x7f090005;
         public static final int busyIndicator=0x7f090006;
-        public static final int buyButton=0x7f09005a;
-        public static final int buy_now=0x7f09005e;
-        public static final int buy_with_google=0x7f09005f;
-        public static final int checkbox=0x7f09006f;
-        public static final int classic=0x7f090061;
+        public static final int buyButton=0x7f09005c;
+        public static final int buy_now=0x7f090060;
+        public static final int buy_with_google=0x7f090061;
+        public static final int checkbox=0x7f090071;
+        public static final int classic=0x7f090063;
         public static final int clearFlare=0x7f090007;
         public static final int clear_contacts=0x7f090008;
-        public static final int collapseActionView=0x7f09004e;
+        public static final int collapseActionView=0x7f090050;
         public static final int contactItem=0x7f090009;
         public static final int contact_image=0x7f09000a;
         public static final int contact_name=0x7f09000b;
@@ -1865,103 +1876,105 @@ containing a value of this type.
         public static final int contact_selected=0x7f09000d;
         public static final int contactsHome=0x7f09000e;
         public static final int createGroup=0x7f09000f;
-        public static final int decor_content_parent=0x7f090075;
+        public static final int decor_content_parent=0x7f090077;
         public static final int default_accept_edittext=0x7f090010;
         public static final int default_accept_textview=0x7f090011;
-        public static final int default_activity_button=0x7f09006a;
+        public static final int default_activity_button=0x7f09006c;
         public static final int default_decline_edittext=0x7f090012;
         public static final int default_decline_textview=0x7f090013;
         public static final int deleteGroup=0x7f090014;
-        public static final int dialog=0x7f090052;
-        public static final int disableHome=0x7f09003d;
-        public static final int donate_with_google=0x7f090060;
-        public static final int dropdown=0x7f090053;
+        public static final int dialog=0x7f090054;
+        public static final int disableHome=0x7f09003e;
+        public static final int donate_with_google=0x7f090062;
+        public static final int dropdown=0x7f090055;
         public static final int editGroup=0x7f090015;
-        public static final int edit_query=0x7f090079;
-        public static final int end=0x7f090046;
-        public static final int expand_activities_button=0x7f090068;
-        public static final int expanded_menu=0x7f09006e;
+        public static final int edit_query=0x7f09007b;
+        public static final int end=0x7f090048;
+        public static final int expand_activities_button=0x7f09006a;
+        public static final int expanded_menu=0x7f090070;
         public static final int fab=0x7f090016;
         public static final int fabGroups=0x7f090017;
         public static final int fabSendFlare=0x7f090018;
         public static final int fab_expand_menu_button=0x7f090019;
         public static final int feedback=0x7f09001a;
-        public static final int grayscale=0x7f090062;
+        public static final int grayscale=0x7f090064;
         public static final int groupName=0x7f09001b;
         public static final int group_count=0x7f09001c;
         public static final int group_item=0x7f09001d;
         public static final int group_name=0x7f09001e;
-        public static final int groups_list=0x7f09001f;
-        public static final int help=0x7f090020;
-        public static final int holo_dark=0x7f090055;
-        public static final int holo_light=0x7f090056;
-        public static final int home=0x7f090021;
-        public static final int homeAsUp=0x7f09003e;
-        public static final int hybrid=0x7f09004a;
-        public static final int icon=0x7f09006c;
-        public static final int ifRoom=0x7f09004f;
-        public static final int image=0x7f090069;
-        public static final int latitude=0x7f090022;
-        public static final int listMode=0x7f09003a;
-        public static final int list_item=0x7f09006b;
-        public static final int loading=0x7f090023;
-        public static final int location=0x7f090024;
-        public static final int longitude=0x7f090025;
-        public static final int map=0x7f090026;
-        public static final int match_parent=0x7f09005c;
-        public static final int middle=0x7f090047;
-        public static final int mini=0x7f090044;
-        public static final int monochrome=0x7f090063;
-        public static final int never=0x7f090050;
-        public static final int none=0x7f09003f;
-        public static final int normal=0x7f09003b;
-        public static final int overlay=0x7f090027;
-        public static final int phone=0x7f090028;
-        public static final int production=0x7f090057;
-        public static final int progress_circular=0x7f090029;
-        public static final int progress_horizontal=0x7f09002a;
-        public static final int radio=0x7f090071;
-        public static final int sandbox=0x7f090058;
-        public static final int satellite=0x7f09004b;
-        public static final int saveGroup=0x7f09002b;
-        public static final int searchLocationText=0x7f09002c;
-        public static final int search_badge=0x7f09007b;
-        public static final int search_bar=0x7f09007a;
-        public static final int search_button=0x7f09007c;
-        public static final int search_close_btn=0x7f090081;
-        public static final int search_edit_frame=0x7f09007d;
-        public static final int search_go_btn=0x7f090083;
-        public static final int search_mag_icon=0x7f09007e;
-        public static final int search_plate=0x7f09007f;
-        public static final int search_src_text=0x7f090080;
-        public static final int search_voice_btn=0x7f090084;
-        public static final int selectionDetails=0x7f09005b;
-        public static final int sendFlareLayout=0x7f09002d;
-        public static final int sendFlareScreen=0x7f09002e;
-        public static final int sendGroupFlare=0x7f09002f;
-        public static final int send_flare=0x7f090030;
-        public static final int send_text_response=0x7f090031;
-        public static final int send_text_toggle=0x7f090032;
-        public static final int settings=0x7f090033;
-        public static final int shortcut=0x7f090070;
-        public static final int showCustom=0x7f090040;
-        public static final int showHome=0x7f090041;
-        public static final int showTitle=0x7f090042;
-        public static final int sosSortText=0x7f090034;
-        public static final int split_action_bar=0x7f090035;
-        public static final int strict_sandbox=0x7f090059;
-        public static final int submit_area=0x7f090082;
-        public static final int tabMode=0x7f09003c;
-        public static final int terrain=0x7f09004c;
-        public static final int title=0x7f09006d;
-        public static final int toolbar=0x7f090085;
-        public static final int up=0x7f090036;
-        public static final int useLogo=0x7f090043;
-        public static final int whats_new=0x7f090037;
-        public static final int withText=0x7f090051;
-        public static final int wrap_content=0x7f090054;
-        public static final int writeMessage=0x7f090038;
-        public static final int writeMessageLayout=0x7f090039;
+        public static final int groupsAdView=0x7f09001f;
+        public static final int groups_list=0x7f090020;
+        public static final int help=0x7f090021;
+        public static final int holo_dark=0x7f090057;
+        public static final int holo_light=0x7f090058;
+        public static final int home=0x7f090022;
+        public static final int homeAsUp=0x7f09003f;
+        public static final int hybrid=0x7f09004c;
+        public static final int icon=0x7f09006e;
+        public static final int ifRoom=0x7f090051;
+        public static final int image=0x7f09006b;
+        public static final int latitude=0x7f090023;
+        public static final int listMode=0x7f09003b;
+        public static final int list_item=0x7f09006d;
+        public static final int loading=0x7f090024;
+        public static final int location=0x7f090025;
+        public static final int longitude=0x7f090026;
+        public static final int map=0x7f090027;
+        public static final int match_parent=0x7f09005e;
+        public static final int middle=0x7f090049;
+        public static final int mini=0x7f090046;
+        public static final int monochrome=0x7f090065;
+        public static final int never=0x7f090052;
+        public static final int none=0x7f090040;
+        public static final int normal=0x7f09003c;
+        public static final int overlay=0x7f090028;
+        public static final int phone=0x7f090029;
+        public static final int production=0x7f090059;
+        public static final int progress_circular=0x7f09002a;
+        public static final int progress_horizontal=0x7f09002b;
+        public static final int radio=0x7f090073;
+        public static final int sandbox=0x7f09005a;
+        public static final int satellite=0x7f09004d;
+        public static final int saveGroup=0x7f09002c;
+        public static final int searchLocationText=0x7f09002d;
+        public static final int search_badge=0x7f09007d;
+        public static final int search_bar=0x7f09007c;
+        public static final int search_button=0x7f09007e;
+        public static final int search_close_btn=0x7f090083;
+        public static final int search_edit_frame=0x7f09007f;
+        public static final int search_go_btn=0x7f090085;
+        public static final int search_mag_icon=0x7f090080;
+        public static final int search_plate=0x7f090081;
+        public static final int search_src_text=0x7f090082;
+        public static final int search_voice_btn=0x7f090086;
+        public static final int selectionDetails=0x7f09005d;
+        public static final int sendFlareLayout=0x7f09002e;
+        public static final int sendFlareScreen=0x7f09002f;
+        public static final int sendGroupFlare=0x7f090030;
+        public static final int send_flare=0x7f090031;
+        public static final int send_text_response=0x7f090032;
+        public static final int send_text_toggle=0x7f090033;
+        public static final int settings=0x7f090034;
+        public static final int shortcut=0x7f090072;
+        public static final int showCustom=0x7f090041;
+        public static final int showHome=0x7f090042;
+        public static final int showTitle=0x7f090043;
+        public static final int slide=0x7f090045;
+        public static final int sosSortText=0x7f090035;
+        public static final int split_action_bar=0x7f090036;
+        public static final int strict_sandbox=0x7f09005b;
+        public static final int submit_area=0x7f090084;
+        public static final int tabMode=0x7f09003d;
+        public static final int terrain=0x7f09004e;
+        public static final int title=0x7f09006f;
+        public static final int toolbar=0x7f090087;
+        public static final int up=0x7f090037;
+        public static final int useLogo=0x7f090044;
+        public static final int whats_new=0x7f090038;
+        public static final int withText=0x7f090053;
+        public static final int wrap_content=0x7f090056;
+        public static final int writeMessage=0x7f090039;
+        public static final int writeMessageLayout=0x7f09003a;
     }
     public static final class integer {
         public static final int abc_config_activityDefaultDur=0x7f0a0000;
@@ -2056,55 +2069,60 @@ containing a value of this type.
         public static final int common_google_play_services_notification_needs_installation_title=0x7f0b0027;
         public static final int common_google_play_services_notification_needs_update_title=0x7f0b0028;
         public static final int common_google_play_services_notification_ticker=0x7f0b0029;
-        public static final int common_google_play_services_unknown_issue=0x7f0b002a;
-        public static final int common_google_play_services_unsupported_text=0x7f0b002b;
-        public static final int common_google_play_services_unsupported_title=0x7f0b002c;
-        public static final int common_google_play_services_update_button=0x7f0b002d;
-        public static final int common_google_play_services_update_text=0x7f0b002e;
-        public static final int common_google_play_services_update_title=0x7f0b002f;
-        public static final int common_open_on_phone=0x7f0b0030;
-        public static final int common_signin_button_text=0x7f0b0031;
-        public static final int common_signin_button_text_long=0x7f0b0032;
-        public static final int connecting=0x7f0b0033;
-        public static final int create_calendar_message=0x7f0b0034;
-        public static final int create_calendar_title=0x7f0b0035;
-        public static final int decline=0x7f0b0036;
-        public static final int default_flare_message=0x7f0b0037;
-        public static final int delete_group=0x7f0b0038;
-        public static final int edit_group=0x7f0b0039;
-        public static final int emergency=0x7f0b003a;
-        public static final int enter_group_name=0x7f0b003b;
-        public static final int feedback=0x7f0b003c;
-        public static final int flare_accept_text=0x7f0b003d;
-        public static final int flare_decline_text=0x7f0b003e;
-        public static final int hello_world=0x7f0b003f;
-        public static final int help=0x7f0b0040;
-        public static final int latitude=0x7f0b0041;
-        public static final int loading=0x7f0b0042;
-        public static final int location=0x7f0b0043;
-        public static final int longitude=0x7f0b0044;
-        public static final int new_group=0x7f0b0045;
-        public static final int no_selected_contacts=0x7f0b0046;
-        public static final int phone=0x7f0b0047;
-        public static final int phone_clear=0x7f0b0048;
-        public static final int save_group_text=0x7f0b0049;
-        public static final int save_text=0x7f0b004a;
-        public static final int send=0x7f0b004b;
-        public static final int send_response_text=0x7f0b004c;
-        public static final int settings_menu=0x7f0b004d;
-        public static final int sos_click=0x7f0b004e;
-        public static final int sos_menu=0x7f0b004f;
-        public static final int store_picture_message=0x7f0b0050;
-        public static final int store_picture_title=0x7f0b0051;
-        public static final int title_activity_create_group=0x7f0b0052;
-        public static final int title_activity_groups=0x7f0b0053;
-        public static final int title_activity_load_screen=0x7f0b0054;
-        public static final int title_activity_send=0x7f0b0055;
-        public static final int title_activity_settings=0x7f0b0056;
-        public static final int version=0x7f0b0057;
-        public static final int wallet_buy_button_place_holder=0x7f0b0058;
-        public static final int whats_new=0x7f0b0059;
-        public static final int writeMessage=0x7f0b005a;
+        public static final int common_google_play_services_sign_in_failed_text=0x7f0b002a;
+        public static final int common_google_play_services_sign_in_failed_title=0x7f0b002b;
+        public static final int common_google_play_services_unknown_issue=0x7f0b002c;
+        public static final int common_google_play_services_unsupported_text=0x7f0b002d;
+        public static final int common_google_play_services_unsupported_title=0x7f0b002e;
+        public static final int common_google_play_services_update_button=0x7f0b002f;
+        public static final int common_google_play_services_update_text=0x7f0b0030;
+        public static final int common_google_play_services_update_title=0x7f0b0031;
+        public static final int common_open_on_phone=0x7f0b0032;
+        public static final int common_signin_button_text=0x7f0b0033;
+        public static final int common_signin_button_text_long=0x7f0b0034;
+        public static final int commono_google_play_services_api_unavailable_text=0x7f0b0035;
+        public static final int connecting=0x7f0b0036;
+        public static final int create_calendar_message=0x7f0b0037;
+        public static final int create_calendar_title=0x7f0b0038;
+        public static final int create_groups_ads_id=0x7f0b0039;
+        public static final int decline=0x7f0b003a;
+        public static final int default_flare_message=0x7f0b003b;
+        public static final int delete_group=0x7f0b003c;
+        public static final int edit_group=0x7f0b003d;
+        public static final int emergency=0x7f0b003e;
+        public static final int enter_group_name=0x7f0b003f;
+        public static final int feedback=0x7f0b0040;
+        public static final int flare_accept_text=0x7f0b0041;
+        public static final int flare_decline_text=0x7f0b0042;
+        public static final int groups_page_ads_id=0x7f0b0043;
+        public static final int hello_world=0x7f0b0044;
+        public static final int help=0x7f0b0045;
+        public static final int latitude=0x7f0b0046;
+        public static final int loading=0x7f0b0047;
+        public static final int location=0x7f0b0048;
+        public static final int longitude=0x7f0b0049;
+        public static final int new_group=0x7f0b004a;
+        public static final int no_selected_contacts=0x7f0b004b;
+        public static final int phone=0x7f0b004c;
+        public static final int phone_clear=0x7f0b004d;
+        public static final int save_group_text=0x7f0b004e;
+        public static final int save_text=0x7f0b004f;
+        public static final int send=0x7f0b0050;
+        public static final int send_response_text=0x7f0b0051;
+        public static final int settings_menu=0x7f0b0052;
+        public static final int sos_click=0x7f0b0053;
+        public static final int sos_menu=0x7f0b0054;
+        public static final int store_picture_message=0x7f0b0055;
+        public static final int store_picture_title=0x7f0b0056;
+        public static final int title_activity_create_group=0x7f0b0057;
+        public static final int title_activity_groups=0x7f0b0058;
+        public static final int title_activity_load_screen=0x7f0b0059;
+        public static final int title_activity_send=0x7f0b005a;
+        public static final int title_activity_settings=0x7f0b005b;
+        public static final int version=0x7f0b005c;
+        public static final int wallet_buy_button_place_holder=0x7f0b005d;
+        public static final int whats_new=0x7f0b005e;
+        public static final int writeMessage=0x7f0b005f;
     }
     public static final class style {
         public static final int Animation_AppCompat_DropDownUp=0x7f0c0000;
@@ -2372,33 +2390,33 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionBar_background flaregradle.myapp.com.flare:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_backgroundSplit flaregradle.myapp.com.flare:backgroundSplit}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_backgroundStacked flaregradle.myapp.com.flare:backgroundStacked}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetEnd flaregradle.myapp.com.flare:contentInsetEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetLeft flaregradle.myapp.com.flare:contentInsetLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetRight flaregradle.myapp.com.flare:contentInsetRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetStart flaregradle.myapp.com.flare:contentInsetStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_customNavigationLayout flaregradle.myapp.com.flare:customNavigationLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_displayOptions flaregradle.myapp.com.flare:displayOptions}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_divider flaregradle.myapp.com.flare:divider}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_elevation flaregradle.myapp.com.flare:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_height flaregradle.myapp.com.flare:height}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_hideOnContentScroll flaregradle.myapp.com.flare:hideOnContentScroll}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_homeAsUpIndicator flaregradle.myapp.com.flare:homeAsUpIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_homeLayout flaregradle.myapp.com.flare:homeLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_icon flaregradle.myapp.com.flare:icon}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_indeterminateProgressStyle flaregradle.myapp.com.flare:indeterminateProgressStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_itemPadding flaregradle.myapp.com.flare:itemPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_logo flaregradle.myapp.com.flare:logo}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_navigationMode flaregradle.myapp.com.flare:navigationMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_popupTheme flaregradle.myapp.com.flare:popupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_progressBarPadding flaregradle.myapp.com.flare:progressBarPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_progressBarStyle flaregradle.myapp.com.flare:progressBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_subtitle flaregradle.myapp.com.flare:subtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_subtitleTextStyle flaregradle.myapp.com.flare:subtitleTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_title flaregradle.myapp.com.flare:title}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_titleTextStyle flaregradle.myapp.com.flare:titleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_background flaregradle.myapp.com.Flare:background}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_backgroundSplit flaregradle.myapp.com.Flare:backgroundSplit}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_backgroundStacked flaregradle.myapp.com.Flare:backgroundStacked}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetEnd flaregradle.myapp.com.Flare:contentInsetEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetLeft flaregradle.myapp.com.Flare:contentInsetLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetRight flaregradle.myapp.com.Flare:contentInsetRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetStart flaregradle.myapp.com.Flare:contentInsetStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_customNavigationLayout flaregradle.myapp.com.Flare:customNavigationLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_displayOptions flaregradle.myapp.com.Flare:displayOptions}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_divider flaregradle.myapp.com.Flare:divider}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_elevation flaregradle.myapp.com.Flare:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_height flaregradle.myapp.com.Flare:height}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_hideOnContentScroll flaregradle.myapp.com.Flare:hideOnContentScroll}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_homeAsUpIndicator flaregradle.myapp.com.Flare:homeAsUpIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_homeLayout flaregradle.myapp.com.Flare:homeLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_icon flaregradle.myapp.com.Flare:icon}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_indeterminateProgressStyle flaregradle.myapp.com.Flare:indeterminateProgressStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_itemPadding flaregradle.myapp.com.Flare:itemPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_logo flaregradle.myapp.com.Flare:logo}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_navigationMode flaregradle.myapp.com.Flare:navigationMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_popupTheme flaregradle.myapp.com.Flare:popupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_progressBarPadding flaregradle.myapp.com.Flare:progressBarPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_progressBarStyle flaregradle.myapp.com.Flare:progressBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_subtitle flaregradle.myapp.com.Flare:subtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_subtitleTextStyle flaregradle.myapp.com.Flare:subtitleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_title flaregradle.myapp.com.Flare:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_titleTextStyle flaregradle.myapp.com.Flare:titleTextStyle}</code></td><td></td></tr>
            </table>
            @see #ActionBar_background
            @see #ActionBar_backgroundSplit
@@ -2435,20 +2453,20 @@ containing a value of this type.
             0x7f01000e, 0x7f01000f, 0x7f010010, 0x7f010011,
             0x7f010012, 0x7f010013, 0x7f010014, 0x7f010015,
             0x7f010016, 0x7f010017, 0x7f010018, 0x7f010019,
-            0x7f01001a, 0x7f01001b, 0x7f010091
+            0x7f01001a, 0x7f01001b, 0x7f010092
         };
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#background}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#background}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:background
+          @attr name flaregradle.myapp.com.Flare:background
         */
         public static final int ActionBar_background = 10;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#backgroundSplit}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#backgroundSplit}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2456,11 +2474,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name flaregradle.myapp.com.flare:backgroundSplit
+          @attr name flaregradle.myapp.com.Flare:backgroundSplit
         */
         public static final int ActionBar_backgroundSplit = 12;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#backgroundStacked}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#backgroundStacked}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2468,11 +2486,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name flaregradle.myapp.com.flare:backgroundStacked
+          @attr name flaregradle.myapp.com.Flare:backgroundStacked
         */
         public static final int ActionBar_backgroundStacked = 11;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#contentInsetEnd}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#contentInsetEnd}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2484,11 +2502,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:contentInsetEnd
+          @attr name flaregradle.myapp.com.Flare:contentInsetEnd
         */
         public static final int ActionBar_contentInsetEnd = 21;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#contentInsetLeft}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#contentInsetLeft}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2500,11 +2518,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:contentInsetLeft
+          @attr name flaregradle.myapp.com.Flare:contentInsetLeft
         */
         public static final int ActionBar_contentInsetLeft = 22;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#contentInsetRight}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#contentInsetRight}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2516,11 +2534,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:contentInsetRight
+          @attr name flaregradle.myapp.com.Flare:contentInsetRight
         */
         public static final int ActionBar_contentInsetRight = 23;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#contentInsetStart}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#contentInsetStart}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2532,21 +2550,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:contentInsetStart
+          @attr name flaregradle.myapp.com.Flare:contentInsetStart
         */
         public static final int ActionBar_contentInsetStart = 20;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#customNavigationLayout}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#customNavigationLayout}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:customNavigationLayout
+          @attr name flaregradle.myapp.com.Flare:customNavigationLayout
         */
         public static final int ActionBar_customNavigationLayout = 13;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#displayOptions}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#displayOptions}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2564,21 +2582,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>showCustom</code></td><td>0x10</td><td></td></tr>
 <tr><td><code>disableHome</code></td><td>0x20</td><td></td></tr>
 </table>
-          @attr name flaregradle.myapp.com.flare:displayOptions
+          @attr name flaregradle.myapp.com.Flare:displayOptions
         */
         public static final int ActionBar_displayOptions = 3;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#divider}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#divider}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:divider
+          @attr name flaregradle.myapp.com.Flare:divider
         */
         public static final int ActionBar_divider = 9;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#elevation}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#elevation}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2590,11 +2608,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:elevation
+          @attr name flaregradle.myapp.com.Flare:elevation
         */
         public static final int ActionBar_elevation = 24;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#height}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#height}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2606,11 +2624,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:height
+          @attr name flaregradle.myapp.com.Flare:height
         */
         public static final int ActionBar_height = 0;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#hideOnContentScroll}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#hideOnContentScroll}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2620,51 +2638,51 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:hideOnContentScroll
+          @attr name flaregradle.myapp.com.Flare:hideOnContentScroll
         */
         public static final int ActionBar_hideOnContentScroll = 19;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#homeAsUpIndicator}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#homeAsUpIndicator}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:homeAsUpIndicator
+          @attr name flaregradle.myapp.com.Flare:homeAsUpIndicator
         */
         public static final int ActionBar_homeAsUpIndicator = 26;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#homeLayout}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#homeLayout}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:homeLayout
+          @attr name flaregradle.myapp.com.Flare:homeLayout
         */
         public static final int ActionBar_homeLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#icon}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#icon}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:icon
+          @attr name flaregradle.myapp.com.Flare:icon
         */
         public static final int ActionBar_icon = 7;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#indeterminateProgressStyle}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#indeterminateProgressStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:indeterminateProgressStyle
+          @attr name flaregradle.myapp.com.Flare:indeterminateProgressStyle
         */
         public static final int ActionBar_indeterminateProgressStyle = 16;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#itemPadding}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#itemPadding}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2676,21 +2694,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:itemPadding
+          @attr name flaregradle.myapp.com.Flare:itemPadding
         */
         public static final int ActionBar_itemPadding = 18;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#logo}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#logo}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:logo
+          @attr name flaregradle.myapp.com.Flare:logo
         */
         public static final int ActionBar_logo = 8;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#navigationMode}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#navigationMode}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2704,21 +2722,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>listMode</code></td><td>1</td><td></td></tr>
 <tr><td><code>tabMode</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name flaregradle.myapp.com.flare:navigationMode
+          @attr name flaregradle.myapp.com.Flare:navigationMode
         */
         public static final int ActionBar_navigationMode = 2;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#popupTheme}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:popupTheme
+          @attr name flaregradle.myapp.com.Flare:popupTheme
         */
         public static final int ActionBar_popupTheme = 25;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#progressBarPadding}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#progressBarPadding}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2730,21 +2748,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:progressBarPadding
+          @attr name flaregradle.myapp.com.Flare:progressBarPadding
         */
         public static final int ActionBar_progressBarPadding = 17;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#progressBarStyle}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#progressBarStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:progressBarStyle
+          @attr name flaregradle.myapp.com.Flare:progressBarStyle
         */
         public static final int ActionBar_progressBarStyle = 15;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#subtitle}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#subtitle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2754,21 +2772,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:subtitle
+          @attr name flaregradle.myapp.com.Flare:subtitle
         */
         public static final int ActionBar_subtitle = 4;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#subtitleTextStyle}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#subtitleTextStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:subtitleTextStyle
+          @attr name flaregradle.myapp.com.Flare:subtitleTextStyle
         */
         public static final int ActionBar_subtitleTextStyle = 6;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#title}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#title}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2778,17 +2796,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:title
+          @attr name flaregradle.myapp.com.Flare:title
         */
         public static final int ActionBar_title = 1;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#titleTextStyle}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#titleTextStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:titleTextStyle
+          @attr name flaregradle.myapp.com.Flare:titleTextStyle
         */
         public static final int ActionBar_titleTextStyle = 5;
         /** Attributes that can be used with a ActionBarLayout.
@@ -2840,12 +2858,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionMode_background flaregradle.myapp.com.flare:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_backgroundSplit flaregradle.myapp.com.flare:backgroundSplit}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_closeItemLayout flaregradle.myapp.com.flare:closeItemLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_height flaregradle.myapp.com.flare:height}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_subtitleTextStyle flaregradle.myapp.com.flare:subtitleTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_titleTextStyle flaregradle.myapp.com.flare:titleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_background flaregradle.myapp.com.Flare:background}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_backgroundSplit flaregradle.myapp.com.Flare:backgroundSplit}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_closeItemLayout flaregradle.myapp.com.Flare:closeItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_height flaregradle.myapp.com.Flare:height}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_subtitleTextStyle flaregradle.myapp.com.Flare:subtitleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_titleTextStyle flaregradle.myapp.com.Flare:titleTextStyle}</code></td><td></td></tr>
            </table>
            @see #ActionMode_background
            @see #ActionMode_backgroundSplit
@@ -2859,17 +2877,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f01000e, 0x7f01001c
         };
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#background}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#background}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:background
+          @attr name flaregradle.myapp.com.Flare:background
         */
         public static final int ActionMode_background = 3;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#backgroundSplit}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#backgroundSplit}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
@@ -2877,21 +2895,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name flaregradle.myapp.com.flare:backgroundSplit
+          @attr name flaregradle.myapp.com.Flare:backgroundSplit
         */
         public static final int ActionMode_backgroundSplit = 4;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#closeItemLayout}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#closeItemLayout}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:closeItemLayout
+          @attr name flaregradle.myapp.com.Flare:closeItemLayout
         */
         public static final int ActionMode_closeItemLayout = 5;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#height}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#height}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
@@ -2903,27 +2921,27 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:height
+          @attr name flaregradle.myapp.com.Flare:height
         */
         public static final int ActionMode_height = 0;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#subtitleTextStyle}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#subtitleTextStyle}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:subtitleTextStyle
+          @attr name flaregradle.myapp.com.Flare:subtitleTextStyle
         */
         public static final int ActionMode_subtitleTextStyle = 2;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#titleTextStyle}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#titleTextStyle}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:titleTextStyle
+          @attr name flaregradle.myapp.com.Flare:titleTextStyle
         */
         public static final int ActionMode_titleTextStyle = 1;
         /** Attributes that can be used with a ActivityChooserView.
@@ -2932,8 +2950,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable flaregradle.myapp.com.flare:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActivityChooserView_initialActivityCount flaregradle.myapp.com.flare:initialActivityCount}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable flaregradle.myapp.com.Flare:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActivityChooserView_initialActivityCount flaregradle.myapp.com.Flare:initialActivityCount}</code></td><td></td></tr>
            </table>
            @see #ActivityChooserView_expandActivityOverflowButtonDrawable
            @see #ActivityChooserView_initialActivityCount
@@ -2942,17 +2960,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f01001d, 0x7f01001e
         };
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#expandActivityOverflowButtonDrawable}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#expandActivityOverflowButtonDrawable}
           attribute's value can be found in the {@link #ActivityChooserView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:expandActivityOverflowButtonDrawable
+          @attr name flaregradle.myapp.com.Flare:expandActivityOverflowButtonDrawable
         */
         public static final int ActivityChooserView_expandActivityOverflowButtonDrawable = 1;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#initialActivityCount}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#initialActivityCount}
           attribute's value can be found in the {@link #ActivityChooserView} array.
 
 
@@ -2962,7 +2980,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:initialActivityCount
+          @attr name flaregradle.myapp.com.Flare:initialActivityCount
         */
         public static final int ActivityChooserView_initialActivityCount = 0;
         /** Attributes that can be used with a AddFloatingActionButton.
@@ -2971,7 +2989,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #AddFloatingActionButton_fab_plusIconColor flaregradle.myapp.com.flare:fab_plusIconColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AddFloatingActionButton_fab_plusIconColor flaregradle.myapp.com.Flare:fab_plusIconColor}</code></td><td></td></tr>
            </table>
            @see #AddFloatingActionButton_fab_plusIconColor
          */
@@ -2979,7 +2997,7 @@ containing a value of this type.
             0x7f01001f
         };
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#fab_plusIconColor}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#fab_plusIconColor}
           attribute's value can be found in the {@link #AddFloatingActionButton} array.
 
 
@@ -2990,7 +3008,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:fab_plusIconColor
+          @attr name flaregradle.myapp.com.Flare:fab_plusIconColor
         */
         public static final int AddFloatingActionButton_fab_plusIconColor = 0;
         /** Attributes that can be used with a AdsAttrs.
@@ -2999,9 +3017,9 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #AdsAttrs_adSize flaregradle.myapp.com.flare:adSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #AdsAttrs_adSizes flaregradle.myapp.com.flare:adSizes}</code></td><td></td></tr>
-           <tr><td><code>{@link #AdsAttrs_adUnitId flaregradle.myapp.com.flare:adUnitId}</code></td><td></td></tr>
+           <tr><td><code>{@link #AdsAttrs_adSize flaregradle.myapp.com.Flare:adSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #AdsAttrs_adSizes flaregradle.myapp.com.Flare:adSizes}</code></td><td></td></tr>
+           <tr><td><code>{@link #AdsAttrs_adUnitId flaregradle.myapp.com.Flare:adUnitId}</code></td><td></td></tr>
            </table>
            @see #AdsAttrs_adSize
            @see #AdsAttrs_adSizes
@@ -3011,7 +3029,7 @@ containing a value of this type.
             0x7f010020, 0x7f010021, 0x7f010022
         };
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#adSize}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#adSize}
           attribute's value can be found in the {@link #AdsAttrs} array.
 
 
@@ -3021,11 +3039,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:adSize
+          @attr name flaregradle.myapp.com.Flare:adSize
         */
         public static final int AdsAttrs_adSize = 0;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#adSizes}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#adSizes}
           attribute's value can be found in the {@link #AdsAttrs} array.
 
 
@@ -3035,11 +3053,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:adSizes
+          @attr name flaregradle.myapp.com.Flare:adSizes
         */
         public static final int AdsAttrs_adSizes = 1;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#adUnitId}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#adUnitId}
           attribute's value can be found in the {@link #AdsAttrs} array.
 
 
@@ -3049,7 +3067,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:adUnitId
+          @attr name flaregradle.myapp.com.Flare:adUnitId
         */
         public static final int AdsAttrs_adUnitId = 2;
         /** Attributes that can be used with a ButtonBarContainerTheme.
@@ -3058,8 +3076,8 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ButtonBarContainerTheme_metaButtonBarButtonStyle flaregradle.myapp.com.flare:metaButtonBarButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ButtonBarContainerTheme_metaButtonBarStyle flaregradle.myapp.com.flare:metaButtonBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ButtonBarContainerTheme_metaButtonBarButtonStyle flaregradle.myapp.com.Flare:metaButtonBarButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ButtonBarContainerTheme_metaButtonBarStyle flaregradle.myapp.com.Flare:metaButtonBarStyle}</code></td><td></td></tr>
            </table>
            @see #ButtonBarContainerTheme_metaButtonBarButtonStyle
            @see #ButtonBarContainerTheme_metaButtonBarStyle
@@ -3068,23 +3086,23 @@ containing a value of this type.
             0x7f010023, 0x7f010024
         };
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#metaButtonBarButtonStyle}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#metaButtonBarButtonStyle}
           attribute's value can be found in the {@link #ButtonBarContainerTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:metaButtonBarButtonStyle
+          @attr name flaregradle.myapp.com.Flare:metaButtonBarButtonStyle
         */
         public static final int ButtonBarContainerTheme_metaButtonBarButtonStyle = 1;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#metaButtonBarStyle}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#metaButtonBarStyle}
           attribute's value can be found in the {@link #ButtonBarContainerTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:metaButtonBarStyle
+          @attr name flaregradle.myapp.com.Flare:metaButtonBarStyle
         */
         public static final int ButtonBarContainerTheme_metaButtonBarStyle = 0;
         /** Attributes that can be used with a CompatTextView.
@@ -3093,7 +3111,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CompatTextView_textAllCaps flaregradle.myapp.com.flare:textAllCaps}</code></td><td></td></tr>
+           <tr><td><code>{@link #CompatTextView_textAllCaps flaregradle.myapp.com.Flare:textAllCaps}</code></td><td></td></tr>
            </table>
            @see #CompatTextView_textAllCaps
          */
@@ -3101,30 +3119,60 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010025
         };
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#textAllCaps}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#textAllCaps}
           attribute's value can be found in the {@link #CompatTextView} array.
 
 
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
-          @attr name flaregradle.myapp.com.flare:textAllCaps
+          @attr name flaregradle.myapp.com.Flare:textAllCaps
         */
         public static final int CompatTextView_textAllCaps = 0;
+        /** Attributes that can be used with a CustomWalletTheme.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #CustomWalletTheme_windowTransitionStyle flaregradle.myapp.com.Flare:windowTransitionStyle}</code></td><td></td></tr>
+           </table>
+           @see #CustomWalletTheme_windowTransitionStyle
+         */
+        public static final int[] CustomWalletTheme = {
+            0x7f010026
+        };
+        /**
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#windowTransitionStyle}
+          attribute's value can be found in the {@link #CustomWalletTheme} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>slide</code></td><td>1</td><td></td></tr>
+<tr><td><code>none</code></td><td>2</td><td></td></tr>
+</table>
+          @attr name flaregradle.myapp.com.Flare:windowTransitionStyle
+        */
+        public static final int CustomWalletTheme_windowTransitionStyle = 0;
         /** Attributes that can be used with a DrawerArrowToggle.
            <p>Includes the following attributes:</p>
            <table>
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_barSize flaregradle.myapp.com.flare:barSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_color flaregradle.myapp.com.flare:color}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_drawableSize flaregradle.myapp.com.flare:drawableSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars flaregradle.myapp.com.flare:gapBetweenBars}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_middleBarArrowSize flaregradle.myapp.com.flare:middleBarArrowSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_spinBars flaregradle.myapp.com.flare:spinBars}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_thickness flaregradle.myapp.com.flare:thickness}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_topBottomBarArrowSize flaregradle.myapp.com.flare:topBottomBarArrowSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_barSize flaregradle.myapp.com.Flare:barSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_color flaregradle.myapp.com.Flare:color}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_drawableSize flaregradle.myapp.com.Flare:drawableSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars flaregradle.myapp.com.Flare:gapBetweenBars}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_middleBarArrowSize flaregradle.myapp.com.Flare:middleBarArrowSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_spinBars flaregradle.myapp.com.Flare:spinBars}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_thickness flaregradle.myapp.com.Flare:thickness}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_topBottomBarArrowSize flaregradle.myapp.com.Flare:topBottomBarArrowSize}</code></td><td></td></tr>
            </table>
            @see #DrawerArrowToggle_barSize
            @see #DrawerArrowToggle_color
@@ -3136,11 +3184,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            @see #DrawerArrowToggle_topBottomBarArrowSize
          */
         public static final int[] DrawerArrowToggle = {
-            0x7f010026, 0x7f010027, 0x7f010028, 0x7f010029,
-            0x7f01002a, 0x7f01002b, 0x7f01002c, 0x7f01002d
+            0x7f010027, 0x7f010028, 0x7f010029, 0x7f01002a,
+            0x7f01002b, 0x7f01002c, 0x7f01002d, 0x7f01002e
         };
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#barSize}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#barSize}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -3152,11 +3200,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:barSize
+          @attr name flaregradle.myapp.com.Flare:barSize
         */
         public static final int DrawerArrowToggle_barSize = 6;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#color}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#color}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -3167,11 +3215,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:color
+          @attr name flaregradle.myapp.com.Flare:color
         */
         public static final int DrawerArrowToggle_color = 0;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#drawableSize}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#drawableSize}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -3183,11 +3231,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:drawableSize
+          @attr name flaregradle.myapp.com.Flare:drawableSize
         */
         public static final int DrawerArrowToggle_drawableSize = 2;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#gapBetweenBars}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#gapBetweenBars}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -3199,11 +3247,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:gapBetweenBars
+          @attr name flaregradle.myapp.com.Flare:gapBetweenBars
         */
         public static final int DrawerArrowToggle_gapBetweenBars = 3;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#middleBarArrowSize}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#middleBarArrowSize}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -3215,11 +3263,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:middleBarArrowSize
+          @attr name flaregradle.myapp.com.Flare:middleBarArrowSize
         */
         public static final int DrawerArrowToggle_middleBarArrowSize = 5;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#spinBars}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#spinBars}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -3229,11 +3277,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:spinBars
+          @attr name flaregradle.myapp.com.Flare:spinBars
         */
         public static final int DrawerArrowToggle_spinBars = 1;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#thickness}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#thickness}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -3245,11 +3293,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:thickness
+          @attr name flaregradle.myapp.com.Flare:thickness
         */
         public static final int DrawerArrowToggle_thickness = 7;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#topBottomBarArrowSize}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#topBottomBarArrowSize}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -3261,7 +3309,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:topBottomBarArrowSize
+          @attr name flaregradle.myapp.com.Flare:topBottomBarArrowSize
         */
         public static final int DrawerArrowToggle_topBottomBarArrowSize = 4;
         /** Attributes that can be used with a FloatingActionButton.
@@ -3270,10 +3318,10 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #FloatingActionButton_fab_colorNormal flaregradle.myapp.com.flare:fab_colorNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_fab_colorPressed flaregradle.myapp.com.flare:fab_colorPressed}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_fab_icon flaregradle.myapp.com.flare:fab_icon}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_fab_size flaregradle.myapp.com.flare:fab_size}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_fab_colorNormal flaregradle.myapp.com.Flare:fab_colorNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_fab_colorPressed flaregradle.myapp.com.Flare:fab_colorPressed}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_fab_icon flaregradle.myapp.com.Flare:fab_icon}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_fab_size flaregradle.myapp.com.Flare:fab_size}</code></td><td></td></tr>
            </table>
            @see #FloatingActionButton_fab_colorNormal
            @see #FloatingActionButton_fab_colorPressed
@@ -3281,10 +3329,10 @@ containing a value of this type.
            @see #FloatingActionButton_fab_size
          */
         public static final int[] FloatingActionButton = {
-            0x7f01002e, 0x7f01002f, 0x7f010030, 0x7f010031
+            0x7f01002f, 0x7f010030, 0x7f010031, 0x7f010032
         };
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#fab_colorNormal}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#fab_colorNormal}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -3295,11 +3343,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:fab_colorNormal
+          @attr name flaregradle.myapp.com.Flare:fab_colorNormal
         */
         public static final int FloatingActionButton_fab_colorNormal = 1;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#fab_colorPressed}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#fab_colorPressed}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -3310,21 +3358,21 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:fab_colorPressed
+          @attr name flaregradle.myapp.com.Flare:fab_colorPressed
         */
         public static final int FloatingActionButton_fab_colorPressed = 0;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#fab_icon}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#fab_icon}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:fab_icon
+          @attr name flaregradle.myapp.com.Flare:fab_icon
         */
         public static final int FloatingActionButton_fab_icon = 2;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#fab_size}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#fab_size}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -3337,7 +3385,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>normal</code></td><td>0</td><td></td></tr>
 <tr><td><code>mini</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name flaregradle.myapp.com.flare:fab_size
+          @attr name flaregradle.myapp.com.Flare:fab_size
         */
         public static final int FloatingActionButton_fab_size = 3;
         /** Attributes that can be used with a FloatingActionsMenu.
@@ -3346,19 +3394,19 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #FloatingActionsMenu_fab_addButtonColorNormal flaregradle.myapp.com.flare:fab_addButtonColorNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionsMenu_fab_addButtonColorPressed flaregradle.myapp.com.flare:fab_addButtonColorPressed}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionsMenu_fab_addButtonPlusIconColor flaregradle.myapp.com.flare:fab_addButtonPlusIconColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionsMenu_fab_addButtonColorNormal flaregradle.myapp.com.Flare:fab_addButtonColorNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionsMenu_fab_addButtonColorPressed flaregradle.myapp.com.Flare:fab_addButtonColorPressed}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionsMenu_fab_addButtonPlusIconColor flaregradle.myapp.com.Flare:fab_addButtonPlusIconColor}</code></td><td></td></tr>
            </table>
            @see #FloatingActionsMenu_fab_addButtonColorNormal
            @see #FloatingActionsMenu_fab_addButtonColorPressed
            @see #FloatingActionsMenu_fab_addButtonPlusIconColor
          */
         public static final int[] FloatingActionsMenu = {
-            0x7f010032, 0x7f010033, 0x7f010034
+            0x7f010033, 0x7f010034, 0x7f010035
         };
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#fab_addButtonColorNormal}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#fab_addButtonColorNormal}
           attribute's value can be found in the {@link #FloatingActionsMenu} array.
 
 
@@ -3369,11 +3417,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:fab_addButtonColorNormal
+          @attr name flaregradle.myapp.com.Flare:fab_addButtonColorNormal
         */
         public static final int FloatingActionsMenu_fab_addButtonColorNormal = 1;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#fab_addButtonColorPressed}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#fab_addButtonColorPressed}
           attribute's value can be found in the {@link #FloatingActionsMenu} array.
 
 
@@ -3384,11 +3432,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:fab_addButtonColorPressed
+          @attr name flaregradle.myapp.com.Flare:fab_addButtonColorPressed
         */
         public static final int FloatingActionsMenu_fab_addButtonColorPressed = 0;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#fab_addButtonPlusIconColor}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#fab_addButtonPlusIconColor}
           attribute's value can be found in the {@link #FloatingActionsMenu} array.
 
 
@@ -3399,7 +3447,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:fab_addButtonPlusIconColor
+          @attr name flaregradle.myapp.com.Flare:fab_addButtonPlusIconColor
         */
         public static final int FloatingActionsMenu_fab_addButtonPlusIconColor = 2;
         /** Attributes that can be used with a LinearLayoutCompat.
@@ -3413,10 +3461,10 @@ containing a value of this type.
            <tr><td><code>{@link #LinearLayoutCompat_android_gravity android:gravity}</code></td><td></td></tr>
            <tr><td><code>{@link #LinearLayoutCompat_android_orientation android:orientation}</code></td><td></td></tr>
            <tr><td><code>{@link #LinearLayoutCompat_android_weightSum android:weightSum}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_divider flaregradle.myapp.com.flare:divider}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_dividerPadding flaregradle.myapp.com.flare:dividerPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild flaregradle.myapp.com.flare:measureWithLargestChild}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_showDividers flaregradle.myapp.com.flare:showDividers}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_divider flaregradle.myapp.com.Flare:divider}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_dividerPadding flaregradle.myapp.com.Flare:dividerPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild flaregradle.myapp.com.Flare:measureWithLargestChild}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_showDividers flaregradle.myapp.com.Flare:showDividers}</code></td><td></td></tr>
            </table>
            @see #LinearLayoutCompat_android_baselineAligned
            @see #LinearLayoutCompat_android_baselineAlignedChildIndex
@@ -3430,8 +3478,8 @@ containing a value of this type.
          */
         public static final int[] LinearLayoutCompat = {
             0x010100af, 0x010100c4, 0x01010126, 0x01010127,
-            0x01010128, 0x7f01000b, 0x7f010035, 0x7f010036,
-            0x7f010037
+            0x01010128, 0x7f01000b, 0x7f010036, 0x7f010037,
+            0x7f010038
         };
         /**
           <p>This symbol is the offset where the {@link android.R.attr#baselineAligned}
@@ -3464,17 +3512,17 @@ containing a value of this type.
         */
         public static final int LinearLayoutCompat_android_weightSum = 4;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#divider}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#divider}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:divider
+          @attr name flaregradle.myapp.com.Flare:divider
         */
         public static final int LinearLayoutCompat_divider = 5;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#dividerPadding}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#dividerPadding}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -3486,11 +3534,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:dividerPadding
+          @attr name flaregradle.myapp.com.Flare:dividerPadding
         */
         public static final int LinearLayoutCompat_dividerPadding = 8;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#measureWithLargestChild}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#measureWithLargestChild}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -3500,11 +3548,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:measureWithLargestChild
+          @attr name flaregradle.myapp.com.Flare:measureWithLargestChild
         */
         public static final int LinearLayoutCompat_measureWithLargestChild = 6;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#showDividers}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#showDividers}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -3519,7 +3567,7 @@ containing a value of this type.
 <tr><td><code>middle</code></td><td>2</td><td></td></tr>
 <tr><td><code>end</code></td><td>4</td><td></td></tr>
 </table>
-          @attr name flaregradle.myapp.com.flare:showDividers
+          @attr name flaregradle.myapp.com.Flare:showDividers
         */
         public static final int LinearLayoutCompat_showDividers = 7;
         /** Attributes that can be used with a LinearLayoutCompat_Layout.
@@ -3598,19 +3646,19 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #LoadingImageView_circleCrop flaregradle.myapp.com.flare:circleCrop}</code></td><td></td></tr>
-           <tr><td><code>{@link #LoadingImageView_imageAspectRatio flaregradle.myapp.com.flare:imageAspectRatio}</code></td><td></td></tr>
-           <tr><td><code>{@link #LoadingImageView_imageAspectRatioAdjust flaregradle.myapp.com.flare:imageAspectRatioAdjust}</code></td><td></td></tr>
+           <tr><td><code>{@link #LoadingImageView_circleCrop flaregradle.myapp.com.Flare:circleCrop}</code></td><td></td></tr>
+           <tr><td><code>{@link #LoadingImageView_imageAspectRatio flaregradle.myapp.com.Flare:imageAspectRatio}</code></td><td></td></tr>
+           <tr><td><code>{@link #LoadingImageView_imageAspectRatioAdjust flaregradle.myapp.com.Flare:imageAspectRatioAdjust}</code></td><td></td></tr>
            </table>
            @see #LoadingImageView_circleCrop
            @see #LoadingImageView_imageAspectRatio
            @see #LoadingImageView_imageAspectRatioAdjust
          */
         public static final int[] LoadingImageView = {
-            0x7f010038, 0x7f010039, 0x7f01003a
+            0x7f010039, 0x7f01003a, 0x7f01003b
         };
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#circleCrop}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#circleCrop}
           attribute's value can be found in the {@link #LoadingImageView} array.
 
 
@@ -3620,11 +3668,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:circleCrop
+          @attr name flaregradle.myapp.com.Flare:circleCrop
         */
         public static final int LoadingImageView_circleCrop = 2;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#imageAspectRatio}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#imageAspectRatio}
           attribute's value can be found in the {@link #LoadingImageView} array.
 
 
@@ -3634,11 +3682,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:imageAspectRatio
+          @attr name flaregradle.myapp.com.Flare:imageAspectRatio
         */
         public static final int LoadingImageView_imageAspectRatio = 1;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#imageAspectRatioAdjust}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#imageAspectRatioAdjust}
           attribute's value can be found in the {@link #LoadingImageView} array.
 
 
@@ -3652,7 +3700,7 @@ containing a value of this type.
 <tr><td><code>adjust_width</code></td><td>1</td><td></td></tr>
 <tr><td><code>adjust_height</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name flaregradle.myapp.com.flare:imageAspectRatioAdjust
+          @attr name flaregradle.myapp.com.Flare:imageAspectRatioAdjust
         */
         public static final int LoadingImageView_imageAspectRatioAdjust = 0;
         /** Attributes that can be used with a MapAttrs.
@@ -3661,22 +3709,22 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #MapAttrs_cameraBearing flaregradle.myapp.com.flare:cameraBearing}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraTargetLat flaregradle.myapp.com.flare:cameraTargetLat}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraTargetLng flaregradle.myapp.com.flare:cameraTargetLng}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraTilt flaregradle.myapp.com.flare:cameraTilt}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraZoom flaregradle.myapp.com.flare:cameraZoom}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_liteMode flaregradle.myapp.com.flare:liteMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_mapType flaregradle.myapp.com.flare:mapType}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiCompass flaregradle.myapp.com.flare:uiCompass}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiMapToolbar flaregradle.myapp.com.flare:uiMapToolbar}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiRotateGestures flaregradle.myapp.com.flare:uiRotateGestures}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiScrollGestures flaregradle.myapp.com.flare:uiScrollGestures}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiTiltGestures flaregradle.myapp.com.flare:uiTiltGestures}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiZoomControls flaregradle.myapp.com.flare:uiZoomControls}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiZoomGestures flaregradle.myapp.com.flare:uiZoomGestures}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_useViewLifecycle flaregradle.myapp.com.flare:useViewLifecycle}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_zOrderOnTop flaregradle.myapp.com.flare:zOrderOnTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraBearing flaregradle.myapp.com.Flare:cameraBearing}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraTargetLat flaregradle.myapp.com.Flare:cameraTargetLat}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraTargetLng flaregradle.myapp.com.Flare:cameraTargetLng}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraTilt flaregradle.myapp.com.Flare:cameraTilt}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraZoom flaregradle.myapp.com.Flare:cameraZoom}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_liteMode flaregradle.myapp.com.Flare:liteMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_mapType flaregradle.myapp.com.Flare:mapType}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiCompass flaregradle.myapp.com.Flare:uiCompass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiMapToolbar flaregradle.myapp.com.Flare:uiMapToolbar}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiRotateGestures flaregradle.myapp.com.Flare:uiRotateGestures}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiScrollGestures flaregradle.myapp.com.Flare:uiScrollGestures}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiTiltGestures flaregradle.myapp.com.Flare:uiTiltGestures}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiZoomControls flaregradle.myapp.com.Flare:uiZoomControls}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiZoomGestures flaregradle.myapp.com.Flare:uiZoomGestures}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_useViewLifecycle flaregradle.myapp.com.Flare:useViewLifecycle}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_zOrderOnTop flaregradle.myapp.com.Flare:zOrderOnTop}</code></td><td></td></tr>
            </table>
            @see #MapAttrs_cameraBearing
            @see #MapAttrs_cameraTargetLat
@@ -3696,13 +3744,13 @@ containing a value of this type.
            @see #MapAttrs_zOrderOnTop
          */
         public static final int[] MapAttrs = {
-            0x7f01003b, 0x7f01003c, 0x7f01003d, 0x7f01003e,
-            0x7f01003f, 0x7f010040, 0x7f010041, 0x7f010042,
-            0x7f010043, 0x7f010044, 0x7f010045, 0x7f010046,
-            0x7f010047, 0x7f010048, 0x7f010049, 0x7f01004a
+            0x7f01003c, 0x7f01003d, 0x7f01003e, 0x7f01003f,
+            0x7f010040, 0x7f010041, 0x7f010042, 0x7f010043,
+            0x7f010044, 0x7f010045, 0x7f010046, 0x7f010047,
+            0x7f010048, 0x7f010049, 0x7f01004a, 0x7f01004b
         };
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#cameraBearing}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#cameraBearing}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -3712,11 +3760,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:cameraBearing
+          @attr name flaregradle.myapp.com.Flare:cameraBearing
         */
         public static final int MapAttrs_cameraBearing = 1;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#cameraTargetLat}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#cameraTargetLat}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -3726,11 +3774,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:cameraTargetLat
+          @attr name flaregradle.myapp.com.Flare:cameraTargetLat
         */
         public static final int MapAttrs_cameraTargetLat = 2;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#cameraTargetLng}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#cameraTargetLng}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -3740,11 +3788,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:cameraTargetLng
+          @attr name flaregradle.myapp.com.Flare:cameraTargetLng
         */
         public static final int MapAttrs_cameraTargetLng = 3;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#cameraTilt}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#cameraTilt}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -3754,11 +3802,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:cameraTilt
+          @attr name flaregradle.myapp.com.Flare:cameraTilt
         */
         public static final int MapAttrs_cameraTilt = 4;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#cameraZoom}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#cameraZoom}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -3768,11 +3816,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:cameraZoom
+          @attr name flaregradle.myapp.com.Flare:cameraZoom
         */
         public static final int MapAttrs_cameraZoom = 5;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#liteMode}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#liteMode}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -3782,11 +3830,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:liteMode
+          @attr name flaregradle.myapp.com.Flare:liteMode
         */
         public static final int MapAttrs_liteMode = 6;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#mapType}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#mapType}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -3802,11 +3850,11 @@ containing a value of this type.
 <tr><td><code>terrain</code></td><td>3</td><td></td></tr>
 <tr><td><code>hybrid</code></td><td>4</td><td></td></tr>
 </table>
-          @attr name flaregradle.myapp.com.flare:mapType
+          @attr name flaregradle.myapp.com.Flare:mapType
         */
         public static final int MapAttrs_mapType = 0;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#uiCompass}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#uiCompass}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -3816,11 +3864,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:uiCompass
+          @attr name flaregradle.myapp.com.Flare:uiCompass
         */
         public static final int MapAttrs_uiCompass = 7;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#uiMapToolbar}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#uiMapToolbar}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -3830,11 +3878,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:uiMapToolbar
+          @attr name flaregradle.myapp.com.Flare:uiMapToolbar
         */
         public static final int MapAttrs_uiMapToolbar = 15;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#uiRotateGestures}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#uiRotateGestures}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -3844,11 +3892,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:uiRotateGestures
+          @attr name flaregradle.myapp.com.Flare:uiRotateGestures
         */
         public static final int MapAttrs_uiRotateGestures = 8;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#uiScrollGestures}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#uiScrollGestures}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -3858,11 +3906,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:uiScrollGestures
+          @attr name flaregradle.myapp.com.Flare:uiScrollGestures
         */
         public static final int MapAttrs_uiScrollGestures = 9;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#uiTiltGestures}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#uiTiltGestures}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -3872,11 +3920,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:uiTiltGestures
+          @attr name flaregradle.myapp.com.Flare:uiTiltGestures
         */
         public static final int MapAttrs_uiTiltGestures = 10;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#uiZoomControls}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#uiZoomControls}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -3886,11 +3934,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:uiZoomControls
+          @attr name flaregradle.myapp.com.Flare:uiZoomControls
         */
         public static final int MapAttrs_uiZoomControls = 11;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#uiZoomGestures}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#uiZoomGestures}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -3900,11 +3948,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:uiZoomGestures
+          @attr name flaregradle.myapp.com.Flare:uiZoomGestures
         */
         public static final int MapAttrs_uiZoomGestures = 12;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#useViewLifecycle}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#useViewLifecycle}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -3914,11 +3962,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:useViewLifecycle
+          @attr name flaregradle.myapp.com.Flare:useViewLifecycle
         */
         public static final int MapAttrs_useViewLifecycle = 13;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#zOrderOnTop}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#zOrderOnTop}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -3928,7 +3976,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:zOrderOnTop
+          @attr name flaregradle.myapp.com.Flare:zOrderOnTop
         */
         public static final int MapAttrs_zOrderOnTop = 14;
         /** Attributes that can be used with a MenuGroup.
@@ -3997,9 +4045,9 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #MenuItem_actionLayout flaregradle.myapp.com.flare:actionLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_actionProviderClass flaregradle.myapp.com.flare:actionProviderClass}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_actionViewClass flaregradle.myapp.com.flare:actionViewClass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionLayout flaregradle.myapp.com.Flare:actionLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionProviderClass flaregradle.myapp.com.Flare:actionProviderClass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionViewClass flaregradle.myapp.com.Flare:actionViewClass}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_alphabeticShortcut android:alphabeticShortcut}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_checkable android:checkable}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_checked android:checked}</code></td><td></td></tr>
@@ -4013,7 +4061,7 @@ containing a value of this type.
            <tr><td><code>{@link #MenuItem_android_title android:title}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_titleCondensed android:titleCondensed}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_visible android:visible}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_showAsAction flaregradle.myapp.com.flare:showAsAction}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_showAsAction flaregradle.myapp.com.Flare:showAsAction}</code></td><td></td></tr>
            </table>
            @see #MenuItem_actionLayout
            @see #MenuItem_actionProviderClass
@@ -4037,21 +4085,21 @@ containing a value of this type.
             0x01010002, 0x0101000e, 0x010100d0, 0x01010106,
             0x01010194, 0x010101de, 0x010101df, 0x010101e1,
             0x010101e2, 0x010101e3, 0x010101e4, 0x010101e5,
-            0x0101026f, 0x7f01004b, 0x7f01004c, 0x7f01004d,
-            0x7f01004e
+            0x0101026f, 0x7f01004c, 0x7f01004d, 0x7f01004e,
+            0x7f01004f
         };
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#actionLayout}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#actionLayout}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:actionLayout
+          @attr name flaregradle.myapp.com.Flare:actionLayout
         */
         public static final int MenuItem_actionLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#actionProviderClass}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#actionProviderClass}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -4061,11 +4109,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:actionProviderClass
+          @attr name flaregradle.myapp.com.Flare:actionProviderClass
         */
         public static final int MenuItem_actionProviderClass = 16;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#actionViewClass}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#actionViewClass}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -4075,7 +4123,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:actionViewClass
+          @attr name flaregradle.myapp.com.Flare:actionViewClass
         */
         public static final int MenuItem_actionViewClass = 15;
         /**
@@ -4157,7 +4205,7 @@ containing a value of this type.
         */
         public static final int MenuItem_android_visible = 4;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#showAsAction}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#showAsAction}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -4173,7 +4221,7 @@ containing a value of this type.
 <tr><td><code>withText</code></td><td>4</td><td></td></tr>
 <tr><td><code>collapseActionView</code></td><td>8</td><td></td></tr>
 </table>
-          @attr name flaregradle.myapp.com.flare:showAsAction
+          @attr name flaregradle.myapp.com.Flare:showAsAction
         */
         public static final int MenuItem_showAsAction = 13;
         /** Attributes that can be used with a MenuView.
@@ -4189,7 +4237,7 @@ containing a value of this type.
            <tr><td><code>{@link #MenuView_android_itemTextAppearance android:itemTextAppearance}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuView_android_verticalDivider android:verticalDivider}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuView_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuView_preserveIconSpacing flaregradle.myapp.com.flare:preserveIconSpacing}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuView_preserveIconSpacing flaregradle.myapp.com.Flare:preserveIconSpacing}</code></td><td></td></tr>
            </table>
            @see #MenuView_android_headerBackground
            @see #MenuView_android_horizontalDivider
@@ -4202,7 +4250,7 @@ containing a value of this type.
          */
         public static final int[] MenuView = {
             0x010100ae, 0x0101012c, 0x0101012d, 0x0101012e,
-            0x0101012f, 0x01010130, 0x01010131, 0x7f01004f
+            0x0101012f, 0x01010130, 0x01010131, 0x7f010050
         };
         /**
           <p>This symbol is the offset where the {@link android.R.attr#headerBackground}
@@ -4247,7 +4295,7 @@ containing a value of this type.
         */
         public static final int MenuView_android_windowAnimationStyle = 0;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#preserveIconSpacing}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#preserveIconSpacing}
           attribute's value can be found in the {@link #MenuView} array.
 
 
@@ -4257,7 +4305,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:preserveIconSpacing
+          @attr name flaregradle.myapp.com.Flare:preserveIconSpacing
         */
         public static final int MenuView_preserveIconSpacing = 7;
         /** Attributes that can be used with a PopupWindow.
@@ -4267,13 +4315,13 @@ containing a value of this type.
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #PopupWindow_android_popupBackground android:popupBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #PopupWindow_overlapAnchor flaregradle.myapp.com.flare:overlapAnchor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PopupWindow_overlapAnchor flaregradle.myapp.com.Flare:overlapAnchor}</code></td><td></td></tr>
            </table>
            @see #PopupWindow_android_popupBackground
            @see #PopupWindow_overlapAnchor
          */
         public static final int[] PopupWindow = {
-            0x01010176, 0x7f010050
+            0x01010176, 0x7f010051
         };
         /**
           <p>This symbol is the offset where the {@link android.R.attr#popupBackground}
@@ -4282,7 +4330,7 @@ containing a value of this type.
         */
         public static final int PopupWindow_android_popupBackground = 0;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#overlapAnchor}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#overlapAnchor}
           attribute's value can be found in the {@link #PopupWindow} array.
 
 
@@ -4292,7 +4340,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:overlapAnchor
+          @attr name flaregradle.myapp.com.Flare:overlapAnchor
         */
         public static final int PopupWindow_overlapAnchor = 1;
         /** Attributes that can be used with a PopupWindowBackgroundState.
@@ -4301,15 +4349,15 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor flaregradle.myapp.com.flare:state_above_anchor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor flaregradle.myapp.com.Flare:state_above_anchor}</code></td><td></td></tr>
            </table>
            @see #PopupWindowBackgroundState_state_above_anchor
          */
         public static final int[] PopupWindowBackgroundState = {
-            0x7f010051
+            0x7f010052
         };
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#state_above_anchor}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#state_above_anchor}
           attribute's value can be found in the {@link #PopupWindowBackgroundState} array.
 
 
@@ -4319,7 +4367,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:state_above_anchor
+          @attr name flaregradle.myapp.com.Flare:state_above_anchor
         */
         public static final int PopupWindowBackgroundState_state_above_anchor = 0;
         /** Attributes that can be used with a SearchView.
@@ -4332,17 +4380,17 @@ containing a value of this type.
            <tr><td><code>{@link #SearchView_android_imeOptions android:imeOptions}</code></td><td></td></tr>
            <tr><td><code>{@link #SearchView_android_inputType android:inputType}</code></td><td></td></tr>
            <tr><td><code>{@link #SearchView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_closeIcon flaregradle.myapp.com.flare:closeIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_commitIcon flaregradle.myapp.com.flare:commitIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_goIcon flaregradle.myapp.com.flare:goIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_iconifiedByDefault flaregradle.myapp.com.flare:iconifiedByDefault}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_layout flaregradle.myapp.com.flare:layout}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_queryBackground flaregradle.myapp.com.flare:queryBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_queryHint flaregradle.myapp.com.flare:queryHint}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_searchIcon flaregradle.myapp.com.flare:searchIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_submitBackground flaregradle.myapp.com.flare:submitBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_suggestionRowLayout flaregradle.myapp.com.flare:suggestionRowLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_voiceIcon flaregradle.myapp.com.flare:voiceIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_closeIcon flaregradle.myapp.com.Flare:closeIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_commitIcon flaregradle.myapp.com.Flare:commitIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_goIcon flaregradle.myapp.com.Flare:goIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_iconifiedByDefault flaregradle.myapp.com.Flare:iconifiedByDefault}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_layout flaregradle.myapp.com.Flare:layout}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_queryBackground flaregradle.myapp.com.Flare:queryBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_queryHint flaregradle.myapp.com.Flare:queryHint}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_searchIcon flaregradle.myapp.com.Flare:searchIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_submitBackground flaregradle.myapp.com.Flare:submitBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_suggestionRowLayout flaregradle.myapp.com.Flare:suggestionRowLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_voiceIcon flaregradle.myapp.com.Flare:voiceIcon}</code></td><td></td></tr>
            </table>
            @see #SearchView_android_focusable
            @see #SearchView_android_imeOptions
@@ -4362,9 +4410,9 @@ containing a value of this type.
          */
         public static final int[] SearchView = {
             0x010100da, 0x0101011f, 0x01010220, 0x01010264,
-            0x7f010052, 0x7f010053, 0x7f010054, 0x7f010055,
-            0x7f010056, 0x7f010057, 0x7f010058, 0x7f010059,
-            0x7f01005a, 0x7f01005b, 0x7f01005c
+            0x7f010053, 0x7f010054, 0x7f010055, 0x7f010056,
+            0x7f010057, 0x7f010058, 0x7f010059, 0x7f01005a,
+            0x7f01005b, 0x7f01005c, 0x7f01005d
         };
         /**
           <p>This symbol is the offset where the {@link android.R.attr#focusable}
@@ -4391,37 +4439,37 @@ containing a value of this type.
         */
         public static final int SearchView_android_maxWidth = 1;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#closeIcon}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#closeIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:closeIcon
+          @attr name flaregradle.myapp.com.Flare:closeIcon
         */
         public static final int SearchView_closeIcon = 7;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#commitIcon}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#commitIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:commitIcon
+          @attr name flaregradle.myapp.com.Flare:commitIcon
         */
         public static final int SearchView_commitIcon = 11;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#goIcon}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#goIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:goIcon
+          @attr name flaregradle.myapp.com.Flare:goIcon
         */
         public static final int SearchView_goIcon = 8;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#iconifiedByDefault}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#iconifiedByDefault}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -4431,31 +4479,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:iconifiedByDefault
+          @attr name flaregradle.myapp.com.Flare:iconifiedByDefault
         */
         public static final int SearchView_iconifiedByDefault = 5;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#layout}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#layout}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:layout
+          @attr name flaregradle.myapp.com.Flare:layout
         */
         public static final int SearchView_layout = 4;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#queryBackground}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#queryBackground}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:queryBackground
+          @attr name flaregradle.myapp.com.Flare:queryBackground
         */
         public static final int SearchView_queryBackground = 13;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#queryHint}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#queryHint}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -4465,47 +4513,47 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:queryHint
+          @attr name flaregradle.myapp.com.Flare:queryHint
         */
         public static final int SearchView_queryHint = 6;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#searchIcon}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#searchIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:searchIcon
+          @attr name flaregradle.myapp.com.Flare:searchIcon
         */
         public static final int SearchView_searchIcon = 9;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#submitBackground}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#submitBackground}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:submitBackground
+          @attr name flaregradle.myapp.com.Flare:submitBackground
         */
         public static final int SearchView_submitBackground = 14;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#suggestionRowLayout}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#suggestionRowLayout}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:suggestionRowLayout
+          @attr name flaregradle.myapp.com.Flare:suggestionRowLayout
         */
         public static final int SearchView_suggestionRowLayout = 12;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#voiceIcon}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#voiceIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:voiceIcon
+          @attr name flaregradle.myapp.com.Flare:voiceIcon
         */
         public static final int SearchView_voiceIcon = 10;
         /** Attributes that can be used with a Spinner.
@@ -4521,10 +4569,10 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><td><code>{@link #Spinner_android_dropDownWidth android:dropDownWidth}</code></td><td></td></tr>
            <tr><td><code>{@link #Spinner_android_gravity android:gravity}</code></td><td></td></tr>
            <tr><td><code>{@link #Spinner_android_popupBackground android:popupBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Spinner_disableChildrenWhenDisabled flaregradle.myapp.com.flare:disableChildrenWhenDisabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #Spinner_popupPromptView flaregradle.myapp.com.flare:popupPromptView}</code></td><td></td></tr>
-           <tr><td><code>{@link #Spinner_prompt flaregradle.myapp.com.flare:prompt}</code></td><td></td></tr>
-           <tr><td><code>{@link #Spinner_spinnerMode flaregradle.myapp.com.flare:spinnerMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #Spinner_disableChildrenWhenDisabled flaregradle.myapp.com.Flare:disableChildrenWhenDisabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #Spinner_popupPromptView flaregradle.myapp.com.Flare:popupPromptView}</code></td><td></td></tr>
+           <tr><td><code>{@link #Spinner_prompt flaregradle.myapp.com.Flare:prompt}</code></td><td></td></tr>
+           <tr><td><code>{@link #Spinner_spinnerMode flaregradle.myapp.com.Flare:spinnerMode}</code></td><td></td></tr>
            </table>
            @see #Spinner_android_background
            @see #Spinner_android_dropDownHorizontalOffset
@@ -4540,8 +4588,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
          */
         public static final int[] Spinner = {
             0x010100af, 0x010100d4, 0x01010175, 0x01010176,
-            0x01010262, 0x010102ac, 0x010102ad, 0x7f01005d,
-            0x7f01005e, 0x7f01005f, 0x7f010060
+            0x01010262, 0x010102ac, 0x010102ad, 0x7f01005e,
+            0x7f01005f, 0x7f010060, 0x7f010061
         };
         /**
           <p>This symbol is the offset where the {@link android.R.attr#background}
@@ -4586,7 +4634,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Spinner_android_popupBackground = 3;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#disableChildrenWhenDisabled}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#disableChildrenWhenDisabled}
           attribute's value can be found in the {@link #Spinner} array.
 
 
@@ -4596,31 +4644,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:disableChildrenWhenDisabled
+          @attr name flaregradle.myapp.com.Flare:disableChildrenWhenDisabled
         */
         public static final int Spinner_disableChildrenWhenDisabled = 10;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#popupPromptView}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#popupPromptView}
           attribute's value can be found in the {@link #Spinner} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:popupPromptView
+          @attr name flaregradle.myapp.com.Flare:popupPromptView
         */
         public static final int Spinner_popupPromptView = 9;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#prompt}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#prompt}
           attribute's value can be found in the {@link #Spinner} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:prompt
+          @attr name flaregradle.myapp.com.Flare:prompt
         */
         public static final int Spinner_prompt = 7;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#spinnerMode}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#spinnerMode}
           attribute's value can be found in the {@link #Spinner} array.
 
 
@@ -4633,7 +4681,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>dialog</code></td><td>0</td><td></td></tr>
 <tr><td><code>dropdown</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name flaregradle.myapp.com.flare:spinnerMode
+          @attr name flaregradle.myapp.com.Flare:spinnerMode
         */
         public static final int Spinner_spinnerMode = 8;
         /** Attributes that can be used with a SwitchCompat.
@@ -4645,13 +4693,13 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><td><code>{@link #SwitchCompat_android_textOff android:textOff}</code></td><td></td></tr>
            <tr><td><code>{@link #SwitchCompat_android_textOn android:textOn}</code></td><td></td></tr>
            <tr><td><code>{@link #SwitchCompat_android_thumb android:thumb}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_showText flaregradle.myapp.com.flare:showText}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_splitTrack flaregradle.myapp.com.flare:splitTrack}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchMinWidth flaregradle.myapp.com.flare:switchMinWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchPadding flaregradle.myapp.com.flare:switchPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchTextAppearance flaregradle.myapp.com.flare:switchTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_thumbTextPadding flaregradle.myapp.com.flare:thumbTextPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_track flaregradle.myapp.com.flare:track}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_showText flaregradle.myapp.com.Flare:showText}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_splitTrack flaregradle.myapp.com.Flare:splitTrack}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchMinWidth flaregradle.myapp.com.Flare:switchMinWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchPadding flaregradle.myapp.com.Flare:switchPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchTextAppearance flaregradle.myapp.com.Flare:switchTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_thumbTextPadding flaregradle.myapp.com.Flare:thumbTextPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_track flaregradle.myapp.com.Flare:track}</code></td><td></td></tr>
            </table>
            @see #SwitchCompat_android_textOff
            @see #SwitchCompat_android_textOn
@@ -4665,9 +4713,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            @see #SwitchCompat_track
          */
         public static final int[] SwitchCompat = {
-            0x01010124, 0x01010125, 0x01010142, 0x7f010061,
-            0x7f010062, 0x7f010063, 0x7f010064, 0x7f010065,
-            0x7f010066, 0x7f010067
+            0x01010124, 0x01010125, 0x01010142, 0x7f010062,
+            0x7f010063, 0x7f010064, 0x7f010065, 0x7f010066,
+            0x7f010067, 0x7f010068
         };
         /**
           <p>This symbol is the offset where the {@link android.R.attr#textOff}
@@ -4688,7 +4736,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SwitchCompat_android_thumb = 2;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#showText}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#showText}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -4698,11 +4746,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:showText
+          @attr name flaregradle.myapp.com.Flare:showText
         */
         public static final int SwitchCompat_showText = 9;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#splitTrack}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#splitTrack}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -4712,11 +4760,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:splitTrack
+          @attr name flaregradle.myapp.com.Flare:splitTrack
         */
         public static final int SwitchCompat_splitTrack = 8;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#switchMinWidth}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#switchMinWidth}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -4728,11 +4776,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:switchMinWidth
+          @attr name flaregradle.myapp.com.Flare:switchMinWidth
         */
         public static final int SwitchCompat_switchMinWidth = 6;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#switchPadding}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#switchPadding}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -4744,21 +4792,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:switchPadding
+          @attr name flaregradle.myapp.com.Flare:switchPadding
         */
         public static final int SwitchCompat_switchPadding = 7;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#switchTextAppearance}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#switchTextAppearance}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:switchTextAppearance
+          @attr name flaregradle.myapp.com.Flare:switchTextAppearance
         */
         public static final int SwitchCompat_switchTextAppearance = 5;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#thumbTextPadding}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#thumbTextPadding}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -4770,17 +4818,17 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:thumbTextPadding
+          @attr name flaregradle.myapp.com.Flare:thumbTextPadding
         */
         public static final int SwitchCompat_thumbTextPadding = 4;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#track}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#track}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:track
+          @attr name flaregradle.myapp.com.Flare:track
         */
         public static final int SwitchCompat_track = 3;
         /** Attributes that can be used with a SwitchCompatTextAppearance.
@@ -4791,7 +4839,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #SwitchCompatTextAppearance_android_textColor android:textColor}</code></td><td></td></tr>
            <tr><td><code>{@link #SwitchCompatTextAppearance_android_textSize android:textSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompatTextAppearance_textAllCaps flaregradle.myapp.com.flare:textAllCaps}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompatTextAppearance_textAllCaps flaregradle.myapp.com.Flare:textAllCaps}</code></td><td></td></tr>
            </table>
            @see #SwitchCompatTextAppearance_android_textColor
            @see #SwitchCompatTextAppearance_android_textSize
@@ -4813,14 +4861,14 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SwitchCompatTextAppearance_android_textSize = 0;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#textAllCaps}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#textAllCaps}
           attribute's value can be found in the {@link #SwitchCompatTextAppearance} array.
 
 
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
-          @attr name flaregradle.myapp.com.flare:textAllCaps
+          @attr name flaregradle.myapp.com.Flare:textAllCaps
         */
         public static final int SwitchCompatTextAppearance_textAllCaps = 2;
         /** Attributes that can be used with a Theme.
@@ -4829,90 +4877,90 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #Theme_actionBarDivider flaregradle.myapp.com.flare:actionBarDivider}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarItemBackground flaregradle.myapp.com.flare:actionBarItemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarPopupTheme flaregradle.myapp.com.flare:actionBarPopupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarSize flaregradle.myapp.com.flare:actionBarSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarSplitStyle flaregradle.myapp.com.flare:actionBarSplitStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarStyle flaregradle.myapp.com.flare:actionBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarTabBarStyle flaregradle.myapp.com.flare:actionBarTabBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarTabStyle flaregradle.myapp.com.flare:actionBarTabStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarTabTextStyle flaregradle.myapp.com.flare:actionBarTabTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarTheme flaregradle.myapp.com.flare:actionBarTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarWidgetTheme flaregradle.myapp.com.flare:actionBarWidgetTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionButtonStyle flaregradle.myapp.com.flare:actionButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionDropDownStyle flaregradle.myapp.com.flare:actionDropDownStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionMenuTextAppearance flaregradle.myapp.com.flare:actionMenuTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionMenuTextColor flaregradle.myapp.com.flare:actionMenuTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeBackground flaregradle.myapp.com.flare:actionModeBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeCloseButtonStyle flaregradle.myapp.com.flare:actionModeCloseButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeCloseDrawable flaregradle.myapp.com.flare:actionModeCloseDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeCopyDrawable flaregradle.myapp.com.flare:actionModeCopyDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeCutDrawable flaregradle.myapp.com.flare:actionModeCutDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeFindDrawable flaregradle.myapp.com.flare:actionModeFindDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModePasteDrawable flaregradle.myapp.com.flare:actionModePasteDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModePopupWindowStyle flaregradle.myapp.com.flare:actionModePopupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeSelectAllDrawable flaregradle.myapp.com.flare:actionModeSelectAllDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeShareDrawable flaregradle.myapp.com.flare:actionModeShareDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeSplitBackground flaregradle.myapp.com.flare:actionModeSplitBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeStyle flaregradle.myapp.com.flare:actionModeStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeWebSearchDrawable flaregradle.myapp.com.flare:actionModeWebSearchDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionOverflowButtonStyle flaregradle.myapp.com.flare:actionOverflowButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionOverflowMenuStyle flaregradle.myapp.com.flare:actionOverflowMenuStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_activityChooserViewStyle flaregradle.myapp.com.flare:activityChooserViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarDivider flaregradle.myapp.com.Flare:actionBarDivider}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarItemBackground flaregradle.myapp.com.Flare:actionBarItemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarPopupTheme flaregradle.myapp.com.Flare:actionBarPopupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarSize flaregradle.myapp.com.Flare:actionBarSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarSplitStyle flaregradle.myapp.com.Flare:actionBarSplitStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarStyle flaregradle.myapp.com.Flare:actionBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarTabBarStyle flaregradle.myapp.com.Flare:actionBarTabBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarTabStyle flaregradle.myapp.com.Flare:actionBarTabStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarTabTextStyle flaregradle.myapp.com.Flare:actionBarTabTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarTheme flaregradle.myapp.com.Flare:actionBarTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarWidgetTheme flaregradle.myapp.com.Flare:actionBarWidgetTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionButtonStyle flaregradle.myapp.com.Flare:actionButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionDropDownStyle flaregradle.myapp.com.Flare:actionDropDownStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionMenuTextAppearance flaregradle.myapp.com.Flare:actionMenuTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionMenuTextColor flaregradle.myapp.com.Flare:actionMenuTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeBackground flaregradle.myapp.com.Flare:actionModeBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeCloseButtonStyle flaregradle.myapp.com.Flare:actionModeCloseButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeCloseDrawable flaregradle.myapp.com.Flare:actionModeCloseDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeCopyDrawable flaregradle.myapp.com.Flare:actionModeCopyDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeCutDrawable flaregradle.myapp.com.Flare:actionModeCutDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeFindDrawable flaregradle.myapp.com.Flare:actionModeFindDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModePasteDrawable flaregradle.myapp.com.Flare:actionModePasteDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModePopupWindowStyle flaregradle.myapp.com.Flare:actionModePopupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeSelectAllDrawable flaregradle.myapp.com.Flare:actionModeSelectAllDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeShareDrawable flaregradle.myapp.com.Flare:actionModeShareDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeSplitBackground flaregradle.myapp.com.Flare:actionModeSplitBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeStyle flaregradle.myapp.com.Flare:actionModeStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeWebSearchDrawable flaregradle.myapp.com.Flare:actionModeWebSearchDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionOverflowButtonStyle flaregradle.myapp.com.Flare:actionOverflowButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionOverflowMenuStyle flaregradle.myapp.com.Flare:actionOverflowMenuStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_activityChooserViewStyle flaregradle.myapp.com.Flare:activityChooserViewStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #Theme_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #Theme_android_windowIsFloating android:windowIsFloating}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_buttonBarButtonStyle flaregradle.myapp.com.flare:buttonBarButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_buttonBarStyle flaregradle.myapp.com.flare:buttonBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorAccent flaregradle.myapp.com.flare:colorAccent}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorButtonNormal flaregradle.myapp.com.flare:colorButtonNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorControlActivated flaregradle.myapp.com.flare:colorControlActivated}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorControlHighlight flaregradle.myapp.com.flare:colorControlHighlight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorControlNormal flaregradle.myapp.com.flare:colorControlNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorPrimary flaregradle.myapp.com.flare:colorPrimary}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorPrimaryDark flaregradle.myapp.com.flare:colorPrimaryDark}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorSwitchThumbNormal flaregradle.myapp.com.flare:colorSwitchThumbNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_dividerHorizontal flaregradle.myapp.com.flare:dividerHorizontal}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_dividerVertical flaregradle.myapp.com.flare:dividerVertical}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_dropDownListViewStyle flaregradle.myapp.com.flare:dropDownListViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_dropdownListPreferredItemHeight flaregradle.myapp.com.flare:dropdownListPreferredItemHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_editTextBackground flaregradle.myapp.com.flare:editTextBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_editTextColor flaregradle.myapp.com.flare:editTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_homeAsUpIndicator flaregradle.myapp.com.flare:homeAsUpIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listChoiceBackgroundIndicator flaregradle.myapp.com.flare:listChoiceBackgroundIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPopupWindowStyle flaregradle.myapp.com.flare:listPopupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemHeight flaregradle.myapp.com.flare:listPreferredItemHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemHeightLarge flaregradle.myapp.com.flare:listPreferredItemHeightLarge}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemHeightSmall flaregradle.myapp.com.flare:listPreferredItemHeightSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemPaddingLeft flaregradle.myapp.com.flare:listPreferredItemPaddingLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemPaddingRight flaregradle.myapp.com.flare:listPreferredItemPaddingRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_panelBackground flaregradle.myapp.com.flare:panelBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_panelMenuListTheme flaregradle.myapp.com.flare:panelMenuListTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_panelMenuListWidth flaregradle.myapp.com.flare:panelMenuListWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_popupMenuStyle flaregradle.myapp.com.flare:popupMenuStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_popupWindowStyle flaregradle.myapp.com.flare:popupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_searchViewStyle flaregradle.myapp.com.flare:searchViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_selectableItemBackground flaregradle.myapp.com.flare:selectableItemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_selectableItemBackgroundBorderless flaregradle.myapp.com.flare:selectableItemBackgroundBorderless}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_spinnerDropDownItemStyle flaregradle.myapp.com.flare:spinnerDropDownItemStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_spinnerStyle flaregradle.myapp.com.flare:spinnerStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_switchStyle flaregradle.myapp.com.flare:switchStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceLargePopupMenu flaregradle.myapp.com.flare:textAppearanceLargePopupMenu}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceListItem flaregradle.myapp.com.flare:textAppearanceListItem}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceListItemSmall flaregradle.myapp.com.flare:textAppearanceListItemSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceSearchResultSubtitle flaregradle.myapp.com.flare:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceSearchResultTitle flaregradle.myapp.com.flare:textAppearanceSearchResultTitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceSmallPopupMenu flaregradle.myapp.com.flare:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textColorSearchUrl flaregradle.myapp.com.flare:textColorSearchUrl}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_toolbarNavigationButtonStyle flaregradle.myapp.com.flare:toolbarNavigationButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_toolbarStyle flaregradle.myapp.com.flare:toolbarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowActionBar flaregradle.myapp.com.flare:windowActionBar}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowActionBarOverlay flaregradle.myapp.com.flare:windowActionBarOverlay}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowActionModeOverlay flaregradle.myapp.com.flare:windowActionModeOverlay}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowFixedHeightMajor flaregradle.myapp.com.flare:windowFixedHeightMajor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowFixedHeightMinor flaregradle.myapp.com.flare:windowFixedHeightMinor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowFixedWidthMajor flaregradle.myapp.com.flare:windowFixedWidthMajor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowFixedWidthMinor flaregradle.myapp.com.flare:windowFixedWidthMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_buttonBarButtonStyle flaregradle.myapp.com.Flare:buttonBarButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_buttonBarStyle flaregradle.myapp.com.Flare:buttonBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorAccent flaregradle.myapp.com.Flare:colorAccent}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorButtonNormal flaregradle.myapp.com.Flare:colorButtonNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorControlActivated flaregradle.myapp.com.Flare:colorControlActivated}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorControlHighlight flaregradle.myapp.com.Flare:colorControlHighlight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorControlNormal flaregradle.myapp.com.Flare:colorControlNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorPrimary flaregradle.myapp.com.Flare:colorPrimary}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorPrimaryDark flaregradle.myapp.com.Flare:colorPrimaryDark}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorSwitchThumbNormal flaregradle.myapp.com.Flare:colorSwitchThumbNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_dividerHorizontal flaregradle.myapp.com.Flare:dividerHorizontal}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_dividerVertical flaregradle.myapp.com.Flare:dividerVertical}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_dropDownListViewStyle flaregradle.myapp.com.Flare:dropDownListViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_dropdownListPreferredItemHeight flaregradle.myapp.com.Flare:dropdownListPreferredItemHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_editTextBackground flaregradle.myapp.com.Flare:editTextBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_editTextColor flaregradle.myapp.com.Flare:editTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_homeAsUpIndicator flaregradle.myapp.com.Flare:homeAsUpIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listChoiceBackgroundIndicator flaregradle.myapp.com.Flare:listChoiceBackgroundIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPopupWindowStyle flaregradle.myapp.com.Flare:listPopupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemHeight flaregradle.myapp.com.Flare:listPreferredItemHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemHeightLarge flaregradle.myapp.com.Flare:listPreferredItemHeightLarge}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemHeightSmall flaregradle.myapp.com.Flare:listPreferredItemHeightSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemPaddingLeft flaregradle.myapp.com.Flare:listPreferredItemPaddingLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemPaddingRight flaregradle.myapp.com.Flare:listPreferredItemPaddingRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_panelBackground flaregradle.myapp.com.Flare:panelBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_panelMenuListTheme flaregradle.myapp.com.Flare:panelMenuListTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_panelMenuListWidth flaregradle.myapp.com.Flare:panelMenuListWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_popupMenuStyle flaregradle.myapp.com.Flare:popupMenuStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_popupWindowStyle flaregradle.myapp.com.Flare:popupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_searchViewStyle flaregradle.myapp.com.Flare:searchViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_selectableItemBackground flaregradle.myapp.com.Flare:selectableItemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_selectableItemBackgroundBorderless flaregradle.myapp.com.Flare:selectableItemBackgroundBorderless}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_spinnerDropDownItemStyle flaregradle.myapp.com.Flare:spinnerDropDownItemStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_spinnerStyle flaregradle.myapp.com.Flare:spinnerStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_switchStyle flaregradle.myapp.com.Flare:switchStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceLargePopupMenu flaregradle.myapp.com.Flare:textAppearanceLargePopupMenu}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceListItem flaregradle.myapp.com.Flare:textAppearanceListItem}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceListItemSmall flaregradle.myapp.com.Flare:textAppearanceListItemSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceSearchResultSubtitle flaregradle.myapp.com.Flare:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceSearchResultTitle flaregradle.myapp.com.Flare:textAppearanceSearchResultTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceSmallPopupMenu flaregradle.myapp.com.Flare:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textColorSearchUrl flaregradle.myapp.com.Flare:textColorSearchUrl}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_toolbarNavigationButtonStyle flaregradle.myapp.com.Flare:toolbarNavigationButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_toolbarStyle flaregradle.myapp.com.Flare:toolbarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowActionBar flaregradle.myapp.com.Flare:windowActionBar}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowActionBarOverlay flaregradle.myapp.com.Flare:windowActionBarOverlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowActionModeOverlay flaregradle.myapp.com.Flare:windowActionModeOverlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowFixedHeightMajor flaregradle.myapp.com.Flare:windowFixedHeightMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowFixedHeightMinor flaregradle.myapp.com.Flare:windowFixedHeightMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowFixedWidthMajor flaregradle.myapp.com.Flare:windowFixedWidthMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowFixedWidthMinor flaregradle.myapp.com.Flare:windowFixedWidthMinor}</code></td><td></td></tr>
            </table>
            @see #Theme_actionBarDivider
            @see #Theme_actionBarItemBackground
@@ -5000,60 +5048,60 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            @see #Theme_windowFixedWidthMinor
          */
         public static final int[] Theme = {
-            0x01010057, 0x010100ae, 0x7f010068, 0x7f010069,
-            0x7f01006a, 0x7f01006b, 0x7f01006c, 0x7f01006d,
-            0x7f01006e, 0x7f01006f, 0x7f010070, 0x7f010071,
-            0x7f010072, 0x7f010073, 0x7f010074, 0x7f010075,
-            0x7f010076, 0x7f010077, 0x7f010078, 0x7f010079,
-            0x7f01007a, 0x7f01007b, 0x7f01007c, 0x7f01007d,
-            0x7f01007e, 0x7f01007f, 0x7f010080, 0x7f010081,
-            0x7f010082, 0x7f010083, 0x7f010084, 0x7f010085,
-            0x7f010086, 0x7f010087, 0x7f010088, 0x7f010089,
-            0x7f01008a, 0x7f01008b, 0x7f01008c, 0x7f01008d,
-            0x7f01008e, 0x7f01008f, 0x7f010090, 0x7f010091,
-            0x7f010092, 0x7f010093, 0x7f010094, 0x7f010095,
-            0x7f010096, 0x7f010097, 0x7f010098, 0x7f010099,
-            0x7f01009a, 0x7f01009b, 0x7f01009c, 0x7f01009d,
-            0x7f01009e, 0x7f01009f, 0x7f0100a0, 0x7f0100a1,
-            0x7f0100a2, 0x7f0100a3, 0x7f0100a4, 0x7f0100a5,
-            0x7f0100a6, 0x7f0100a7, 0x7f0100a8, 0x7f0100a9,
-            0x7f0100aa, 0x7f0100ab, 0x7f0100ac, 0x7f0100ad,
-            0x7f0100ae, 0x7f0100af, 0x7f0100b0, 0x7f0100b1,
-            0x7f0100b2, 0x7f0100b3, 0x7f0100b4, 0x7f0100b5,
-            0x7f0100b6, 0x7f0100b7, 0x7f0100b8, 0x7f0100b9
+            0x01010057, 0x010100ae, 0x7f010069, 0x7f01006a,
+            0x7f01006b, 0x7f01006c, 0x7f01006d, 0x7f01006e,
+            0x7f01006f, 0x7f010070, 0x7f010071, 0x7f010072,
+            0x7f010073, 0x7f010074, 0x7f010075, 0x7f010076,
+            0x7f010077, 0x7f010078, 0x7f010079, 0x7f01007a,
+            0x7f01007b, 0x7f01007c, 0x7f01007d, 0x7f01007e,
+            0x7f01007f, 0x7f010080, 0x7f010081, 0x7f010082,
+            0x7f010083, 0x7f010084, 0x7f010085, 0x7f010086,
+            0x7f010087, 0x7f010088, 0x7f010089, 0x7f01008a,
+            0x7f01008b, 0x7f01008c, 0x7f01008d, 0x7f01008e,
+            0x7f01008f, 0x7f010090, 0x7f010091, 0x7f010092,
+            0x7f010093, 0x7f010094, 0x7f010095, 0x7f010096,
+            0x7f010097, 0x7f010098, 0x7f010099, 0x7f01009a,
+            0x7f01009b, 0x7f01009c, 0x7f01009d, 0x7f01009e,
+            0x7f01009f, 0x7f0100a0, 0x7f0100a1, 0x7f0100a2,
+            0x7f0100a3, 0x7f0100a4, 0x7f0100a5, 0x7f0100a6,
+            0x7f0100a7, 0x7f0100a8, 0x7f0100a9, 0x7f0100aa,
+            0x7f0100ab, 0x7f0100ac, 0x7f0100ad, 0x7f0100ae,
+            0x7f0100af, 0x7f0100b0, 0x7f0100b1, 0x7f0100b2,
+            0x7f0100b3, 0x7f0100b4, 0x7f0100b5, 0x7f0100b6,
+            0x7f0100b7, 0x7f0100b8, 0x7f0100b9, 0x7f0100ba
         };
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#actionBarDivider}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#actionBarDivider}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:actionBarDivider
+          @attr name flaregradle.myapp.com.Flare:actionBarDivider
         */
         public static final int Theme_actionBarDivider = 20;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#actionBarItemBackground}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#actionBarItemBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:actionBarItemBackground
+          @attr name flaregradle.myapp.com.Flare:actionBarItemBackground
         */
         public static final int Theme_actionBarItemBackground = 21;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#actionBarPopupTheme}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#actionBarPopupTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:actionBarPopupTheme
+          @attr name flaregradle.myapp.com.Flare:actionBarPopupTheme
         */
         public static final int Theme_actionBarPopupTheme = 14;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#actionBarSize}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#actionBarSize}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -5073,111 +5121,111 @@ containing a value of this type.
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
 <tr><td><code>wrap_content</code></td><td>0</td><td></td></tr>
 </table>
-          @attr name flaregradle.myapp.com.flare:actionBarSize
+          @attr name flaregradle.myapp.com.Flare:actionBarSize
         */
         public static final int Theme_actionBarSize = 19;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#actionBarSplitStyle}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#actionBarSplitStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:actionBarSplitStyle
+          @attr name flaregradle.myapp.com.Flare:actionBarSplitStyle
         */
         public static final int Theme_actionBarSplitStyle = 16;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#actionBarStyle}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#actionBarStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:actionBarStyle
+          @attr name flaregradle.myapp.com.Flare:actionBarStyle
         */
         public static final int Theme_actionBarStyle = 15;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#actionBarTabBarStyle}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#actionBarTabBarStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:actionBarTabBarStyle
+          @attr name flaregradle.myapp.com.Flare:actionBarTabBarStyle
         */
         public static final int Theme_actionBarTabBarStyle = 10;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#actionBarTabStyle}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#actionBarTabStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:actionBarTabStyle
+          @attr name flaregradle.myapp.com.Flare:actionBarTabStyle
         */
         public static final int Theme_actionBarTabStyle = 9;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#actionBarTabTextStyle}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#actionBarTabTextStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:actionBarTabTextStyle
+          @attr name flaregradle.myapp.com.Flare:actionBarTabTextStyle
         */
         public static final int Theme_actionBarTabTextStyle = 11;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#actionBarTheme}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#actionBarTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:actionBarTheme
+          @attr name flaregradle.myapp.com.Flare:actionBarTheme
         */
         public static final int Theme_actionBarTheme = 17;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#actionBarWidgetTheme}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#actionBarWidgetTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:actionBarWidgetTheme
+          @attr name flaregradle.myapp.com.Flare:actionBarWidgetTheme
         */
         public static final int Theme_actionBarWidgetTheme = 18;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#actionButtonStyle}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#actionButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:actionButtonStyle
+          @attr name flaregradle.myapp.com.Flare:actionButtonStyle
         */
         public static final int Theme_actionButtonStyle = 44;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#actionDropDownStyle}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#actionDropDownStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:actionDropDownStyle
+          @attr name flaregradle.myapp.com.Flare:actionDropDownStyle
         */
         public static final int Theme_actionDropDownStyle = 39;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#actionMenuTextAppearance}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#actionMenuTextAppearance}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:actionMenuTextAppearance
+          @attr name flaregradle.myapp.com.Flare:actionMenuTextAppearance
         */
         public static final int Theme_actionMenuTextAppearance = 22;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#actionMenuTextColor}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#actionMenuTextColor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -5185,167 +5233,167 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name flaregradle.myapp.com.flare:actionMenuTextColor
+          @attr name flaregradle.myapp.com.Flare:actionMenuTextColor
         */
         public static final int Theme_actionMenuTextColor = 23;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#actionModeBackground}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#actionModeBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:actionModeBackground
+          @attr name flaregradle.myapp.com.Flare:actionModeBackground
         */
         public static final int Theme_actionModeBackground = 26;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#actionModeCloseButtonStyle}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#actionModeCloseButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:actionModeCloseButtonStyle
+          @attr name flaregradle.myapp.com.Flare:actionModeCloseButtonStyle
         */
         public static final int Theme_actionModeCloseButtonStyle = 25;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#actionModeCloseDrawable}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#actionModeCloseDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:actionModeCloseDrawable
+          @attr name flaregradle.myapp.com.Flare:actionModeCloseDrawable
         */
         public static final int Theme_actionModeCloseDrawable = 28;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#actionModeCopyDrawable}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#actionModeCopyDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:actionModeCopyDrawable
+          @attr name flaregradle.myapp.com.Flare:actionModeCopyDrawable
         */
         public static final int Theme_actionModeCopyDrawable = 30;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#actionModeCutDrawable}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#actionModeCutDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:actionModeCutDrawable
+          @attr name flaregradle.myapp.com.Flare:actionModeCutDrawable
         */
         public static final int Theme_actionModeCutDrawable = 29;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#actionModeFindDrawable}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#actionModeFindDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:actionModeFindDrawable
+          @attr name flaregradle.myapp.com.Flare:actionModeFindDrawable
         */
         public static final int Theme_actionModeFindDrawable = 34;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#actionModePasteDrawable}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#actionModePasteDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:actionModePasteDrawable
+          @attr name flaregradle.myapp.com.Flare:actionModePasteDrawable
         */
         public static final int Theme_actionModePasteDrawable = 31;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#actionModePopupWindowStyle}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#actionModePopupWindowStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:actionModePopupWindowStyle
+          @attr name flaregradle.myapp.com.Flare:actionModePopupWindowStyle
         */
         public static final int Theme_actionModePopupWindowStyle = 36;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#actionModeSelectAllDrawable}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#actionModeSelectAllDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:actionModeSelectAllDrawable
+          @attr name flaregradle.myapp.com.Flare:actionModeSelectAllDrawable
         */
         public static final int Theme_actionModeSelectAllDrawable = 32;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#actionModeShareDrawable}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#actionModeShareDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:actionModeShareDrawable
+          @attr name flaregradle.myapp.com.Flare:actionModeShareDrawable
         */
         public static final int Theme_actionModeShareDrawable = 33;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#actionModeSplitBackground}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#actionModeSplitBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:actionModeSplitBackground
+          @attr name flaregradle.myapp.com.Flare:actionModeSplitBackground
         */
         public static final int Theme_actionModeSplitBackground = 27;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#actionModeStyle}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#actionModeStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:actionModeStyle
+          @attr name flaregradle.myapp.com.Flare:actionModeStyle
         */
         public static final int Theme_actionModeStyle = 24;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#actionModeWebSearchDrawable}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#actionModeWebSearchDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:actionModeWebSearchDrawable
+          @attr name flaregradle.myapp.com.Flare:actionModeWebSearchDrawable
         */
         public static final int Theme_actionModeWebSearchDrawable = 35;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#actionOverflowButtonStyle}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#actionOverflowButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:actionOverflowButtonStyle
+          @attr name flaregradle.myapp.com.Flare:actionOverflowButtonStyle
         */
         public static final int Theme_actionOverflowButtonStyle = 12;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#actionOverflowMenuStyle}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#actionOverflowMenuStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:actionOverflowMenuStyle
+          @attr name flaregradle.myapp.com.Flare:actionOverflowMenuStyle
         */
         public static final int Theme_actionOverflowMenuStyle = 13;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#activityChooserViewStyle}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#activityChooserViewStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:activityChooserViewStyle
+          @attr name flaregradle.myapp.com.Flare:activityChooserViewStyle
         */
         public static final int Theme_activityChooserViewStyle = 51;
         /**
@@ -5361,27 +5409,27 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_android_windowIsFloating = 0;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#buttonBarButtonStyle}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#buttonBarButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:buttonBarButtonStyle
+          @attr name flaregradle.myapp.com.Flare:buttonBarButtonStyle
         */
         public static final int Theme_buttonBarButtonStyle = 46;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#buttonBarStyle}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#buttonBarStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:buttonBarStyle
+          @attr name flaregradle.myapp.com.Flare:buttonBarStyle
         */
         public static final int Theme_buttonBarStyle = 45;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#colorAccent}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#colorAccent}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -5392,11 +5440,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:colorAccent
+          @attr name flaregradle.myapp.com.Flare:colorAccent
         */
         public static final int Theme_colorAccent = 78;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#colorButtonNormal}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#colorButtonNormal}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -5407,11 +5455,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:colorButtonNormal
+          @attr name flaregradle.myapp.com.Flare:colorButtonNormal
         */
         public static final int Theme_colorButtonNormal = 82;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#colorControlActivated}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#colorControlActivated}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -5422,11 +5470,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:colorControlActivated
+          @attr name flaregradle.myapp.com.Flare:colorControlActivated
         */
         public static final int Theme_colorControlActivated = 80;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#colorControlHighlight}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#colorControlHighlight}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -5437,11 +5485,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:colorControlHighlight
+          @attr name flaregradle.myapp.com.Flare:colorControlHighlight
         */
         public static final int Theme_colorControlHighlight = 81;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#colorControlNormal}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#colorControlNormal}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -5452,11 +5500,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:colorControlNormal
+          @attr name flaregradle.myapp.com.Flare:colorControlNormal
         */
         public static final int Theme_colorControlNormal = 79;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#colorPrimary}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#colorPrimary}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -5467,11 +5515,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:colorPrimary
+          @attr name flaregradle.myapp.com.Flare:colorPrimary
         */
         public static final int Theme_colorPrimary = 76;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#colorPrimaryDark}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#colorPrimaryDark}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -5482,11 +5530,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:colorPrimaryDark
+          @attr name flaregradle.myapp.com.Flare:colorPrimaryDark
         */
         public static final int Theme_colorPrimaryDark = 77;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#colorSwitchThumbNormal}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#colorSwitchThumbNormal}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -5497,41 +5545,41 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:colorSwitchThumbNormal
+          @attr name flaregradle.myapp.com.Flare:colorSwitchThumbNormal
         */
         public static final int Theme_colorSwitchThumbNormal = 83;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#dividerHorizontal}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#dividerHorizontal}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:dividerHorizontal
+          @attr name flaregradle.myapp.com.Flare:dividerHorizontal
         */
         public static final int Theme_dividerHorizontal = 50;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#dividerVertical}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#dividerVertical}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:dividerVertical
+          @attr name flaregradle.myapp.com.Flare:dividerVertical
         */
         public static final int Theme_dividerVertical = 49;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#dropDownListViewStyle}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#dropDownListViewStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:dropDownListViewStyle
+          @attr name flaregradle.myapp.com.Flare:dropDownListViewStyle
         */
         public static final int Theme_dropDownListViewStyle = 68;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#dropdownListPreferredItemHeight}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#dropdownListPreferredItemHeight}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -5543,21 +5591,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:dropdownListPreferredItemHeight
+          @attr name flaregradle.myapp.com.Flare:dropdownListPreferredItemHeight
         */
         public static final int Theme_dropdownListPreferredItemHeight = 40;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#editTextBackground}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#editTextBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:editTextBackground
+          @attr name flaregradle.myapp.com.Flare:editTextBackground
         */
         public static final int Theme_editTextBackground = 57;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#editTextColor}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#editTextColor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -5565,41 +5613,41 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name flaregradle.myapp.com.flare:editTextColor
+          @attr name flaregradle.myapp.com.Flare:editTextColor
         */
         public static final int Theme_editTextColor = 56;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#homeAsUpIndicator}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#homeAsUpIndicator}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:homeAsUpIndicator
+          @attr name flaregradle.myapp.com.Flare:homeAsUpIndicator
         */
         public static final int Theme_homeAsUpIndicator = 43;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#listChoiceBackgroundIndicator}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#listChoiceBackgroundIndicator}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:listChoiceBackgroundIndicator
+          @attr name flaregradle.myapp.com.Flare:listChoiceBackgroundIndicator
         */
         public static final int Theme_listChoiceBackgroundIndicator = 75;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#listPopupWindowStyle}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#listPopupWindowStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:listPopupWindowStyle
+          @attr name flaregradle.myapp.com.Flare:listPopupWindowStyle
         */
         public static final int Theme_listPopupWindowStyle = 69;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#listPreferredItemHeight}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#listPreferredItemHeight}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -5611,11 +5659,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:listPreferredItemHeight
+          @attr name flaregradle.myapp.com.Flare:listPreferredItemHeight
         */
         public static final int Theme_listPreferredItemHeight = 63;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#listPreferredItemHeightLarge}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#listPreferredItemHeightLarge}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -5627,11 +5675,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:listPreferredItemHeightLarge
+          @attr name flaregradle.myapp.com.Flare:listPreferredItemHeightLarge
         */
         public static final int Theme_listPreferredItemHeightLarge = 65;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#listPreferredItemHeightSmall}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#listPreferredItemHeightSmall}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -5643,11 +5691,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:listPreferredItemHeightSmall
+          @attr name flaregradle.myapp.com.Flare:listPreferredItemHeightSmall
         */
         public static final int Theme_listPreferredItemHeightSmall = 64;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#listPreferredItemPaddingLeft}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#listPreferredItemPaddingLeft}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -5659,11 +5707,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:listPreferredItemPaddingLeft
+          @attr name flaregradle.myapp.com.Flare:listPreferredItemPaddingLeft
         */
         public static final int Theme_listPreferredItemPaddingLeft = 66;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#listPreferredItemPaddingRight}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#listPreferredItemPaddingRight}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -5675,31 +5723,31 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:listPreferredItemPaddingRight
+          @attr name flaregradle.myapp.com.Flare:listPreferredItemPaddingRight
         */
         public static final int Theme_listPreferredItemPaddingRight = 67;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#panelBackground}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#panelBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:panelBackground
+          @attr name flaregradle.myapp.com.Flare:panelBackground
         */
         public static final int Theme_panelBackground = 72;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#panelMenuListTheme}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#panelMenuListTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:panelMenuListTheme
+          @attr name flaregradle.myapp.com.Flare:panelMenuListTheme
         */
         public static final int Theme_panelMenuListTheme = 74;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#panelMenuListWidth}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#panelMenuListWidth}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -5711,151 +5759,151 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:panelMenuListWidth
+          @attr name flaregradle.myapp.com.Flare:panelMenuListWidth
         */
         public static final int Theme_panelMenuListWidth = 73;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#popupMenuStyle}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#popupMenuStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:popupMenuStyle
+          @attr name flaregradle.myapp.com.Flare:popupMenuStyle
         */
         public static final int Theme_popupMenuStyle = 54;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#popupWindowStyle}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#popupWindowStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:popupWindowStyle
+          @attr name flaregradle.myapp.com.Flare:popupWindowStyle
         */
         public static final int Theme_popupWindowStyle = 55;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#searchViewStyle}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#searchViewStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:searchViewStyle
+          @attr name flaregradle.myapp.com.Flare:searchViewStyle
         */
         public static final int Theme_searchViewStyle = 62;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#selectableItemBackground}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#selectableItemBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:selectableItemBackground
+          @attr name flaregradle.myapp.com.Flare:selectableItemBackground
         */
         public static final int Theme_selectableItemBackground = 47;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#selectableItemBackgroundBorderless}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#selectableItemBackgroundBorderless}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:selectableItemBackgroundBorderless
+          @attr name flaregradle.myapp.com.Flare:selectableItemBackgroundBorderless
         */
         public static final int Theme_selectableItemBackgroundBorderless = 48;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#spinnerDropDownItemStyle}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#spinnerDropDownItemStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:spinnerDropDownItemStyle
+          @attr name flaregradle.myapp.com.Flare:spinnerDropDownItemStyle
         */
         public static final int Theme_spinnerDropDownItemStyle = 42;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#spinnerStyle}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#spinnerStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:spinnerStyle
+          @attr name flaregradle.myapp.com.Flare:spinnerStyle
         */
         public static final int Theme_spinnerStyle = 41;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#switchStyle}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#switchStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:switchStyle
+          @attr name flaregradle.myapp.com.Flare:switchStyle
         */
         public static final int Theme_switchStyle = 58;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#textAppearanceLargePopupMenu}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#textAppearanceLargePopupMenu}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:textAppearanceLargePopupMenu
+          @attr name flaregradle.myapp.com.Flare:textAppearanceLargePopupMenu
         */
         public static final int Theme_textAppearanceLargePopupMenu = 37;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#textAppearanceListItem}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#textAppearanceListItem}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:textAppearanceListItem
+          @attr name flaregradle.myapp.com.Flare:textAppearanceListItem
         */
         public static final int Theme_textAppearanceListItem = 70;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#textAppearanceListItemSmall}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#textAppearanceListItemSmall}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:textAppearanceListItemSmall
+          @attr name flaregradle.myapp.com.Flare:textAppearanceListItemSmall
         */
         public static final int Theme_textAppearanceListItemSmall = 71;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#textAppearanceSearchResultSubtitle}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#textAppearanceSearchResultSubtitle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:textAppearanceSearchResultSubtitle
+          @attr name flaregradle.myapp.com.Flare:textAppearanceSearchResultSubtitle
         */
         public static final int Theme_textAppearanceSearchResultSubtitle = 60;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#textAppearanceSearchResultTitle}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#textAppearanceSearchResultTitle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:textAppearanceSearchResultTitle
+          @attr name flaregradle.myapp.com.Flare:textAppearanceSearchResultTitle
         */
         public static final int Theme_textAppearanceSearchResultTitle = 59;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#textAppearanceSmallPopupMenu}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#textAppearanceSmallPopupMenu}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:textAppearanceSmallPopupMenu
+          @attr name flaregradle.myapp.com.Flare:textAppearanceSmallPopupMenu
         */
         public static final int Theme_textAppearanceSmallPopupMenu = 38;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#textColorSearchUrl}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#textColorSearchUrl}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -5863,31 +5911,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name flaregradle.myapp.com.flare:textColorSearchUrl
+          @attr name flaregradle.myapp.com.Flare:textColorSearchUrl
         */
         public static final int Theme_textColorSearchUrl = 61;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#toolbarNavigationButtonStyle}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#toolbarNavigationButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:toolbarNavigationButtonStyle
+          @attr name flaregradle.myapp.com.Flare:toolbarNavigationButtonStyle
         */
         public static final int Theme_toolbarNavigationButtonStyle = 53;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#toolbarStyle}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#toolbarStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:toolbarStyle
+          @attr name flaregradle.myapp.com.Flare:toolbarStyle
         */
         public static final int Theme_toolbarStyle = 52;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#windowActionBar}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#windowActionBar}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -5897,11 +5945,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:windowActionBar
+          @attr name flaregradle.myapp.com.Flare:windowActionBar
         */
         public static final int Theme_windowActionBar = 2;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#windowActionBarOverlay}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#windowActionBarOverlay}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -5911,11 +5959,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:windowActionBarOverlay
+          @attr name flaregradle.myapp.com.Flare:windowActionBarOverlay
         */
         public static final int Theme_windowActionBarOverlay = 3;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#windowActionModeOverlay}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#windowActionModeOverlay}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -5925,11 +5973,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:windowActionModeOverlay
+          @attr name flaregradle.myapp.com.Flare:windowActionModeOverlay
         */
         public static final int Theme_windowActionModeOverlay = 4;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#windowFixedHeightMajor}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#windowFixedHeightMajor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -5944,11 +5992,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:windowFixedHeightMajor
+          @attr name flaregradle.myapp.com.Flare:windowFixedHeightMajor
         */
         public static final int Theme_windowFixedHeightMajor = 8;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#windowFixedHeightMinor}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#windowFixedHeightMinor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -5963,11 +6011,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:windowFixedHeightMinor
+          @attr name flaregradle.myapp.com.Flare:windowFixedHeightMinor
         */
         public static final int Theme_windowFixedHeightMinor = 6;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#windowFixedWidthMajor}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#windowFixedWidthMajor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -5982,11 +6030,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:windowFixedWidthMajor
+          @attr name flaregradle.myapp.com.Flare:windowFixedWidthMajor
         */
         public static final int Theme_windowFixedWidthMajor = 5;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#windowFixedWidthMinor}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#windowFixedWidthMinor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6001,7 +6049,7 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:windowFixedWidthMinor
+          @attr name flaregradle.myapp.com.Flare:windowFixedWidthMinor
         */
         public static final int Theme_windowFixedWidthMinor = 7;
         /** Attributes that can be used with a Toolbar.
@@ -6012,26 +6060,26 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #Toolbar_android_gravity android:gravity}</code></td><td></td></tr>
            <tr><td><code>{@link #Toolbar_android_minHeight android:minHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_collapseContentDescription flaregradle.myapp.com.flare:collapseContentDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_collapseIcon flaregradle.myapp.com.flare:collapseIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetEnd flaregradle.myapp.com.flare:contentInsetEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetLeft flaregradle.myapp.com.flare:contentInsetLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetRight flaregradle.myapp.com.flare:contentInsetRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetStart flaregradle.myapp.com.flare:contentInsetStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_maxButtonHeight flaregradle.myapp.com.flare:maxButtonHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_navigationContentDescription flaregradle.myapp.com.flare:navigationContentDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_navigationIcon flaregradle.myapp.com.flare:navigationIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_popupTheme flaregradle.myapp.com.flare:popupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_subtitle flaregradle.myapp.com.flare:subtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_subtitleTextAppearance flaregradle.myapp.com.flare:subtitleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_theme flaregradle.myapp.com.flare:theme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_title flaregradle.myapp.com.flare:title}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginBottom flaregradle.myapp.com.flare:titleMarginBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginEnd flaregradle.myapp.com.flare:titleMarginEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginStart flaregradle.myapp.com.flare:titleMarginStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginTop flaregradle.myapp.com.flare:titleMarginTop}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMargins flaregradle.myapp.com.flare:titleMargins}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleTextAppearance flaregradle.myapp.com.flare:titleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_collapseContentDescription flaregradle.myapp.com.Flare:collapseContentDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_collapseIcon flaregradle.myapp.com.Flare:collapseIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetEnd flaregradle.myapp.com.Flare:contentInsetEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetLeft flaregradle.myapp.com.Flare:contentInsetLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetRight flaregradle.myapp.com.Flare:contentInsetRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetStart flaregradle.myapp.com.Flare:contentInsetStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_maxButtonHeight flaregradle.myapp.com.Flare:maxButtonHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_navigationContentDescription flaregradle.myapp.com.Flare:navigationContentDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_navigationIcon flaregradle.myapp.com.Flare:navigationIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_popupTheme flaregradle.myapp.com.Flare:popupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitle flaregradle.myapp.com.Flare:subtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitleTextAppearance flaregradle.myapp.com.Flare:subtitleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_theme flaregradle.myapp.com.Flare:theme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_title flaregradle.myapp.com.Flare:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginBottom flaregradle.myapp.com.Flare:titleMarginBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginEnd flaregradle.myapp.com.Flare:titleMarginEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginStart flaregradle.myapp.com.Flare:titleMarginStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginTop flaregradle.myapp.com.Flare:titleMarginTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMargins flaregradle.myapp.com.Flare:titleMargins}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleTextAppearance flaregradle.myapp.com.Flare:titleTextAppearance}</code></td><td></td></tr>
            </table>
            @see #Toolbar_android_gravity
            @see #Toolbar_android_minHeight
@@ -6059,10 +6107,10 @@ containing a value of this type.
         public static final int[] Toolbar = {
             0x010100af, 0x01010140, 0x7f010003, 0x7f010006,
             0x7f010016, 0x7f010017, 0x7f010018, 0x7f010019,
-            0x7f01001b, 0x7f0100ba, 0x7f0100bb, 0x7f0100bc,
-            0x7f0100bd, 0x7f0100be, 0x7f0100bf, 0x7f0100c0,
-            0x7f0100c1, 0x7f0100c2, 0x7f0100c3, 0x7f0100c4,
-            0x7f0100c5, 0x7f0100c6
+            0x7f01001b, 0x7f0100bb, 0x7f0100bc, 0x7f0100bd,
+            0x7f0100be, 0x7f0100bf, 0x7f0100c0, 0x7f0100c1,
+            0x7f0100c2, 0x7f0100c3, 0x7f0100c4, 0x7f0100c5,
+            0x7f0100c6, 0x7f0100c7
         };
         /**
           <p>This symbol is the offset where the {@link android.R.attr#gravity}
@@ -6077,7 +6125,7 @@ containing a value of this type.
         */
         public static final int Toolbar_android_minHeight = 1;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#collapseContentDescription}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#collapseContentDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -6087,21 +6135,21 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:collapseContentDescription
+          @attr name flaregradle.myapp.com.Flare:collapseContentDescription
         */
         public static final int Toolbar_collapseContentDescription = 19;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#collapseIcon}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#collapseIcon}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:collapseIcon
+          @attr name flaregradle.myapp.com.Flare:collapseIcon
         */
         public static final int Toolbar_collapseIcon = 18;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#contentInsetEnd}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#contentInsetEnd}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -6113,11 +6161,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:contentInsetEnd
+          @attr name flaregradle.myapp.com.Flare:contentInsetEnd
         */
         public static final int Toolbar_contentInsetEnd = 5;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#contentInsetLeft}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#contentInsetLeft}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -6129,11 +6177,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:contentInsetLeft
+          @attr name flaregradle.myapp.com.Flare:contentInsetLeft
         */
         public static final int Toolbar_contentInsetLeft = 6;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#contentInsetRight}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#contentInsetRight}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -6145,11 +6193,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:contentInsetRight
+          @attr name flaregradle.myapp.com.Flare:contentInsetRight
         */
         public static final int Toolbar_contentInsetRight = 7;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#contentInsetStart}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#contentInsetStart}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -6161,11 +6209,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:contentInsetStart
+          @attr name flaregradle.myapp.com.Flare:contentInsetStart
         */
         public static final int Toolbar_contentInsetStart = 4;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#maxButtonHeight}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#maxButtonHeight}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -6177,11 +6225,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:maxButtonHeight
+          @attr name flaregradle.myapp.com.Flare:maxButtonHeight
         */
         public static final int Toolbar_maxButtonHeight = 16;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#navigationContentDescription}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#navigationContentDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -6191,31 +6239,31 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:navigationContentDescription
+          @attr name flaregradle.myapp.com.Flare:navigationContentDescription
         */
         public static final int Toolbar_navigationContentDescription = 21;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#navigationIcon}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#navigationIcon}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:navigationIcon
+          @attr name flaregradle.myapp.com.Flare:navigationIcon
         */
         public static final int Toolbar_navigationIcon = 20;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#popupTheme}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:popupTheme
+          @attr name flaregradle.myapp.com.Flare:popupTheme
         */
         public static final int Toolbar_popupTheme = 8;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#subtitle}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#subtitle}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -6225,31 +6273,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:subtitle
+          @attr name flaregradle.myapp.com.Flare:subtitle
         */
         public static final int Toolbar_subtitle = 3;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#subtitleTextAppearance}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#subtitleTextAppearance}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:subtitleTextAppearance
+          @attr name flaregradle.myapp.com.Flare:subtitleTextAppearance
         */
         public static final int Toolbar_subtitleTextAppearance = 10;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#theme}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#theme}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:theme
+          @attr name flaregradle.myapp.com.Flare:theme
         */
         public static final int Toolbar_theme = 17;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#title}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#title}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -6259,11 +6307,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:title
+          @attr name flaregradle.myapp.com.Flare:title
         */
         public static final int Toolbar_title = 2;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#titleMarginBottom}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#titleMarginBottom}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -6275,11 +6323,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:titleMarginBottom
+          @attr name flaregradle.myapp.com.Flare:titleMarginBottom
         */
         public static final int Toolbar_titleMarginBottom = 15;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#titleMarginEnd}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#titleMarginEnd}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -6291,11 +6339,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:titleMarginEnd
+          @attr name flaregradle.myapp.com.Flare:titleMarginEnd
         */
         public static final int Toolbar_titleMarginEnd = 13;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#titleMarginStart}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#titleMarginStart}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -6307,11 +6355,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:titleMarginStart
+          @attr name flaregradle.myapp.com.Flare:titleMarginStart
         */
         public static final int Toolbar_titleMarginStart = 12;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#titleMarginTop}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#titleMarginTop}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -6323,11 +6371,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:titleMarginTop
+          @attr name flaregradle.myapp.com.Flare:titleMarginTop
         */
         public static final int Toolbar_titleMarginTop = 14;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#titleMargins}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#titleMargins}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -6339,17 +6387,17 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:titleMargins
+          @attr name flaregradle.myapp.com.Flare:titleMargins
         */
         public static final int Toolbar_titleMargins = 11;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#titleTextAppearance}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#titleTextAppearance}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:titleTextAppearance
+          @attr name flaregradle.myapp.com.Flare:titleTextAppearance
         */
         public static final int Toolbar_titleTextAppearance = 9;
         /** Attributes that can be used with a View.
@@ -6359,15 +6407,15 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #View_android_focusable android:focusable}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_paddingEnd flaregradle.myapp.com.flare:paddingEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_paddingStart flaregradle.myapp.com.flare:paddingStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_paddingEnd flaregradle.myapp.com.Flare:paddingEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_paddingStart flaregradle.myapp.com.Flare:paddingStart}</code></td><td></td></tr>
            </table>
            @see #View_android_focusable
            @see #View_paddingEnd
            @see #View_paddingStart
          */
         public static final int[] View = {
-            0x010100da, 0x7f0100c7, 0x7f0100c8
+            0x010100da, 0x7f0100c8, 0x7f0100c9
         };
         /**
           <p>This symbol is the offset where the {@link android.R.attr#focusable}
@@ -6376,7 +6424,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int View_android_focusable = 0;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#paddingEnd}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#paddingEnd}
           attribute's value can be found in the {@link #View} array.
 
 
@@ -6388,11 +6436,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:paddingEnd
+          @attr name flaregradle.myapp.com.Flare:paddingEnd
         */
         public static final int View_paddingEnd = 2;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#paddingStart}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#paddingStart}
           attribute's value can be found in the {@link #View} array.
 
 
@@ -6404,7 +6452,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:paddingStart
+          @attr name flaregradle.myapp.com.Flare:paddingStart
         */
         public static final int View_paddingStart = 1;
         /** Attributes that can be used with a ViewStubCompat.
@@ -6448,10 +6496,10 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #WalletFragmentOptions_appTheme flaregradle.myapp.com.flare:appTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentOptions_environment flaregradle.myapp.com.flare:environment}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentOptions_fragmentMode flaregradle.myapp.com.flare:fragmentMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentOptions_fragmentStyle flaregradle.myapp.com.flare:fragmentStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentOptions_appTheme flaregradle.myapp.com.Flare:appTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentOptions_environment flaregradle.myapp.com.Flare:environment}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentOptions_fragmentMode flaregradle.myapp.com.Flare:fragmentMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentOptions_fragmentStyle flaregradle.myapp.com.Flare:fragmentStyle}</code></td><td></td></tr>
            </table>
            @see #WalletFragmentOptions_appTheme
            @see #WalletFragmentOptions_environment
@@ -6459,10 +6507,10 @@ containing a value of this type.
            @see #WalletFragmentOptions_fragmentStyle
          */
         public static final int[] WalletFragmentOptions = {
-            0x7f0100c9, 0x7f0100ca, 0x7f0100cb, 0x7f0100cc
+            0x7f0100ca, 0x7f0100cb, 0x7f0100cc, 0x7f0100cd
         };
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#appTheme}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#appTheme}
           attribute's value can be found in the {@link #WalletFragmentOptions} array.
 
 
@@ -6475,11 +6523,11 @@ containing a value of this type.
 <tr><td><code>holo_dark</code></td><td>0</td><td></td></tr>
 <tr><td><code>holo_light</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name flaregradle.myapp.com.flare:appTheme
+          @attr name flaregradle.myapp.com.Flare:appTheme
         */
         public static final int WalletFragmentOptions_appTheme = 0;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#environment}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#environment}
           attribute's value can be found in the {@link #WalletFragmentOptions} array.
 
 
@@ -6493,11 +6541,11 @@ containing a value of this type.
 <tr><td><code>sandbox</code></td><td>0</td><td></td></tr>
 <tr><td><code>strict_sandbox</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name flaregradle.myapp.com.flare:environment
+          @attr name flaregradle.myapp.com.Flare:environment
         */
         public static final int WalletFragmentOptions_environment = 1;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#fragmentMode}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#fragmentMode}
           attribute's value can be found in the {@link #WalletFragmentOptions} array.
 
 
@@ -6510,17 +6558,17 @@ containing a value of this type.
 <tr><td><code>buyButton</code></td><td>1</td><td></td></tr>
 <tr><td><code>selectionDetails</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name flaregradle.myapp.com.flare:fragmentMode
+          @attr name flaregradle.myapp.com.Flare:fragmentMode
         */
         public static final int WalletFragmentOptions_fragmentMode = 3;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#fragmentStyle}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#fragmentStyle}
           attribute's value can be found in the {@link #WalletFragmentOptions} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:fragmentStyle
+          @attr name flaregradle.myapp.com.Flare:fragmentStyle
         */
         public static final int WalletFragmentOptions_fragmentStyle = 2;
         /** Attributes that can be used with a WalletFragmentStyle.
@@ -6529,17 +6577,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_buyButtonAppearance flaregradle.myapp.com.flare:buyButtonAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_buyButtonHeight flaregradle.myapp.com.flare:buyButtonHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_buyButtonText flaregradle.myapp.com.flare:buyButtonText}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_buyButtonWidth flaregradle.myapp.com.flare:buyButtonWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsBackground flaregradle.myapp.com.flare:maskedWalletDetailsBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsButtonBackground flaregradle.myapp.com.flare:maskedWalletDetailsButtonBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsButtonTextAppearance flaregradle.myapp.com.flare:maskedWalletDetailsButtonTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsHeaderTextAppearance flaregradle.myapp.com.flare:maskedWalletDetailsHeaderTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsLogoImageType flaregradle.myapp.com.flare:maskedWalletDetailsLogoImageType}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsLogoTextColor flaregradle.myapp.com.flare:maskedWalletDetailsLogoTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsTextAppearance flaregradle.myapp.com.flare:maskedWalletDetailsTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_buyButtonAppearance flaregradle.myapp.com.Flare:buyButtonAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_buyButtonHeight flaregradle.myapp.com.Flare:buyButtonHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_buyButtonText flaregradle.myapp.com.Flare:buyButtonText}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_buyButtonWidth flaregradle.myapp.com.Flare:buyButtonWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsBackground flaregradle.myapp.com.Flare:maskedWalletDetailsBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsButtonBackground flaregradle.myapp.com.Flare:maskedWalletDetailsButtonBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsButtonTextAppearance flaregradle.myapp.com.Flare:maskedWalletDetailsButtonTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsHeaderTextAppearance flaregradle.myapp.com.Flare:maskedWalletDetailsHeaderTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsLogoImageType flaregradle.myapp.com.Flare:maskedWalletDetailsLogoImageType}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsLogoTextColor flaregradle.myapp.com.Flare:maskedWalletDetailsLogoTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsTextAppearance flaregradle.myapp.com.Flare:maskedWalletDetailsTextAppearance}</code></td><td></td></tr>
            </table>
            @see #WalletFragmentStyle_buyButtonAppearance
            @see #WalletFragmentStyle_buyButtonHeight
@@ -6554,12 +6602,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            @see #WalletFragmentStyle_maskedWalletDetailsTextAppearance
          */
         public static final int[] WalletFragmentStyle = {
-            0x7f0100cd, 0x7f0100ce, 0x7f0100cf, 0x7f0100d0,
-            0x7f0100d1, 0x7f0100d2, 0x7f0100d3, 0x7f0100d4,
-            0x7f0100d5, 0x7f0100d6, 0x7f0100d7
+            0x7f0100ce, 0x7f0100cf, 0x7f0100d0, 0x7f0100d1,
+            0x7f0100d2, 0x7f0100d3, 0x7f0100d4, 0x7f0100d5,
+            0x7f0100d6, 0x7f0100d7, 0x7f0100d8
         };
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#buyButtonAppearance}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#buyButtonAppearance}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
@@ -6573,11 +6621,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>grayscale</code></td><td>2</td><td></td></tr>
 <tr><td><code>monochrome</code></td><td>3</td><td></td></tr>
 </table>
-          @attr name flaregradle.myapp.com.flare:buyButtonAppearance
+          @attr name flaregradle.myapp.com.Flare:buyButtonAppearance
         */
         public static final int WalletFragmentStyle_buyButtonAppearance = 3;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#buyButtonHeight}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#buyButtonHeight}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
@@ -6598,11 +6646,11 @@ containing a value of this type.
 <tr><td><code>match_parent</code></td><td>-1</td><td></td></tr>
 <tr><td><code>wrap_content</code></td><td>-2</td><td></td></tr>
 </table>
-          @attr name flaregradle.myapp.com.flare:buyButtonHeight
+          @attr name flaregradle.myapp.com.Flare:buyButtonHeight
         */
         public static final int WalletFragmentStyle_buyButtonHeight = 0;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#buyButtonText}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#buyButtonText}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
@@ -6617,11 +6665,11 @@ containing a value of this type.
 <tr><td><code>book_now</code></td><td>3</td><td></td></tr>
 <tr><td><code>donate_with_google</code></td><td>4</td><td></td></tr>
 </table>
-          @attr name flaregradle.myapp.com.flare:buyButtonText
+          @attr name flaregradle.myapp.com.Flare:buyButtonText
         */
         public static final int WalletFragmentStyle_buyButtonText = 2;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#buyButtonWidth}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#buyButtonWidth}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
@@ -6642,11 +6690,11 @@ containing a value of this type.
 <tr><td><code>match_parent</code></td><td>-1</td><td></td></tr>
 <tr><td><code>wrap_content</code></td><td>-2</td><td></td></tr>
 </table>
-          @attr name flaregradle.myapp.com.flare:buyButtonWidth
+          @attr name flaregradle.myapp.com.Flare:buyButtonWidth
         */
         public static final int WalletFragmentStyle_buyButtonWidth = 1;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#maskedWalletDetailsBackground}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#maskedWalletDetailsBackground}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
@@ -6654,11 +6702,11 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name flaregradle.myapp.com.flare:maskedWalletDetailsBackground
+          @attr name flaregradle.myapp.com.Flare:maskedWalletDetailsBackground
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsBackground = 6;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#maskedWalletDetailsButtonBackground}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#maskedWalletDetailsButtonBackground}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
@@ -6666,31 +6714,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name flaregradle.myapp.com.flare:maskedWalletDetailsButtonBackground
+          @attr name flaregradle.myapp.com.Flare:maskedWalletDetailsButtonBackground
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsButtonBackground = 8;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#maskedWalletDetailsButtonTextAppearance}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#maskedWalletDetailsButtonTextAppearance}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:maskedWalletDetailsButtonTextAppearance
+          @attr name flaregradle.myapp.com.Flare:maskedWalletDetailsButtonTextAppearance
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsButtonTextAppearance = 7;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#maskedWalletDetailsHeaderTextAppearance}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#maskedWalletDetailsHeaderTextAppearance}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:maskedWalletDetailsHeaderTextAppearance
+          @attr name flaregradle.myapp.com.Flare:maskedWalletDetailsHeaderTextAppearance
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsHeaderTextAppearance = 5;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#maskedWalletDetailsLogoImageType}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#maskedWalletDetailsLogoImageType}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
@@ -6703,11 +6751,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>classic</code></td><td>1</td><td></td></tr>
 <tr><td><code>monochrome</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name flaregradle.myapp.com.flare:maskedWalletDetailsLogoImageType
+          @attr name flaregradle.myapp.com.Flare:maskedWalletDetailsLogoImageType
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsLogoImageType = 10;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#maskedWalletDetailsLogoTextColor}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#maskedWalletDetailsLogoTextColor}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
@@ -6718,17 +6766,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name flaregradle.myapp.com.flare:maskedWalletDetailsLogoTextColor
+          @attr name flaregradle.myapp.com.Flare:maskedWalletDetailsLogoTextColor
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsLogoTextColor = 9;
         /**
-          <p>This symbol is the offset where the {@link flaregradle.myapp.com.flare.R.attr#maskedWalletDetailsTextAppearance}
+          <p>This symbol is the offset where the {@link flaregradle.myapp.com.Flare.R.attr#maskedWalletDetailsTextAppearance}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name flaregradle.myapp.com.flare:maskedWalletDetailsTextAppearance
+          @attr name flaregradle.myapp.com.Flare:maskedWalletDetailsTextAppearance
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsTextAppearance = 4;
     };

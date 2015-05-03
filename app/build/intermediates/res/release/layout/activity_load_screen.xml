@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/grey"
-    tools:context="flaregradle.myapp.com.flare.LoadScreen">
+    tools:context="flaregradle.myapp.com.Flare.LoadScreen">
 
     <!-- The primary full-screen view -->
     <ImageView

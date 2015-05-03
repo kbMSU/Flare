@@ -75,4 +75,6 @@
     <item name="writeMessageLayout" type="id">write message layout</item>
     <item name="allContacts" type="id">Contacts List</item>
 
+    <item name="groupsAdView" type="id">groups ad view</item>
+
 </resources>

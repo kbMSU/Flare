@@ -1,4 +1,4 @@
-package flaregradle.myapp.com.flare;
+package flaregradle.myapp.com.Flare;
 
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
@@ -22,11 +22,11 @@ import com.MyApp.Flare.R;
 import java.util.ArrayList;
 import java.util.Collections;
 
-import flaregradle.myapp.com.flare.Adapters.ContactsAdapter;
-import flaregradle.myapp.com.flare.AsyncTasks.SendFlareAsyncTask;
-import flaregradle.myapp.com.flare.DataItems.Contact;
-import flaregradle.myapp.com.flare.DataItems.Group;
-import flaregradle.myapp.com.flare.Utilities.DataStorageHandler;
+import flaregradle.myapp.com.Flare.Adapters.ContactsAdapter;
+import flaregradle.myapp.com.Flare.AsyncTasks.SendFlareAsyncTask;
+import flaregradle.myapp.com.Flare.DataItems.Contact;
+import flaregradle.myapp.com.Flare.DataItems.Group;
+import flaregradle.myapp.com.Flare.Utilities.DataStorageHandler;
 
 
 public class SendFlareActivity extends ActionBarActivity {
@@ -113,21 +113,20 @@ public class SendFlareActivity extends ActionBarActivity {
         _contactsView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+            if(_overlay.getVisibility() != View.GONE)
+                return;
 
-                if(_overlay.getVisibility() != View.GONE)
-                    return;
+            Object itemAtPosition = adapterView.getItemAtPosition(i);
+            Contact contact = (Contact) itemAtPosition;
 
-                Object itemAtPosition = adapterView.getItemAtPosition(i);
-                Contact contact = (Contact) itemAtPosition;
+            contact.selected = !contact.selected;
 
-                contact.selected = !contact.selected;
+            if(contact.selected)
+                _dataStore.SelectedContacts.add(contact);
+            else
+                _dataStore.SelectedContacts.remove(contact);
 
-                if(contact.selected)
-                    _dataStore.SelectedContacts.add(contact);
-                else
-                    _dataStore.SelectedContacts.remove(contact);
-
-                _contactAdapter.notifyDataSetChanged();
+            _contactAdapter.notifyDataSetChanged();
             }
         });
 

@@ -1,10 +1,10 @@
-package flaregradle.myapp.com.flare.Utilities;
+package flaregradle.myapp.com.Flare.Utilities;
 
 import android.location.Location;
 import android.location.LocationListener;
 import android.os.Bundle;
 
-import flaregradle.myapp.com.flare.FlareHome;
+import flaregradle.myapp.com.Flare.FlareHome;
 
 public class LocationUpdateHandler implements LocationListener {
 

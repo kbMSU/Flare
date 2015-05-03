@@ -1,9 +1,9 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:fab="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="flaregradle.myapp.com.flare.CreateGroupActivity">
+                xmlns:tools="http://schemas.android.com/tools"
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="flaregradle.myapp.com.Flare.CreateGroupActivity">
 
     <android.support.v7.widget.Toolbar
         xmlns:android="http://schemas.android.com/apk/res/android"
@@ -17,7 +17,8 @@
         android:layout_below="@id/toolbar"
         android:background="@color/greyDark"
         android:orientation="vertical"
-        android:id="@id/sendFlareScreen">
+        android:id="@id/sendFlareScreen"
+        android:layout_above="@id/groupsAdView">
 
         <EditText
             android:layout_width="match_parent"
@@ -40,98 +41,13 @@
 
     </LinearLayout>
 
-    <RelativeLayout
+    <com.google.android.gms.ads.AdView
+        android:id="@id/groupsAdView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:id="@id/saveGroup"
-        android:layout_margin="20dp"
-        android:background="@color/white">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_margin="10dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:textStyle="bold"
-                android:textSize="20sp"
-                android:text="@string/save_group_text"
-                android:textColor="@color/grey"
-                android:layout_marginBottom="10dp"/>
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@id/groupName"
-                android:hint="@string/enter_group_name"
-                android:textColor="@color/grey"
-                android:textColorHint="@color/grey"
-                android:textCursorDrawable="@null"
-                android:textColorHighlight="@color/grey"
-                android:layout_margin="5dp"/>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:weightSum="1">
-
-                <Button
-                    android:layout_width="0dp"
-                    android:layout_weight="0.5"
-                    android:layout_height="wrap_content"
-                    android:onClick="onCreateGroupCancelClick"
-                    android:background="@color/white"
-                    android:textColor="@color/black"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:text="@string/cancel_text"/>
-
-                <Button
-                    android:layout_width="0dp"
-                    android:layout_weight="0.5"
-                    android:layout_height="wrap_content"
-                    android:background="@color/blue"
-                    android:elevation="10dp"
-                    android:textColor="@color/white"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:text="@string/save_text"
-                    android:onClick="onCreateGroupAddClick"/>
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-    </RelativeLayout>
-
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/greyLight"
-        android:id="@id/overlay"
-        android:visibility="gone">
-    </FrameLayout>
-
-    <!--<com.getbase.floatingactionbutton.FloatingActionButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        fab:fab_colorNormal="@color/fabColor"
-        fab:fab_colorPressed="@color/grey"
-        android:id="@id/fabGroups"
-        android:onClick="onSaveGroupClick"
-        fab:fab_icon="@android:drawable/ic_input_add"
-        fab:fab_size="normal"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_margin="16dp"/>-->
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/create_groups_ads_id"
+        android:layout_alignParentBottom="true">
+    </com.google.android.gms.ads.AdView>
 
 </RelativeLayout>

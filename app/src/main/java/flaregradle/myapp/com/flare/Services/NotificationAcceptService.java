@@ -1,4 +1,4 @@
-package flaregradle.myapp.com.flare.Services;
+package flaregradle.myapp.com.Flare.Services;
 
 import android.app.IntentService;
 import android.app.NotificationManager;
@@ -9,7 +9,7 @@ import android.os.Bundle;
 import android.telephony.SmsManager;
 import android.util.Log;
 
-import flaregradle.myapp.com.flare.Utilities.DataStorageHandler;
+import flaregradle.myapp.com.Flare.Utilities.DataStorageHandler;
 
 public class NotificationAcceptService extends IntentService {
 
@@ -25,17 +25,10 @@ public class NotificationAcceptService extends IntentService {
         String location = extras.getString("location");
         int id = extras.getInt("mID");
 
-        if(DataStorageHandler.getInstance().GetSendFlareTextResponse()){
-            SmsManager manager = SmsManager.getDefault();
-            try {
-                if(text == null || text.isEmpty())
-                    text = "I will be there ASAP";
-
-                manager.sendTextMessage(phone,null,text,null,null);
-            } catch (Exception ex) {
-                Log.e("SMS",ex.getMessage());
-            }
-        }
+        SmsManager manager = SmsManager.getDefault();
+        if(text == null || text.isEmpty())
+            text = "I will be there ASAP";
+        manager.sendTextMessage(phone,null,text,null,null);
 
         NotificationManager mNotificationManager =
                 (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);

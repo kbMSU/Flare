@@ -1,4 +1,4 @@
-package flaregradle.myapp.com.flare;
+package flaregradle.myapp.com.Flare;
 
 import android.content.Intent;
 import android.location.Criteria;
@@ -18,13 +18,15 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.MyApp.Flare.R;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 
 import java.util.ArrayList;
 
-import flaregradle.myapp.com.flare.Adapters.GroupsAdapter;
-import flaregradle.myapp.com.flare.DataItems.Contact;
-import flaregradle.myapp.com.flare.DataItems.Group;
-import flaregradle.myapp.com.flare.Utilities.DataStorageHandler;
+import flaregradle.myapp.com.Flare.Adapters.GroupsAdapter;
+import flaregradle.myapp.com.Flare.DataItems.Contact;
+import flaregradle.myapp.com.Flare.DataItems.Group;
+import flaregradle.myapp.com.Flare.Utilities.DataStorageHandler;
 
 
 public class GroupsActivity extends ActionBarActivity {
@@ -120,6 +122,13 @@ public class GroupsActivity extends ActionBarActivity {
                 return true;
             }
         });
+
+        // Setup the ad
+        AdView mAdView = (AdView) findViewById(R.id.groupsAdView);
+        AdRequest.Builder adRequest = new AdRequest.Builder();
+        if(_dataStore.CurrentLocation != null)
+            adRequest.setLocation(_dataStore.CurrentLocation);
+        mAdView.loadAd(adRequest.build());
     }
 
     @Override

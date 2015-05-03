@@ -20,7 +20,7 @@
             android:layout_gravity="center_vertical"
             />
 
-        <flaregradle.myapp.com.flare.Utilities.RoundedImageView
+        <flaregradle.myapp.com.Flare.Utilities.RoundedImageView
             android:layout_width="0dp"
                    android:layout_weight="0.25"
                    android:layout_height="50dp"

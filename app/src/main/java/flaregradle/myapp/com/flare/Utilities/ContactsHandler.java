@@ -1,4 +1,4 @@
-package flaregradle.myapp.com.flare.Utilities;
+package flaregradle.myapp.com.Flare.Utilities;
 
 import android.content.ContentResolver;
 import android.content.ContentUris;
@@ -11,7 +11,7 @@ import android.util.Log;
 
 import java.util.*;
 
-import flaregradle.myapp.com.flare.DataItems.Contact;
+import flaregradle.myapp.com.Flare.DataItems.Contact;
 
 public class ContactsHandler {
 

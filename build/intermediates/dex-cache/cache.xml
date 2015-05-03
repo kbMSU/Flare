@@ -6,77 +6,210 @@
         jumboMode="false"
         revision="22.0.1"
         sha1="f225d9c34f93107ee9f5e53f329ce3bb0438545c">
-        <dex dex="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/pre-dexed/debug/mobileservices-2.0.1-beta-44956fcd4d6fca7a4fc10df2b9dad0e85bdad9d8.jar" />
+        <dex dex="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/pre-dexed/release/mobileservices-2.0.1-beta-44956fcd4d6fca7a4fc10df2b9dad0e85bdad9d8.jar" />
     </item>
     <item
-        jar="/Users/Karthik/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar"
+        jar="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/7.3.0/classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
-        <dex dex="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/pre-dexed/debug/support-annotations-22.0.0-e9d5048d4ad68b8b6a9194a32caaa22a55624f37.jar" />
+        sha1="7215ac1f2fca947b9415a6ee2a1bf991364aab24">
+        <dex dex="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/pre-dexed/debug/classes-f8376f72b4659d7cd9eb2e32ce182f0fb58cb54e.jar" />
     </item>
     <item
-        jar="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/classes.jar"
+        jar="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/7.3.0/classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
-        <dex dex="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/pre-dexed/debug/classes-e0f3fa9085432c6d77bdec15bc3a7f323ee9ea8c.jar" />
+        sha1="59652857a825fff0de62166fca1bc9553cc01abb">
+        <dex dex="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/pre-dexed/debug/classes-db826a0072ff387faddcfc16866b45a7a953f64c.jar" />
     </item>
     <item
-        jar="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/libs/notifications-1.0.1.jar"
+        jar="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.3.0/classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="d2498fce7adbdb5ebd37dafc56d8056db60f51fe">
-        <dex dex="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/pre-dexed/debug/notifications-1.0.1-399ac377d7b0a21d679abed0e3406af6abca5c3b.jar" />
+        sha1="f2f7ec211ce4d244ee97a57523eeb4526dc3cf8a">
+        <dex dex="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/pre-dexed/debug/classes-b5d37a50ca7cff86350339f52e67499476257d6f.jar" />
     </item>
     <item
-        jar="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/libs/gson-2.3.1.jar"
+        jar="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/7.3.0/classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
-        <dex dex="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/pre-dexed/debug/gson-2.3.1-b67c0df2ad81d13e2194df7ca606786f594f963b.jar" />
+        sha1="a0ce76dfaccbfbd6c551ed2174280aaabe60fe47">
+        <dex dex="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/pre-dexed/debug/classes-f5842f7205f8d5cb7d59cdf892d4134400902e62.jar" />
     </item>
     <item
-        jar="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.getbase/floatingactionbutton/1.1.0/classes.jar"
+        jar="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/7.3.0/classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="6530bce64dfbde38a6beceaf1cca8a0257516f51">
-        <dex dex="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/pre-dexed/debug/classes-f0db0b2114a94756ef7fd51c7236cc810c9c52e2.jar" />
+        sha1="b48d5c51a9a9e329005106b4667f54948de4d4d8">
+        <dex dex="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/pre-dexed/debug/classes-f1bb7cd7710fcbe13ac609d6eb976e6bc4ecdf15.jar" />
     </item>
     <item
-        jar="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/classes.jar"
+        jar="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/7.3.0/classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
-        <dex dex="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/pre-dexed/debug/classes-ced641d6306e67ec17fde508b885bfd9035ebdcd.jar" />
-    </item>
-    <item
-        jar="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="dd9247ea0fabe8ee479638c4b4a23e93752be256">
-        <dex dex="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/pre-dexed/debug/classes-ab587d35fa890ac5c922ac9c237cfbf174fece87.jar" />
-    </item>
-    <item
-        jar="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/libs/notification-hubs-0.3.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="5665f8e79e2d89a83af0f915e5fcc93b9ae6747b">
-        <dex dex="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/pre-dexed/debug/notification-hubs-0.3-ad36049f8a1933351ce7547b438d21ddedd8323b.jar" />
+        sha1="e5bf453b070c1e39297986144960e45afa0fdfad">
+        <dex dex="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/pre-dexed/debug/classes-add450802e6b46615be0d28610ef8f4a3f07f87c.jar" />
     </item>
     <item
         jar="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/libs/guava-17.0.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="9c6ef172e8de35fd8d4d8783e4821e57cdef7445">
-        <dex dex="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/pre-dexed/debug/guava-17.0-e0260889d6b8c3fa8c0ede505e4378f9b095c206.jar" />
+        <dex dex="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/pre-dexed/release/guava-17.0-e0260889d6b8c3fa8c0ede505e4378f9b095c206.jar" />
     </item>
     <item
-        jar="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/libs/internal_impl-22.0.0.jar"
+        jar="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/7.3.0/classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
-        <dex dex="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-c918c50a850d662132827fad9ed36d335cad3135.jar" />
+        sha1="e35fae1b377c23aa5fd2d309a190c2d0f73d54ec">
+        <dex dex="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/pre-dexed/debug/classes-f3322192e37b6eced9650192e50bc0bbd6d15499.jar" />
+    </item>
+    <item
+        jar="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/libs/notifications-1.0.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="d2498fce7adbdb5ebd37dafc56d8056db60f51fe">
+        <dex dex="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/pre-dexed/release/notifications-1.0.1-399ac377d7b0a21d679abed0e3406af6abca5c3b.jar" />
+    </item>
+    <item
+        jar="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.getbase/floatingactionbutton/1.1.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="6530bce64dfbde38a6beceaf1cca8a0257516f51">
+        <dex dex="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/pre-dexed/release/classes-f0db0b2114a94756ef7fd51c7236cc810c9c52e2.jar" />
+    </item>
+    <item
+        jar="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/libs/internal_impl-22.1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
+        <dex dex="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/pre-dexed/debug/internal_impl-22.1.1-888cc42912449e395188a65c939f7a1cdd8368cd.jar" />
+    </item>
+    <item
+        jar="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/libs/notification-hubs-0.3.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="5665f8e79e2d89a83af0f915e5fcc93b9ae6747b">
+        <dex dex="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/pre-dexed/release/notification-hubs-0.3-ad36049f8a1933351ce7547b438d21ddedd8323b.jar" />
+    </item>
+    <item
+        jar="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4f4fe3c23776540625f3c2844152a7510fddf9f1">
+        <dex dex="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/pre-dexed/debug/classes-97d34ed46501e0cfa471401a643ccad295f4dc8a.jar" />
+    </item>
+    <item
+        jar="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appstate/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="0180d031a7b54dabb93b4af3869468b55dc938bd">
+        <dex dex="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/pre-dexed/debug/classes-2c62daee89a19e023a18d783809f2179964b3496.jar" />
+    </item>
+    <item
+        jar="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="b2c07cdb814fe988ad05f7b4d767a841514a5991">
+        <dex dex="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/pre-dexed/debug/classes-34707517218633c50b078ac471ce5ae9a0d2cb7c.jar" />
+    </item>
+    <item
+        jar="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="3988694bf9d8186ff97ad5cdfa4ed88b5010fe08">
+        <dex dex="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/pre-dexed/debug/classes-0ea70dcc09306763bc745d610412181f0b24f824.jar" />
+    </item>
+    <item
+        jar="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="0708ef60917bf94913fe9ef972a655b99462dca7">
+        <dex dex="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/pre-dexed/debug/classes-155a9eabcd4f8f3d44033a59853d8338e6321fcf.jar" />
+    </item>
+    <item
+        jar="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
+        <dex dex="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/pre-dexed/debug/classes-b67e34072fb6d5d5397e1aa63babb9cf895e19ea.jar" />
+    </item>
+    <item
+        jar="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="6046e5cdaf799120b7c56a5a061d80e8854c4d34">
+        <dex dex="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/pre-dexed/debug/classes-b67008a12fe4a4f3b52c280506d253755510994c.jar" />
+    </item>
+    <item
+        jar="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="5ea948d825957be6c4358c48422bee60eef2d487">
+        <dex dex="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/pre-dexed/debug/classes-de30982f757ce7676324cf7e7eeb083747eeaf42.jar" />
+    </item>
+    <item
+        jar="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/pre-dexed/release/classes-e0f3fa9085432c6d77bdec15bc3a7f323ee9ea8c.jar" />
+    </item>
+    <item
+        jar="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="3b4ff5c39dace8f3b4ab4cab8191785547a0815f">
+        <dex dex="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/pre-dexed/debug/classes-57635671034a809ee9a7e1e52cce4305256aa826.jar" />
+    </item>
+    <item
+        jar="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="9c9dea9e85aceb09d95df5e6f7bc8a43fc286068">
+        <dex dex="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/pre-dexed/debug/classes-adf856dad9af76fa0e5cc209d26797bd84406d05.jar" />
+    </item>
+    <item
+        jar="/Users/Karthik/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.1.1/support-annotations-22.1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="01d051a6bfb1218b1db2d3a5af0480ac2c25c42a">
+        <dex dex="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/pre-dexed/debug/support-annotations-22.1.1-6b1b8dc8b5fe1c0434113b3082d8d264b8d70649.jar" />
+    </item>
+    <item
+        jar="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/libs/gson-2.3.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/pre-dexed/release/gson-2.3.1-b67c0df2ad81d13e2194df7ca606786f594f963b.jar" />
+    </item>
+    <item
+        jar="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="fe3e0c6de7cceed888b277487238b6af9a1cc299">
+        <dex dex="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/pre-dexed/debug/classes-bf113647fed303b46e42673f3f4f5f6e3c0eb7a8.jar" />
+    </item>
+    <item
+        jar="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e5b9f5b0aa8dee788beb63d23832cb29ce771343">
+        <dex dex="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/pre-dexed/debug/classes-dac796d58879319eb490813404977da6b0d9786a.jar" />
+    </item>
+    <item
+        jar="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="565a01f90f1529f73362707c4c185d0623a68782">
+        <dex dex="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/pre-dexed/debug/classes-9ea06d2fa254f6189f5641683bfcdf9719361c63.jar" />
+    </item>
+    <item
+        jar="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="bb36004beb02b69562cbec9aa7d6a3cf16bf5d1b">
+        <dex dex="/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/pre-dexed/debug/classes-148995efed40bdd9b1081fe4973c10ad7dc2f4d5.jar" />
     </item>
 
 </items>

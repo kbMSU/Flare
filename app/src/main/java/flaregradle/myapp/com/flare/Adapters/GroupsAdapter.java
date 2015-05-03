@@ -1,4 +1,4 @@
-package flaregradle.myapp.com.flare.Adapters;
+package flaregradle.myapp.com.Flare.Adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -12,7 +12,7 @@ import com.MyApp.Flare.R;
 
 import java.util.List;
 
-import flaregradle.myapp.com.flare.DataItems.Group;
+import flaregradle.myapp.com.Flare.DataItems.Group;
 
 /**
  * Created by Karthik on 1/2/2015.

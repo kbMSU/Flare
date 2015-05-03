@@ -1,4 +1,4 @@
-package flaregradle.myapp.com.flare.Utilities;
+package flaregradle.myapp.com.Flare.Utilities;
 
 import android.content.Context;
 import android.graphics.Bitmap;

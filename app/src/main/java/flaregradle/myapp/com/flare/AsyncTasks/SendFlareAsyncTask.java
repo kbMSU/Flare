@@ -1,4 +1,4 @@
-package flaregradle.myapp.com.flare.AsyncTasks;
+package flaregradle.myapp.com.Flare.AsyncTasks;
 
 import android.content.Context;
 import android.os.AsyncTask;
@@ -20,8 +20,8 @@ import org.apache.http.impl.client.DefaultHttpClient;
 
 import java.util.ArrayList;
 
-import flaregradle.myapp.com.flare.BackendItems.DeviceItem;
-import flaregradle.myapp.com.flare.Utilities.DataStorageHandler;
+import flaregradle.myapp.com.Flare.BackendItems.DeviceItem;
+import flaregradle.myapp.com.Flare.Utilities.DataStorageHandler;
 
 public class SendFlareAsyncTask extends AsyncTask<Context,Void,String> {
     private Context context;

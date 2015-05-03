@@ -1,4 +1,4 @@
-package flaregradle.myapp.com.flare.AsyncTasks;
+package flaregradle.myapp.com.Flare.AsyncTasks;
 
 import android.content.Context;
 import android.os.AsyncTask;
@@ -14,10 +14,10 @@ import com.microsoft.windowsazure.notifications.NotificationsManager;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import flaregradle.myapp.com.flare.AzureNotificationsHandler;
-import flaregradle.myapp.com.flare.BackendItems.DeviceItem;
-import flaregradle.myapp.com.flare.Utilities.DataStorageHandler;
-import flaregradle.myapp.com.flare.LoadScreen;
+import flaregradle.myapp.com.Flare.AzureNotificationsHandler;
+import flaregradle.myapp.com.Flare.BackendItems.DeviceItem;
+import flaregradle.myapp.com.Flare.Utilities.DataStorageHandler;
+import flaregradle.myapp.com.Flare.LoadScreen;
 
 public class GcmRegistrationAsyncTask extends AsyncTask<Context, Void, String> {
 

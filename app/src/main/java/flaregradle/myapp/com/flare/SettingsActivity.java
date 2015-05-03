@@ -1,4 +1,4 @@
-package flaregradle.myapp.com.flare;
+package flaregradle.myapp.com.Flare;
 
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
@@ -12,7 +12,7 @@ import android.widget.ToggleButton;
 
 import com.MyApp.Flare.R;
 
-import flaregradle.myapp.com.flare.Utilities.DataStorageHandler;
+import flaregradle.myapp.com.Flare.Utilities.DataStorageHandler;
 
 
 public class SettingsActivity extends ActionBarActivity {
@@ -39,7 +39,7 @@ public class SettingsActivity extends ActionBarActivity {
         // Set up settings
         //_handler.setupPreferences();
 
-        _toggle.setChecked(_handler.GetSendFlareTextResponse());
+        //_toggle.setChecked(_handler.GetSendFlareTextResponse());
 
         _declineResponseTextView.setText(_handler.GetDefaultDeclineResponse());
         _declineResponseEditText.setText(_handler.GetDefaultDeclineResponse());
@@ -87,11 +87,6 @@ public class SettingsActivity extends ActionBarActivity {
     }
 
     public void onSendResponseToggleClick(View v) {
-        //ToggleButton toggle = (ToggleButton)findViewById(R.id.send_text_toggle);
-        //toggle.toggle();
-
-        //_handler.SetSendFlareTextResponse(toggle.isChecked());
-
         _toggle.toggle();
         _handler.SetSendFlareTextResponse(_toggle.isChecked());
     }

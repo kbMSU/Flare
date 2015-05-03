@@ -1,4 +1,4 @@
-package flaregradle.myapp.com.flare.Adapters;
+package flaregradle.myapp.com.Flare.Adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -13,7 +13,7 @@ import com.MyApp.Flare.R;
 
 import java.util.List;
 
-import flaregradle.myapp.com.flare.DataItems.Contact;
+import flaregradle.myapp.com.Flare.DataItems.Contact;
 
 public class ContactsAdapter extends ArrayAdapter<Contact> {
 

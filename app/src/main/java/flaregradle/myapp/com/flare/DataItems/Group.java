@@ -1,4 +1,4 @@
-package flaregradle.myapp.com.flare.DataItems;
+package flaregradle.myapp.com.Flare.DataItems;
 
 import java.io.Serializable;
 import java.util.ArrayList;

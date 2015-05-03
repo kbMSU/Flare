@@ -1,4 +1,4 @@
-package flaregradle.myapp.com.flare.AsyncTasks;
+package flaregradle.myapp.com.Flare.AsyncTasks;
 
 import android.content.Context;
 import android.os.AsyncTask;
@@ -6,10 +6,10 @@ import android.os.AsyncTask;
 import java.util.ArrayList;
 import java.util.TreeMap;
 
-import flaregradle.myapp.com.flare.DataItems.Contact;
-import flaregradle.myapp.com.flare.Utilities.ContactsHandler;
-import flaregradle.myapp.com.flare.Utilities.DataStorageHandler;
-import flaregradle.myapp.com.flare.LoadScreen;
+import flaregradle.myapp.com.Flare.DataItems.Contact;
+import flaregradle.myapp.com.Flare.Utilities.ContactsHandler;
+import flaregradle.myapp.com.Flare.Utilities.DataStorageHandler;
+import flaregradle.myapp.com.Flare.LoadScreen;
 
 public class SetUpContactsTask extends AsyncTask<Context, Void, String> {
 

@@ -1,4 +1,4 @@
-package flaregradle.myapp.com.flare.util;
+package flaregradle.myapp.com.Flare.util;
 
 import android.annotation.TargetApi;
 import android.app.Activity;

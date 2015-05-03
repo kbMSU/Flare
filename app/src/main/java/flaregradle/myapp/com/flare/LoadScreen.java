@@ -1,10 +1,10 @@
-package flaregradle.myapp.com.flare;
+package flaregradle.myapp.com.Flare;
 
-import flaregradle.myapp.com.flare.AsyncTasks.GcmRegistrationAsyncTask;
-import flaregradle.myapp.com.flare.AsyncTasks.SetUpContactsTask;
-import flaregradle.myapp.com.flare.Utilities.ContactsHandler;
-import flaregradle.myapp.com.flare.Utilities.DataStorageHandler;
-import flaregradle.myapp.com.flare.util.SystemUiHider;
+import flaregradle.myapp.com.Flare.AsyncTasks.GcmRegistrationAsyncTask;
+import flaregradle.myapp.com.Flare.AsyncTasks.SetUpContactsTask;
+import flaregradle.myapp.com.Flare.Utilities.ContactsHandler;
+import flaregradle.myapp.com.Flare.Utilities.DataStorageHandler;
+import flaregradle.myapp.com.Flare.util.SystemUiHider;
 
 import android.content.ContentResolver;
 import android.content.Intent;

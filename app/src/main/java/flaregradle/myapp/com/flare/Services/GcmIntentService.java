@@ -1,4 +1,4 @@
-package flaregradle.myapp.com.flare.Services;
+package flaregradle.myapp.com.Flare.Services;
 
 import android.app.IntentService;
 import android.app.Notification;
@@ -8,15 +8,15 @@ import android.content.Context;
 import android.content.Intent;
 import android.media.RingtoneManager;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.NotificationCompat;
 
 import com.MyApp.Flare.R;
 import com.google.android.gms.gcm.GoogleCloudMessaging;
 
-import flaregradle.myapp.com.flare.DataItems.Contact;
-import flaregradle.myapp.com.flare.GcmBroadcastReceiver;
-import flaregradle.myapp.com.flare.Utilities.DataStorageHandler;
+import flaregradle.myapp.com.Flare.DataItems.Contact;
+import flaregradle.myapp.com.Flare.Utilities.DataStorageHandler;
 
 public class GcmIntentService extends IntentService {
 
@@ -49,10 +49,12 @@ public class GcmIntentService extends IntentService {
                                                         .setSmallIcon(R.drawable.flare_notification)
                                                         .setContentTitle(contentTitle)
                                                         .setContentText(extras.getString("text"))
-                                                        .setPriority(Notification.PRIORITY_MAX)
                                                         .setSound(alarmSound)
                                                         .setVibrate(new long[] { 1000, 1000, 1000, 1000, 1000 })
                                                         .setOngoing(true);
+
+                if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN)
+                    mBuilder.setPriority(Notification.PRIORITY_HIGH);
 
                 // Set the sound to play
                 Uri sound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
@@ -65,6 +67,7 @@ public class GcmIntentService extends IntentService {
                 // Create intents for actions
                 int id = DataStorageHandler.getInstance().getNotificationId();
 
+                // Decline Action
                 Intent declineService = new Intent(getApplicationContext(),NotificationDeclineService.class);
                 declineService.putExtra("phone",phoneNumber);
                 declineService.putExtra("action",DataStorageHandler.getInstance().GetDefaultDeclineResponse());
@@ -72,6 +75,7 @@ public class GcmIntentService extends IntentService {
                 PendingIntent declineIntent = PendingIntent.getService(this,id,declineService,0);
                 mBuilder.addAction(R.drawable.abc_ic_clear_mtrl_alpha,"Decline",declineIntent);
 
+                // Accept Action
                 Intent acceptService = new Intent(getApplicationContext(),NotificationAcceptService.class);
                 acceptService.putExtra("phone",phoneNumber);
                 acceptService.putExtra("action",DataStorageHandler.getInstance().GetDefaultAcceptResponse());
