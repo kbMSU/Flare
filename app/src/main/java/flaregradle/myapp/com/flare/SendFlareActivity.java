@@ -18,6 +18,9 @@ import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.MyApp.Flare.R;
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.InterstitialAd;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -44,6 +47,7 @@ public class SendFlareActivity extends ActionBarActivity {
     private RelativeLayout _saveGroupOverlay;
     private FrameLayout _overlay;
     private Group _group;
+    private InterstitialAd _interstitialAd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -139,6 +143,25 @@ public class SendFlareActivity extends ActionBarActivity {
         // Load the save group overlay
         _saveGroupOverlay = (RelativeLayout)findViewById(R.id.saveGroup);
         _saveGroupOverlay.setVisibility(View.GONE);
+
+        // Load the ad
+        _interstitialAd = new InterstitialAd(this);
+        _interstitialAd.setAdUnitId("ca-app-pub-9978131204593610/9323499682");
+        _interstitialAd.setAdListener(new AdListener() {
+            @Override
+            public void onAdClosed() {
+                requestNewInterstitial();
+                finish();
+            }
+        });
+        requestNewInterstitial();
+    }
+
+    private void requestNewInterstitial() {
+        AdRequest.Builder adRequest = new AdRequest.Builder();
+        if(_dataStore.CurrentLocation != null)
+            adRequest.setLocation(_dataStore.CurrentLocation);
+        _interstitialAd.loadAd(adRequest.build());
     }
 
     @Override
@@ -262,7 +285,7 @@ public class SendFlareActivity extends ActionBarActivity {
         if(text == null || text.equals(""))
             text = "Flare";
         try {
-            new SendFlareAsyncTask(screen,_busyIndicator,contactNumbers,_latitude,_longitude,text).execute(this);
+            new SendFlareAsyncTask(this,screen,_busyIndicator,contactNumbers,_latitude,_longitude,text).execute(this);
         } catch (Exception ex){
             showMessage(ex.getMessage());
             return;
@@ -282,5 +305,10 @@ public class SendFlareActivity extends ActionBarActivity {
         }
         _dataStore.SelectedContacts.clear();
         _contactAdapter.notifyDataSetChanged();
+    }
+
+    public void showFullPageAd() {
+        if(_interstitialAd.isLoaded())
+            _interstitialAd.show();
     }
 }

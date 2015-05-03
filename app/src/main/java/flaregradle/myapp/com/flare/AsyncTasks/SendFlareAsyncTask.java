@@ -21,6 +21,7 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import java.util.ArrayList;
 
 import flaregradle.myapp.com.Flare.BackendItems.DeviceItem;
+import flaregradle.myapp.com.Flare.SendFlareActivity;
 import flaregradle.myapp.com.Flare.Utilities.DataStorageHandler;
 
 public class SendFlareAsyncTask extends AsyncTask<Context,Void,String> {
@@ -37,7 +38,10 @@ public class SendFlareAsyncTask extends AsyncTask<Context,Void,String> {
 
     private String website = "http://flarebackend.azurewebsites.net";
 
-    public SendFlareAsyncTask(RelativeLayout screen,
+    private SendFlareActivity _sendFlareActivity;
+
+    public SendFlareAsyncTask(SendFlareActivity activity,
+                              RelativeLayout screen,
                               ProgressBar spinner,
                               ArrayList<String> phones,
                               String latitude,
@@ -47,6 +51,7 @@ public class SendFlareAsyncTask extends AsyncTask<Context,Void,String> {
         _longitude = longitude;
         _message = message;
         _contactNumbers = phones;
+        _sendFlareActivity = activity;
         _spinner = spinner;
         _screen = screen;
         _spinner.setVisibility(View.VISIBLE);
@@ -128,5 +133,6 @@ public class SendFlareAsyncTask extends AsyncTask<Context,Void,String> {
         _spinner.setVisibility(View.GONE);
         _screen.setAlpha(1);
         _screen.setClickable(true);
+        _sendFlareActivity.showFullPageAd();
     }
 }
