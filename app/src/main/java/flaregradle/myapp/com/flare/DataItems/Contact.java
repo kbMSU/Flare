@@ -3,6 +3,7 @@ package flaregradle.myapp.com.Flare.DataItems;
 import android.graphics.Bitmap;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Comparator;
 
 public class Contact implements Comparator<Contact>,Comparable<Contact>,Serializable {
@@ -11,6 +12,7 @@ public class Contact implements Comparator<Contact>,Comparable<Contact>,Serializ
     public String name;
     public boolean selected = false;
     public Bitmap photo;
+    public ArrayList<String> allPhoneNumbers;
 
     public Contact(Contact copy) {
         phoneNumber = copy.phoneNumber;
@@ -18,9 +20,12 @@ public class Contact implements Comparator<Contact>,Comparable<Contact>,Serializ
         name = copy.name;
         selected = copy.selected;
         photo = copy.photo;
+        allPhoneNumbers = copy.allPhoneNumbers;
     }
 
-    public Contact(){}
+    public Contact(){
+        allPhoneNumbers = new ArrayList<>();
+    }
 
     @Override
     public int compare(Contact contact, Contact contact2) {

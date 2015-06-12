@@ -11,6 +11,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.NotificationCompat;
+import android.support.v4.app.NotificationManagerCompat;
 
 import com.MyApp.Flare.R;
 import com.google.android.gms.gcm.GoogleCloudMessaging;
@@ -51,7 +52,8 @@ public class GcmIntentService extends IntentService {
                                                         .setContentText(extras.getString("text"))
                                                         .setSound(alarmSound)
                                                         .setVibrate(new long[] { 1000, 1000, 1000, 1000, 1000 })
-                                                        .setOngoing(true);
+                                                        .setOngoing(true)
+                                                        .extend(new NotificationCompat.WearableExtender());
 
                 if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN)
                     mBuilder.setPriority(Notification.PRIORITY_HIGH);
@@ -73,7 +75,9 @@ public class GcmIntentService extends IntentService {
                 declineService.putExtra("action",DataStorageHandler.getInstance().GetDefaultDeclineResponse());
                 declineService.putExtra("mID",id);
                 PendingIntent declineIntent = PendingIntent.getService(this,id,declineService,0);
-                mBuilder.addAction(R.drawable.abc_ic_clear_mtrl_alpha,"Decline",declineIntent);
+                NotificationCompat.Action declineAction =
+                        new NotificationCompat.Action.Builder(R.drawable.abc_ic_clear_mtrl_alpha,"Decline",declineIntent).build();
+                mBuilder.addAction(declineAction);
 
                 // Accept Action
                 Intent acceptService = new Intent(getApplicationContext(),NotificationAcceptService.class);
@@ -82,15 +86,16 @@ public class GcmIntentService extends IntentService {
                 acceptService.putExtra("location","geo:0,0?q="+latitude+","+longitude+" (" + "Flare from "+contentTitle + ")");
                 acceptService.putExtra("mID",id);
                 PendingIntent acceptIntent = PendingIntent.getService(this,id,acceptService,0);
-                mBuilder.addAction(R.drawable.send_reg_icon_transparent, "Accept", acceptIntent);
+                NotificationCompat.Action acceptAction =
+                        new NotificationCompat.Action.Builder(R.drawable.send_reg_icon_transparent, "Accept", acceptIntent).build();
+                mBuilder.addAction(acceptAction);
 
                 // Build the notification
                 Notification notification = mBuilder.build();
 
                 // mId allows you to update the notification later on.
-                NotificationManager mNotificationManager =
-                        (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-                mNotificationManager.notify(phoneNumber,id, notification);
+                NotificationManagerCompat mNotificationManager = NotificationManagerCompat.from(this);
+                mNotificationManager.notify(phoneNumber, id, notification);
             }
         }
         GcmBroadcastReceiver.completeWakefulIntent(intent);

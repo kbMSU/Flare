@@ -15,6 +15,14 @@ import flaregradle.myapp.com.Flare.DataItems.Contact;
 
 public class ContactsHandler {
 
+    private static final String[] PROJECTION = new String[] {
+      ContactsContract.CommonDataKinds.Phone.CONTACT_ID,
+      ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME_PRIMARY,
+      ContactsContract.CommonDataKinds.Phone.HAS_PHONE_NUMBER,
+      ContactsContract.CommonDataKinds.Phone.NUMBER,
+      ContactsContract.CommonDataKinds.Phone.PHOTO_URI
+    };
+
     private ContentResolver _contentResolver;
     private Bitmap _defaultContactImage;
 
@@ -27,57 +35,56 @@ public class ContactsHandler {
     }
 
     public TreeMap<String,Contact> getContacts(){
-        Cursor cur = _contentResolver.query(ContactsContract.Contacts.CONTENT_URI,
-                new String[] {ContactsContract.Contacts._ID,ContactsContract.Contacts.DISPLAY_NAME_PRIMARY}, null, null, null);
         TreeMap<String,Contact> contacts = new TreeMap<>();
         try {
-            if (cur.getCount() > 0) {
-                Integer id_index = cur.getColumnIndex(ContactsContract.Contacts._ID);
-                Integer name_index = cur.getColumnIndex(ContactsContract.Contacts.DISPLAY_NAME_PRIMARY);
+            Cursor cur = _contentResolver.query(ContactsContract.CommonDataKinds.Phone.CONTENT_URI,PROJECTION,null,null,null);
+            Integer id_index = cur.getColumnIndex(ContactsContract.CommonDataKinds.Phone.CONTACT_ID);
+            Integer name_index = cur.getColumnIndex(ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME_PRIMARY);
+            Integer hasPhone_index = cur.getColumnIndex(ContactsContract.CommonDataKinds.Phone.CONTACT_ID);
+            Integer number_index = cur.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER);
+            Integer photo_index = cur.getColumnIndex(ContactsContract.CommonDataKinds.Phone.PHOTO_URI);
 
-                while (cur.moveToNext()) {
-                    String id = cur.getString(id_index);
-                    String name = cur.getString(name_index);
+            while(cur.moveToNext()) {
+                Integer hasPhoneNumber = cur.getInt(hasPhone_index);
+                if(hasPhoneNumber.equals(0))
+                    continue;
 
-                    byte[] photo = null;
-                    try { photo = openPhoto(Long.parseLong(id)); } catch (Exception ex) {}
+                String name = cur.getString(name_index);
+                String number = cur.getString(number_index);
 
-                    Cursor phones = _contentResolver.query(ContactsContract.CommonDataKinds.Phone.CONTENT_URI,
-                            new String[] {ContactsContract.CommonDataKinds.Phone.NUMBER},
-                            ContactsContract.CommonDataKinds.Phone.CONTACT_ID + " = " + id, null, null);
-                    Integer phoneIndex = phones.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER);
-                    if (phones.moveToNext()) {
-                        try {
-                            String number = phones.getString(phoneIndex);
-
-                            Contact contact = new Contact();
-                            contact.id = id;
-                            contact.name = name;
-                            contact.phoneNumber = number;
-
-                            if(photo != null) {
-                                Bitmap image = BitmapFactory.decodeByteArray(photo,0,photo.length);
-                                if(image != null) {
-                                    contact.photo = Bitmap.createScaledBitmap(image,(int)(image.getWidth()*1.5),(int)(image.getHeight()*1.5),false);
-                                }
-                                else
-                                    contact.photo = _defaultContactImage;
-                            } else {
-                                contact.photo = _defaultContactImage;
-                            }
-
-                            contacts.put(name, contact);
-                        } catch (Exception ex){
-                            Log.e("GettingPhoneNumber",ex.getMessage());
-                        }
-                    }
-                    phones.close();
+                if(contacts.containsKey(name)) {
+                    Contact c = contacts.get(name);
+                    c.allPhoneNumbers.add(number);
+                    continue;
                 }
+
+                String id = cur.getString(id_index);
+                byte[] photo = openPhoto(Long.parseLong(id)); //cur.getBlob(photo_index);
+
+                Contact contact = new Contact();
+                contact.id = id;
+                contact.name = name;
+                contact.phoneNumber = number;
+                contact.allPhoneNumbers.add(number);
+
+                if(photo != null) {
+                    Bitmap image = BitmapFactory.decodeByteArray(photo,0,photo.length);
+                    if(image != null) {
+                        contact.photo = Bitmap.createScaledBitmap(image,(int)(image.getWidth()*1.5),(int)(image.getHeight()*1.5),false);
+                    }
+                    else
+                        contact.photo = _defaultContactImage;
+                } else {
+                    contact.photo = _defaultContactImage;
+                }
+
+                contacts.put(name, contact);
             }
+
+            cur.close();
         } catch (Exception ex) {
             Log.e("GettingContacts",ex.getMessage());
         }
-        cur.close();
         return contacts;
     }
 

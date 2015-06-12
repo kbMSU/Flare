@@ -7,9 +7,11 @@ import flaregradle.myapp.com.Flare.Utilities.DataStorageHandler;
 import flaregradle.myapp.com.Flare.util.SystemUiHider;
 
 import android.content.ContentResolver;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.telephony.TelephonyManager;
@@ -31,6 +33,9 @@ public class LoadScreen extends ActionBarActivity {
     private GcmRegistrationAsyncTask _registrationTask;
     private ProgressBar _busyIndicator;
     private TextView _loading;
+
+    private boolean _error;
+    private String _message;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,11 +86,19 @@ public class LoadScreen extends ActionBarActivity {
 
     public void continueToHomeScreen() {
         Intent intent = new Intent(this,FlareHome.class);
+        intent.putExtra("Error",_error);
+        intent.putExtra("Message",_message);
         startActivity(intent);
     }
 
     public void retryRegister() {
         _loading.setText(R.string.connecting);
         registerDevice();
+    }
+
+    public void sendError(String msg) {
+        _error = true;
+        _message = msg;
+        _registrationTask.proceed();
     }
 }

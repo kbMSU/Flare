@@ -28,7 +28,8 @@
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
         ads:adSize="BANNER"
-        ads:adUnitId="@string/groups_page_ads_id">
+        ads:adUnitId="@string/groups_page_ads_id"
+        android:visibility="gone">
     </com.google.android.gms.ads.AdView>
 
 </RelativeLayout>

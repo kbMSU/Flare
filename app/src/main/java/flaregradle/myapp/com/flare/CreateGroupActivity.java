@@ -20,6 +20,7 @@ import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.MyApp.Flare.R;
+import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 
@@ -120,10 +121,16 @@ public class CreateGroupActivity extends ActionBarActivity {
         });
 
         // Setup the ad
-        AdView mAdView = (AdView) findViewById(R.id.groupsAdView);
+        final AdView mAdView = (AdView) findViewById(R.id.groupsAdView);
         AdRequest.Builder adRequest = new AdRequest.Builder();
         if(_dataStore.CurrentLocation != null)
             adRequest.setLocation(_dataStore.CurrentLocation);
+        mAdView.setAdListener(new AdListener() {
+            @Override
+            public void onAdLoaded() {
+                mAdView.setVisibility(View.VISIBLE);
+            }
+        });
         mAdView.loadAd(adRequest.build());
 
         setTheToolbar();

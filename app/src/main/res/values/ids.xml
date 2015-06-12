@@ -15,12 +15,10 @@
     <item name="broadcast" type="id">Broadcast</item>
 
     <item name="settings" type="id">Settings</item>
-
     <item name="whats_new" type="id">What\'s new</item>
-
     <item name="help" type="id">Help</item>
-
     <item name="feedback" type="id">Feedback</item>
+    <item name="share" type="id">Share</item>
 
     <item name="clear_contacts" type="id">Clear Contacts</item>
 
@@ -76,5 +74,7 @@
     <item name="allContacts" type="id">Contacts List</item>
 
     <item name="groupsAdView" type="id">groups ad view</item>
+
+    <item name="main_page_actions" type="id">main page actions</item>
 
 </resources>

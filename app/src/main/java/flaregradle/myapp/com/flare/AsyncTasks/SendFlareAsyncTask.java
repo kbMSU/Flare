@@ -4,6 +4,7 @@ import android.content.Context;
 import android.os.AsyncTask;
 import android.telephony.SmsManager;
 import android.util.Log;
+import android.util.Pair;
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
@@ -19,6 +20,7 @@ import org.apache.http.client.methods.HttpUriRequest;
 import org.apache.http.impl.client.DefaultHttpClient;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import flaregradle.myapp.com.Flare.BackendItems.DeviceItem;
 import flaregradle.myapp.com.Flare.SendFlareActivity;
@@ -91,27 +93,38 @@ public class SendFlareAsyncTask extends AsyncTask<Context,Void,String> {
             for(String _phoneNumber : _contactNumbers) {
                     // Get the actual number
                     String finalPhone = "";
-                    for(int i=0; i<_phoneNumber.length(); i++)
+                    for(int i=_phoneNumber.length()-1; i>=0; i--)
                     {
                         Character c = _phoneNumber.charAt(i);
-                        if(Character.isDigit(c))
+                        if(Character.isDigit(c) && finalPhone.length() < 10)
                             finalPhone+=c;
                     }
+                    String reverse = new StringBuilder(finalPhone).reverse().toString();
 
-                    MobileServiceList<DeviceItem> phoneItems = devices.where().indexOf("FullPhone",finalPhone).ne(-1).execute().get();
+                    MobileServiceList<DeviceItem> phoneItems = devices.where().indexOf("FullPhone",reverse).ne(-1).execute().get();
                     if(phoneItems.size() == 0){
                         SmsManager m = SmsManager.getDefault();
                         m.sendTextMessage(_phoneNumber,null,_message+" http://maps.google.com/?q="+_latitude+","+_longitude+" "
                                 +"  "+"Sent from Flare",null,null);
                     } else {
                         try {
-                            HttpUriRequest request = new HttpPost(website+"/api/notifications");
+                            /*HttpUriRequest request = new HttpPost(website+"/api/notifications");
                             request.addHeader("text",_message);
                             request.addHeader("phone",phone);
                             request.addHeader("latitude",_latitude);
                             request.addHeader("longitude",_longitude);
                             request.addHeader("to",phoneItems.get(0).fullPhone);
-                            HttpResponse response = new DefaultHttpClient().execute(request);
+                            HttpResponse response = new DefaultHttpClient().execute(request);*/
+
+                            List<Pair<String,String>> parameters = new ArrayList<>();
+                            parameters.add(new Pair<>("text",_message));
+                            parameters.add(new Pair<>("phone",phone));
+                            parameters.add(new Pair<>("latitude",_latitude));
+                            parameters.add(new Pair<>("longitude",_longitude));
+                            parameters.add(new Pair<>("to",phoneItems.get(0).fullPhone));
+
+                            client.invokeApi("Notifications","Post",parameters);
+
                         } catch (Exception e) {
                             Log.e("MainActivity", "Failed to send notification - " + e.getMessage());
                         }

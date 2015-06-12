@@ -5,6 +5,10 @@
     <item android:id="@id/settings"
           android:title="@string/settings_menu"
           flare:showAsAction="never"/>
+    <item android:id="@id/share"
+          android:title="@string/share_menu"
+          android:icon="@drawable/abc_ic_menu_share_mtrl_alpha"
+          flare:showAsAction="ifRoom"/>
     <item android:id="@id/feedback"
         android:title="@string/feedback"
         flare:showAsAction="never"/>

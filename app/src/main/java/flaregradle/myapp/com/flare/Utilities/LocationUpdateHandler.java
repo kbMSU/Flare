@@ -17,7 +17,7 @@ public class LocationUpdateHandler implements LocationListener {
 
     @Override
     public void onLocationChanged(Location location) {
-        _parent.GetLocationUpdate(location);
+        //_parent.GetLocationUpdate(location);
     }
 
     @Override

@@ -1,7 +1,14 @@
 package flaregradle.myapp.com.Flare.AsyncTasks;
 
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.AsyncTask;
+import android.provider.ContactsContract;
+import android.util.Log;
+import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.gcm.GoogleCloudMessaging;
@@ -43,16 +50,18 @@ public class GcmRegistrationAsyncTask extends AsyncTask<Context, Void, String> {
 
         context = params[0];
 
-        String msg = "";
+        String msg = "Getting gcm";
         try {
             if (gcm == null) {
                 gcm = GoogleCloudMessaging.getInstance(context);
             }
+            msg = "Getting regId";
             String regId = gcm.register(SENDER_ID);
 
             DataStorageHandler dataStore = DataStorageHandler.getInstance();
             dataStore.registrationId = regId;
 
+            msg = "Parsing phone number";
             // Split the phone number
             String phone = "";
             String code = "";
@@ -68,16 +77,21 @@ public class GcmRegistrationAsyncTask extends AsyncTask<Context, Void, String> {
             code = new StringBuilder(code).reverse().toString();
             phone = new StringBuilder(phone).reverse().toString();
 
+            msg = "Instantiating mobile service client";
             // Save phone data in backend
             MobileServiceClient client = new MobileServiceClient(
                     "https://flareservice.azure-mobile.net/",
                     "vAymygcCyvnOQrDzLOEjyOQGIxIJMm78",
                     context);
 
+            msg = "Getting devices table";
             MobileServiceTable<DeviceItem> devices = client.getTable(DeviceItem.class);
 
+            msg = "Getting phone and reg Items";
             MobileServiceList<DeviceItem> phoneItems = devices.where().field("FullPhone").eq(phoneNumber).execute().get();
             MobileServiceList<DeviceItem> regItems = devices.where().field("RegId").eq(regId).execute().get();
+
+            msg = "Saving device in SQL database";
             if(phoneItems.size() == 0){
                 // This phone has not been registered before, how about this device ?
                 if(regItems.size() > 0) {
@@ -114,37 +128,69 @@ public class GcmRegistrationAsyncTask extends AsyncTask<Context, Void, String> {
                 }
             }
 
+            msg = "Registering with notification hubs";
             // Register with notification hubs
             NotificationsManager.handleNotifications(context,SENDER_ID,AzureNotificationsHandler.class);
             NotificationHub hub = new NotificationHub("flarenotifications",connection_string,context);
             hub.register(regId,phoneNumber);
 
-            msg = "Device Registered ";
+            msg = "Device Registered";
 
         } catch (Exception ex) {
-            ex.printStackTrace();
-            msg = "Error: " + ex.getMessage();
+            msg += " : " + ex.getMessage();
         }
         return msg;
     }
 
     @Override
     protected void onPostExecute(String msg) {
-        if(msg.startsWith("Device Registered")) {
-            onDeviceRegister();
-            return;
+        if(!DataStorageHandler.getInstance().loadedHomeScreen) {
+            DataStorageHandler.getInstance().loadedHomeScreen = true;
+            if(!msg.startsWith("Device Registered")) {
+                showErrorOverlay(msg);
+            } else {
+                onDeviceRegister();
+            }
+        } else {
+            if(!msg.startsWith("Device Registered")) {
+                Log.e("Registration",msg);
+                onFailedToRegister();
+            }
         }
-
-        Toast.makeText(context, "Retrying, Failed to connect : "+msg, Toast.LENGTH_SHORT).show();
-        onFailedToRegister();
-
-        Logger.getLogger("REGISTRATION").log(Level.INFO, msg);
     }
 
     private void onDeviceRegister() {
         _parent.continueToHomeScreen();
     }
     private void onFailedToRegister() {
+        GcmRegistrationAsyncTask task = new GcmRegistrationAsyncTask(_parent,phoneNumber);
+        task.execute(_parent);
+
         _parent.retryRegister();
+    }
+    private void showErrorOverlay(String msg) {
+        final String message = msg;
+
+        AlertDialog.Builder alert = new AlertDialog.Builder(_parent);
+        alert.setTitle("Error");
+        alert.setMessage("Could not connect, We'll keep trying. Would you like to send the error to the Flare team ?");
+        alert.setPositiveButton("Send",new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                _parent.sendError(message);
+            }
+        });
+        alert.setNegativeButton("Cancel",new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                proceed();
+                dialog.dismiss();
+            }
+        });
+        alert.show();
+    }
+    public void proceed(){
+        onFailedToRegister();
+        onDeviceRegister();
     }
 }

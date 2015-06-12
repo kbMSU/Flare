@@ -32,6 +32,7 @@ public class DataStorageHandler {
     public ArrayList<Contact> SelectedContacts;
     public String registrationId;
     public String thisPhone;
+    public boolean loadedHomeScreen;
     public static HashMap<String,Group> SavedContactGroups;
     public Location CurrentLocation;
 

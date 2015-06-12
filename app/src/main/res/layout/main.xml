@@ -15,7 +15,9 @@
     <RelativeLayout android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_below="@id/toolbar"
-                    android:background="@color/background_material_dark">
+                    android:background="@color/background_material_dark"
+                    android:id="@+id/map"
+                    android:layout_above="@id/main_page_actions">
 
         <fragment xmlns:android="http://schemas.android.com/apk/res/android"
                   android:id="@id/map"
@@ -34,17 +36,9 @@
             android:background="@drawable/search_layout"
             android:weightSum="1">
 
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.05"
-                android:background="@drawable/search_layout"
-                android:src="@drawable/magnifying_glass"
-                android:layout_gravity="center_vertical"
-                android:onClick="onLocationLookupClick"/>
-
             <TextView
-                android:layout_weight="0.90"
+                android:layout_marginLeft="10sp"
+                android:layout_weight="0.95"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:hint="@string/phone"
@@ -53,7 +47,6 @@
                 android:textColor="@color/black"
                 android:textColorHint="@color/greyLight"
                 android:id="@id/searchLocationText"
-                android:onClick="onLocationLookupClick"
                 android:clickable="true"
                 android:textSize="15sp"/>
 
@@ -68,44 +61,40 @@
 
         </LinearLayout>
 
-        <com.getbase.floatingactionbutton.FloatingActionsMenu
-            android:id="@id/fab"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            fab:fab_addButtonColorNormal="@color/fabColor"
-            fab:fab_addButtonColorPressed="@color/grey"
-            fab:fab_addButtonPlusIconColor="@color/colorPrimary"
-            android:layout_marginBottom="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginEnd="16dp">
-
-            <com.getbase.floatingactionbutton.FloatingActionButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                fab:fab_colorNormal="@color/fabColor"
-                fab:fab_colorPressed="@color/grey"
-                android:id="@id/fabGroups"
-                android:onClick="onGroupsClick"
-                fab:fab_icon="@drawable/contact_group_fab"
-                fab:fab_size="normal"/>
-
-            <com.getbase.floatingactionbutton.FloatingActionButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                fab:fab_colorNormal="@color/fabColor"
-                fab:fab_colorPressed="@color/grey"
-                android:id="@id/fabSendFlare"
-                android:onClick="onSendFlareClick"
-                fab:fab_icon="@drawable/send_reg_icon_transparent"
-                fab:fab_size="normal"/>
-
-        </com.getbase.floatingactionbutton.FloatingActionsMenu>
-
     </RelativeLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@id/main_page_actions"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_margin="2dp"
+            android:drawableStart="@drawable/send_reg_icon_transparent"
+            android:drawableLeft="@drawable/send_reg_icon_transparent"
+            android:text="Send Flare"
+            android:layout_gravity="center"
+            android:onClick="onSendFlareClick">
+        </Button>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_margin="2dp"
+            android:drawableStart="@drawable/contact_group_fab"
+            android:drawableLeft="@drawable/contact_group_fab"
+            android:text="Groups"
+            android:layout_gravity="center"
+            android:onClick="onGroupsClick"/>
+
+    </LinearLayout>
 
 </RelativeLayout>
 

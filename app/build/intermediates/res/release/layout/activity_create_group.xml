@@ -47,7 +47,8 @@
         android:layout_height="wrap_content"
         ads:adSize="BANNER"
         ads:adUnitId="@string/create_groups_ads_id"
-        android:layout_alignParentBottom="true">
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
     </com.google.android.gms.ads.AdView>
 
 </RelativeLayout>

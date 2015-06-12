@@ -18,6 +18,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.MyApp.Flare.R;
+import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 
@@ -110,7 +111,7 @@ public class GroupsActivity extends ActionBarActivity {
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
                 Object itemAtPosition = parent.getItemAtPosition(position);
-                _currentGroup = (Group)itemAtPosition;
+                _currentGroup = (Group) itemAtPosition;
 
                 if (mActionMode != null)
                     return false;
@@ -124,10 +125,16 @@ public class GroupsActivity extends ActionBarActivity {
         });
 
         // Setup the ad
-        AdView mAdView = (AdView) findViewById(R.id.groupsAdView);
+        final AdView mAdView = (AdView) findViewById(R.id.groupsAdView);
         AdRequest.Builder adRequest = new AdRequest.Builder();
         if(_dataStore.CurrentLocation != null)
             adRequest.setLocation(_dataStore.CurrentLocation);
+        mAdView.setAdListener(new AdListener() {
+            @Override
+            public void onAdLoaded() {
+                mAdView.setVisibility(View.VISIBLE);
+            }
+        });
         mAdView.loadAd(adRequest.build());
     }
 
