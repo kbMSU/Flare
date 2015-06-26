@@ -93,7 +93,7 @@
         android:layout_centerHorizontal="true"
         style="?android:attr/progressBarStyle"/>
 
-    <RelativeLayout
+    <!--<RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -163,6 +163,6 @@
 
         </LinearLayout>
 
-    </RelativeLayout>
+    </RelativeLayout>-->
 
 </RelativeLayout>

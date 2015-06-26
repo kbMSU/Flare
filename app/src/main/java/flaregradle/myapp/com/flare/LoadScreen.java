@@ -79,26 +79,30 @@ public class LoadScreen extends ActionBarActivity {
         task.execute(this);
     }
 
-    public void RegisterDevice() {
+    /*public void RegisterDevice() {
         _loading.setText(R.string.connecting);
         registerDevice();
-    }
+    }*/
 
     public void continueToHomeScreen() {
+        // Start registering the device
+        registerDevice();
+
+        // Continue on to the home screen
         Intent intent = new Intent(this,FlareHome.class);
         intent.putExtra("Error",_error);
         intent.putExtra("Message",_message);
         startActivity(intent);
     }
 
-    public void retryRegister() {
+    /*public void retryRegister() {
         _loading.setText(R.string.connecting);
         registerDevice();
-    }
+    }*/
 
-    public void sendError(String msg) {
+    /*public void sendError(String msg) {
         _error = true;
         _message = msg;
         _registrationTask.proceed();
-    }
+    }*/
 }

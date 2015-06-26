@@ -35,17 +35,20 @@ public class DataStorageHandler {
     public boolean loadedHomeScreen;
     public static HashMap<String,Group> SavedContactGroups;
     public Location CurrentLocation;
+    public boolean Registered;
 
     public static Contact findContact(String phoneNumber) {
         for(Contact contact : getInstance().AllContacts.values()) {
-            String finalPhone = "";
-            for (Character c : contact.phoneNumber.toCharArray()) {
-                if(Character.isDigit(c)) {
-                    finalPhone+=c;
+            for(String phone : contact.allPhoneNumbers) {
+                String finalPhone = "";
+                for (Character c : phone.toCharArray()) {
+                    if(Character.isDigit(c)) {
+                        finalPhone+=c;
+                    }
                 }
+                if(finalPhone.contains(phoneNumber))
+                    return contact;
             }
-            if(finalPhone.contains(phoneNumber))
-                return contact;
         }
         return null;
     }

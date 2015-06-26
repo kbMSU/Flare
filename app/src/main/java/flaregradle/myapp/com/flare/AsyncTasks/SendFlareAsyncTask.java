@@ -56,9 +56,9 @@ public class SendFlareAsyncTask extends AsyncTask<Context,Void,String> {
         _sendFlareActivity = activity;
         _spinner = spinner;
         _screen = screen;
-        _spinner.setVisibility(View.VISIBLE);
+        /*_spinner.setVisibility(View.VISIBLE);
         _screen.setAlpha((float)0.3);
-        _screen.setClickable(false);
+        _screen.setClickable(false);*/
     }
 
     @Override
@@ -101,6 +101,16 @@ public class SendFlareAsyncTask extends AsyncTask<Context,Void,String> {
                     }
                     String reverse = new StringBuilder(finalPhone).reverse().toString();
 
+                    // If we have been unable to connect with the server to register then SMS is the only choice
+                    if(!DataStorageHandler.getInstance().Registered) {
+                        SmsManager m = SmsManager.getDefault();
+                        m.sendTextMessage(_phoneNumber,null,_message+" http://maps.google.com/?q="+_latitude+","+_longitude+" "
+                                +"  "+"Sent from Flare",null,null);
+                        msg = "Message Sent";
+                        continue;
+                    }
+
+                    // If we have been able to register then try to send a flare first before SMS
                     MobileServiceList<DeviceItem> phoneItems = devices.where().indexOf("FullPhone",reverse).ne(-1).execute().get();
                     if(phoneItems.size() == 0){
                         SmsManager m = SmsManager.getDefault();
@@ -108,14 +118,6 @@ public class SendFlareAsyncTask extends AsyncTask<Context,Void,String> {
                                 +"  "+"Sent from Flare",null,null);
                     } else {
                         try {
-                            /*HttpUriRequest request = new HttpPost(website+"/api/notifications");
-                            request.addHeader("text",_message);
-                            request.addHeader("phone",phone);
-                            request.addHeader("latitude",_latitude);
-                            request.addHeader("longitude",_longitude);
-                            request.addHeader("to",phoneItems.get(0).fullPhone);
-                            HttpResponse response = new DefaultHttpClient().execute(request);*/
-
                             List<Pair<String,String>> parameters = new ArrayList<>();
                             parameters.add(new Pair<>("text",_message));
                             parameters.add(new Pair<>("phone",phone));
@@ -143,9 +145,9 @@ public class SendFlareAsyncTask extends AsyncTask<Context,Void,String> {
     @Override
     protected void onPostExecute(String msg) {
         Toast.makeText(context, msg, Toast.LENGTH_LONG).show();
-        _spinner.setVisibility(View.GONE);
+        /*_spinner.setVisibility(View.GONE);
         _screen.setAlpha(1);
         _screen.setClickable(true);
-        _sendFlareActivity.showFullPageAd();
+        _sendFlareActivity.showFullPageAd();*/
     }
 }

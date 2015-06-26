@@ -93,7 +93,7 @@
         android:layout_centerHorizontal="true"
         style="?android:attr/progressBarStyle"/>
 
-    <RelativeLayout
+    <!--<RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -163,7 +163,7 @@
 
         </LinearLayout>
 
-    </RelativeLayout>
+    </RelativeLayout>-->
 
 </RelativeLayout>
 <!-- From: file:/Users/Karthik/Library/Mobile%20Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/res/layout/activity_send_flare.xml -->

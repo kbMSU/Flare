@@ -38,6 +38,6 @@ public class SetUpContactsTask extends AsyncTask<Context, Void, String> {
 
     @Override
     protected void onPostExecute(String msg) {
-        _parent.RegisterDevice();
+        _parent.continueToHomeScreen();
     }
 }

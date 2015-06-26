@@ -279,6 +279,7 @@ com/google/android/gms/ads/internal/zzh.class
 android/support/v7/widget/LinearLayoutCompat.class
 com/google/android/gms/appindexing/AppIndexApi.class
 com/google/android/gms/internal/zzes.class
+flaregradle/myapp/com/Flare/SendFlareActivity$5.class
 com/google/common/base/Ascii.class
 com/google/common/base/Equivalence$Wrapper.class
 com/google/common/reflect/TypeToken$TypeCollector$2.class
@@ -326,6 +327,7 @@ com/google/android/gms/ads/internal/util/client/zza.class
 android/support/annotation/CallSuper.class
 com/google/android/gms/internal/zzbj.class
 com/google/android/gms/internal/zzeu.class
+flaregradle/myapp/com/Flare/SendFlareActivity$4.class
 com/google/android/gms/cast/Cast$CastApi$zza.class
 android/support/annotation/DrawableRes.class
 com/google/android/gms/common/internal/zze.class
