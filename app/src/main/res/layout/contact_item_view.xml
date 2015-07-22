@@ -32,7 +32,7 @@
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                       android:orientation="vertical"
                       android:layout_width="0dp"
-                      android:layout_weight="0.65"
+                      android:layout_weight="0.55"
                       android:layout_height="wrap_content">
 
             <TextView android:layout_width="fill_parent"
@@ -45,5 +45,12 @@
                       android:id="@id/contact_phone"/>
 
         </LinearLayout>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:layout_gravity="center_vertical"
+            android:id="@id/contact_has_flare"/>
 
 </LinearLayout>

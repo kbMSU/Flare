@@ -1,5 +1,6 @@
 package flaregradle.myapp.com.Flare;
 
+import flaregradle.myapp.com.Flare.AsyncTasks.FindFlareUsersTask;
 import flaregradle.myapp.com.Flare.AsyncTasks.GcmRegistrationAsyncTask;
 import flaregradle.myapp.com.Flare.AsyncTasks.SetUpContactsTask;
 import flaregradle.myapp.com.Flare.Utilities.ContactsHandler;
@@ -22,20 +23,11 @@ import android.widget.TextView;
 import com.MyApp.Flare.R;
 
 
-/**
- * An example full-screen activity that shows and hides the system UI (i.e.
- * status bar and navigation/system bar) with user interaction.
- *
- * @see SystemUiHider
- */
 public class LoadScreen extends ActionBarActivity {
 
     private GcmRegistrationAsyncTask _registrationTask;
     private ProgressBar _busyIndicator;
     private TextView _loading;
-
-    private boolean _error;
-    private String _message;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,30 +71,16 @@ public class LoadScreen extends ActionBarActivity {
         task.execute(this);
     }
 
-    /*public void RegisterDevice() {
-        _loading.setText(R.string.connecting);
-        registerDevice();
-    }*/
-
     public void continueToHomeScreen() {
         // Start registering the device
         registerDevice();
 
+        // Find out who all has flare
+        FindFlareUsersTask findTask = new FindFlareUsersTask();
+        findTask.execute(this);
+
         // Continue on to the home screen
         Intent intent = new Intent(this,FlareHome.class);
-        intent.putExtra("Error",_error);
-        intent.putExtra("Message",_message);
         startActivity(intent);
     }
-
-    /*public void retryRegister() {
-        _loading.setText(R.string.connecting);
-        registerDevice();
-    }*/
-
-    /*public void sendError(String msg) {
-        _error = true;
-        _message = msg;
-        _registrationTask.proceed();
-    }*/
 }

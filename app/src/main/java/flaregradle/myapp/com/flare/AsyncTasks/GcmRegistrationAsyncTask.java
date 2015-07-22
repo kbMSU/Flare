@@ -1,15 +1,7 @@
 package flaregradle.myapp.com.Flare.AsyncTasks;
 
-import android.app.AlertDialog;
 import android.content.Context;
-import android.content.DialogInterface;
-import android.content.Intent;
 import android.os.AsyncTask;
-import android.provider.ContactsContract;
-import android.util.Log;
-import android.widget.EditText;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import com.google.android.gms.gcm.GoogleCloudMessaging;
 import com.microsoft.windowsazure.messaging.NotificationHub;
@@ -18,13 +10,10 @@ import com.microsoft.windowsazure.mobileservices.MobileServiceList;
 import com.microsoft.windowsazure.mobileservices.table.MobileServiceTable;
 import com.microsoft.windowsazure.notifications.NotificationsManager;
 
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
 import flaregradle.myapp.com.Flare.AzureNotificationsHandler;
 import flaregradle.myapp.com.Flare.BackendItems.DeviceItem;
-import flaregradle.myapp.com.Flare.Utilities.DataStorageHandler;
 import flaregradle.myapp.com.Flare.LoadScreen;
+import flaregradle.myapp.com.Flare.Utilities.DataStorageHandler;
 
 public class GcmRegistrationAsyncTask extends AsyncTask<Context, Void, String> {
 

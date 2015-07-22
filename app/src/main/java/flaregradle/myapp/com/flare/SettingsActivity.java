@@ -18,7 +18,6 @@ import flaregradle.myapp.com.Flare.Utilities.DataStorageHandler;
 public class SettingsActivity extends ActionBarActivity {
 
     private DataStorageHandler _handler;
-    private ToggleButton _toggle;
     private TextView _declineResponseTextView;
     private EditText _declineResponseEditText;
     private TextView _acceptResponseTextView;
@@ -30,16 +29,10 @@ public class SettingsActivity extends ActionBarActivity {
         setContentView(R.layout.activity_settings);
 
         _handler = DataStorageHandler.getInstance();
-        _toggle = (ToggleButton)findViewById(R.id.send_text_toggle);
         _declineResponseTextView = (TextView)findViewById(R.id.default_decline_textview);
         _declineResponseEditText = (EditText)findViewById(R.id.default_decline_edittext);
         _acceptResponseTextView = (TextView)findViewById(R.id.default_accept_textview);
         _acceptResponsetEditText = (EditText)findViewById(R.id.default_accept_edittext);
-
-        // Set up settings
-        //_handler.setupPreferences();
-
-        //_toggle.setChecked(_handler.GetSendFlareTextResponse());
 
         _declineResponseTextView.setText(_handler.GetDefaultDeclineResponse());
         _declineResponseEditText.setText(_handler.GetDefaultDeclineResponse());
@@ -48,9 +41,6 @@ public class SettingsActivity extends ActionBarActivity {
         _acceptResponseTextView.setText(_handler.GetDefaultAcceptResponse());
         _acceptResponsetEditText.setText(_handler.GetDefaultAcceptResponse());
         _acceptResponsetEditText.setVisibility(View.GONE);
-
-        // Set up toolbar
-        setTheToolbar();
     }
 
     @Override
@@ -70,25 +60,6 @@ public class SettingsActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
-    }
-
-    private void setTheToolbar() {
-        android.support.v7.widget.Toolbar toolbar = (android.support.v7.widget.Toolbar) findViewById(R.id.toolbar);
-        if (toolbar != null) {
-            setSupportActionBar(toolbar);
-        }
-
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-    }
-
-    public void onSendResponseSettingsClick(View v) {
-        _toggle.toggle();
-        _handler.SetSendFlareTextResponse(_toggle.isChecked());
-    }
-
-    public void onSendResponseToggleClick(View v) {
-        _toggle.toggle();
-        _handler.SetSendFlareTextResponse(_toggle.isChecked());
     }
 
     public void onDeclineMessageEditClick(View v) {

@@ -3,16 +3,9 @@
     android:layout_height="match_parent"
     tools:context="flaregradle.myapp.com.Flare.SettingsActivity">
 
-    <android.support.v7.widget.Toolbar
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/toolbar"
         android:background="@color/greyDark"
         android:orientation="vertical"
         android:padding="16dp">
@@ -30,34 +23,6 @@
             android:textSize="15sp"
             android:textColor="@color/greyLight"
             android:paddingBottom="10dp"/>
-
-        <!--<LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:weightSum="1"
-            android:id="@id/send_text_response"
-            android:onClick="onSendResponseSettingsClick"
-            android:paddingBottom="10dp">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="@string/send_response_text"
-                android:textSize="20sp"
-                android:layout_weight="0.8"/>
-
-            <ToggleButton
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.2"
-                android:id="@id/send_text_toggle"
-                android:onClick="onSendResponseToggleClick"
-                />
-
-        </LinearLayout>-->
-
-        
 
         <LinearLayout
             android:layout_width="match_parent"

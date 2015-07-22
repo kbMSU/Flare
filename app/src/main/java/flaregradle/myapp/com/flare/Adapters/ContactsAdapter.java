@@ -1,6 +1,7 @@
 package flaregradle.myapp.com.Flare.Adapters;
 
 import android.content.Context;
+import android.opengl.Visibility;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -51,6 +52,7 @@ public class ContactsAdapter extends ArrayAdapter<Contact> {
         TextView number = (TextView)contactView.findViewById(com.MyApp.Flare.R.id.contact_phone);
         ImageView image = (ImageView)contactView.findViewById(com.MyApp.Flare.R.id.contact_image);
         ImageView selection = (ImageView)contactView.findViewById(R.id.contact_selected);
+        ImageView hasFlareImage = (ImageView)contactView.findViewById(R.id.contact_has_flare);
 
         name.setText(currentContact.name);
         name.setTextSize(18);
@@ -67,6 +69,14 @@ public class ContactsAdapter extends ArrayAdapter<Contact> {
             selection.setImageResource(R.drawable.ic_radio_button_on_white_24dp);
         } else {
             selection.setImageResource(R.drawable.ic_radio_button_off_white_24dp);
+        }
+
+        hasFlareImage.setImageResource(R.drawable.flare_notification);
+
+        if(currentContact.hasFlare) {
+            hasFlareImage.setVisibility(View.VISIBLE);
+        } else {
+            hasFlareImage.setVisibility(View.GONE);
         }
 
         return contactView;

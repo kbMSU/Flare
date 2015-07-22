@@ -8,8 +8,8 @@ android {
         applicationId "flaregradle.myapp.com.Flare"
         minSdkVersion 14
         targetSdkVersion 22
-        versionCode 37
-        versionName "1.9.99"
+        versionCode 38
+        versionName "1.9.99v1"
         multiDexEnabled true
     }
     buildTypes {

@@ -13,6 +13,7 @@ public class Contact implements Comparator<Contact>,Comparable<Contact>,Serializ
     public boolean selected = false;
     public Bitmap photo;
     public ArrayList<String> allPhoneNumbers;
+    public boolean hasFlare = false;
 
     public Contact(Contact copy) {
         phoneNumber = copy.phoneNumber;
@@ -21,6 +22,7 @@ public class Contact implements Comparator<Contact>,Comparable<Contact>,Serializ
         selected = copy.selected;
         photo = copy.photo;
         allPhoneNumbers = copy.allPhoneNumbers;
+        hasFlare = copy.hasFlare;
     }
 
     public Contact(){

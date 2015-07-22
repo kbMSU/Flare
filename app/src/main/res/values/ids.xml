@@ -37,6 +37,7 @@
     <item name="clearFlare" type="id">clear flare text</item>
 
     <item name="contact_selected" type="id">contact selected</item>
+    <item name="contact_has_flare" type="id">contact_has_flare</item>
 
     <item name="busyIndicator" type="id">busy indicator</item>
     <item name="loading" type="id">loading</item>

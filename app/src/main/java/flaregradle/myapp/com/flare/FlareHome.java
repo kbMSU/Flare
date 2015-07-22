@@ -45,29 +45,8 @@ public class FlareHome extends ActionBarActivity implements
         super.onCreate(savedInstanceState);
         setContentView(com.MyApp.Flare.R.layout.main);
 
-        // region Is Error
-        /*Bundle extras = getIntent().getExtras();
-        if(extras != null ){
-            try {
-                boolean error = extras.getBoolean("Error");
-                if(error) {
-                    String msg = extras.getString("Message");
-                    Intent email = new Intent(Intent.ACTION_SEND);
-                    email.putExtra(Intent.EXTRA_EMAIL, new String[] { "support@shoresideapps.com" });
-                    email.putExtra(Intent.EXTRA_SUBJECT, "Registration Error");
-                    email.putExtra(Intent.EXTRA_TEXT,msg);
-                    // need this to prompts email client only
-                    email.setType("message/rfc822");
-                    startActivity(Intent.createChooser(email, "Choose an Email client"));
-                }
-            } catch(Exception ex) {
-                Log.e("SendError",ex.getMessage());
-            }
-        }*/
-        // endregion
-
         // Set up the toast message
-        _message = Toast.makeText(getApplicationContext(),"",Toast.LENGTH_SHORT);
+        _message = Toast.makeText(getApplicationContext(), "", Toast.LENGTH_SHORT);
 
         // Get the map
         _map =((MapFragment)getFragmentManager().findFragmentById(com.MyApp.Flare.R.id.map)).getMap();
@@ -81,9 +60,6 @@ public class FlareHome extends ActionBarActivity implements
 
         // Create the request to get location updates
         createLocationRequest();
-
-        // Set up the Material theme
-        setTheToolbar();
     }
 
     // region Create Google Services Client
@@ -128,7 +104,7 @@ public class FlareHome extends ActionBarActivity implements
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(com.MyApp.Flare.R.menu.home_options_menu, menu);
-        return super.onCreateOptionsMenu(menu);
+        return true;
     }
 
     @Override
@@ -159,15 +135,6 @@ public class FlareHome extends ActionBarActivity implements
         }
 
         return super.onOptionsItemSelected(item);
-    }
-    // endregion
-
-    // region Load the toolbar
-    private void setTheToolbar() {
-        android.support.v7.widget.Toolbar toolbar = (android.support.v7.widget.Toolbar) findViewById(R.id.toolbar);
-        if (toolbar != null) {
-            setSupportActionBar(toolbar);
-        }
     }
     // endregion
 

@@ -132,8 +132,6 @@ public class CreateGroupActivity extends ActionBarActivity {
             }
         });
         mAdView.loadAd(adRequest.build());
-
-        setTheToolbar();
     }
 
     @Override
@@ -178,15 +176,6 @@ public class CreateGroupActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
-    }
-
-    private void setTheToolbar() {
-        android.support.v7.widget.Toolbar toolbar = (android.support.v7.widget.Toolbar) findViewById(R.id.toolbar);
-        if (toolbar != null) {
-            setSupportActionBar(toolbar);
-        }
-
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     public void onSaveGroupClick() {

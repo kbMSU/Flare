@@ -17,6 +17,7 @@ import android.widget.FrameLayout;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.MyApp.Flare.R;
@@ -26,6 +27,7 @@ import com.google.android.gms.ads.InterstitialAd;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 
 import flaregradle.myapp.com.Flare.Adapters.ContactsAdapter;
 import flaregradle.myapp.com.Flare.AsyncTasks.SendFlareAsyncTask;
@@ -46,11 +48,9 @@ public class SendFlareActivity extends ActionBarActivity {
     private ArrayAdapter _contactAdapter;
     private EditText _phoneText;
     private ProgressBar _busyIndicator;
-    private RelativeLayout _saveGroupOverlay;
-    //private FrameLayout _overlay;
-    private Group _group;
     private InterstitialAd _interstitialAd;
     private String _groupName;
+    private Contact _currentlyEditingContact;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -112,47 +112,36 @@ public class SendFlareActivity extends ActionBarActivity {
             }
         });
 
-        // Load the overlay
-        //_overlay = (FrameLayout)findViewById(R.id.overlay);
-        //_overlay.setVisibility(View.GONE);
-
         // Set up listener for contacts view
         _contactsView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-            //if(_overlay.getVisibility() != View.GONE)
-            //    return;
-
             Object itemAtPosition = adapterView.getItemAtPosition(i);
             Contact contact = (Contact) itemAtPosition;
 
-            contact.selected = !contact.selected;
-
-            if(contact.selected)
+            if(!contact.selected)
             {
                 if(contact.allPhoneNumbers != null && contact.allPhoneNumbers.size() > 1) {
-                    // todo
-                    ListView numbersList = new ListView(getApplicationContext());
+                    _currentlyEditingContact = contact;
+                    showSelectNumber(contact.allPhoneNumbers);
                 }
-                else
+                else {
                     _dataStore.SelectedContacts.add(contact);
+                    contact.selected = !contact.selected;
+                }
             }
-            else
+            else {
                 _dataStore.SelectedContacts.remove(contact);
+                contact.selected = !contact.selected;
+            }
 
             _contactAdapter.notifyDataSetChanged();
             }
         });
 
-        setTheToolbar();
-
         // Load the progress bar
         _busyIndicator = (ProgressBar)findViewById(R.id.busyIndicator);
         _busyIndicator.setVisibility(View.GONE);
-
-        // Load the save group overlay
-        //_saveGroupOverlay = (RelativeLayout)findViewById(R.id.saveGroup);
-        //_saveGroupOverlay.setVisibility(View.GONE);
 
         // Load the ad
         _interstitialAd = new InterstitialAd(this);
@@ -172,6 +161,43 @@ public class SendFlareActivity extends ActionBarActivity {
         if(_dataStore.CurrentLocation != null)
             adRequest.setLocation(_dataStore.CurrentLocation);
         _interstitialAd.loadAd(adRequest.build());
+    }
+
+    private void showSelectNumber(List<String> numbers) {
+        final ListView view = new ListView(this);
+        view.setDivider(null);
+        view.setPadding(5,5,5,5);
+        ArrayAdapter<String> numbersAdapter = new ArrayAdapter<>(this, R.layout.number_view, numbers);
+        view.setAdapter(numbersAdapter);
+        view.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Object itemAtPosition = parent.getItemAtPosition(position);
+                String number = (String)itemAtPosition;
+
+                _currentlyEditingContact.phoneNumber = number;
+            }
+        });
+
+        AlertDialog.Builder alert = new AlertDialog.Builder(this);
+        alert.setTitle("Select Number");
+        alert.setView(view);
+        alert.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
+        alert.setPositiveButton("Done", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                _dataStore.SelectedContacts.add(_currentlyEditingContact);
+                _currentlyEditingContact.selected = true;
+                _contactAdapter.notifyDataSetChanged();
+                dialog.dismiss();
+            }
+        });
+        alert.show();
     }
 
     @Override
@@ -222,57 +248,7 @@ public class SendFlareActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    private void setTheToolbar() {
-        android.support.v7.widget.Toolbar toolbar = (android.support.v7.widget.Toolbar) findViewById(R.id.toolbar);
-        if (toolbar != null) {
-            setSupportActionBar(toolbar);
-        }
-
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-    }
-
-    /*public void onCreateGroupCancelClick(View v) {
-        EditText groupName = (EditText)findViewById(R.id.groupName);
-        groupName.setText("");
-
-        removeSaveGroupOverlay();
-    }
-
-    public void onCreateGroupAddClick(View v) {
-        EditText groupName = (EditText)findViewById(R.id.groupName);
-        if(groupName.getText() == null || groupName.getText().toString().isEmpty()) {
-            showMessage("Please enter a name for this group");
-            return;
-        }
-
-        removeSaveGroupOverlay();
-
-        Group newContactGroup = new Group();
-        newContactGroup.Name = groupName.getText().toString();
-        newContactGroup.Contacts = new ArrayList<>(_dataStore.SelectedContacts);
-        _dataStore.saveContactGroup(newContactGroup);
-
-        groupName.setText("");
-    }
-
-    private void removeSaveGroupOverlay() {
-        RelativeLayout screen = (RelativeLayout)findViewById(R.id.sendFlareScreen);
-        screen.setAlpha(1);
-        screen.setClickable(true);
-        _overlay.setVisibility(View.GONE);
-        _saveGroupOverlay.setVisibility(View.GONE);
-    }*/
-
     private void showSaveGroupOverlay() {
-        /*RelativeLayout screen = (RelativeLayout)findViewById(R.id.sendFlareScreen);
-        screen.setAlpha((float) 0.3);
-        screen.setClickable(false);
-        screen.setEnabled(false);
-        _overlay.setVisibility(View.INVISIBLE);
-        _saveGroupOverlay.setVisibility(View.VISIBLE);
-        EditText groupName = (EditText)findViewById(R.id.groupName);
-        groupName.requestFocus();*/
-
         final EditText input = new EditText(this);
         input.setText(_groupName);
         AlertDialog.Builder alert = new AlertDialog.Builder(this);

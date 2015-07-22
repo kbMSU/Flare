@@ -6,7 +6,7 @@
     <string name="location">You are here</string>
     <string name="latitude">Latitude :</string>
     <string name="longitude">Longitude :</string>
-    <string name="phone">Search</string>
+    <string name="phone">Location</string>
     <string name="send">Send</string>
     <string name="sos_menu">SOS Group</string>
     <string name="settings_menu">Settings</string>
@@ -47,5 +47,6 @@
     <string name="create_groups_ads_id">ca-app-pub-9978131204593610/6943612881</string>
     <string name="post_flare_interstitial_ad_id">ca-app-pub-9978131204593610/9323499682</string>
     <string name="share_menu">Share</string>
+    <string name="title_activity_test">TestActivity</string>
 
 </resources>

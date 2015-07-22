@@ -50,7 +50,13 @@ public class ContactsHandler {
                     continue;
 
                 String name = cur.getString(name_index);
-                String number = cur.getString(number_index);
+                String unformattedNumber = cur.getString(number_index);
+
+                String number = "";
+                for(char c: unformattedNumber.toCharArray()) {
+                    if(Character.isDigit(c))
+                        number += c;
+                }
 
                 if(contacts.containsKey(name)) {
                     Contact c = contacts.get(name);

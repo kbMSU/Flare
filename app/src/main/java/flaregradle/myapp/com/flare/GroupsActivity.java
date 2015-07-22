@@ -44,8 +44,6 @@ public class GroupsActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_groups);
 
-        setTheToolbar();
-
         // Setup the groups view
         _dataStore = DataStorageHandler.getInstance();
         _groupsListView = (ListView)findViewById(R.id.groups_list);
@@ -159,15 +157,6 @@ public class GroupsActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
-    }
-
-    private void setTheToolbar() {
-        android.support.v7.widget.Toolbar toolbar = (android.support.v7.widget.Toolbar) findViewById(R.id.toolbar);
-        if (toolbar != null) {
-            setSupportActionBar(toolbar);
-        }
-
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     private void deleteGroup() {

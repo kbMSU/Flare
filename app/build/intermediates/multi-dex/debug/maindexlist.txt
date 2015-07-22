@@ -76,6 +76,7 @@ android/support/v4/app/ActionBarDrawerToggle.class
 com/google/android/gms/ads/internal/purchase/GInAppPurchaseManagerInfoParcel.class
 com/google/common/cache/LoadingCache.class
 com/google/common/cache/RemovalNotification.class
+flaregradle/myapp/com/Flare/SendFlareActivity$8.class
 flaregradle/myapp/com/Flare/Utilities/ContactsHandler.class
 android/support/v7/app/ActionBarDrawerToggle$Delegate.class
 com/google/common/hash/package-info.class
@@ -134,6 +135,7 @@ com/google/android/gms/maps/MapView.class
 com/google/android/gms/internal/zzgq.class
 android/support/annotation/Nullable.class
 com/google/android/gms/ads/internal/purchase/zzc.class
+flaregradle/myapp/com/Flare/Test.class
 com/google/ads/AdSize.class
 com/google/common/collect/TreeMultiset$Reference.class
 com/google/android/gms/ads/internal/formats/zzg.class
@@ -213,6 +215,7 @@ android/support/v4/app/FragmentManager$BackStackEntry.class
 com/google/common/reflect/Parameter.class
 com/google/common/annotations/Beta.class
 com/google/android/gms/internal/zzoz.class
+flaregradle/myapp/com/Flare/SendFlareActivity$6.class
 com/google/common/base/Splitter.class
 com/google/common/io/ByteStreams.class
 android/support/annotation/StringRes.class
@@ -243,7 +246,6 @@ com/google/android/gms/ads/internal/zzc.class
 android/support/v7/appcompat/R$styleable.class
 com/google/common/collect/UnmodifiableListIterator.class
 com/google/android/gms/ads/internal/request/zzc.class
-android/support/v7/widget/Toolbar.class
 android/support/multidex/MultiDexApplication.class
 flaregradle/myapp/com/Flare/DataItems/Contact.class
 com/google/android/gms/ads/internal/client/zzg.class
@@ -252,6 +254,7 @@ com/google/android/gms/internal/zzfm.class
 com/google/android/gms/common/GooglePlayServicesUtil.class
 com/google/android/gms/ads/internal/zzj.class
 com/google/common/util/concurrent/AbstractService$StateSnapshot.class
+flaregradle/myapp/com/Flare/SendFlareActivity$7.class
 android/support/v7/widget/LinearLayoutCompat$DividerMode.class
 flaregradle/myapp/com/Flare/SendFlareActivity$1.class
 com/google/android/gms/internal/zzid.class
@@ -499,6 +502,7 @@ com/google/android/gms/ads/internal/purchase/zzd.class
 android/support/v7/app/ActionBar$NavigationMode.class
 android/support/v7/view/ActionMode.class
 com/google/common/base/Stopwatch.class
+flaregradle/myapp/com/Flare/AsyncTasks/FindFlareUsersTask.class
 flaregradle/myapp/com/Flare/CreateGroupActivity$5.class
 com/google/android/gms/ads/internal/zzm.class
 android/support/v7/internal/widget/ViewUtils.class

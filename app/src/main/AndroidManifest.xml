@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.MyApp.Flare" >
 
+    <uses-sdk android:minSdkVersion="14" />
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -25,11 +27,15 @@
         android:name="com.example.gcm.permission.C2D_MESSAGE"
         android:protectionLevel="signature" />
 
+    <android:uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
     <application
+        android:name="android.support.multidex.MultiDexApplication"
         android:icon="@drawable/app_icon"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme"
-        android:name="android.support.multidex.MultiDexApplication">
+        android:theme="@style/AppTheme" >
         <activity
             android:name="flaregradle.myapp.com.Flare.FlareHome"
             android:label="@string/app_name"
@@ -53,10 +59,44 @@
             android:name="flaregradle.myapp.com.Flare.SendFlareActivity"
             android:label="@string/title_activity_send"
             android:parentActivityName="flaregradle.myapp.com.Flare.FlareHome"
-            android:windowSoftInputMode="stateHidden">
+            android:windowSoftInputMode="stateHidden" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="flaregradle.myapp.com.Flare.FlareHome" />
+        </activity>
+
+        <activity
+            android:name="flaregradle.myapp.com.Flare.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName="flaregradle.myapp.com.Flare.FlareHome" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="flaregradle.myapp.com.Flare.FlareHome" />
+        </activity>
+        <activity
+            android:name="flaregradle.myapp.com.Flare.GroupsActivity"
+            android:label="@string/title_activity_groups"
+            android:parentActivityName="flaregradle.myapp.com.Flare.FlareHome" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="flaregradle.myapp.com.Flare.FlareHome" />
+        </activity>
+        <activity
+            android:name="flaregradle.myapp.com.Flare.CreateGroupActivity"
+            android:label="@string/title_activity_create_group"
+            android:parentActivityName="flaregradle.myapp.com.Flare.GroupsActivity"
+            android:windowSoftInputMode="stateHidden" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="flaregradle.myapp.com.Flare.GroupsActivity" />
+        </activity>
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="flaregradle.myapp.com.Flare.Test"
+            android:label="@string/title_activity_test" >
         </activity>
 
         <meta-data
@@ -68,11 +108,17 @@
 
         <!-- release key -->
 
-        <!-- test key
-        AIzaSyANZICm-GBRToxjlPyWe2Y1Vqrxr3ASiU8 -->
 
-        <!-- real release key
-        AIzaSyB-05hWM_Jk9m9XunzQkjsWmzK6S4NTdFY -->
+        <!--
+        test key
+        AIzaSyANZICm-GBRToxjlPyWe2Y1Vqrxr3ASiU8
+        -->
+
+
+        <!--
+        real release key
+        AIzaSyB-05hWM_Jk9m9XunzQkjsWmzK6S4NTdFY
+        -->
 
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
@@ -97,35 +143,6 @@
         <service android:name="flaregradle.myapp.com.Flare.Services.GcmIntentService" />
         <service android:name="flaregradle.myapp.com.Flare.Services.NotificationDeclineService" />
         <service android:name="flaregradle.myapp.com.Flare.Services.NotificationAcceptService" />
-
-        <activity
-            android:name="flaregradle.myapp.com.Flare.SettingsActivity"
-            android:label="@string/title_activity_settings"
-            android:parentActivityName="flaregradle.myapp.com.Flare.FlareHome" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="flaregradle.myapp.com.Flare.FlareHome" />
-        </activity>
-        <activity
-            android:name="flaregradle.myapp.com.Flare.GroupsActivity"
-            android:label="@string/title_activity_groups"
-            android:parentActivityName="flaregradle.myapp.com.Flare.FlareHome" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="flaregradle.myapp.com.Flare.FlareHome" />
-        </activity>
-        <activity
-            android:name="flaregradle.myapp.com.Flare.CreateGroupActivity"
-            android:label="@string/title_activity_create_group"
-            android:parentActivityName="flaregradle.myapp.com.Flare.GroupsActivity"
-            android:windowSoftInputMode="stateHidden">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="flaregradle.myapp.com.Flare.GroupsActivity" />
-        </activity>
-        <activity android:name="com.google.android.gms.ads.AdActivity"
-                  android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
-                  android:theme="@android:style/Theme.Translucent" />
     </application>
 
 </manifest>
