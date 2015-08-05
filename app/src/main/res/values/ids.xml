@@ -78,4 +78,15 @@
 
     <item name="main_page_actions" type="id">main page actions</item>
 
+    <item name="phoneNumberSelected" type="id">phone number selected</item>
+    <item name="phoneNumberText" type="id">phone number text</item>
+    <item name="phoneNumberHasFlare" type="id">phone number has flare</item>
+
+    <item name="dialogButtons" type="id">dialog buttons</item>
+    <item name="alternateFlareText" type="id">alternate flare text</item>
+    <item name="smsButton" type="id">sms button</item>
+    <item name="cloudButton" type="id">cloud button</item>
+    <item name="phoneNumbers" type="id">phone numbers</item>
+    <item name="closeDialog" type="id">close dialog</item>
+
 </resources>

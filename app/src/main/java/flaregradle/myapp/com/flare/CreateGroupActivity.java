@@ -85,7 +85,7 @@ public class CreateGroupActivity extends ActionBarActivity {
                     for (Contact c : _dataStore.AllContacts.values()){
                         if(c.name.toLowerCase().contains(charSequence.toString().toLowerCase())){
                             _sortedContacts.add(c);
-                        } else if (c.phoneNumber.contains(charSequence.toString())) {
+                        } else if (c.phoneNumber.Contains(charSequence.toString())) {
                             _sortedContacts.add(c);
                         }
                     }
@@ -201,7 +201,7 @@ public class CreateGroupActivity extends ActionBarActivity {
         input.setText(_groupName);
 
         AlertDialog.Builder alert = new AlertDialog.Builder(this);
-        alert.setTitle("Save Group");
+        alert.setTitle("Save group");
         alert.setMessage("Enter a group name");
         alert.setView(input);
         alert.setPositiveButton("Save",new DialogInterface.OnClickListener() {

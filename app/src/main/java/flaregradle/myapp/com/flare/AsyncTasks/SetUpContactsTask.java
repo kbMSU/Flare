@@ -30,8 +30,7 @@ public class SetUpContactsTask extends AsyncTask<Context, Void, String> {
             _dataStore.AllContacts = contacts;
         }
         //Collections.sort(_dataStore.AllContacts);
-        if(_dataStore.SelectedContacts == null) _dataStore.SelectedContacts = new ArrayList<Contact>();
-        _dataStore.setupPreferences();
+        if(_dataStore.SelectedContacts == null) _dataStore.SelectedContacts = new ArrayList<>();
 
         return "success";
     }

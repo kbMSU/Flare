@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="flaregradle.myapp.com.Flare"
-    android:versionCode="38"
-    android:versionName="1.9.99v1" >
+    android:versionCode="40"
+    android:versionName="1.9.99v3" >
 
     <uses-sdk
         android:minSdkVersion="14"

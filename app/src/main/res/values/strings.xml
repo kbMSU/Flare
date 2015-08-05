@@ -41,12 +41,14 @@
     <string name="title_activity_create_group">Save Group</string>
     <string name="hello_world">Hello world!</string>
 
-    <string name="version">Version 1.9.99</string>
+    <string name="version">Version 1.9.99v3</string>
 
     <string name="groups_page_ads_id">ca-app-pub-9978131204593610/2792614883</string>
     <string name="create_groups_ads_id">ca-app-pub-9978131204593610/6943612881</string>
     <string name="post_flare_interstitial_ad_id">ca-app-pub-9978131204593610/9323499682</string>
     <string name="share_menu">Share</string>
     <string name="title_activity_test">TestActivity</string>
+    <string name="search">Search</string>
+    <string name="alternate_flare_text">Some of your friends don\'t have flare ! But don\'t worry you can still reach them. You can either send them an SMS or cloud message ( SMS or data charges may apply )</string>
 
 </resources>

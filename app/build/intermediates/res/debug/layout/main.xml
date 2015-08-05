@@ -80,8 +80,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
             android:layout_margin="2dp"
-            android:drawableStart="@drawable/contact_group_fab"
-            android:drawableLeft="@drawable/contact_group_fab"
+            android:drawableStart="@drawable/group"
+            android:drawableLeft="@drawable/group"
             android:text="Groups"
             android:layout_gravity="center"
             android:onClick="onGroupsClick"/>

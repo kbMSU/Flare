@@ -22,6 +22,8 @@ import android.widget.TextView;
 
 import com.MyApp.Flare.R;
 
+import java.util.Locale;
+
 
 public class LoadScreen extends ActionBarActivity {
 
@@ -47,12 +49,20 @@ public class LoadScreen extends ActionBarActivity {
     protected void onResume() {
         super.onResume();
 
+        setUpDataStore();
         setUpContacts();
+    }
+
+    private void setUpDataStore() {
+        DataStorageHandler.getInstance();
+        DataStorageHandler.Preferences = getPreferences(MODE_PRIVATE);
+        DataStorageHandler.setupPreferences();
     }
 
     private void registerDevice(){
         TelephonyManager tm = (TelephonyManager)getSystemService(TELEPHONY_SERVICE);
         String number = tm.getLine1Number();
+        String country = tm.getSimCountryIso();
         DataStorageHandler.getInstance().thisPhone = number;
         _registrationTask = new GcmRegistrationAsyncTask(this,number);
         _registrationTask.execute(this);
@@ -61,12 +71,10 @@ public class LoadScreen extends ActionBarActivity {
     private void setUpContacts() {
         ContentResolver cr = getContentResolver();
         ContactsHandler _contactsHandler = new ContactsHandler(cr);
-        int contactId = getResources().getIdentifier("contactdefaultimage","drawable",getPackageName());
+        int contactId = getResources().getIdentifier("person", "drawable", getPackageName());
         Bitmap bitmap = BitmapFactory.decodeResource(getResources(), contactId);
         _contactsHandler.setDefaultImage(bitmap);
 
-        DataStorageHandler _dataStore = DataStorageHandler.getInstance();
-        _dataStore.Preferences = getPreferences(MODE_PRIVATE);
         SetUpContactsTask task = new SetUpContactsTask(this,_contactsHandler);
         task.execute(this);
     }

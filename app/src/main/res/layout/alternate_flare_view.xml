@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/ic_menu_close_clear_cancel"
+        android:id="@id/closeDialog"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/alternate_flare_text"
+        android:layout_below="@id/closeDialog"
+        android:id="@id/alternateFlareText"
+        android:textSize="15sp"/>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@id/phoneNumbers"
+        android:layout_margin="10dp"
+        android:layout_above="@id/dialogButtons"
+        android:layout_below="@id/alternateFlareText"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@id/dialogButtons"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:drawableStart="@drawable/message_smaller"
+            android:drawableLeft="@drawable/message_smaller"
+            android:text="SMS"
+            android:textSize="15sp"
+            android:id="@id/smsButton"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:drawableStart="@drawable/cloud_smaller"
+            android:drawableLeft="@drawable/cloud_smaller"
+            android:text="CLOUD"
+            android:textSize="15sp"
+            android:id="@id/cloudButton"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -4,7 +4,7 @@
     tools:context="flaregradle.myapp.com.Flare.SendFlareActivity">
 
     <item android:id="@id/createGroup"
-        android:icon="@android:drawable/ic_input_add"
+        android:icon="@drawable/add_group"
         android:title="@string/addToGroup"
         flare:showAsAction="always"/>
 

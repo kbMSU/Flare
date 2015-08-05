@@ -7,12 +7,12 @@ import java.util.ArrayList;
 import java.util.Comparator;
 
 public class Contact implements Comparator<Contact>,Comparable<Contact>,Serializable {
-    public String phoneNumber;
+    public PhoneNumber phoneNumber;
     public String id;
     public String name;
     public boolean selected = false;
     public Bitmap photo;
-    public ArrayList<String> allPhoneNumbers;
+    public ArrayList<PhoneNumber> allPhoneNumbers;
     public boolean hasFlare = false;
 
     public Contact(Contact copy) {

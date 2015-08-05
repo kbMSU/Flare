@@ -12,6 +12,7 @@ import android.util.Log;
 import java.util.*;
 
 import flaregradle.myapp.com.Flare.DataItems.Contact;
+import flaregradle.myapp.com.Flare.DataItems.PhoneNumber;
 
 public class ContactsHandler {
 
@@ -58,9 +59,11 @@ public class ContactsHandler {
                         number += c;
                 }
 
+                boolean hasFlare = DataStorageHandler.doesNumberHaveFlare(number);
+
                 if(contacts.containsKey(name)) {
                     Contact c = contacts.get(name);
-                    c.allPhoneNumbers.add(number);
+                    c.allPhoneNumbers.add(new PhoneNumber(hasFlare,number,false));
                     continue;
                 }
 
@@ -70,8 +73,9 @@ public class ContactsHandler {
                 Contact contact = new Contact();
                 contact.id = id;
                 contact.name = name;
-                contact.phoneNumber = number;
-                contact.allPhoneNumbers.add(number);
+                contact.phoneNumber = new PhoneNumber(hasFlare,number,true);
+                contact.allPhoneNumbers.add(new PhoneNumber(hasFlare,number,true));
+                contact.hasFlare = hasFlare;
 
                 if(photo != null) {
                     Bitmap image = BitmapFactory.decodeByteArray(photo,0,photo.length);

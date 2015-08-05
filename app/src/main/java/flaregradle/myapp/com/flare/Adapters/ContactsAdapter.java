@@ -56,7 +56,7 @@ public class ContactsAdapter extends ArrayAdapter<Contact> {
 
         name.setText(currentContact.name);
         name.setTextSize(18);
-        number.setText(currentContact.phoneNumber);
+        number.setText(currentContact.phoneNumber.number);
         try{
             if(currentContact.photo != null)
                 image.setImageBitmap(currentContact.photo);

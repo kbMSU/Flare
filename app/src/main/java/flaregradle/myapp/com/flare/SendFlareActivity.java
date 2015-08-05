@@ -1,10 +1,13 @@
 package flaregradle.myapp.com.Flare;
 
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v4.app.NavUtils;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.Menu;
@@ -20,23 +23,34 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.MyApp.Flare.BuildConfig;
 import com.MyApp.Flare.R;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
+import com.microsoft.windowsazure.mobileservices.MobileServiceClient;
+import com.microsoft.windowsazure.mobileservices.MobileServiceList;
+import com.microsoft.windowsazure.mobileservices.table.MobileServiceTable;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
 import flaregradle.myapp.com.Flare.Adapters.ContactsAdapter;
+import flaregradle.myapp.com.Flare.Adapters.PhoneNumberAdapter;
 import flaregradle.myapp.com.Flare.AsyncTasks.SendFlareAsyncTask;
+import flaregradle.myapp.com.Flare.BackendItems.DeviceItem;
 import flaregradle.myapp.com.Flare.DataItems.Contact;
 import flaregradle.myapp.com.Flare.DataItems.Group;
+import flaregradle.myapp.com.Flare.DataItems.PhoneNumber;
+import flaregradle.myapp.com.Flare.Dialogs.AlternateFlareOptionsDialog;
+import flaregradle.myapp.com.Flare.Interfaces.ICallBack;
+import flaregradle.myapp.com.Flare.Interfaces.ISendFlare;
+import flaregradle.myapp.com.Flare.Runnables.SendFlare;
 import flaregradle.myapp.com.Flare.Utilities.DataStorageHandler;
 
 
-public class SendFlareActivity extends ActionBarActivity {
+public class SendFlareActivity extends AppCompatActivity implements ISendFlare {
 
     private Toast _message;
     private DataStorageHandler _dataStore;
@@ -96,7 +110,7 @@ public class SendFlareActivity extends ActionBarActivity {
                     for (Contact c : _dataStore.AllContacts.values()){
                         if(c.name.toLowerCase().contains(charSequence.toString().toLowerCase())){
                             _sortedContacts.add(c);
-                        } else if (c.phoneNumber.contains(charSequence.toString())) {
+                        } else if (c.phoneNumber.Contains(charSequence.toString())) {
                             _sortedContacts.add(c);
                         }
                     }
@@ -127,12 +141,12 @@ public class SendFlareActivity extends ActionBarActivity {
                 }
                 else {
                     _dataStore.SelectedContacts.add(contact);
-                    contact.selected = !contact.selected;
+                    contact.selected = true;
                 }
             }
             else {
                 _dataStore.SelectedContacts.remove(contact);
-                contact.selected = !contact.selected;
+                contact.selected = false;
             }
 
             _contactAdapter.notifyDataSetChanged();
@@ -163,19 +177,27 @@ public class SendFlareActivity extends ActionBarActivity {
         _interstitialAd.loadAd(adRequest.build());
     }
 
-    private void showSelectNumber(List<String> numbers) {
+    private void showSelectNumber(List<PhoneNumber> numbers) {
+        final List<PhoneNumber> finalNumbers = numbers;
         final ListView view = new ListView(this);
         view.setDivider(null);
         view.setPadding(5,5,5,5);
-        ArrayAdapter<String> numbersAdapter = new ArrayAdapter<>(this, R.layout.number_view, numbers);
+        final ArrayAdapter<PhoneNumber> numbersAdapter = new PhoneNumberAdapter(this, R.layout.number_view, finalNumbers);
         view.setAdapter(numbersAdapter);
         view.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Object itemAtPosition = parent.getItemAtPosition(position);
-                String number = (String)itemAtPosition;
+                PhoneNumber number = (PhoneNumber)itemAtPosition;
+                number.isSelected = true;
+                for(PhoneNumber otherNumber : finalNumbers) {
+                    if(!otherNumber.number.equals(number.number) && otherNumber.isSelected)
+                        otherNumber.isSelected = false;
+                }
 
                 _currentlyEditingContact.phoneNumber = number;
+
+                numbersAdapter.notifyDataSetChanged();
             }
         });
 
@@ -211,7 +233,7 @@ public class SendFlareActivity extends ActionBarActivity {
     protected void onPause()
     {
         clearSelectedContacts();
-        super.onStop();
+        super.onPause();
     }
 
     private void resetSortedContacts() {
@@ -252,7 +274,7 @@ public class SendFlareActivity extends ActionBarActivity {
         final EditText input = new EditText(this);
         input.setText(_groupName);
         AlertDialog.Builder alert = new AlertDialog.Builder(this);
-        alert.setTitle("Save Group");
+        alert.setTitle("Save group");
         alert.setMessage("Enter a group name");
         alert.setView(input);
         alert.setPositiveButton("Save", new DialogInterface.OnClickListener() {
@@ -288,34 +310,43 @@ public class SendFlareActivity extends ActionBarActivity {
     }
 
     public void onSendClick(View v) {
-        RelativeLayout screen = (RelativeLayout)findViewById(R.id.sendFlareScreen);
-        EditText phoneText = (EditText)findViewById(com.MyApp.Flare.R.id.phone);
-        String phoneNumber = phoneText.getText().toString();
-        ArrayList<String> contactNumbers = new ArrayList<String>();
         if(_dataStore.SelectedContacts == null || _dataStore.SelectedContacts.size() == 0){
-            if(phoneNumber == null || phoneNumber.length() < 10){
-                showMessage("Select a contact or enter a valid phone number");
-                return;
-            }
-
-            contactNumbers.add(phoneNumber);
-        } else {
-            for(Contact c : _dataStore.SelectedContacts)
-                contactNumbers.add(c.phoneNumber);
+            showMessage("You have not selected any contacts");
+            return;
         }
 
         String text = _flareMessage.getText().toString();
         if(text == null || text.equals(""))
             text = "Flare";
-        try {
-            new SendFlareAsyncTask(this,screen,_busyIndicator,contactNumbers,_latitude,_longitude,text).execute(this);
-        } catch (Exception ex){
-            showMessage(ex.getMessage());
-            return;
+
+        ArrayList<PhoneNumber> contactsWithFlare = new ArrayList<>();
+        ArrayList<PhoneNumber> contactsWithoutFlare = new ArrayList<>();
+
+        for(Contact phone : _dataStore.SelectedContacts) {
+            if(!_dataStore.Registered) {
+                contactsWithFlare.add(phone.phoneNumber);
+                continue;
+            }
+
+            if(phone.phoneNumber.hasFlare) {
+                contactsWithFlare.add(phone.phoneNumber);
+            } else {
+                contactsWithoutFlare.add(phone.phoneNumber);
+            }
         }
 
-        showFullPageAd();
-        clearSelectedContacts();
+        if(contactsWithFlare.size() > 0)
+            new SendFlareAsyncTask(this,_latitude,_longitude,text,contactsWithFlare).execute(this);
+
+        if(contactsWithoutFlare.size() > 0) {
+            AlternateFlareOptionsDialog dialog = new AlternateFlareOptionsDialog(this);
+            dialog.SetData(_latitude,_longitude,text,this,contactsWithoutFlare);
+            dialog.show();
+        } else {
+            showFullPageAd();
+            clearSelectedContacts();
+            showMessage("Message sent");
+        }
     }
 
     private void showMessage(String text){
@@ -334,5 +365,33 @@ public class SendFlareActivity extends ActionBarActivity {
     public void showFullPageAd() {
         if(_interstitialAd.isLoaded())
             _interstitialAd.show();
+    }
+
+    @Override
+    public void CallBack() {
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+            showFullPageAd();
+            clearSelectedContacts();
+            showMessage("Message sent");
+            }
+        });
+    }
+
+    @Override
+    public void SendAlternateFlare(ArrayList<PhoneNumber> phoneNumbers, final String message) {
+        final ArrayList<PhoneNumber> numbers = phoneNumbers;
+        final SendFlareActivity current = this;
+
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+
+                AlternateFlareOptionsDialog dialog = new AlternateFlareOptionsDialog(current);
+                dialog.SetData(_latitude,_longitude,message,current,numbers);
+                dialog.show();
+            }
+        });
     }
 }

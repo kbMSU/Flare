@@ -12,6 +12,7 @@ import com.microsoft.windowsazure.mobileservices.table.query.Query;
 
 import flaregradle.myapp.com.Flare.BackendItems.DeviceItem;
 import flaregradle.myapp.com.Flare.DataItems.Contact;
+import flaregradle.myapp.com.Flare.DataItems.PhoneNumber;
 import flaregradle.myapp.com.Flare.Utilities.DataStorageHandler;
 
 
@@ -31,18 +32,26 @@ public class FindFlareUsersTask extends AsyncTask<Context,Void,Void> {
             MobileServiceTable<DeviceItem> devicesTable = client.getTable(DeviceItem.class);
 
             for(Contact c : DataStorageHandler.getInstance().AllContacts.values()) {
-                boolean hasFound = false;
-                for(String phone : c.allPhoneNumbers) {
-                    if(hasFound)
-                        continue;
+                boolean hasFlare = false;
+                for(PhoneNumber phone : c.allPhoneNumbers) {
+                    String number = phone.number;
+                    MobileServiceList<DeviceItem> phoneItems = devicesTable.where().indexOf("FullPhone",number).ne(-1).execute().get();
 
-                    MobileServiceList<DeviceItem> phoneItems = devicesTable.where().indexOf("FullPhone",phone).ne(-1).execute().get();
-
+                    boolean isSavedAsHasFlare =  DataStorageHandler.doesNumberHaveFlare(number);
                     if(phoneItems.size() > 0) {
-                        c.hasFlare = true;
-                        hasFound = true;
+                        hasFlare = true;
+                        phone.hasFlare = true;
+                        if(!isSavedAsHasFlare) {
+                            DataStorageHandler.getInstance().saveContactNumbersWithFlare(phone);
+                        }
+                    } else {
+                        phone.hasFlare = false;
+                        if(isSavedAsHasFlare) {
+                            DataStorageHandler.getInstance().deleteContactNumbersWithFlare(phone);
+                        }
                     }
                 }
+                c.hasFlare = hasFlare;
             }
 
         } catch (Exception ex) {
