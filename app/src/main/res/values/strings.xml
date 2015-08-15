@@ -51,4 +51,8 @@
     <string name="search">Search</string>
     <string name="alternate_flare_text">Some of your friends don\'t have flare ! But don\'t worry you can still reach them. You can either send them an SMS or cloud message ( SMS or data charges may apply )</string>
 
+    <string name="title_activity_verify_phone">VerifyPhoneActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
 </resources>

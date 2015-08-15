@@ -88,5 +88,6 @@
     <item name="cloudButton" type="id">cloud button</item>
     <item name="phoneNumbers" type="id">phone numbers</item>
     <item name="closeDialog" type="id">close dialog</item>
+    <item name="code" type="id">verification code</item>
 
 </resources>

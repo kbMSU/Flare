@@ -31,7 +31,6 @@
             android:layout_above="@id/sendFlareLayout"
             android:background="@color/greyDark"/>
 
-
         <RelativeLayout android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginLeft="2dp"

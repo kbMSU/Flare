@@ -21,26 +21,69 @@ public class DataStorageHandler {
     public static DataStorageHandler getInstance() {
         if(instance == null){
             instance = new DataStorageHandler();
-            instance.AllContacts = new TreeMap<>();
-            instance.SelectedContacts = new ArrayList<>();
-            instance.SavedContactGroups = new HashMap<>();
-            instance.ContactNumbersWithFlare = new HashMap<>();
+            AllContacts = new TreeMap<>();
+            SelectedContacts = new ArrayList<>();
+            SavedContactGroups = new HashMap<>();
+            ContactNumbersWithFlare = new HashMap<>();
         }
         return instance;
     }
 
+    private static String _defaultDeclineResponse;
+    private static Integer _notificationId = 1;
+    private static String _defaultAcceptResponse;
+    private static boolean _registered;
+    private static boolean _phoneNumberVerified;
+
     public static SharedPreferences Preferences;
-    public TreeMap<String,Contact> AllContacts;
-    public ArrayList<Contact> SelectedContacts;
-    public String registrationId;
-    public String thisPhone;
+    public static TreeMap<String,Contact> AllContacts;
+    public static ArrayList<Contact> SelectedContacts;
+    public static String registrationId;
+    public static String thisPhone;
     public static HashMap<String,Group> SavedContactGroups;
     public static HashMap<String,PhoneNumber> ContactNumbersWithFlare;
-    public Location CurrentLocation;
-    public boolean Registered;
+    public static Location CurrentLocation;
 
+    //region Setup
+    public static void setupPreferences() {
+        _defaultDeclineResponse = Preferences.getString("DefaultDeclineResponse", "Sorry, I can't make it");
+        _defaultAcceptResponse = Preferences.getString("DefaultAcceptResponse","I will be there ASAP");
+        _notificationId = Preferences.getInt("notificationId", 1);
+
+        _registered = Preferences.getBoolean("registered", false);
+        _registered = Preferences.getBoolean("verified",false);
+
+        // Get saved contact groups
+        String json = Preferences.getString("SavedContactGroups", null);
+        if(json != null) {
+            Gson gson = new Gson();
+            HashMap<String,Group> groups = gson.fromJson(json,new TypeToken<HashMap<String,Group>>(){}.getType());
+            if(groups != null)
+                SavedContactGroups = groups;
+        }
+
+        // Get contacts with flare
+        String contactsWithFlare = Preferences.getString("ContactsWithFlare", null);
+        if(contactsWithFlare != null) {
+            Gson gson = new Gson();
+            HashMap<String,PhoneNumber> contacts = gson.fromJson(contactsWithFlare,new TypeToken<HashMap<String,PhoneNumber>>(){}.getType());
+            if(contacts != null)
+                ContactNumbersWithFlare = contacts;
+        }
+    }
+
+    private static void wipeGroups() {
+        Gson gson = new Gson();
+        String json = gson.toJson(null);
+        SharedPreferences.Editor editor = Preferences.edit();
+        editor.putString("SavedContactGroups", json);
+        editor.apply();
+    }
+    //endregion
+
+    //region Methods
     public static Contact findContact(String phoneNumber) {
-        for(Contact contact : getInstance().AllContacts.values()) {
+        for(Contact contact : AllContacts.values()) {
             for(PhoneNumber phone : contact.allPhoneNumbers) {
                 String number = phone.number;
 
@@ -57,52 +100,13 @@ public class DataStorageHandler {
         return null;
     }
 
-    public static void setupPreferences() {
-        _defaultDeclineResponse = Preferences.getString("DefaultDeclineResponse", "Sorry, I can't make it");
-        _defaultAcceptResponse = Preferences.getString("DefaultAcceptResponse","I will be there ASAP");
-        _notificationId = Preferences.getInt("notificationId", 1);
-
-        //wipeGroups();
-
-        String json = Preferences.getString("SavedContactGroups",null);
-        if(json != null) {
-            Gson gson = new Gson();
-            HashMap<String,Group> groups = gson.fromJson(json,new TypeToken<HashMap<String,Group>>(){}.getType());
-            if(groups != null)
-                SavedContactGroups = groups;
-        }
-
-        String contactsWithFlare = Preferences.getString("ContactsWithFlare",null);
-        if(contactsWithFlare != null) {
-            Gson gson = new Gson();
-            HashMap<String,PhoneNumber> contacts = gson.fromJson(contactsWithFlare,new TypeToken<HashMap<String,PhoneNumber>>(){}.getType());
-            if(contacts != null)
-                ContactNumbersWithFlare = contacts;
-        }
+    public static boolean doesNumberHaveFlare(String phone) {
+        return ContactNumbersWithFlare.containsKey(phone);
     }
+    //endregion
 
-    private static void wipeGroups() {
-        Gson gson = new Gson();
-        String json = gson.toJson(null);
-        SharedPreferences.Editor editor = Preferences.edit();
-        editor.putString("SavedContactGroups",json);
-        editor.apply();
-    }
-
-    public void saveContactGroup(Group group) {
-        for (Contact c : group.Contacts)
-            c.photo = null;
-
-        SavedContactGroups.put(group.Name, group);
-        writeGroupsToPreferences();
-    }
-
-    public void deleteContactGroup(String groupName) {
-        SavedContactGroups.remove(groupName);
-        writeGroupsToPreferences();
-    }
-
-    public void writeGroupsToPreferences() {
+    //region Preferences I/O
+    public static void writeGroupsToPreferences() {
         Gson gson = new Gson();
         String json = gson.toJson(SavedContactGroups);
         SharedPreferences.Editor editor = Preferences.edit();
@@ -110,30 +114,40 @@ public class DataStorageHandler {
         editor.apply();
     }
 
-    public void saveContactNumbersWithFlare(PhoneNumber number) {
-        ContactNumbersWithFlare.put(number.number,number);
+    private static void writeContactsWithFlareToPreferences() {
+        Gson gson = new Gson();
+        String json = gson.toJson(ContactNumbersWithFlare);
+        SharedPreferences.Editor editor = Preferences.edit();
+        editor.putString("ContactsWithFlare", json);
+        editor.apply();
+    }
+    //endregion
+
+    //region Save to Preferences
+    public static void saveContactGroup(Group group) {
+        for (Contact c : group.Contacts)
+            c.photo = null;
+
+        SavedContactGroups.put(group.Name, group);
+        writeGroupsToPreferences();
+    }
+
+    public static void deleteContactGroup(String groupName) {
+        SavedContactGroups.remove(groupName);
+        writeGroupsToPreferences();
+    }
+
+    public static void saveContactNumbersWithFlare(PhoneNumber number) {
+        ContactNumbersWithFlare.put(number.number, number);
         writeContactsWithFlareToPreferences();
     }
 
-    public void deleteContactNumbersWithFlare(PhoneNumber number) {
+    public static void deleteContactNumbersWithFlare(PhoneNumber number) {
         ContactNumbersWithFlare.remove(number.number);
         writeContactsWithFlareToPreferences();
     }
 
-    private void writeContactsWithFlareToPreferences() {
-        Gson gson = new Gson();
-        String json = gson.toJson(ContactNumbersWithFlare);
-        SharedPreferences.Editor editor = Preferences.edit();
-        editor.putString("ContactsWithFlare",json);
-        editor.apply();
-    }
-
-    public static boolean doesNumberHaveFlare(String phone) {
-        return ContactNumbersWithFlare.containsKey(phone);
-    }
-
-    private static Integer _notificationId = 1;
-    public Integer getNotificationId() {
+    public static Integer getNotificationId() {
         _notificationId++;
 
         if(_notificationId > 10)
@@ -148,11 +162,10 @@ public class DataStorageHandler {
         return _notificationId;
     }
 
-    private static String _defaultDeclineResponse;
-    public String GetDefaultDeclineResponse() {
+    public static String GetDefaultDeclineResponse() {
         return _defaultDeclineResponse;
     }
-    public void SetDefaultDeclineResponse(String decline) {
+    public static void SetDefaultDeclineResponse(String decline) {
         _defaultDeclineResponse = decline;
 
         SharedPreferences.Editor editor = Preferences.edit();
@@ -160,15 +173,31 @@ public class DataStorageHandler {
         editor.apply();
     }
 
-    private static String _defaultAcceptResponse;
-    public String GetDefaultAcceptResponse() {
+    public static String GetDefaultAcceptResponse() {
         return _defaultAcceptResponse;
     }
-    public void SetDefaultAcceptResponse(String accept) {
+    public static void SetDefaultAcceptResponse(String accept) {
         _defaultAcceptResponse = accept;
 
         SharedPreferences.Editor editor = Preferences.edit();
         editor.putString("DefaultAcceptResponse",_defaultAcceptResponse);
         editor.apply();
     }
+
+    public static boolean IsPhoneNumberVerified() { return _phoneNumberVerified; }
+    public static void SetPhoneNumberVerified() {
+        _phoneNumberVerified = true;
+        SharedPreferences.Editor editor = Preferences.edit();
+        editor.putBoolean("verified",_phoneNumberVerified);
+        editor.apply();
+    }
+
+    public static boolean IsRegistered() { return _registered; }
+    public static void SetRegistered() {
+        _registered = true;
+        SharedPreferences.Editor editor = Preferences.edit();
+        editor.putBoolean("registered",_registered);
+        editor.apply();
+    }
+    //endregion
 }

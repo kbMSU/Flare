@@ -24,19 +24,16 @@ public class SetUpContactsTask extends AsyncTask<Context, Void, String> {
     @Override
     protected String doInBackground(Context... params) {
         // Set up the contacts
-        DataStorageHandler _dataStore = DataStorageHandler.getInstance();
-        if(_dataStore.AllContacts == null || _dataStore.AllContacts.size() == 0){
-            TreeMap<String,Contact> contacts = _contactsHandler.getContacts();
-            _dataStore.AllContacts = contacts;
+        if(DataStorageHandler.AllContacts == null || DataStorageHandler.AllContacts.size() == 0){
+            DataStorageHandler.AllContacts = _contactsHandler.getContacts();
         }
-        //Collections.sort(_dataStore.AllContacts);
-        if(_dataStore.SelectedContacts == null) _dataStore.SelectedContacts = new ArrayList<>();
+        if(DataStorageHandler.SelectedContacts == null) DataStorageHandler.SelectedContacts = new ArrayList<>();
 
         return "success";
     }
 
     @Override
     protected void onPostExecute(String msg) {
-        _parent.continueToHomeScreen();
+        _parent.finishedGettingContacts();
     }
 }

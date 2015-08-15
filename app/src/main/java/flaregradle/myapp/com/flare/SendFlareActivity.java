@@ -1,12 +1,9 @@
 package flaregradle.myapp.com.Flare;
 
 import android.app.AlertDialog;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
-import android.os.Handler;
 import android.support.v4.app.NavUtils;
-import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -16,21 +13,14 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
-import android.widget.FrameLayout;
 import android.widget.ListView;
 import android.widget.ProgressBar;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import com.MyApp.Flare.BuildConfig;
 import com.MyApp.Flare.R;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
-import com.microsoft.windowsazure.mobileservices.MobileServiceClient;
-import com.microsoft.windowsazure.mobileservices.MobileServiceList;
-import com.microsoft.windowsazure.mobileservices.table.MobileServiceTable;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -39,14 +29,11 @@ import java.util.List;
 import flaregradle.myapp.com.Flare.Adapters.ContactsAdapter;
 import flaregradle.myapp.com.Flare.Adapters.PhoneNumberAdapter;
 import flaregradle.myapp.com.Flare.AsyncTasks.SendFlareAsyncTask;
-import flaregradle.myapp.com.Flare.BackendItems.DeviceItem;
 import flaregradle.myapp.com.Flare.DataItems.Contact;
 import flaregradle.myapp.com.Flare.DataItems.Group;
 import flaregradle.myapp.com.Flare.DataItems.PhoneNumber;
 import flaregradle.myapp.com.Flare.Dialogs.AlternateFlareOptionsDialog;
-import flaregradle.myapp.com.Flare.Interfaces.ICallBack;
 import flaregradle.myapp.com.Flare.Interfaces.ISendFlare;
-import flaregradle.myapp.com.Flare.Runnables.SendFlare;
 import flaregradle.myapp.com.Flare.Utilities.DataStorageHandler;
 
 

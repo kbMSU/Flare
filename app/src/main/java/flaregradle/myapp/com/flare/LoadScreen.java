@@ -1,20 +1,12 @@
 package flaregradle.myapp.com.Flare;
 
-import flaregradle.myapp.com.Flare.AsyncTasks.FindFlareUsersTask;
-import flaregradle.myapp.com.Flare.AsyncTasks.GcmRegistrationAsyncTask;
-import flaregradle.myapp.com.Flare.AsyncTasks.SetUpContactsTask;
-import flaregradle.myapp.com.Flare.Utilities.ContactsHandler;
-import flaregradle.myapp.com.Flare.Utilities.DataStorageHandler;
-import flaregradle.myapp.com.Flare.util.SystemUiHider;
-
 import android.content.ContentResolver;
-import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.telephony.TelephonyManager;
 import android.view.View;
 import android.widget.ProgressBar;
@@ -22,10 +14,13 @@ import android.widget.TextView;
 
 import com.MyApp.Flare.R;
 
-import java.util.Locale;
+import flaregradle.myapp.com.Flare.AsyncTasks.FindFlareUsersTask;
+import flaregradle.myapp.com.Flare.AsyncTasks.GcmRegistrationAsyncTask;
+import flaregradle.myapp.com.Flare.AsyncTasks.SetUpContactsTask;
+import flaregradle.myapp.com.Flare.Utilities.ContactsHandler;
+import flaregradle.myapp.com.Flare.Utilities.DataStorageHandler;
 
-
-public class LoadScreen extends ActionBarActivity {
+public class LoadScreen extends AppCompatActivity {
 
     private GcmRegistrationAsyncTask _registrationTask;
     private ProgressBar _busyIndicator;
@@ -59,17 +54,9 @@ public class LoadScreen extends ActionBarActivity {
         DataStorageHandler.setupPreferences();
     }
 
-    private void registerDevice(){
-        TelephonyManager tm = (TelephonyManager)getSystemService(TELEPHONY_SERVICE);
-        String number = tm.getLine1Number();
-        String country = tm.getSimCountryIso();
-        DataStorageHandler.getInstance().thisPhone = number;
-        _registrationTask = new GcmRegistrationAsyncTask(this,number);
-        _registrationTask.execute(this);
-    }
-
     private void setUpContacts() {
         ContentResolver cr = getContentResolver();
+
         ContactsHandler _contactsHandler = new ContactsHandler(cr);
         int contactId = getResources().getIdentifier("person", "drawable", getPackageName());
         Bitmap bitmap = BitmapFactory.decodeResource(getResources(), contactId);
@@ -79,7 +66,20 @@ public class LoadScreen extends ActionBarActivity {
         task.execute(this);
     }
 
-    public void continueToHomeScreen() {
+    public void finishedGettingContacts() {
+        if(DataStorageHandler.IsPhoneNumberVerified()) {
+            continueToHomeScreen();
+        } else {
+            verifyPhoneNumber();
+        }
+    }
+
+    private void verifyPhoneNumber() {
+        Intent intent = new Intent(this,VerifyPhoneActivity.class);
+        startActivity(intent);
+    }
+
+    private void continueToHomeScreen() {
         // Start registering the device
         registerDevice();
 
@@ -90,5 +90,15 @@ public class LoadScreen extends ActionBarActivity {
         // Continue on to the home screen
         Intent intent = new Intent(this,FlareHome.class);
         startActivity(intent);
+    }
+
+    private void registerDevice(){
+        TelephonyManager tm = (TelephonyManager)getSystemService(TELEPHONY_SERVICE);
+        String number = tm.getLine1Number();
+        String country = tm.getSimCountryIso();
+
+        DataStorageHandler.thisPhone = number;
+        _registrationTask = new GcmRegistrationAsyncTask(this,number);
+        _registrationTask.execute(this);
     }
 }
