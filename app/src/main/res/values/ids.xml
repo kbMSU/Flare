@@ -89,5 +89,14 @@
     <item name="phoneNumbers" type="id">phone numbers</item>
     <item name="closeDialog" type="id">close dialog</item>
     <item name="code" type="id">verification code</item>
+    <item name="verify_button" type="id">verify phone number</item>
+    <item name="submit_button" type="id">submit phone</item>
+    <item name="error" type="id">error message</item>
+    <item name="resend" type="id">resend code</item>
+    <item name="countries" type="id">country list</item>
+    <item name="verify_phone" type="id">verify phone layout</item>
+    <item name="enter_code" type="id">enter code layout</item>
+    <item name="submit_error" type="id">submit error</item>
+    <item name="continue_setup" type="id">continue setup layout</item>
 
 </resources>

@@ -1,5 +1,6 @@
 package flaregradle.myapp.com.Flare;
 
+import android.app.Activity;
 import android.content.ContentResolver;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -9,6 +10,8 @@ import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.telephony.TelephonyManager;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -20,7 +23,7 @@ import flaregradle.myapp.com.Flare.AsyncTasks.SetUpContactsTask;
 import flaregradle.myapp.com.Flare.Utilities.ContactsHandler;
 import flaregradle.myapp.com.Flare.Utilities.DataStorageHandler;
 
-public class LoadScreen extends AppCompatActivity {
+public class LoadScreen extends Activity {
 
     private GcmRegistrationAsyncTask _registrationTask;
     private ProgressBar _busyIndicator;
@@ -38,6 +41,7 @@ public class LoadScreen extends AppCompatActivity {
         // Set loading message
         _loading = (TextView)findViewById(R.id.loading);
         _loading.setText(R.string.loading);
+
     }
 
     @Override
@@ -46,6 +50,11 @@ public class LoadScreen extends AppCompatActivity {
 
         setUpDataStore();
         setUpContacts();
+    }
+
+    private void setFullscreen() {
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
     }
 
     private void setUpDataStore() {
@@ -68,7 +77,7 @@ public class LoadScreen extends AppCompatActivity {
 
     public void finishedGettingContacts() {
         if(DataStorageHandler.IsPhoneNumberVerified()) {
-            continueToHomeScreen();
+            phoneNumberIsVerified();
         } else {
             verifyPhoneNumber();
         }
@@ -79,17 +88,12 @@ public class LoadScreen extends AppCompatActivity {
         startActivity(intent);
     }
 
-    private void continueToHomeScreen() {
-        // Start registering the device
+    private void phoneNumberIsVerified() {
         registerDevice();
 
-        // Find out who all has flare
-        FindFlareUsersTask findTask = new FindFlareUsersTask();
-        findTask.execute(this);
+        findContactsWithFlare();
 
-        // Continue on to the home screen
-        Intent intent = new Intent(this,FlareHome.class);
-        startActivity(intent);
+        moveToHomeScreen();
     }
 
     private void registerDevice(){
@@ -100,5 +104,15 @@ public class LoadScreen extends AppCompatActivity {
         DataStorageHandler.thisPhone = number;
         _registrationTask = new GcmRegistrationAsyncTask(this,number);
         _registrationTask.execute(this);
+    }
+
+    private void findContactsWithFlare() {
+        FindFlareUsersTask findTask = new FindFlareUsersTask();
+        findTask.execute(this);
+    }
+
+    private void moveToHomeScreen() {
+        Intent intent = new Intent(this,FlareHome.class);
+        startActivity(intent);
     }
 }

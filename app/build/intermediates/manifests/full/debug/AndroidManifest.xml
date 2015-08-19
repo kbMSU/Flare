@@ -56,8 +56,7 @@
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/app_name"
             android:noHistory="true"
-            android:screenOrientation="portrait"
-            android:theme="@style/FullscreenTheme" >
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -77,11 +76,17 @@
             android:name="flaregradle.myapp.com.Flare.SettingsActivity"
             android:label="@string/title_activity_settings"
             android:parentActivityName="flaregradle.myapp.com.Flare.FlareHome" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="flaregradle.myapp.com.Flare.FlareHome" />
         </activity>
         <activity
             android:name="flaregradle.myapp.com.Flare.GroupsActivity"
             android:label="@string/title_activity_groups"
             android:parentActivityName="flaregradle.myapp.com.Flare.FlareHome" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="flaregradle.myapp.com.Flare.FlareHome" />
         </activity>
         <activity
             android:name="flaregradle.myapp.com.Flare.CreateGroupActivity"
@@ -97,8 +102,7 @@
             android:name="flaregradle.myapp.com.Flare.VerifyPhoneActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/app_name"
-            android:screenOrientation="portrait"
-            android:theme="@style/FullscreenTheme" >
+            android:screenOrientation="portrait" >
         </activity>
 
         <receiver
@@ -135,7 +139,7 @@
 
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
-            android:value="AIzaSyANZICm-GBRToxjlPyWe2Y1Vqrxr3ASiU8" />
+            android:value="AIzaSyB-MGunwsr3DX2H70xAAse6VJ2S7hLu440" />
 
         <!-- Debug key -->
         <!--
@@ -144,6 +148,14 @@
             android:value="AIzaSyB-MGunwsr3DX2H70xAAse6VJ2S7hLu440" />
         -->
 
+        <activity
+            android:name="flaregradle.myapp.com.Flare.SettingsSetup"
+            android:label="@string/title_activity_settings_setup"
+            android:parentActivityName="flaregradle.myapp.com.Flare.FlareHome" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="flaregradle.myapp.com.Flare.FlareHome" />
+        </activity>
         <activity
             android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity"
             android:theme="@style/Theme.IAPTheme" />

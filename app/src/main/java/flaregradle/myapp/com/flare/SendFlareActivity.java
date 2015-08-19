@@ -310,7 +310,7 @@ public class SendFlareActivity extends AppCompatActivity implements ISendFlare {
         ArrayList<PhoneNumber> contactsWithoutFlare = new ArrayList<>();
 
         for(Contact phone : _dataStore.SelectedContacts) {
-            if(!_dataStore.Registered) {
+            if(!DataStorageHandler.IsRegistered()) {
                 contactsWithFlare.add(phone.phoneNumber);
                 continue;
             }

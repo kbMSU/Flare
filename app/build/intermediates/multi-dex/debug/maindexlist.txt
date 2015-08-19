@@ -133,9 +133,9 @@ com/google/android/gms/analytics/internal/Command.class
 com/google/android/gms/maps/MapView.class
 com/google/android/gms/games/snapshot/SnapshotMetadata.class
 com/google/android/gms/internal/zzgq.class
+flaregradle/myapp/com/Flare/VerifyPhoneActivity$2.class
 android/support/annotation/Nullable.class
 com/google/android/gms/ads/internal/purchase/zzc.class
-flaregradle/myapp/com/Flare/Test.class
 com/google/ads/AdSize.class
 com/google/common/collect/TreeMultiset$Reference.class
 com/google/android/gms/ads/internal/formats/zzg.class
@@ -363,6 +363,7 @@ com/google/common/collect/Maps$TransformedEntriesNavigableMap.class
 android/support/v4/app/NotificationCompat.class
 com/google/common/reflect/TypeToken$TypeCollector$1.class
 android/support/v4/app/FragmentManagerImpl$5.class
+flaregradle/myapp/com/Flare/VerifyPhoneActivity.class
 com/google/android/gms/ads/internal/purchase/zzi.class
 com/google/android/gms/internal/zzbi.class
 com/google/common/cache/LocalCache$LocalManualCache.class
@@ -397,6 +398,7 @@ android/support/v4/app/FragmentManagerImpl$4.class
 android/support/annotation/CheckResult.class
 com/MyApp/Flare/R$menu.class
 com/google/android/gms/internal/zzgf.class
+flaregradle/myapp/com/Flare/VerifyPhoneActivity$1.class
 android/support/annotation/AnimRes.class
 com/google/android/gms/internal/zzft.class
 com/google/android/gms/ads/internal/purchase/zzk.class
@@ -467,6 +469,7 @@ com/google/android/gms/internal/zzds.class
 com/google/common/collect/ImmutableSortedMap.class
 flaregradle/myapp/com/Flare/Services/NotificationDeclineService.class
 com/google/common/base/Absent.class
+com/microsoft/windowsazure/mobileservices/MobileServiceClient.class
 com/google/android/gms/common/api/GoogleApiClient$Builder.class
 com/google/common/annotations/GwtCompatible.class
 com/google/android/gms/ads/mediation/NetworkExtras.class
@@ -638,6 +641,7 @@ com/google/common/collect/Multisets$ImmutableEntry.class
 com/google/common/collect/AbstractSortedMultiset.class
 flaregradle/myapp/com/Flare/Services/GcmBroadcastReceiver.class
 flaregradle/myapp/com/Flare/AsyncTasks/GcmRegistrationAsyncTask.class
+flaregradle/myapp/com/Flare/SettingsSetup.class
 flaregradle/myapp/com/Flare/GroupsActivity$3.class
 com/google/common/base/Joiner.class
 android/support/annotation/WorkerThread.class
@@ -702,6 +706,7 @@ android/support/v4/view/ViewPager.class
 com/google/android/gms/internal/zzbv.class
 com/google/android/gms/ads/AdListener.class
 flaregradle/myapp/com/Flare/GroupsActivity$2.class
+com/MyApp/Flare/R$array.class
 com/google/ads/mediation/customevent/CustomEventBanner.class
 com/google/android/gms/ads/internal/request/zzb$zza.class
 com/google/android/gms/internal/zzhs.class

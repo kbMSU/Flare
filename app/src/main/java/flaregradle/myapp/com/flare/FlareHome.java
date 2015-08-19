@@ -1,11 +1,13 @@
 package flaregradle.myapp.com.Flare;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -30,7 +32,7 @@ import java.util.Locale;
 
 import flaregradle.myapp.com.Flare.Utilities.DataStorageHandler;
 
-public class FlareHome extends ActionBarActivity implements
+public class FlareHome extends Activity implements
         GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, LocationListener {
 
     private Location _location;

@@ -120,7 +120,6 @@
     <orderEntry type="library" exported="" name="multidex-1.0.1" level="project" />
     <orderEntry type="library" exported="" name="notification-hubs-0.3" level="project" />
     <orderEntry type="library" exported="" name="play-services-drive-7.5.0" level="project" />
-    <orderEntry type="library" exported="" name="mobileservices-2.0.1-beta" level="project" />
     <orderEntry type="library" exported="" name="play-services-gcm-7.5.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-appindexing-7.5.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-wearable-7.5.0" level="project" />
@@ -130,8 +129,8 @@
     <orderEntry type="library" exported="" name="play-services-plus-7.5.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-maps-7.5.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-fitness-7.5.0" level="project" />
-    <orderEntry type="library" exported="" name="play-services-analytics-7.5.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-7.5.0" level="project" />
+    <orderEntry type="library" exported="" name="play-services-analytics-7.5.0" level="project" />
     <orderEntry type="library" exported="" name="mediarouter-v7-22.0.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-wallet-7.5.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-identity-7.5.0" level="project" />
@@ -142,7 +141,9 @@
     <orderEntry type="library" exported="" name="play-services-nearby-7.5.0" level="project" />
     <orderEntry type="library" exported="" name="guava-17.0" level="project" />
     <orderEntry type="library" exported="" name="support-v4-22.2.1" level="project" />
+    <orderEntry type="library" exported="" name="mobileservices-2.0.3" level="project" />
     <orderEntry type="library" exported="" name="play-services-cast-7.5.0" level="project" />
+    <orderEntry type="library" exported="" name="twilio-java-sdk-4.5.0-jar-with-dependencies" level="project" />
     <orderEntry type="library" exported="" name="appcompat-v7-22.2.1" level="project" />
     <orderEntry type="library" exported="" name="play-services-ads-7.5.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-location-7.5.0" level="project" />

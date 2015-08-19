@@ -30,28 +30,47 @@ public class FindFlareUsersTask extends AsyncTask<Context,Void,Void> {
                     context);
 
             MobileServiceTable<DeviceItem> devicesTable = client.getTable(DeviceItem.class);
+            Query query = null;
 
-            for(Contact c : DataStorageHandler.getInstance().AllContacts.values()) {
-                boolean hasFlare = false;
+            for(Contact c : DataStorageHandler.AllContacts.values()) {
                 for(PhoneNumber phone : c.allPhoneNumbers) {
                     String number = phone.number;
-                    MobileServiceList<DeviceItem> phoneItems = devicesTable.where().indexOf("FullPhone",number).ne(-1).execute().get();
-
-                    boolean isSavedAsHasFlare =  DataStorageHandler.doesNumberHaveFlare(number);
-                    if(phoneItems.size() > 0) {
-                        hasFlare = true;
-                        phone.hasFlare = true;
-                        if(!isSavedAsHasFlare) {
-                            DataStorageHandler.getInstance().saveContactNumbersWithFlare(phone);
-                        }
+                    if(query == null) {
+                        query = devicesTable.where().indexOf("FullPhone",number).ne(-1);
                     } else {
-                        phone.hasFlare = false;
-                        if(isSavedAsHasFlare) {
-                            DataStorageHandler.getInstance().deleteContactNumbersWithFlare(phone);
-                        }
+                        query.or().indexOf("FullPhone",number).ne(-1);
                     }
                 }
-                c.hasFlare = hasFlare;
+            }
+
+            if(query != null) {
+                MobileServiceList<DeviceItem> items = devicesTable.execute(query).get();
+                for(Contact c : DataStorageHandler.AllContacts.values()) {
+                    boolean hasFlare = false;
+                    for(PhoneNumber phone : c.allPhoneNumbers) {
+                        boolean isSavedAsHasFlare =  DataStorageHandler.doesNumberHaveFlare(phone.number);
+                        boolean result = false;
+                        for (DeviceItem item : items) {
+                            if(item.fullPhone.contains(phone.number)) {
+                                result = true;
+                                break;
+                            }
+                        }
+                        if(result) {
+                            hasFlare = true;
+                            phone.hasFlare = true;
+                            if(!isSavedAsHasFlare) {
+                                DataStorageHandler.saveContactNumbersWithFlare(phone);
+                            }
+                        } else {
+                            phone.hasFlare = false;
+                            if(isSavedAsHasFlare) {
+                                DataStorageHandler.deleteContactNumbersWithFlare(phone);
+                            }
+                        }
+                    }
+                    c.hasFlare = hasFlare;
+                }
             }
 
         } catch (Exception ex) {

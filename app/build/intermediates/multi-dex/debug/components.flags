@@ -44,7 +44,7 @@
     <init>();
 }
 
--keep class flaregradle.myapp.com.Flare.Test {
+-keep class flaregradle.myapp.com.Flare.VerifyPhoneActivity {
     <init>();
 }
 
@@ -61,6 +61,10 @@
 }
 
 -keep class flaregradle.myapp.com.Flare.Services.NotificationAcceptService {
+    <init>();
+}
+
+-keep class flaregradle.myapp.com.Flare.SettingsSetup {
     <init>();
 }
 

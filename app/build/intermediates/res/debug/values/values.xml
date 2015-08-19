@@ -1,5 +1,215 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- From: file:/Users/Karthik/Library/Mobile%20Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string-array name="CountryCodes">
+        <item>93,AF</item>
+        <item>355,AL</item>
+        <item>213,DZ</item>
+        <item>376,AD</item>
+        <item>244,AO</item>
+        <item>672,AQ</item>
+        <item>54,AR</item>
+        <item>374,AM</item>
+        <item>297,AW</item>
+        <item>61,AU</item>
+        <item>43,AT</item>
+        <item>994,AZ</item>
+        <item>973,BH</item>
+        <item>880,BD</item>
+        <item>375,BY</item>
+        <item>32,BE</item>
+        <item>501,BZ</item>
+        <item>229,BJ</item>
+        <item>975,BT</item>
+        <item>591,BO</item>
+        <item>387,BA</item>
+        <item>267,BW</item>
+        <item>55,BR</item>
+        <item>673,BN</item>
+        <item>359,BG</item>
+        <item>226,BF</item>
+        <item>95,MM</item>
+        <item>257,BI</item>
+        <item>855,KH</item>
+        <item>237,CM</item>
+        <item>1,CA</item>
+        <item>238,CV</item>
+        <item>236,CF</item>
+        <item>235,TD</item>
+        <item>56,CL</item>
+        <item>86,CN</item>
+        <item>61,CX</item>
+        <item>61,CC</item>
+        <item>57,CO</item>
+        <item>269,KM</item>
+        <item>242,CG</item>
+        <item>243,CD</item>
+        <item>682,CK</item>
+        <item>506,CR</item>
+        <item>385,HR</item>
+        <item>53,CU</item>
+        <item>357,CY</item>
+        <item>420,CZ</item>
+        <item>45,DK</item>
+        <item>253,DJ</item>
+        <item>670,TL</item>
+        <item>593,EC</item>
+        <item>20,EG</item>
+        <item>503,SV</item>
+        <item>240,GQ</item>
+        <item>291,ER</item>
+        <item>372,EE</item>
+        <item>251,ET</item>
+        <item>500,FK</item>
+        <item>298,FO</item>
+        <item>679,FJ</item>
+        <item>358,FI</item>
+        <item>33,FR</item>
+        <item>689,PF</item>
+        <item>241,GA</item>
+        <item>220,GM</item>
+        <item>995,GE</item>
+        <item>49,DE</item>
+        <item>233,GH</item>
+        <item>350,GI</item>
+        <item>30,GR</item>
+        <item>299,GL</item>
+        <item>502,GT</item>
+        <item>224,GN</item>
+        <item>245,GW</item>
+        <item>592,GY</item>
+        <item>509,HT</item>
+        <item>504,HN</item>
+        <item>852,HK</item>
+        <item>36,HU</item>
+        <item>91,IN</item>
+        <item>62,ID</item>
+        <item>98,IR</item>
+        <item>964,IQ</item>
+        <item>353,IE</item>
+        <item>44,IM</item>
+        <item>972,IL</item>
+        <item>39,IT</item>
+        <item>225,CI</item>
+        <item>81,JP</item>
+        <item>962,JO</item>
+        <item>7,KZ</item>
+        <item>254,KE</item>
+        <item>686,KI</item>
+        <item>965,KW</item>
+        <item>996,KG</item>
+        <item>856,LA</item>
+        <item>371,LV</item>
+        <item>961,LB</item>
+        <item>266,LS</item>
+        <item>231,LR</item>
+        <item>218,LY</item>
+        <item>423,LI</item>
+        <item>370,LT</item>
+        <item>352,LU</item>
+        <item>853,MO</item>
+        <item>389,MK</item>
+        <item>261,MG</item>
+        <item>265,MW</item>
+        <item>60,MY</item>
+        <item>960,MV</item>
+        <item>223,ML</item>
+        <item>356,MT</item>
+        <item>692,MH</item>
+        <item>222,MR</item>
+        <item>230,MU</item>
+        <item>262,YT</item>
+        <item>52,MX</item>
+        <item>691,FM</item>
+        <item>373,MD</item>
+        <item>377,MC</item>
+        <item>976,MN</item>
+        <item>382,ME</item>
+        <item>212,MA</item>
+        <item>258,MZ</item>
+        <item>264,NA</item>
+        <item>674,NR</item>
+        <item>977,NP</item>
+        <item>31,NL</item>
+        <item>599,AN</item>
+        <item>687,NC</item>
+        <item>64,NZ</item>
+        <item>505,NI</item>
+        <item>227,NE</item>
+        <item>234,NG</item>
+        <item>683,NU</item>
+        <item>850,KP</item>
+        <item>47,NO</item>
+        <item>968,OM</item>
+        <item>92,PK</item>
+        <item>680,PW</item>
+        <item>507,PA</item>
+        <item>675,PG</item>
+        <item>595,PY</item>
+        <item>51,PE</item>
+        <item>63,PH</item>
+        <item>870,PN</item>
+        <item>48,PL</item>
+        <item>351,PT</item>
+        <item>1,PR</item>
+        <item>974,QA</item>
+        <item>40,RO</item>
+        <item>7,RU</item>
+        <item>250,RW</item>
+        <item>590,BL</item>
+        <item>685,WS</item>
+        <item>378,SM</item>
+        <item>239,ST</item>
+        <item>966,SA</item>
+        <item>221,SN</item>
+        <item>381,RS</item>
+        <item>248,SC</item>
+        <item>232,SL</item>
+        <item>65,SG</item>
+        <item>421,SK</item>
+        <item>386,SI</item>
+        <item>677,SB</item>
+        <item>252,SO</item>
+        <item>27,ZA</item>
+        <item>82,KR</item>
+        <item>34,ES</item>
+        <item>94,LK</item>
+        <item>290,SH</item>
+        <item>508,PM</item>
+        <item>249,SD</item>
+        <item>597,SR</item>
+        <item>268,SZ</item>
+        <item>46,SE</item>
+        <item>41,CH</item>
+        <item>963,SY</item>
+        <item>886,TW</item>
+        <item>992,TJ</item>
+        <item>255,TZ</item>
+        <item>66,TH</item>
+        <item>228,TG</item>
+        <item>690,TK</item>
+        <item>676,TO</item>
+        <item>216,TN</item>
+        <item>90,TR</item>
+        <item>993,TM</item>
+        <item>688,TV</item>
+        <item>971,AE</item>
+        <item>256,UG</item>
+        <item>44,GB</item>
+        <item>380,UA</item>
+        <item>598,UY</item>
+        <item>1,US</item>
+        <item>998,UZ</item>
+        <item>678,VU</item>
+        <item>39,VA</item>
+        <item>58,VE</item>
+        <item>84,VN</item>
+        <item>681,WF</item>
+        <item>967,YE</item>
+        <item>260,ZM</item>
+        <item>263,ZW</item>
+    </string-array>
     <!-- From: file:/Users/Karthik/Library/Mobile%20Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <attr format="reference" name="drawerArrowStyle"/>
@@ -278,6 +488,7 @@
     <item name="clear_contacts" type="id">Clear Contacts</item>
     <item name="closeDialog" type="id">close dialog</item>
     <item name="cloudButton" type="id">cloud button</item>
+    <item name="code" type="id">verification code</item>
     <item name="contactItem" type="id">contact item</item>
     <item name="contact_has_flare" type="id">contact_has_flare</item>
     <item name="contact_image" type="id">contact image</item>
@@ -285,6 +496,8 @@
     <item name="contact_phone" type="id">contact phone</item>
     <item name="contact_selected" type="id">contact selected</item>
     <item name="contactsHome" type="id">contacts home</item>
+    <item name="continue_setup" type="id">continue setup layout</item>
+    <item name="countries" type="id">country list</item>
     <item name="createGroup" type="id">create group</item>
     <item name="default_accept_edittext" type="id">default accept edittext</item>
     <item name="default_accept_textview" type="id">default accept textview</item>
@@ -293,6 +506,8 @@
     <item name="deleteGroup" type="id">delete group</item>
     <item name="dialogButtons" type="id">dialog buttons</item>
     <item name="editGroup" type="id">edit group</item>
+    <item name="enter_code" type="id">enter code layout</item>
+    <item name="error" type="id">error message</item>
     <item name="fab" type="id">floating action button</item>
     <item name="fabGroups" type="id">fab groups</item>
     <item name="fabSendFlare" type="id">fab send flare</item>
@@ -332,6 +547,7 @@
     <item name="progress_horizontal" type="id"/>
     <!-- From: file:/Users/Karthik/Library/Mobile%20Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/res/values/ids.xml -->
     <eat-comment/>
+    <item name="resend" type="id">resend code</item>
     <item name="saveGroup" type="id">save group</item>
     <item name="searchLocationText" type="id">search location text</item>
     <item name="sendFlareLayout" type="id">send flare layout</item>
@@ -347,9 +563,17 @@
     <!-- From: file:/Users/Karthik/Library/Mobile%20Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <item name="split_action_bar" type="id"/>
+    <!-- From: file:/Users/Karthik/Library/Mobile%20Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/res/values/ids.xml -->
+    <eat-comment/>
+    <item name="submit_button" type="id">submit phone</item>
+    <item name="submit_error" type="id">submit error</item>
+    <!-- From: file:/Users/Karthik/Library/Mobile%20Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
+    <eat-comment/>
     <item name="up" type="id"/>
     <!-- From: file:/Users/Karthik/Library/Mobile%20Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/res/values/ids.xml -->
     <eat-comment/>
+    <item name="verify_button" type="id">verify phone number</item>
+    <item name="verify_phone" type="id">verify phone layout</item>
     <item name="whats_new" type="id">What\'s new</item>
     <item name="writeMessage" type="id">write message</item>
     <item name="writeMessageLayout" type="id">write message layout</item>
@@ -492,6 +716,7 @@
     <string name="phone">Location</string>
     <string name="phone_clear">-</string>
     <string name="post_flare_interstitial_ad_id">ca-app-pub-9978131204593610/9323499682</string>
+    <string name="resend_code"><u>Resend code</u></string>
     <string name="save_group_text">SAVE GROUP</string>
     <string name="save_text">SAVE</string>
     <string name="search">Search</string>
@@ -515,6 +740,7 @@
     <string name="title_activity_load_screen">LoadScreen</string>
     <string name="title_activity_send">Send</string>
     <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_settings_setup">Setup</string>
     <string name="title_activity_test">TestActivity</string>
     <string name="title_activity_verify_phone">VerifyPhoneActivity</string>
     <string name="version">Version 1.9.99v3</string>

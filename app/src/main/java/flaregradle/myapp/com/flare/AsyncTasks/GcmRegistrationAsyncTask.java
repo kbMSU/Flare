@@ -46,8 +46,7 @@ public class GcmRegistrationAsyncTask extends AsyncTask<Context, Void, String> {
             }
             String regId = gcm.register(SENDER_ID);
 
-            DataStorageHandler dataStore = DataStorageHandler.getInstance();
-            dataStore.registrationId = regId;
+            DataStorageHandler.registrationId = regId;
 
             // Split the phone number
             String phone = "";
@@ -125,6 +124,6 @@ public class GcmRegistrationAsyncTask extends AsyncTask<Context, Void, String> {
     @Override
     protected void onPostExecute(String msg) {
         if(msg.equals("Device Registered"))
-            DataStorageHandler.getInstance().Registered = true;
+            DataStorageHandler.SetRegistered();
     }
 }
