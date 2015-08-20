@@ -43,6 +43,7 @@ public class DataStorageHandler {
     public static HashMap<String,Group> SavedContactGroups;
     public static HashMap<String,PhoneNumber> ContactNumbersWithFlare;
     public static Location CurrentLocation;
+    public static boolean SetUpComplete;
 
     //region Setup
     public static void setupPreferences() {

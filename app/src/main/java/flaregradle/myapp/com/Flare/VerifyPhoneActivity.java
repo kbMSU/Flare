@@ -25,6 +25,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 import java.util.Random;
+import java.util.TreeMap;
+import java.util.TreeSet;
 
 import flaregradle.myapp.com.Flare.Utilities.DataStorageHandler;
 
@@ -48,7 +50,6 @@ public class VerifyPhoneActivity extends Activity {
     private String _phone;
     private Runnable _askTwilioForMessage;
     private HashMap<String,String> _countryMap;
-    private List<String> _countriesDisplay;
     private MobileServiceClient _azureClient;
 
     @Override
@@ -77,9 +78,7 @@ public class VerifyPhoneActivity extends Activity {
 
     private void countriesSetup() {
         _countryMap = new HashMap<>();
-        _countriesDisplay = new ArrayList<>();
-        Integer index = 0;
-        Integer currentIndex = 0;
+        TreeSet<String> sortedCountries = new TreeSet<>();
         String[] rl = this.getResources().getStringArray(R.array.CountryCodes);
         for(Locale l : Locale.getAvailableLocales()) {
             if(!_countryMap.containsKey(l.getDisplayCountry())) {
@@ -88,19 +87,29 @@ public class VerifyPhoneActivity extends Activity {
                 for(String pair : rl) {
                     String[] splitPair = pair.split(",");
                     if(splitPair[1].trim().equals(country.trim())) {
-                        if(country.trim().toLowerCase().equals("us"))
-                            index = currentIndex;
                         _countryMap.put(displayCountry, splitPair[0]);
-                        _countriesDisplay.add(displayCountry);
-                        currentIndex++;
+                        sortedCountries.add(displayCountry);
                         break;
                     }
                 }
             }
         }
 
+        String[] countries = new String[200];
+        sortedCountries.toArray(countries);
+
+        Integer usIndex = 0;
+        Integer index = 0;
+        for(String country : countries) {
+            if(country.toLowerCase().contains("united states")) {
+                usIndex = index;
+                break;
+            }
+            index++;
+        }
+
         ArrayAdapter<String> countriesAdapter =
-                new ArrayAdapter<>(getApplicationContext(),android.R.layout.simple_list_item_1,_countriesDisplay);
+                new ArrayAdapter<>(getApplicationContext(),android.R.layout.simple_list_item_1,countries);
         _countryList.setAdapter(countriesAdapter);
 
         _countryList.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -118,7 +127,7 @@ public class VerifyPhoneActivity extends Activity {
             }
         });
 
-        _countryList.setSelection(index);
+        _countryList.setSelection(usIndex);
     }
 
     private void twilioSetup() {
@@ -161,9 +170,9 @@ public class VerifyPhoneActivity extends Activity {
 
     private void generateCode() {
         Random random = new Random();
-        Integer code = random.nextInt();
+        Integer code = random.nextInt(9999);
         while(code < 1000) {
-            code *= random.nextInt();
+            code *= 2;
         }
         _code = code.toString();
     }

@@ -42,19 +42,8 @@ public class LoadScreen extends Activity {
         _loading = (TextView)findViewById(R.id.loading);
         _loading.setText(R.string.loading);
 
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-
         setUpDataStore();
         setUpContacts();
-    }
-
-    private void setFullscreen() {
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
     }
 
     private void setUpDataStore() {
@@ -76,6 +65,7 @@ public class LoadScreen extends Activity {
     }
 
     public void finishedGettingContacts() {
+        findContactsWithFlare();
         if(DataStorageHandler.IsPhoneNumberVerified()) {
             phoneNumberIsVerified();
         } else {
@@ -90,9 +80,6 @@ public class LoadScreen extends Activity {
 
     private void phoneNumberIsVerified() {
         registerDevice();
-
-        findContactsWithFlare();
-
         moveToHomeScreen();
     }
 
