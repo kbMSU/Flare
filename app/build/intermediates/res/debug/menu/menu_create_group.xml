@@ -1,7 +1,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:flare="http://schemas.android.com/apk/res-auto"
-    tools:context="flaregradle.myapp.com.Flare.CreateGroupActivity">
+    tools:context="flaregradle.myapp.com.Flare.Activities.CreateGroupActivity">
 
     <item android:id="@id/saveGroup"
         android:title="@string/save_group_text"

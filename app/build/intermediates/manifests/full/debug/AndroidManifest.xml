@@ -9,10 +9,10 @@
         android:targetSdkVersion="22" />
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
@@ -46,13 +46,13 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="flaregradle.myapp.com.Flare.FlareHome"
+            android:name="flaregradle.myapp.com.Flare.Activities.FlareHome"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize" >
         </activity>
         <activity
-            android:name="flaregradle.myapp.com.Flare.LoadScreen"
+            android:name="flaregradle.myapp.com.Flare.Activities.LoadScreen"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/app_name"
             android:noHistory="true"
@@ -64,34 +64,34 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="flaregradle.myapp.com.Flare.SendFlareActivity"
+            android:name="flaregradle.myapp.com.Flare.Activities.SendFlareActivity"
             android:label="@string/title_activity_send"
-            android:parentActivityName="flaregradle.myapp.com.Flare.FlareHome"
+            android:parentActivityName="flaregradle.myapp.com.Flare.Activities.FlareHome"
             android:windowSoftInputMode="stateHidden" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="flaregradle.myapp.com.Flare.FlareHome" />
+                android:value="flaregradle.myapp.com.Flare.Activities.FlareHome" />
         </activity>
         <activity
-            android:name="flaregradle.myapp.com.Flare.SettingsActivity"
+            android:name="flaregradle.myapp.com.Flare.Activities.SettingsActivity"
             android:label="@string/title_activity_settings"
-            android:parentActivityName="flaregradle.myapp.com.Flare.FlareHome" >
+            android:parentActivityName="flaregradle.myapp.com.Flare.Activities.FlareHome" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="flaregradle.myapp.com.Flare.FlareHome" />
+                android:value="flaregradle.myapp.com.Flare.Activities.FlareHome" />
         </activity>
         <activity
-            android:name="flaregradle.myapp.com.Flare.GroupsActivity"
+            android:name="flaregradle.myapp.com.Flare.Activities.GroupsActivity"
             android:label="@string/title_activity_groups"
-            android:parentActivityName="flaregradle.myapp.com.Flare.FlareHome" >
+            android:parentActivityName="flaregradle.myapp.com.Flare.Activities.FlareHome" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="flaregradle.myapp.com.Flare.FlareHome" />
+                android:value="flaregradle.myapp.com.Flare.Activities.FlareHome" />
         </activity>
         <activity
-            android:name="flaregradle.myapp.com.Flare.CreateGroupActivity"
+            android:name="flaregradle.myapp.com.Flare.Activities.CreateGroupActivity"
             android:label="@string/title_activity_create_group"
-            android:parentActivityName="flaregradle.myapp.com.Flare.GroupsActivity"
+            android:parentActivityName="flaregradle.myapp.com.Flare.Activities.GroupsActivity"
             android:windowSoftInputMode="stateHidden" >
         </activity>
         <activity
@@ -99,7 +99,7 @@
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
             android:theme="@android:style/Theme.Translucent" />
         <activity
-            android:name="flaregradle.myapp.com.Flare.VerifyPhoneActivity"
+            android:name="flaregradle.myapp.com.Flare.Activities.VerifyPhoneActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/app_name"
             android:screenOrientation="portrait" >
@@ -149,12 +149,12 @@
         -->
 
         <activity
-            android:name="flaregradle.myapp.com.Flare.SettingsSetup"
+            android:name="flaregradle.myapp.com.Flare.Activities.SettingsSetup"
             android:label="@string/title_activity_settings_setup"
-            android:parentActivityName="flaregradle.myapp.com.Flare.FlareHome" >
+            android:parentActivityName="flaregradle.myapp.com.Flare.Activities.FlareHome" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="flaregradle.myapp.com.Flare.FlareHome" />
+                android:value="flaregradle.myapp.com.Flare.Activities.FlareHome" />
         </activity>
         <activity
             android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity"

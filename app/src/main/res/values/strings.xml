@@ -56,6 +56,16 @@
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="title_activity_settings_setup">Setup</string>
     <string name="resend_code"><u>Resend code</u></string>
+    <string name="submit_string">SUBMIT</string>
+    <string name="incorrect_code">Sorry but that\'s not the right code</string>
+    <string name="sms_setting_explanation">Send a text message with your location and a message. This might incur SMS charges. It will show up in your thread with your friend.</string>
+    <string name="cloud_message_explanation">Send a cloud message with your location and a message. This might incur data charges. This will not show up in your thread with your friend.</string>
+    <string name="settings_setup_header">Just a few more settings !</string>
+    <string name="settings_setup_subheader">Don\'t worry you can change these from the settings menu at any time</string>
+    <string name="settings_alternate_flare">Alternate Flare</string>
+    <string name="settings_alternate_flare_subheader">If your friend does not have flare what do we do ?</string>
+    <string name="text_message">Text Message</string>
+    <string name="cloud_message">Cloud Message</string>
 
     <string-array name="CountryCodes" >
         <item>93,AF</item>

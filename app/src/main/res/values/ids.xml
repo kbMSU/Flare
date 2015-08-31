@@ -98,5 +98,8 @@
     <item name="enter_code" type="id">enter code layout</item>
     <item name="submit_error" type="id">submit error</item>
     <item name="continue_setup" type="id">continue setup layout</item>
+    <item name="select_text_message" type="id">Select text message for alternate flare</item>
+    <item name="select_cloud_message" type="id">Select cloud message for alternate flare</item>
+    <item name="settings_list" type="id">Settings setup list</item>
 
 </resources>

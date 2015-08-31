@@ -34,6 +34,7 @@ public class DataStorageHandler {
     private static String _defaultAcceptResponse;
     private static boolean _registered;
     private static boolean _phoneNumberVerified;
+    private static boolean _sendCloudMessage;
 
     public static SharedPreferences Preferences;
     public static TreeMap<String,Contact> AllContacts;
@@ -43,15 +44,13 @@ public class DataStorageHandler {
     public static HashMap<String,Group> SavedContactGroups;
     public static HashMap<String,PhoneNumber> ContactNumbersWithFlare;
     public static Location CurrentLocation;
-    public static boolean SetUpComplete;
 
     //region Setup
     public static void setupPreferences() {
         _defaultDeclineResponse = Preferences.getString("DefaultDeclineResponse", "Sorry, I can't make it");
         _defaultAcceptResponse = Preferences.getString("DefaultAcceptResponse","I will be there ASAP");
         _notificationId = Preferences.getInt("notificationId", 1);
-
-        _registered = Preferences.getBoolean("registered", false);
+        _sendCloudMessage = Preferences.getBoolean("cloudMessage",false);
         _registered = Preferences.getBoolean("verified",false);
 
         // Get saved contact groups
@@ -198,6 +197,14 @@ public class DataStorageHandler {
         _registered = true;
         SharedPreferences.Editor editor = Preferences.edit();
         editor.putBoolean("registered",_registered);
+        editor.apply();
+    }
+
+    public static boolean CanSendCloudMessage() { return _sendCloudMessage;}
+    public static void SetSendCloudMessage(boolean val) {
+        _sendCloudMessage = val;
+        SharedPreferences.Editor editor = Preferences.edit();
+        editor.putBoolean("cloudMessage",_sendCloudMessage);
         editor.apply();
     }
     //endregion

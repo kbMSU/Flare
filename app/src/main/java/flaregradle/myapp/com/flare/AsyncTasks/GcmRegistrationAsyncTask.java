@@ -10,9 +10,9 @@ import com.microsoft.windowsazure.mobileservices.MobileServiceList;
 import com.microsoft.windowsazure.mobileservices.table.MobileServiceTable;
 import com.microsoft.windowsazure.notifications.NotificationsManager;
 
-import flaregradle.myapp.com.Flare.AzureNotificationsHandler;
+import flaregradle.myapp.com.Flare.Utilities.AzureNotificationsHandler;
 import flaregradle.myapp.com.Flare.BackendItems.DeviceItem;
-import flaregradle.myapp.com.Flare.LoadScreen;
+import flaregradle.myapp.com.Flare.Activities.LoadScreen;
 import flaregradle.myapp.com.Flare.Utilities.DataStorageHandler;
 
 public class GcmRegistrationAsyncTask extends AsyncTask<Context, Void, String> {

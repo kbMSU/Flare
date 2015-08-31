@@ -1,7 +1,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:flare="http://schemas.android.com/apk/res-auto"
-    tools:context="flaregradle.myapp.com.Flare.SendFlareActivity">
+    tools:context="flaregradle.myapp.com.Flare.Activities.SendFlareActivity">
 
     <item android:id="@id/createGroup"
         android:icon="@drawable/add_group"

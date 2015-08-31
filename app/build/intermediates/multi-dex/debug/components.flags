@@ -16,27 +16,27 @@
     void attachBaseContext(android.content.Context);
 }
 
--keep class flaregradle.myapp.com.Flare.FlareHome {
+-keep class flaregradle.myapp.com.Flare.Activities.FlareHome {
     <init>();
 }
 
--keep class flaregradle.myapp.com.Flare.LoadScreen {
+-keep class flaregradle.myapp.com.Flare.Activities.LoadScreen {
     <init>();
 }
 
--keep class flaregradle.myapp.com.Flare.SendFlareActivity {
+-keep class flaregradle.myapp.com.Flare.Activities.SendFlareActivity {
     <init>();
 }
 
--keep class flaregradle.myapp.com.Flare.SettingsActivity {
+-keep class flaregradle.myapp.com.Flare.Activities.SettingsActivity {
     <init>();
 }
 
--keep class flaregradle.myapp.com.Flare.GroupsActivity {
+-keep class flaregradle.myapp.com.Flare.Activities.GroupsActivity {
     <init>();
 }
 
--keep class flaregradle.myapp.com.Flare.CreateGroupActivity {
+-keep class flaregradle.myapp.com.Flare.Activities.CreateGroupActivity {
     <init>();
 }
 
@@ -44,7 +44,7 @@
     <init>();
 }
 
--keep class flaregradle.myapp.com.Flare.VerifyPhoneActivity {
+-keep class flaregradle.myapp.com.Flare.Activities.VerifyPhoneActivity {
     <init>();
 }
 
@@ -64,7 +64,7 @@
     <init>();
 }
 
--keep class flaregradle.myapp.com.Flare.SettingsSetup {
+-keep class flaregradle.myapp.com.Flare.Activities.SettingsSetup {
     <init>();
 }
 
