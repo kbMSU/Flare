@@ -18,7 +18,6 @@ import flaregradle.myapp.com.Flare.Utilities.DataStorageHandler;
 public class GcmRegistrationAsyncTask extends AsyncTask<Context, Void, String> {
 
     private GoogleCloudMessaging gcm;
-    private Context context;
 
     // Google Developers Console project number
     private static final String SENDER_ID = "97762557726";
@@ -26,18 +25,13 @@ public class GcmRegistrationAsyncTask extends AsyncTask<Context, Void, String> {
     // Azure connection string
     private static final String connection_string = "Endpoint=sb://flares.servicebus.windows.net/;SharedAccessKeyName=DefaultFullSharedAccessSignature;SharedAccessKey=+ofrbn1EiYh6j+bgD8z0w20G8oa781CctkemzeQITXU=";
 
-    private LoadScreen _parent;
-    private String phoneNumber;
-
-    public GcmRegistrationAsyncTask(LoadScreen parent, String number){
-        phoneNumber = number;
-        _parent = parent;
+    public GcmRegistrationAsyncTask(){
     }
 
     @Override
     protected String doInBackground(Context... params) {
 
-        context = params[0];
+        Context context = params[0];
 
         String msg = "";
         try {
@@ -45,23 +39,9 @@ public class GcmRegistrationAsyncTask extends AsyncTask<Context, Void, String> {
                 gcm = GoogleCloudMessaging.getInstance(context);
             }
             String regId = gcm.register(SENDER_ID);
-
-            DataStorageHandler.registrationId = regId;
-
-            // Split the phone number
-            String phone = "";
-            String code = "";
-
-            for (int i= phoneNumber.length()-1 ; i >= 0; i--) {
-                if(phone.length() < 10) {
-                    phone += phoneNumber.charAt(i);
-                } else {
-                    code += phoneNumber.charAt(i);
-                }
-            }
-
-            code = new StringBuilder(code).reverse().toString();
-            phone = new StringBuilder(phone).reverse().toString();
+            String code = DataStorageHandler.getCountryCode();
+            String phone = DataStorageHandler.getPhoneNumber();
+            String fullPhone = code+phone;
 
             // Save phone data in backend
             MobileServiceClient client = new MobileServiceClient(
@@ -70,7 +50,7 @@ public class GcmRegistrationAsyncTask extends AsyncTask<Context, Void, String> {
                     context);
 
             MobileServiceTable<DeviceItem> devices = client.getTable(DeviceItem.class);
-            MobileServiceList<DeviceItem> phoneItems = devices.where().field("FullPhone").eq(phoneNumber).execute().get();
+            MobileServiceList<DeviceItem> phoneItems = devices.where().field("FullPhone").eq(fullPhone).execute().get();
             MobileServiceList<DeviceItem> regItems = devices.where().field("RegId").eq(regId).execute().get();
 
             if(phoneItems.size() == 0){
@@ -79,7 +59,7 @@ public class GcmRegistrationAsyncTask extends AsyncTask<Context, Void, String> {
                     // This device has been registered before , lets update it
                     DeviceItem item = regItems.get(0);
                     item.regId = regId;
-                    item.fullPhone = phoneNumber;
+                    item.fullPhone = fullPhone;
                     item.countryCode = code;
                     item.number = phone;
                     item.deviceType = "android";
@@ -89,7 +69,7 @@ public class GcmRegistrationAsyncTask extends AsyncTask<Context, Void, String> {
                     // This phone number has not been registered , nor has this device
                     DeviceItem item = new DeviceItem();
                     item.regId = regId;
-                    item.fullPhone = phoneNumber;
+                    item.fullPhone = fullPhone;
                     item.countryCode = code;
                     item.number = phone;
                     item.deviceType = "android";
@@ -102,7 +82,7 @@ public class GcmRegistrationAsyncTask extends AsyncTask<Context, Void, String> {
                     // It was registered to a different device so lets update it
                     item.regId = regId;
                     item.deviceType = "android";
-                    item.fullPhone = phoneNumber;
+                    item.fullPhone = fullPhone;
                     item.countryCode = code;
                     item.number = phone;
                     devices.update(item);
@@ -111,8 +91,8 @@ public class GcmRegistrationAsyncTask extends AsyncTask<Context, Void, String> {
 
             // Register with notification hubs
             NotificationsManager.handleNotifications(context, SENDER_ID, AzureNotificationsHandler.class);
-            NotificationHub hub = new NotificationHub("flarenotifications",connection_string,context);
-            hub.register(regId,phoneNumber);
+            NotificationHub hub = new NotificationHub("flarenotifications",connection_string, context);
+            hub.register(regId,fullPhone);
 
         } catch (Exception ex) {
             msg += " : " + ex.getMessage();

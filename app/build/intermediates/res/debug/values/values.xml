@@ -498,6 +498,7 @@
     <item name="contactsHome" type="id">contacts home</item>
     <item name="continue_setup" type="id">continue setup layout</item>
     <item name="countries" type="id">country list</item>
+    <item name="country_code" type="id">Country Code</item>
     <item name="createGroup" type="id">create group</item>
     <item name="default_accept_edittext" type="id">default accept edittext</item>
     <item name="default_accept_textview" type="id">default accept textview</item>
@@ -550,6 +551,8 @@
     <item name="resend" type="id">resend code</item>
     <item name="saveGroup" type="id">save group</item>
     <item name="searchLocationText" type="id">search location text</item>
+    <item name="select_cloud_message" type="id">Select cloud message for alternate flare</item>
+    <item name="select_text_message" type="id">Select text message for alternate flare</item>
     <item name="sendFlareLayout" type="id">send flare layout</item>
     <item name="sendFlareScreen" type="id">send flare screen</item>
     <item name="sendGroupFlare" type="id">send group flare</item>
@@ -557,6 +560,7 @@
     <item name="send_text_response" type="id">send text response</item>
     <item name="send_text_toggle" type="id">send text toggle</item>
     <item name="settings" type="id">Settings</item>
+    <item name="settings_list" type="id">Settings setup list</item>
     <item name="share" type="id">Share</item>
     <item name="smsButton" type="id">sms button</item>
     <item name="sosSortText" type="id">sos sort text</item>
@@ -631,6 +635,10 @@
     <string name="cast_notification_connected_message">Connected to <ns1:g id="name">%1$s</ns1:g></string>
     <string name="cast_notification_connecting_message">Connecting to <ns1:g id="name">%1$s</ns1:g></string>
     <string name="cast_notification_disconnect">Disconnect</string>
+    <!-- From: file:/Users/Karthik/Library/Mobile%20Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="cloud_message">Cloud Message</string>
+    <string name="cloud_message_explanation">Send a cloud message with your location and a message. This might incur data charges. This will not show up in your thread with your friend.</string>
     <!-- From: file:/Users/Karthik/Library/Mobile%20Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/res/values/common_strings.xml -->
     <eat-comment/>
     <string name="common_android_wear_notification_needs_update_text"><ns1:g id="app_name">%1$s</ns1:g> requires an update to the Android Wear app.</string>
@@ -682,6 +690,7 @@
     <eat-comment/>
     <string name="default_flare_message">Default Flare Message</string>
     <string name="delete_group">Delete Group</string>
+    <string name="done">DONE</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="edit_group">Edit Group</string>
@@ -723,8 +732,13 @@
     <string name="search">Search</string>
     <string name="send">Send</string>
     <string name="send_response_text">Send Response SMS</string>
+    <string name="settings_alternate_flare">Alternate Flare</string>
+    <string name="settings_alternate_flare_subheader">If your friend does not have flare what do we do ?</string>
     <string name="settings_menu">Settings</string>
+    <string name="settings_setup_header">Just a few more settings !</string>
+    <string name="settings_setup_subheader">Don\'t worry you can change these from the settings menu at any time</string>
     <string name="share_menu">Share</string>
+    <string name="sms_setting_explanation">Send a text message with your location and a message. This might incur SMS charges. It will show up in your thread with your friend.</string>
     <string name="sos_click">SOS</string>
     <string name="sos_menu">SOS Group</string>
     <!-- From: file:/Users/Karthik/Library/Mobile%20Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
@@ -737,6 +751,7 @@
     <!-- From: file:/Users/Karthik/Library/Mobile%20Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="submit_string">SUBMIT</string>
+    <string name="text_message">Text Message</string>
     <string name="title_activity_create_group">Save Group</string>
     <string name="title_activity_groups">Groups</string>
     <string name="title_activity_load_screen">LoadScreen</string>

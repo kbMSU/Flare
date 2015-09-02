@@ -77,7 +77,6 @@ public class FindFlareUsersTask extends AsyncTask<Context,Void,Void> {
             Log.e("Find Flare Users",ex.getMessage());
         }
 
-
         return null;
     }
 }

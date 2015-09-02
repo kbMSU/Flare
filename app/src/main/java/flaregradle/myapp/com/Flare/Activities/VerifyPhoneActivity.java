@@ -29,6 +29,7 @@ import java.util.Locale;
 import java.util.Random;
 import java.util.TreeSet;
 
+import flaregradle.myapp.com.Flare.AsyncTasks.GcmRegistrationAsyncTask;
 import flaregradle.myapp.com.Flare.AsyncTasks.SendTwilioSmsTask;
 import flaregradle.myapp.com.Flare.Events.TwilioError;
 import flaregradle.myapp.com.Flare.Events.TwilioSuccess;
@@ -43,6 +44,7 @@ public class VerifyPhoneActivity extends Activity {
     private LinearLayout _enterCodeLayout;
     private LinearLayout _continueLayout;
 
+    private TextView _countryCodeView;
     private EditText _phoneNumberEntry;
     private EditText _codeEntry;
     private TextView _verifyErrorMessage;
@@ -50,9 +52,7 @@ public class VerifyPhoneActivity extends Activity {
     private Button _verifyButton;
     private ProgressBar _progressBar;
     private Spinner _countryList;
-
     private String _code;
-    private String _phone;
     private HashMap<String,String> _countryMap;
 
     @Override
@@ -60,6 +60,7 @@ public class VerifyPhoneActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_verify_phone);
 
+        _countryCodeView = (TextView)findViewById(R.id.country_code);
         _phoneNumberEntry = (EditText)findViewById(R.id.phone);
         _codeEntry = (EditText)findViewById(R.id.code);
         _verifyButton = (Button)findViewById(R.id.verify_button);
@@ -127,7 +128,7 @@ public class VerifyPhoneActivity extends Activity {
                 Object itemAtPosition = parent.getItemAtPosition(position);
                 String displayCountry = (String)itemAtPosition;
                 String code = _countryMap.get(displayCountry);
-                _phoneNumberEntry.setText(code);
+                _countryCodeView.setText(code);
             }
 
             @Override
@@ -141,8 +142,9 @@ public class VerifyPhoneActivity extends Activity {
 
     public void onVerifyPhone(View view) {
         String phone = _phoneNumberEntry.getText().toString();
+        String code = _countryCodeView.getText().toString();
         generateCode();
-        verifyPhone(phone);
+        verifyPhone("+" + code + phone);
     }
 
     private void generateCode() {
@@ -155,11 +157,11 @@ public class VerifyPhoneActivity extends Activity {
     }
 
     private void verifyPhone(String phone) {
-        _phone = phone;
-
-        String to = "+"+_phone;
+        String to = "+"+phone;
+        List<String> toList = new ArrayList<>();
+        toList.add(to);
         String body = "Your flare code is "+_code;
-        SendTwilioSmsTask askTwilioForMessage = new SendTwilioSmsTask(this, to, body);
+        SendTwilioSmsTask askTwilioForMessage = new SendTwilioSmsTask(this, toList, body);
 
         setVerifyingState();
         askTwilioForMessage.execute();
@@ -221,7 +223,13 @@ public class VerifyPhoneActivity extends Activity {
     }
 
     public void onContinueSetup(View view) {
+        DataStorageHandler.savePhoneNumber(_countryCodeView.getText().toString(),_phoneNumberEntry.getText().toString());
+        registerPhone();
         moveOntoSettingsSetup();
+    }
+
+    private void registerPhone() {
+        new GcmRegistrationAsyncTask().execute(this);
     }
 
     private void moveOntoSettingsSetup() {

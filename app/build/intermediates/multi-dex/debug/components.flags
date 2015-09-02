@@ -48,6 +48,10 @@
     <init>();
 }
 
+-keep class flaregradle.myapp.com.Flare.Activities.SettingsSetup {
+    <init>();
+}
+
 -keep class flaregradle.myapp.com.Flare.Services.GcmBroadcastReceiver {
     <init>();
 }
@@ -61,10 +65,6 @@
 }
 
 -keep class flaregradle.myapp.com.Flare.Services.NotificationAcceptService {
-    <init>();
-}
-
--keep class flaregradle.myapp.com.Flare.Activities.SettingsSetup {
     <init>();
 }
 

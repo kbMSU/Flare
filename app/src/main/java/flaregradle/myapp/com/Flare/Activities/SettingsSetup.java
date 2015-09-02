@@ -12,6 +12,7 @@ import android.widget.CompoundButton;
 import com.MyApp.Flare.R;
 
 import butterknife.Bind;
+import butterknife.ButterKnife;
 import flaregradle.myapp.com.Flare.Utilities.DataStorageHandler;
 
 public class SettingsSetup extends AppCompatActivity {
@@ -25,6 +26,7 @@ public class SettingsSetup extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings_setup);
+        ButterKnife.bind(this);
 
         textMessageCheckBox.setChecked(true);
 

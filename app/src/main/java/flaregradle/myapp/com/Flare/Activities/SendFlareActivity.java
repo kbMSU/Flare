@@ -5,6 +5,7 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
+import android.telephony.SmsManager;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.Menu;
@@ -29,6 +30,7 @@ import java.util.List;
 import flaregradle.myapp.com.Flare.Adapters.ContactsAdapter;
 import flaregradle.myapp.com.Flare.Adapters.PhoneNumberAdapter;
 import flaregradle.myapp.com.Flare.AsyncTasks.SendFlareAsyncTask;
+import flaregradle.myapp.com.Flare.AsyncTasks.SendTwilioSmsTask;
 import flaregradle.myapp.com.Flare.DataItems.Contact;
 import flaregradle.myapp.com.Flare.DataItems.Group;
 import flaregradle.myapp.com.Flare.DataItems.PhoneNumber;
@@ -303,19 +305,14 @@ public class SendFlareActivity extends AppCompatActivity implements ISendFlare {
         }
 
         String text = _flareMessage.getText().toString();
-        if(text == null || text.equals(""))
+        if(text.equals(""))
             text = "Flare";
 
         ArrayList<PhoneNumber> contactsWithFlare = new ArrayList<>();
         ArrayList<PhoneNumber> contactsWithoutFlare = new ArrayList<>();
 
         for(Contact phone : _dataStore.SelectedContacts) {
-            if(!DataStorageHandler.IsRegistered()) {
-                contactsWithFlare.add(phone.phoneNumber);
-                continue;
-            }
-
-            if(phone.phoneNumber.hasFlare) {
+            if(phone.phoneNumber.hasFlare && DataStorageHandler.IsRegistered()) {
                 contactsWithFlare.add(phone.phoneNumber);
             } else {
                 contactsWithoutFlare.add(phone.phoneNumber);
@@ -323,17 +320,27 @@ public class SendFlareActivity extends AppCompatActivity implements ISendFlare {
         }
 
         if(contactsWithFlare.size() > 0)
-            new SendFlareAsyncTask(this,_latitude,_longitude,text,contactsWithFlare).execute(this);
+            new SendFlareAsyncTask(_latitude,_longitude,text,contactsWithFlare).execute(this);
 
         if(contactsWithoutFlare.size() > 0) {
-            AlternateFlareOptionsDialog dialog = new AlternateFlareOptionsDialog(this);
-            dialog.SetData(_latitude,_longitude,text,this,contactsWithoutFlare);
-            dialog.show();
-        } else {
-            showFullPageAd();
-            clearSelectedContacts();
-            showMessage("Message sent");
+            String body = text+" http://maps.google.com/?q="+_latitude+","+_longitude+"  "+"Sent from Flare";
+            if(DataStorageHandler.CanSendCloudMessage()) {
+                List<String> numbers = new ArrayList<>();
+                for(PhoneNumber phone : contactsWithoutFlare) {
+                    numbers.add(phone.number);
+                }
+                new SendTwilioSmsTask(this,numbers,body).execute();
+            } else {
+                for(PhoneNumber phone : contactsWithoutFlare) {
+                    SmsManager m = SmsManager.getDefault();
+                    m.sendTextMessage(phone.number,null,body,null,null);
+                }
+            }
         }
+
+        showFullPageAd();
+        clearSelectedContacts();
+        showMessage("Message sent");
     }
 
     private void showMessage(String text){

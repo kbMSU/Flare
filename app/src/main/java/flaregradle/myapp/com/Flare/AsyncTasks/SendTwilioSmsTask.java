@@ -19,11 +19,10 @@ public class SendTwilioSmsTask extends AsyncTask<Void,Void,Void> {
     private EventsModule eventsModule = EventsModule.getInstance();
     private Exception exception;
     private Context context;
-    private String recipient;
+    private List<String> recipient;
     private String body;
-    private MobileServiceClient client;
 
-    public SendTwilioSmsTask(Context context,String to, String body) {
+    public SendTwilioSmsTask(Context context,List<String> to, String body) {
         this.context = context;
         this.recipient = to;
         this.body = body;
@@ -31,6 +30,8 @@ public class SendTwilioSmsTask extends AsyncTask<Void,Void,Void> {
 
     @Override
     protected Void doInBackground(Void... params) {
+        MobileServiceClient client;
+
         try {
             client = new MobileServiceClient("https://flareservice.azure-mobile.net/","vAymygcCyvnOQrDzLOEjyOQGIxIJMm78",context);
         } catch (Exception ex) {
@@ -38,14 +39,16 @@ public class SendTwilioSmsTask extends AsyncTask<Void,Void,Void> {
             return null;
         }
 
-        try {
-            List<Pair<String,String>> parameters = new ArrayList<>();
-            parameters.add(new Pair<>("to", recipient));
-            parameters.add(new Pair<>("body", body));
-            ListenableFuture<JsonElement> result = client.invokeApi("Messages", "Post", parameters);
-            result.isDone();
-        } catch (Exception ex) {
-            exception = ex;
+        for(String to : recipient) {
+            try {
+                List<Pair<String,String>> parameters = new ArrayList<>();
+                parameters.add(new Pair<>("to", to));
+                parameters.add(new Pair<>("body", body));
+                ListenableFuture<JsonElement> result = client.invokeApi("Messages", "Post", parameters);
+                result.isDone();
+            } catch (Exception ex) {
+                exception = ex;
+            }
         }
 
         return null;

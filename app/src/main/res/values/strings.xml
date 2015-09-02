@@ -66,6 +66,7 @@
     <string name="settings_alternate_flare_subheader">If your friend does not have flare what do we do ?</string>
     <string name="text_message">Text Message</string>
     <string name="cloud_message">Cloud Message</string>
+    <string name="done">DONE</string>
 
     <string-array name="CountryCodes" >
         <item>93,AF</item>

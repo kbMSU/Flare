@@ -26,17 +26,14 @@ public class SendFlareAsyncTask extends AsyncTask<Context,Void,String> {
     private String _longitude;
     private String _message;
     private ArrayList<PhoneNumber> _contactNumbers;
-    private ISendFlare _callBack;
 
-    public SendFlareAsyncTask(ISendFlare callBack,
-                              String latitude,
+    public SendFlareAsyncTask(String latitude,
                               String longitude,
                               String message,
                               ArrayList<PhoneNumber> numbers){
         _latitude = latitude;
         _longitude = longitude;
         _message = message;
-        _callBack = callBack;
         _contactNumbers = numbers;
     }
 
@@ -47,15 +44,6 @@ public class SendFlareAsyncTask extends AsyncTask<Context,Void,String> {
         String msg = "";
 
         try {
-            /*ArrayList<PhoneNumber> contactsWithoutFlare = new ArrayList<>();
-
-            if(!DataStorageHandler.getInstance().Registered) {
-                for(PhoneNumber number : _contactNumbers) {
-                    contactsWithoutFlare.add(number);
-                }
-                _callBack.SendAlternateFlare(contactsWithoutFlare,_message);
-                return "";
-            }*/
 
             MobileServiceClient client = new MobileServiceClient(
                     "https://flareservice.azure-mobile.net/",
@@ -63,20 +51,8 @@ public class SendFlareAsyncTask extends AsyncTask<Context,Void,String> {
                     context);
             MobileServiceTable<DeviceItem> devices = client.getTable(DeviceItem.class);
 
-            String thisPhone = DataStorageHandler.getInstance().thisPhone;
-            String phone = "";
-            String code = "";
-
-            for (int i= thisPhone.length()-1 ; i >= 0; i--) {
-                if(phone.length() < 10) {
-                    phone += thisPhone.charAt(i);
-                } else {
-                    code += thisPhone.charAt(i);
-                }
-            }
-
-            code = new StringBuilder(code).reverse().toString();
-            phone = new StringBuilder(phone).reverse().toString();
+            String code = DataStorageHandler.getCountryCode();
+            String phone = DataStorageHandler.getPhoneNumber();
 
             for(PhoneNumber _phoneNumber : _contactNumbers) {
                 String number = _phoneNumber.number;
@@ -107,19 +83,10 @@ public class SendFlareAsyncTask extends AsyncTask<Context,Void,String> {
                         }
                         msg = "Message Sent";
                     }
-                    //else
-                    //    contactsWithoutFlare.add(_phoneNumber);
                 } catch (Exception ex) {
-                    //contactsWithoutFlare.add(_phoneNumber);
                     Log.e("SEND_FLARE_ASYNC_TASK", "Failed to get user : " + ex.getMessage());
                 }
             }
-
-            /*if(contactsWithoutFlare.size() > 0) {
-                _callBack.SendAlternateFlare(contactsWithoutFlare,_message);
-            } else {
-                _callBack.CallBack();
-            }*/
 
         } catch (Exception e) {
             Log.e("SEND_FLARE_ASYNC_TASK", "Failed to send notification - " + e.getMessage());

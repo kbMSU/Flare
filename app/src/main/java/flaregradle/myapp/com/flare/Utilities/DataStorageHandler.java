@@ -35,12 +35,12 @@ public class DataStorageHandler {
     private static boolean _registered;
     private static boolean _phoneNumberVerified;
     private static boolean _sendCloudMessage;
+    private static String _countryCode;
+    private static String _phoneNumber;
 
     public static SharedPreferences Preferences;
     public static TreeMap<String,Contact> AllContacts;
     public static ArrayList<Contact> SelectedContacts;
-    public static String registrationId;
-    public static String thisPhone;
     public static HashMap<String,Group> SavedContactGroups;
     public static HashMap<String,PhoneNumber> ContactNumbersWithFlare;
     public static Location CurrentLocation;
@@ -50,8 +50,11 @@ public class DataStorageHandler {
         _defaultDeclineResponse = Preferences.getString("DefaultDeclineResponse", "Sorry, I can't make it");
         _defaultAcceptResponse = Preferences.getString("DefaultAcceptResponse","I will be there ASAP");
         _notificationId = Preferences.getInt("notificationId", 1);
-        _sendCloudMessage = Preferences.getBoolean("cloudMessage",false);
-        _registered = Preferences.getBoolean("verified",false);
+        _sendCloudMessage = Preferences.getBoolean("cloudMessage", false);
+        _phoneNumberVerified = Preferences.getBoolean("verified", false);
+        _registered = Preferences.getBoolean("registered",false);
+        _countryCode = Preferences.getString("countryCode", "");
+        _phoneNumber = Preferences.getString("phoneNumber","");
 
         // Get saved contact groups
         String json = Preferences.getString("SavedContactGroups", null);
@@ -103,9 +106,7 @@ public class DataStorageHandler {
     public static boolean doesNumberHaveFlare(String phone) {
         return ContactNumbersWithFlare.containsKey(phone);
     }
-    //endregion
 
-    //region Preferences I/O
     public static void writeGroupsToPreferences() {
         Gson gson = new Gson();
         String json = gson.toJson(SavedContactGroups);
@@ -121,9 +122,7 @@ public class DataStorageHandler {
         editor.putString("ContactsWithFlare", json);
         editor.apply();
     }
-    //endregion
 
-    //region Save to Preferences
     public static void saveContactGroup(Group group) {
         for (Contact c : group.Contacts)
             c.photo = null;
@@ -162,6 +161,24 @@ public class DataStorageHandler {
         return _notificationId;
     }
 
+    public static void savePhoneNumber(String code,String phone) {
+        _countryCode = code;
+        _phoneNumber = phone;
+
+        SharedPreferences.Editor editor = Preferences.edit();
+        editor.putString("countryCode",_countryCode);
+        editor.putString("phoneNumber",_phoneNumber);
+        editor.apply();
+    }
+
+    public static String getCountryCode() {
+        return _countryCode;
+    }
+
+    public static String getPhoneNumber() {
+        return _phoneNumber;
+    }
+
     public static String GetDefaultDeclineResponse() {
         return _defaultDeclineResponse;
     }
@@ -192,7 +209,9 @@ public class DataStorageHandler {
         editor.apply();
     }
 
-    public static boolean IsRegistered() { return _registered; }
+    public static boolean IsRegistered() {
+        return _registered;
+    }
     public static void SetRegistered() {
         _registered = true;
         SharedPreferences.Editor editor = Preferences.edit();

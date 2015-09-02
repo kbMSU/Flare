@@ -84,13 +84,7 @@ public class LoadScreen extends Activity {
     }
 
     private void registerDevice(){
-        TelephonyManager tm = (TelephonyManager)getSystemService(TELEPHONY_SERVICE);
-        String number = tm.getLine1Number();
-        String country = tm.getSimCountryIso();
-
-        DataStorageHandler.thisPhone = number;
-        GcmRegistrationAsyncTask task = new GcmRegistrationAsyncTask(this, number);
-        task.execute(this);
+        new GcmRegistrationAsyncTask().execute(this);
     }
 
     private void moveToHomeScreen() {

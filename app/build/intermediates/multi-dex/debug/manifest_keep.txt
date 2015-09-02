@@ -10,11 +10,11 @@
 -keep class flaregradle.myapp.com.Flare.Activities.CreateGroupActivity { <init>(); }
 -keep class com.google.android.gms.ads.AdActivity { <init>(); }
 -keep class flaregradle.myapp.com.Flare.Activities.VerifyPhoneActivity { <init>(); }
+-keep class flaregradle.myapp.com.Flare.Activities.SettingsSetup { <init>(); }
 -keep class flaregradle.myapp.com.Flare.Services.GcmBroadcastReceiver { <init>(); }
 -keep class flaregradle.myapp.com.Flare.Services.GcmIntentService { <init>(); }
 -keep class flaregradle.myapp.com.Flare.Services.NotificationDeclineService { <init>(); }
 -keep class flaregradle.myapp.com.Flare.Services.NotificationAcceptService { <init>(); }
--keep class flaregradle.myapp.com.Flare.Activities.SettingsSetup { <init>(); }
 -keep class com.google.android.gms.ads.purchase.InAppPurchaseActivity { <init>(); }
 -keep class com.google.android.gms.wallet.EnableWalletOptimizationReceiver { <init>(); }
 -keep public class * extends android.app.backup.BackupAgent {
