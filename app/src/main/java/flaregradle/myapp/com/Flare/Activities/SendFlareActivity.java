@@ -324,7 +324,7 @@ public class SendFlareActivity extends AppCompatActivity implements ISendFlare {
 
         if(contactsWithoutFlare.size() > 0) {
             String body = text+" http://maps.google.com/?q="+_latitude+","+_longitude+"  "+"Sent from Flare";
-            if(DataStorageHandler.CanSendCloudMessage()) {
+            if(DataStorageHandler.CanSendCloudMessage() && DataStorageHandler.IsRegistered()) {
                 List<String> numbers = new ArrayList<>();
                 for(PhoneNumber phone : contactsWithoutFlare) {
                     numbers.add(phone.number);

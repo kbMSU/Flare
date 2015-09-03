@@ -44,6 +44,7 @@ com/MyApp/Flare/R.class
 com/google/ads/mediation/MediationBannerListener.class
 com/google/common/cache/package-info.class
 com/google/android/gms/location/FusedLocationProviderApi.class
+flaregradle/myapp/com/Flare/Activities/FlareHome$1.class
 com/google/android/gms/ads/internal/zzl.class
 butterknife/BindDrawable.class
 flaregradle/myapp/com/Flare/Activities/GroupsActivity$3.class
@@ -61,6 +62,7 @@ com/google/common/escape/package-info.class
 flaregradle/myapp/com/Flare/Activities/SendFlareActivity$7.class
 com/google/common/base/Functions$IdentityFunction.class
 com/MyApp/Flare/R$layout.class
+flaregradle/myapp/com/Flare/Activities/SettingsActivity$1.class
 com/google/android/gms/internal/zzhc.class
 com/google/common/collect/ImmutableSortedSet.class
 com/google/android/gms/internal/zzgg.class
@@ -415,6 +417,7 @@ android/support/annotation/CheckResult.class
 com/MyApp/Flare/R$menu.class
 com/google/android/gms/internal/zzgf.class
 android/support/annotation/AnimRes.class
+com/google/android/gms/maps/GoogleMap$OnMarkerDragListener.class
 com/google/android/gms/internal/zzft.class
 com/google/android/gms/ads/internal/purchase/zzk.class
 com/google/android/gms/location/places/PlaceFilter.class
@@ -452,6 +455,7 @@ com/google/android/gms/games/internal/experience/ExperienceEvent.class
 com/squareup/otto/HandlerFinder$1.class
 flaregradle/myapp/com/Flare/Activities/GroupsActivity$2.class
 com/google/android/gms/ads/internal/client/AdRequestParcel.class
+flaregradle/myapp/com/Flare/Activities/SettingsActivity$2.class
 com/google/android/gms/internal/zzby.class
 com/google/common/collect/ImmutableSortedMapFauxverideShim.class
 com/google/android/gms/analytics/HitBuilders$AppViewBuilder.class
