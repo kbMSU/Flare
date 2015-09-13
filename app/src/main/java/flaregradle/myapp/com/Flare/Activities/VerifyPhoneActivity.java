@@ -29,6 +29,7 @@ import java.util.Locale;
 import java.util.Random;
 import java.util.TreeSet;
 
+import flaregradle.myapp.com.Flare.AsyncTasks.FindFlareUsersTask;
 import flaregradle.myapp.com.Flare.AsyncTasks.GcmRegistrationAsyncTask;
 import flaregradle.myapp.com.Flare.AsyncTasks.SendTwilioSmsTask;
 import flaregradle.myapp.com.Flare.Events.TwilioError;

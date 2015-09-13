@@ -154,7 +154,6 @@ com/google/android/gms/drive/query/Query$Builder.class
 flaregradle/myapp/com/Flare/Activities/CreateGroupActivity$2.class
 com/google/common/collect/ArrayTable.class
 android/support/annotation/RequiresPermission$Read.class
-com/google/android/gms/maps/model/MarkerOptions.class
 android/support/annotation/ArrayRes.class
 com/google/android/gms/internal/zzhm.class
 android/support/v7/app/AppCompatCallback.class
@@ -417,7 +416,6 @@ android/support/annotation/CheckResult.class
 com/MyApp/Flare/R$menu.class
 com/google/android/gms/internal/zzgf.class
 android/support/annotation/AnimRes.class
-com/google/android/gms/maps/GoogleMap$OnMarkerDragListener.class
 com/google/android/gms/internal/zzft.class
 com/google/android/gms/ads/internal/purchase/zzk.class
 com/google/android/gms/location/places/PlaceFilter.class
@@ -493,6 +491,7 @@ flaregradle/myapp/com/Flare/Modules/EventsModule.class
 android/support/v4/app/FragmentActivity$NonConfigurationInstances.class
 com/google/android/gms/ads/internal/client/zzi.class
 com/google/android/gms/internal/zzds.class
+com/google/android/gms/maps/GoogleMap$OnCameraChangeListener.class
 com/google/common/collect/ImmutableSortedMap.class
 flaregradle/myapp/com/Flare/Services/NotificationDeclineService.class
 com/google/common/base/Absent.class

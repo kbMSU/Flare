@@ -533,6 +533,7 @@
     <item name="latitude" type="id">Latitude</item>
     <item name="loading" type="id">loading</item>
     <item name="location" type="id">Location</item>
+    <item name="location_icon" type="id">location icon</item>
     <item name="longitude" type="id">Longitude</item>
     <item name="main_page_actions" type="id">main page actions</item>
     <item name="map" type="id">Map</item>

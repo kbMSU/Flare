@@ -17,6 +17,13 @@
                   android:layout_height="match_parent"
                   android:name="com.google.android.gms.maps.MapFragment"/>
 
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/half_size_location_marker"
+            android:layout_centerInParent="true"
+            android:id="@id/location_icon"/>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -30,6 +37,7 @@
 
             <TextView
                 android:layout_marginLeft="10sp"
+                android:layout_marginStart="10sp"
                 android:layout_weight="0.95"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"

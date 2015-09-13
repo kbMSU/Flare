@@ -10,6 +10,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -23,13 +24,14 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
+import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 import java.util.List;
 import java.util.Locale;
 
+import flaregradle.myapp.com.Flare.AsyncTasks.FindFlareUsersTask;
 import flaregradle.myapp.com.Flare.Utilities.DataStorageHandler;
 
 public class FlareHome extends AppCompatActivity implements
@@ -56,26 +58,19 @@ public class FlareHome extends AppCompatActivity implements
         _map.setMyLocationEnabled(false);
         _map.getUiSettings().setMyLocationButtonEnabled(false);
         _map.getUiSettings().setMapToolbarEnabled(false);
-        _map.setOnMarkerDragListener(new GoogleMap.OnMarkerDragListener() {
-            @Override
-            public void onMarkerDragStart(Marker marker) {
 
-            }
-
+        _map.setOnCameraChangeListener(new GoogleMap.OnCameraChangeListener() {
             @Override
-            public void onMarkerDrag(Marker marker) {
-                if(marker == null)
+            public void onCameraChange(CameraPosition cameraPosition) {
+                if (_location == null) {
+                    TextView view = (TextView)findViewById(R.id.searchLocationText);
+                    view.setText("Unknown location");
                     return;
+                }
 
-                LatLng markerPosition = marker.getPosition();
-                _location.setLatitude(markerPosition.latitude);
-                _location.setLongitude(markerPosition.longitude);
+                _location.setLatitude(cameraPosition.target.latitude);
+                _location.setLongitude(cameraPosition.target.longitude);
                 setLocation();
-            }
-
-            @Override
-            public void onMarkerDragEnd(Marker marker) {
-
             }
         });
 
@@ -103,25 +98,11 @@ public class FlareHome extends AppCompatActivity implements
     @Override
      protected void onPause() {
         super.onPause();
-        //stopLocationUpdates();
     }
 
     @Override
     public void onResume() {
         super.onResume();
-        //if (mGoogleApiClient.isConnected()) {
-        //    startLocationUpdates();
-        //}
-    }
-    // endregion
-
-    // region Start and Stop Location Updates
-    protected void startLocationUpdates() {
-        LocationServices.FusedLocationApi.requestLocationUpdates(mGoogleApiClient, mLocationRequest, this);
-    }
-
-    protected void stopLocationUpdates() {
-        LocationServices.FusedLocationApi.removeLocationUpdates(mGoogleApiClient, this);
     }
     // endregion
 
@@ -199,9 +180,6 @@ public class FlareHome extends AppCompatActivity implements
     public void onConnected(Bundle bundle) {
         // Get the current location
         updateLocation(LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient));
-
-        // Request updates to location
-        //startLocationUpdates();
     }
 
     @Override
@@ -243,7 +221,6 @@ public class FlareHome extends AppCompatActivity implements
             _location = location;
             setLocation();
             moveMapToLocation();
-            //animateMapToLocation();
         } catch (Exception ex) {
             showMessage("Uh oh , there was a problem getting your location. Please try again when you have GPS connection");
         }
@@ -255,21 +232,19 @@ public class FlareHome extends AppCompatActivity implements
 
         DataStorageHandler.CurrentLocation = _location;
 
-        MarkerOptions currentLocationMarker = new MarkerOptions().position(new LatLng(_location.getLatitude(), _location.getLongitude()));
-        currentLocationMarker.icon(BitmapDescriptorFactory.fromResource(R.drawable.half_size_location_marker));
-        currentLocationMarker.draggable(true);
+        //MarkerOptions currentLocationMarker = new MarkerOptions().position(new LatLng(_location.getLatitude(), _location.getLongitude()));
+        //currentLocationMarker.icon(BitmapDescriptorFactory.fromResource(R.drawable.half_size_location_marker));
+        //currentLocationMarker.draggable(true);
 
         try
         {
             Geocoder geocoder = new Geocoder(this, Locale.getDefault());
             List<Address> addresses = geocoder.getFromLocation(_location.getLatitude(), _location.getLongitude(), 1);
-
-            Address likelyLocation = addresses.get(0);
-            String address = likelyLocation.getAddressLine(0)+"\n"+likelyLocation.getAddressLine(1);
-            //currentLocationMarker.title(address);
-
-            TextView view = (TextView)findViewById(R.id.searchLocationText);
-            view.setText(likelyLocation.getAddressLine(0));
+            if(addresses.size() > 0) {
+                Address likelyLocation = addresses.get(0);
+                TextView view = (TextView)findViewById(R.id.searchLocationText);
+                view.setText(likelyLocation.getAddressLine(0));
+            }
         }
         catch(Exception ex)
         {
@@ -278,7 +253,7 @@ public class FlareHome extends AppCompatActivity implements
         }
 
         _map.clear();
-        _map.addMarker(currentLocationMarker);
+        //_map.addMarker(currentLocationMarker);
         _map.setMyLocationEnabled(true);
     }
 
