@@ -73,7 +73,7 @@ public class SendFlareActivity extends AppCompatActivity implements ISendFlare {
 
         // Set up the contacts view
         _dataStore = DataStorageHandler.getInstance();
-        _sortedContacts = new ArrayList<>(_dataStore.AllContacts.values());
+        _sortedContacts = new ArrayList<>(DataStorageHandler.AllContacts.values());
         _contactsView = (ListView)findViewById(com.MyApp.Flare.R.id.contactsHome);
         _contactAdapter = new ContactsAdapter(this,com.MyApp.Flare.R.layout.contact_item_view,_sortedContacts,false);
         _contactsView.setAdapter(_contactAdapter);
@@ -96,7 +96,7 @@ public class SendFlareActivity extends AppCompatActivity implements ISendFlare {
                     resetSortedContacts();
                 }
                 else{
-                    for (Contact c : _dataStore.AllContacts.values()){
+                    for (Contact c : DataStorageHandler.AllContacts.values()){
                         if(c.name.toLowerCase().contains(charSequence.toString().toLowerCase())){
                             _sortedContacts.add(c);
                         } else if (c.phoneNumber.Contains(charSequence.toString())) {
@@ -129,12 +129,12 @@ public class SendFlareActivity extends AppCompatActivity implements ISendFlare {
                     showSelectNumber(contact.allPhoneNumbers);
                 }
                 else {
-                    _dataStore.SelectedContacts.add(contact);
+                    DataStorageHandler.SelectedContacts.add(contact);
                     contact.selected = true;
                 }
             }
             else {
-                _dataStore.SelectedContacts.remove(contact);
+                DataStorageHandler.SelectedContacts.remove(contact);
                 contact.selected = false;
             }
 
@@ -161,8 +161,8 @@ public class SendFlareActivity extends AppCompatActivity implements ISendFlare {
 
     private void requestNewInterstitial() {
         AdRequest.Builder adRequest = new AdRequest.Builder();
-        if(_dataStore.CurrentLocation != null)
-            adRequest.setLocation(_dataStore.CurrentLocation);
+        if(DataStorageHandler.CurrentLocation != null)
+            adRequest.setLocation(DataStorageHandler.CurrentLocation);
         _interstitialAd.loadAd(adRequest.build());
     }
 
@@ -202,7 +202,7 @@ public class SendFlareActivity extends AppCompatActivity implements ISendFlare {
         alert.setPositiveButton("Done", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                _dataStore.SelectedContacts.add(_currentlyEditingContact);
+                DataStorageHandler.SelectedContacts.add(_currentlyEditingContact);
                 _currentlyEditingContact.selected = true;
                 _contactAdapter.notifyDataSetChanged();
                 dialog.dismiss();
@@ -227,7 +227,7 @@ public class SendFlareActivity extends AppCompatActivity implements ISendFlare {
 
     private void resetSortedContacts() {
         _sortedContacts.clear();
-        for(Contact c : _dataStore.AllContacts.values()) {
+        for(Contact c : DataStorageHandler.AllContacts.values()) {
             _sortedContacts.add(c);
         }
     }
@@ -248,7 +248,7 @@ public class SendFlareActivity extends AppCompatActivity implements ISendFlare {
                 return true;
 
             case R.id.createGroup:
-                if(_dataStore.SelectedContacts.size() < 1){
+                if(DataStorageHandler.SelectedContacts.size() < 1){
                     showMessage("Please select contacts to save");
                     return true;
                 }
@@ -270,7 +270,7 @@ public class SendFlareActivity extends AppCompatActivity implements ISendFlare {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 String value = input.getText().toString();
-                if (value == null || value.isEmpty()) {
+                if (value.isEmpty()) {
                     showMessage("Please enter a name for this group");
                     return;
                 }
@@ -292,14 +292,14 @@ public class SendFlareActivity extends AppCompatActivity implements ISendFlare {
     private void createGroup() {
         Group newContactGroup = new Group();
         newContactGroup.Name = _groupName;
-        newContactGroup.Contacts = new ArrayList<>(_dataStore.SelectedContacts);
-        _dataStore.saveContactGroup(newContactGroup);
+        newContactGroup.Contacts = new ArrayList<>(DataStorageHandler.SelectedContacts);
+        DataStorageHandler.saveContactGroup(newContactGroup);
 
         clearSelectedContacts();
     }
 
     public void onSendClick(View v) {
-        if(_dataStore.SelectedContacts == null || _dataStore.SelectedContacts.size() == 0){
+        if(DataStorageHandler.SelectedContacts == null || DataStorageHandler.SelectedContacts.size() == 0){
             showMessage("You have not selected any contacts");
             return;
         }
@@ -311,7 +311,7 @@ public class SendFlareActivity extends AppCompatActivity implements ISendFlare {
         ArrayList<PhoneNumber> contactsWithFlare = new ArrayList<>();
         ArrayList<PhoneNumber> contactsWithoutFlare = new ArrayList<>();
 
-        for(Contact phone : _dataStore.SelectedContacts) {
+        for(Contact phone : DataStorageHandler.SelectedContacts) {
             if(phone.phoneNumber.hasFlare && DataStorageHandler.IsRegistered()) {
                 contactsWithFlare.add(phone.phoneNumber);
             } else {
@@ -349,10 +349,10 @@ public class SendFlareActivity extends AppCompatActivity implements ISendFlare {
     }
 
     private void clearSelectedContacts() {
-        for(Contact c : _dataStore.SelectedContacts) {
+        for(Contact c : DataStorageHandler.SelectedContacts) {
             c.selected = false;
         }
-        _dataStore.SelectedContacts.clear();
+        DataStorageHandler.SelectedContacts.clear();
         _contactAdapter.notifyDataSetChanged();
     }
 

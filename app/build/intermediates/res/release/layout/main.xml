@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:background="@color/background_material_dark">
+    
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/background_material_dark"
+                    android:id="@+id/map"
+                    android:layout_above="@id/main_page_actions">
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:id="@id/map"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:name="com.google.android.gms.maps.MapFragment"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/half_size_location_marker"
+            android:layout_centerInParent="true"
+            android:id="@id/location_icon"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_margin="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:background="@drawable/search_layout"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_marginLeft="10sp"
+                android:layout_marginStart="10sp"
+                android:layout_weight="0.95"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/phone"
+                android:gravity="center_vertical"
+                android:background="@drawable/search_layout"
+                android:textColor="@color/black"
+                android:textColorHint="@color/greyLight"
+                android:id="@id/searchLocationText"
+                android:clickable="true"
+                android:textSize="15sp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.05"
+                android:background="@drawable/search_layout"
+                android:src="@android:drawable/ic_menu_mylocation"
+                android:layout_gravity="center_vertical"
+                android:onClick="onUpdateLocationClick"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@id/main_page_actions"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_margin="2dp"
+            android:drawableStart="@drawable/send_reg_icon_transparent"
+            android:drawableLeft="@drawable/send_reg_icon_transparent"
+            android:text="Send Flare"
+            android:layout_gravity="center"
+            android:onClick="onSendFlareClick">
+        </Button>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_margin="2dp"
+            android:drawableStart="@drawable/group"
+            android:drawableLeft="@drawable/group"
+            android:text="Groups"
+            android:layout_gravity="center"
+            android:onClick="onGroupsClick"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+<!-- From: file:/Users/Karthik/Library/Mobile%20Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/res/layout/main.xml -->

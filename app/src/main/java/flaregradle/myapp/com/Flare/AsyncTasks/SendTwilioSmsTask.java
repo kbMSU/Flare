@@ -7,8 +7,12 @@ import android.util.Pair;
 import com.google.common.util.concurrent.ListenableFuture;
 import com.google.gson.JsonElement;
 import com.microsoft.windowsazure.mobileservices.MobileServiceClient;
+import com.parse.FunctionCallback;
+import com.parse.ParseCloud;
 
+import java.text.ParseException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 import flaregradle.myapp.com.Flare.Events.TwilioError;
@@ -30,7 +34,7 @@ public class SendTwilioSmsTask extends AsyncTask<Void,Void,Void> {
 
     @Override
     protected Void doInBackground(Void... params) {
-        MobileServiceClient client;
+        /*MobileServiceClient client;
 
         try {
             client = new MobileServiceClient("https://flareservice.azure-mobile.net/","vAymygcCyvnOQrDzLOEjyOQGIxIJMm78",context);
@@ -49,6 +53,17 @@ public class SendTwilioSmsTask extends AsyncTask<Void,Void,Void> {
             } catch (Exception ex) {
                 exception = ex;
             }
+        }*/
+
+        for(String to : recipient) {
+            try {
+                HashMap<String, String> smsParams = new HashMap<>();
+                smsParams.put("to", to);
+                smsParams.put("message", body);
+                ParseCloud.callFunction("SendTwilioMessage",smsParams);
+            } catch (Exception ex) {
+                exception = ex;
+            }
         }
 
         return null;
@@ -59,7 +74,7 @@ public class SendTwilioSmsTask extends AsyncTask<Void,Void,Void> {
         super.onPostExecute(aVoid);
 
         if(exception != null)
-            eventsModule.Post(new TwilioError(exception));
+             eventsModule.Post(new TwilioError(exception));
         else
             eventsModule.Post(new TwilioSuccess());
     }

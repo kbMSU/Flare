@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_margin="5dp"
+              android:id="@id/contactItem"
+              android:weightSum="1"
+              android:background="@drawable/contact_item"
+              android:layout_marginTop="5dp"
+              android:layout_marginBottom="5dp"
+              >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:id="@id/contact_selected"
+            android:layout_gravity="center_vertical|start"
+            />
+
+        <flaregradle.myapp.com.Flare.Utilities.RoundedImageView
+                   android:layout_width="0dp"
+                   android:layout_weight="0.25"
+                   android:layout_height="40dp"
+                   android:scaleType="centerInside"
+                   android:id="@id/contact_image"
+                   android:layout_gravity="center_vertical|start"/>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:orientation="vertical"
+                      android:layout_width="0dp"
+                      android:layout_weight="0.55"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center_vertical|start">
+
+            <TextView android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:id="@id/contact_name"
+                      android:textStyle="bold"
+                      android:layout_gravity="center_vertical|start"/>
+
+            <TextView android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:id="@id/contact_phone"
+                      android:layout_gravity="center_vertical|start"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:layout_gravity="center_vertical"
+            android:id="@id/contact_has_flare"/>
+
+</LinearLayout><!-- From: file:/Users/Karthik/Library/Mobile%20Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/res/layout/contact_item_view.xml -->

@@ -12,6 +12,10 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.MyApp.Flare.R;
+import com.parse.Parse;
+import com.parse.ParseAnalytics;
+import com.parse.ParseInstallation;
+import com.parse.ParseObject;
 
 import flaregradle.myapp.com.Flare.AsyncTasks.FindFlareUsersTask;
 import flaregradle.myapp.com.Flare.AsyncTasks.GcmRegistrationAsyncTask;
@@ -28,6 +32,11 @@ public class LoadScreen extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_load_screen);
+
+        // Set up Parse
+        Parse.enableLocalDatastore(this);
+        Parse.initialize(this, "INoehKZFskuQ6nJ383gzDshdhFHSre9lv5MQrZ7g", "9y6Dx6hqc28c4uyULtzOWrwb0Pmfi0Up3GXDzjpA");
+        ParseInstallation.getCurrentInstallation().saveInBackground();
 
         // Load the progress bar
         _busyIndicator = (ProgressBar)findViewById(R.id.busyIndicator);

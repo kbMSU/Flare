@@ -9,8 +9,15 @@ import android.widget.Toast;
 import com.microsoft.windowsazure.mobileservices.MobileServiceClient;
 import com.microsoft.windowsazure.mobileservices.MobileServiceList;
 import com.microsoft.windowsazure.mobileservices.table.MobileServiceTable;
+import com.parse.ParseCloud;
+import com.parse.ParseInstallation;
+import com.parse.ParseObject;
+import com.parse.ParsePush;
+import com.parse.ParseQuery;
+import com.parse.ParseUser;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 import flaregradle.myapp.com.Flare.BackendItems.DeviceItem;
@@ -45,59 +52,53 @@ public class SendFlareAsyncTask extends AsyncTask<Context,Void,String> {
 
         try {
 
-            MobileServiceClient client = new MobileServiceClient(
+            /*MobileServiceClient client = new MobileServiceClient(
                     "https://flareservice.azure-mobile.net/",
                     "vAymygcCyvnOQrDzLOEjyOQGIxIJMm78",
                     context);
-            MobileServiceTable<DeviceItem> devices = client.getTable(DeviceItem.class);
+            MobileServiceTable<DeviceItem> devices = client.getTable(DeviceItem.class);*/
 
             String code = DataStorageHandler.getCountryCode();
             String phone = DataStorageHandler.getPhoneNumber();
 
             for(PhoneNumber _phoneNumber : _contactNumbers) {
                 String number = _phoneNumber.number;
-                String finalPhone = "";
-                for(int i=number.length()-1; i>=0; i--)
-                {
-                    Character ch = number.charAt(i);
-                    if(Character.isDigit(ch) && finalPhone.length() < 10)
-                        finalPhone+=ch;
-                }
-                String reverse = new StringBuilder(finalPhone).reverse().toString();
 
-                try {
-                    MobileServiceList<DeviceItem> phoneItems = devices.where().indexOf("FullPhone",reverse).ne(-1).execute().get();
-                    if(phoneItems.size() > 0) {
+                /*try {
+                    //MobileServiceList<DeviceItem> phoneItems = devices.where().indexOf("FullPhone",reverse).ne(-1).execute().get();
+                    ParseObject phoneItem = ParseQuery.getQuery("Device").whereContains("FullPhone",number).getFirst();
+                    if(phoneItem != null) {
                         try {
                             List<Pair<String,String>> parameters = new ArrayList<>();
                             parameters.add(new Pair<>("text",_message));
                             parameters.add(new Pair<>("phone",phone));
                             parameters.add(new Pair<>("latitude",_latitude));
                             parameters.add(new Pair<>("longitude",_longitude));
-                            parameters.add(new Pair<>("to", phoneItems.get(0).fullPhone));
+                            parameters.add(new Pair<>("to", phoneItem.getString("FullPhone")));
 
                             client.invokeApi("Notifications","Post",parameters);
 
                         } catch (Exception e) {
                             Log.e("SEND_FLARE_ASYNC_TASK", "Failed to invoke api : " + e.getMessage());
                         }
-                        msg = "Message Sent";
                     }
                 } catch (Exception ex) {
                     Log.e("SEND_FLARE_ASYNC_TASK", "Failed to get user : " + ex.getMessage());
-                }
+                }*/
+
+                HashMap<String, String> pushParams = new HashMap<>();
+                pushParams.put("text", _message);
+                pushParams.put("phone", phone);
+                pushParams.put("latitude",_latitude);
+                pushParams.put("longitude",_longitude);
+                pushParams.put("to",number);
+                ParseCloud.callFunction("SendFlare", pushParams);
             }
 
         } catch (Exception e) {
             Log.e("SEND_FLARE_ASYNC_TASK", "Failed to send notification - " + e.getMessage());
-            msg = "Failed to send flare";
         }
 
         return msg;
-    }
-
-    @Override
-    protected void onPostExecute(String msg) {
-
     }
 }

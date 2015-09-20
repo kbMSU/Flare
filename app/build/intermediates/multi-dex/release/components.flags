@@ -1,0 +1,86 @@
+-injars '/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/multi-dex/release/allclasses.jar'
+-outjars '/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/multi-dex/release/componentClasses.jar'
+
+-libraryjars /Users/Karthik/Library/Android/sdk/build-tools/22.0.1/lib/shrinkedAndroid.jar
+
+-forceprocessing
+-dontoptimize
+-dontobfuscate
+-dontpreverify
+-dontwarn
+-printconfiguration '/Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/multi-dex/release/components.flags'
+
+
+-keep class android.support.multidex.MultiDexApplication {
+    <init>();
+    void attachBaseContext(android.content.Context);
+}
+
+-keep class flaregradle.myapp.com.Flare.Activities.FlareHome {
+    <init>();
+}
+
+-keep class flaregradle.myapp.com.Flare.Activities.LoadScreen {
+    <init>();
+}
+
+-keep class flaregradle.myapp.com.Flare.Activities.SendFlareActivity {
+    <init>();
+}
+
+-keep class flaregradle.myapp.com.Flare.Activities.SettingsActivity {
+    <init>();
+}
+
+-keep class flaregradle.myapp.com.Flare.Activities.GroupsActivity {
+    <init>();
+}
+
+-keep class flaregradle.myapp.com.Flare.Activities.CreateGroupActivity {
+    <init>();
+}
+
+-keep class com.google.android.gms.ads.AdActivity {
+    <init>();
+}
+
+-keep class flaregradle.myapp.com.Flare.Activities.VerifyPhoneActivity {
+    <init>();
+}
+
+-keep class flaregradle.myapp.com.Flare.Activities.SettingsSetup {
+    <init>();
+}
+
+-keep class flaregradle.myapp.com.Flare.Services.GcmBroadcastReceiver {
+    <init>();
+}
+
+-keep class flaregradle.myapp.com.Flare.Services.GcmIntentService {
+    <init>();
+}
+
+-keep class flaregradle.myapp.com.Flare.Services.NotificationDeclineService {
+    <init>();
+}
+
+-keep class flaregradle.myapp.com.Flare.Services.NotificationAcceptService {
+    <init>();
+}
+
+-keep class com.google.android.gms.ads.purchase.InAppPurchaseActivity {
+    <init>();
+}
+
+-keep class com.google.android.gms.wallet.EnableWalletOptimizationReceiver {
+    <init>();
+}
+
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+
+-keep public class * extends java.lang.annotation.Annotation {
+    <fields>;
+    <methods>;
+}

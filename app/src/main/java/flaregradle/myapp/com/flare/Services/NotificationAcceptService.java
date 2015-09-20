@@ -25,10 +25,10 @@ public class NotificationAcceptService extends IntentService {
         String location = extras.getString("location");
         int id = extras.getInt("mID");
 
-        //SmsManager manager = SmsManager.getDefault();
-        //if(text == null || text.isEmpty())
-        //    text = "I will be there ASAP";
-        //manager.sendTextMessage(phone,null,text,null,null);
+        SmsManager manager = SmsManager.getDefault();
+        if(text == null || text.isEmpty())
+            text = "I will be there ASAP";
+        manager.sendTextMessage(phone,null,text,null,null);
 
         NotificationManager mNotificationManager =
                 (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);

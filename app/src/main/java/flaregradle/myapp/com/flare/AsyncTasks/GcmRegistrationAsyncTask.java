@@ -9,6 +9,11 @@ import com.microsoft.windowsazure.mobileservices.MobileServiceClient;
 import com.microsoft.windowsazure.mobileservices.MobileServiceList;
 import com.microsoft.windowsazure.mobileservices.table.MobileServiceTable;
 import com.microsoft.windowsazure.notifications.NotificationsManager;
+import com.parse.ParseInstallation;
+import com.parse.ParseObject;
+import com.parse.ParseQuery;
+
+import java.util.List;
 
 import flaregradle.myapp.com.Flare.Utilities.AzureNotificationsHandler;
 import flaregradle.myapp.com.Flare.BackendItems.DeviceItem;
@@ -33,7 +38,7 @@ public class GcmRegistrationAsyncTask extends AsyncTask<Context, Void, String> {
 
         Context context = params[0];
 
-        String msg = "";
+        String msg = "Device Registered";
         try {
             if (gcm == null) {
                 gcm = GoogleCloudMessaging.getInstance(context);
@@ -43,8 +48,47 @@ public class GcmRegistrationAsyncTask extends AsyncTask<Context, Void, String> {
             String phone = DataStorageHandler.getPhoneNumber();
             String fullPhone = code+phone;
 
-            // Save phone data in backend
-            MobileServiceClient client = new MobileServiceClient(
+            // Lets see if this phone number or this device has been saved
+            ParseQuery<ParseObject> query = ParseQuery.getQuery("Device").whereEqualTo("FullPhone",fullPhone);
+            List<ParseObject> savedPhones = query.find();
+            ParseQuery<ParseObject> deviceQuery = ParseQuery.getQuery("Device").whereEqualTo("RegId", regId);
+            List<ParseObject> savedDevices = deviceQuery.find();
+
+            if(savedPhones == null || savedPhones.size() == 0) {
+                // This phone number has not been saved before, how about this device ?
+                if(savedDevices != null && savedDevices.size() > 0) {
+                    // This device has been saved before , lets update it
+                    ParseObject savedDevice = savedDevices.get(0);
+                    savedDevice.put("FullPhone",fullPhone);
+                    savedDevice.put("CountryCode",code);
+                    savedDevice.put("Number", phone);
+                    savedDevice.saveInBackground();
+
+                } else {
+                    // This phone number has not been saved , neither has this device
+                    ParseObject newDevice = new ParseObject("Device");
+                    newDevice.put("RegId", regId);
+                    newDevice.put("FullPhone", fullPhone);
+                    newDevice.put("CountryCode", code);
+                    newDevice.put("Number", phone);
+                    newDevice.put("DeviceType","Android");
+                    newDevice.saveInBackground();
+                }
+            } else {
+                ParseObject savedPhone = savedPhones.get(0);
+                // This phone has been registered before
+                if(savedDevices != null && savedDevices.size() > 0) {
+                    ParseObject savedDevice = savedDevices.get(0);
+                    if(!savedPhone.getString("RegId").equals(regId)) {
+                        // This phone number was registered against a different device
+                        savedDevice.put("RegId",regId);
+                        savedDevice.put("DeviceType","Android");
+                        savedDevice.saveInBackground();
+                    }
+                }
+            }
+
+            /*MobileServiceClient client = new MobileServiceClient(
                     "https://flareservice.azure-mobile.net/",
                     "vAymygcCyvnOQrDzLOEjyOQGIxIJMm78",
                     context);
@@ -87,12 +131,17 @@ public class GcmRegistrationAsyncTask extends AsyncTask<Context, Void, String> {
                     item.number = phone;
                     devices.update(item);
                 }
-            }
+            }*/
 
             // Register with notification hubs
             NotificationsManager.handleNotifications(context, SENDER_ID, AzureNotificationsHandler.class);
             NotificationHub hub = new NotificationHub("flarenotifications",connection_string, context);
             hub.register(regId,fullPhone);
+
+            // Register with Parse push
+            //ParseInstallation installation = ParseInstallation.getCurrentInstallation();
+            //installation.put("RegId","Android"+regId);
+            //installation.save();
 
         } catch (Exception ex) {
             msg += " : " + ex.getMessage();

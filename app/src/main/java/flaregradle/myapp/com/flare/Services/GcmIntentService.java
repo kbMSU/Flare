@@ -31,27 +31,27 @@ public class GcmIntentService extends IntentService {
     @Override
     protected void onHandleIntent(Intent intent) {
         Bundle extras = intent.getExtras();
-        GoogleCloudMessaging gcm = GoogleCloudMessaging.getInstance(this);
+        //GoogleCloudMessaging gcm = GoogleCloudMessaging.getInstance(this);
         // The getMessageType() intent parameter must be the intent you received
         // in your BroadcastReceiver.
-        String messageType = gcm.getMessageType(intent);
+        //String messageType = gcm.getMessageType(intent);
 
         if (extras != null && !extras.isEmpty()) {  // has effect of unparcelling Bundle
             // Since we're not using two way messaging, this is all we really to check for
-            if (GoogleCloudMessaging.MESSAGE_TYPE_MESSAGE.equals(messageType)) {
+        //    if (GoogleCloudMessaging.MESSAGE_TYPE_MESSAGE.equals(messageType)) {
                 String type = extras.getString("type");
                 if(type == null) {
                     GcmBroadcastReceiver.completeWakefulIntent(intent);
                     return;
                 }
 
-                if(type.equals("flare")) {
+                //if(type.equals("flare")) {
                     handleFlare(extras);
-                } else if(type.equals("response")) {
-                    handleResponse(extras);
-                }
+                //} else if(type.equals("response")) {
+                //    handleResponse(extras);
+                //}
             }
-        }
+        //}
         GcmBroadcastReceiver.completeWakefulIntent(intent);
     }
 
@@ -131,51 +131,5 @@ public class GcmIntentService extends IntentService {
         // mId allows you to update the notification later on.
         NotificationManagerCompat mNotificationManager = NotificationManagerCompat.from(this);
         mNotificationManager.notify(phoneNumber, id, notification);
-    }
-
-    private void handleResponse(Bundle extras) {
-        boolean accepted = extras.getBoolean("accepted");
-        String message = extras.getString("message");
-        String from = extras.getString("from");
-
-        Contact contact = DataStorageHandler.findContact(from);
-        String contentTitle = from;
-        if(contact != null)
-            contentTitle = contact.name;
-
-        Uri alarmSound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
-
-        // Make the wearable extender
-        NotificationCompat.WearableExtender wearableExtender = new NotificationCompat.WearableExtender();
-        if(contact != null)
-            wearableExtender.setBackground(contact.photo);
-        else {
-            try {
-                int contactId = getResources().getIdentifier("contactdefaultimage","drawable",getPackageName());
-                Bitmap bitmap = BitmapFactory.decodeResource(getResources(), contactId);
-                Bitmap scaled = Bitmap.createScaledBitmap(bitmap,50,50,false);
-                wearableExtender.setBackground(scaled);
-            } catch(Exception ex) {
-                Log.e("NOTIFICATION","Unable to load the default contact image for the wearable notification");
-            }
-        }
-
-        NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(this)
-                .setSmallIcon(R.drawable.flare_notification)
-                .setContentTitle(contentTitle)
-                .setContentText(message)
-                .setSound(alarmSound)
-                .setVibrate(new long[]{1000, 1000, 1000, 1000, 1000})
-                .setOngoing(false)
-                .extend(wearableExtender);
-
-        // Build the notification
-        Notification notification = mBuilder.build();
-
-        int id = DataStorageHandler.getNotificationId();
-
-        // mId allows you to update the notification later on.
-        NotificationManagerCompat mNotificationManager = NotificationManagerCompat.from(this);
-        mNotificationManager.notify(from, id, notification);
     }
 }

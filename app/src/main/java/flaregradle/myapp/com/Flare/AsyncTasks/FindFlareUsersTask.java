@@ -9,6 +9,11 @@ import com.microsoft.windowsazure.mobileservices.MobileServiceList;
 import com.microsoft.windowsazure.mobileservices.table.MobileServiceTable;
 import com.microsoft.windowsazure.mobileservices.table.query.ExecutableQuery;
 import com.microsoft.windowsazure.mobileservices.table.query.Query;
+import com.parse.ParseObject;
+import com.parse.ParseQuery;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import flaregradle.myapp.com.Flare.BackendItems.DeviceItem;
 import flaregradle.myapp.com.Flare.DataItems.Contact;
@@ -24,7 +29,7 @@ public class FindFlareUsersTask extends AsyncTask<Context,Void,Void> {
         Context context = params[0];
 
         try {
-            MobileServiceClient client = new MobileServiceClient(
+            /*MobileServiceClient client = new MobileServiceClient(
                     "https://flareservice.azure-mobile.net/",
                     "vAymygcCyvnOQrDzLOEjyOQGIxIJMm78",
                     context);
@@ -41,17 +46,32 @@ public class FindFlareUsersTask extends AsyncTask<Context,Void,Void> {
                         query.or().indexOf("FullPhone",number).ne(-1);
                     }
                 }
+            }*/
+
+            List<String> numbers = new ArrayList<>();
+            for(Contact c : DataStorageHandler.AllContacts.values()) {
+                for(PhoneNumber phone : c.allPhoneNumbers) {
+                    String number = phone.number;
+                    numbers.add(number);
+                }
             }
 
-            if(query != null) {
-                MobileServiceList<DeviceItem> items = devicesTable.execute(query).get();
+            ParseQuery<ParseObject> numberQuery = ParseQuery.getQuery("Device").whereContainedIn("Number",numbers);
+            ParseQuery<ParseObject> fullPhoneQuery = ParseQuery.getQuery("Device").whereContainedIn("FullPhone",numbers);
+            List<ParseQuery<ParseObject>> queries = new ArrayList<>();
+            queries.add(numberQuery);
+            queries.add(fullPhoneQuery);
+            List<ParseObject> devices = ParseQuery.or(queries).find();
+
+            //if(query != null) {
+            //    MobileServiceList<DeviceItem> items = devicesTable.execute(query).get();
                 for(Contact c : DataStorageHandler.AllContacts.values()) {
                     boolean hasFlare = false;
                     for(PhoneNumber phone : c.allPhoneNumbers) {
                         boolean isSavedAsHasFlare =  DataStorageHandler.doesNumberHaveFlare(phone.number);
                         boolean result = false;
-                        for (DeviceItem item : items) {
-                            if(item.fullPhone.contains(phone.number)) {
+                        for (ParseObject item : devices) {
+                            if(item.getString("FullPhone").contains(phone.number)) {
                                 result = true;
                                 break;
                             }
@@ -71,7 +91,7 @@ public class FindFlareUsersTask extends AsyncTask<Context,Void,Void> {
                     }
                     c.hasFlare = hasFlare;
                 }
-            }
+            //}
 
         } catch (Exception ex) {
             Log.e("Find Flare Users",ex.getMessage());

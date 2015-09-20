@@ -23,10 +23,10 @@ public class NotificationDeclineService extends IntentService {
         String text = extras.getString("action");
         int id = extras.getInt("mID");
 
-        //SmsManager manager = SmsManager.getDefault();
-        //if(text == null || text.isEmpty())
-        //    text = "Sorry, i can't make it";
-        //manager.sendTextMessage(phone,null,text,null,null);
+        SmsManager manager = SmsManager.getDefault();
+        if(text == null || text.isEmpty())
+            text = "Sorry, i can't make it";
+        manager.sendTextMessage(phone,null,text,null,null);
 
         NotificationManager mNotificationManager =
                 (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);

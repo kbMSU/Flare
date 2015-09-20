@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:flare="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/settings"
+          android:title="@string/settings_menu"
+          flare:showAsAction="never"/>
+    <item android:id="@id/share"
+          android:title="@string/share_menu"
+          android:icon="@drawable/abc_ic_menu_share_mtrl_alpha"
+          flare:showAsAction="ifRoom"/>
+    <item android:id="@id/feedback"
+        android:title="@string/feedback"
+        flare:showAsAction="never"/>
+</menu><!-- From: file:/Users/Karthik/Library/Mobile%20Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/res/menu/home_options_menu.xml -->

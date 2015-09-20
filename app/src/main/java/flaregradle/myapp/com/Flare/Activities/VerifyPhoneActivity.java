@@ -145,7 +145,7 @@ public class VerifyPhoneActivity extends Activity {
         String phone = _phoneNumberEntry.getText().toString();
         String code = _countryCodeView.getText().toString();
         generateCode();
-        verifyPhone("+" + code + phone);
+        verifyPhone(code + phone);
     }
 
     private void generateCode() {
