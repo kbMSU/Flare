@@ -37,6 +37,7 @@ public class DataStorageHandler {
     private static boolean _sendCloudMessage;
     private static String _countryCode;
     private static String _phoneNumber;
+    private static boolean _checkContactsWithFlare;
 
     public static SharedPreferences Preferences;
     public static TreeMap<String,Contact> AllContacts;
@@ -55,6 +56,7 @@ public class DataStorageHandler {
         _registered = Preferences.getBoolean("registered",false);
         _countryCode = Preferences.getString("countryCode", "");
         _phoneNumber = Preferences.getString("phoneNumber","");
+        _checkContactsWithFlare = Preferences.getBoolean("contactsWithFlare",true);
 
         // Get saved contact groups
         String json = Preferences.getString("SavedContactGroups", null);
@@ -224,6 +226,14 @@ public class DataStorageHandler {
         _sendCloudMessage = val;
         SharedPreferences.Editor editor = Preferences.edit();
         editor.putBoolean("cloudMessage",_sendCloudMessage);
+        editor.apply();
+    }
+
+    public static boolean CanCheckContactsForFlare() {return _checkContactsWithFlare; }
+    public static void SetCheckContactsForFlare(boolean val) {
+        _checkContactsWithFlare = val;
+        SharedPreferences.Editor editor = Preferences.edit();
+        editor.putBoolean("contactsWithFlare",_checkContactsWithFlare);
         editor.apply();
     }
     //endregion

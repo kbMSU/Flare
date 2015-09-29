@@ -333,7 +333,7 @@ public class SendFlareActivity extends AppCompatActivity implements ISendFlare {
             } else {
                 for(PhoneNumber phone : contactsWithoutFlare) {
                     SmsManager m = SmsManager.getDefault();
-                    m.sendTextMessage(phone.number,null,body,null,null);
+                    m.sendTextMessage(phone.number,DataStorageHandler.getCountryCode()+DataStorageHandler.getPhoneNumber(),body,null,null);
                 }
             }
         }

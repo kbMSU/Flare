@@ -26,10 +26,13 @@ import com.google.android.gms.ads.AdView;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 
 import flaregradle.myapp.com.Flare.Adapters.ContactsAdapter;
+import flaregradle.myapp.com.Flare.Adapters.PhoneNumberAdapter;
 import flaregradle.myapp.com.Flare.DataItems.Contact;
 import flaregradle.myapp.com.Flare.DataItems.Group;
+import flaregradle.myapp.com.Flare.DataItems.PhoneNumber;
 import flaregradle.myapp.com.Flare.Utilities.DataStorageHandler;
 
 
@@ -42,6 +45,7 @@ public class CreateGroupActivity extends ActionBarActivity {
     private ArrayAdapter _contactAdapter;
     private EditText _phoneText;
     private String _groupName;
+    private Contact _currentlyEditingContact;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -105,16 +109,24 @@ public class CreateGroupActivity extends ActionBarActivity {
         _contactsView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-
                 Object itemAtPosition = adapterView.getItemAtPosition(i);
                 Contact contact = (Contact) itemAtPosition;
 
-                contact.selected = !contact.selected;
-
-                if (contact.selected)
-                    _dataStore.SelectedContacts.add(contact);
-                else
-                    _dataStore.SelectedContacts.remove(contact);
+                if(!contact.selected)
+                {
+                    if(contact.allPhoneNumbers != null && contact.allPhoneNumbers.size() > 1) {
+                        _currentlyEditingContact = contact;
+                        showSelectNumber(contact.allPhoneNumbers);
+                    }
+                    else {
+                        DataStorageHandler.SelectedContacts.add(contact);
+                        contact.selected = true;
+                    }
+                }
+                else {
+                    DataStorageHandler.SelectedContacts.remove(contact);
+                    contact.selected = false;
+                }
 
                 _contactAdapter.notifyDataSetChanged();
             }
@@ -123,8 +135,8 @@ public class CreateGroupActivity extends ActionBarActivity {
         // Setup the ad
         final AdView mAdView = (AdView) findViewById(R.id.groupsAdView);
         AdRequest.Builder adRequest = new AdRequest.Builder();
-        if(_dataStore.CurrentLocation != null)
-            adRequest.setLocation(_dataStore.CurrentLocation);
+        if(DataStorageHandler.CurrentLocation != null)
+            adRequest.setLocation(DataStorageHandler.CurrentLocation);
         mAdView.setAdListener(new AdListener() {
             @Override
             public void onAdLoaded() {
@@ -145,12 +157,57 @@ public class CreateGroupActivity extends ActionBarActivity {
     protected void onPause()
     {
         clearSelectedContacts();
-        super.onStop();
+        super.onPause();
+    }
+
+    private void showSelectNumber(List<PhoneNumber> numbers) {
+        final List<PhoneNumber> finalNumbers = numbers;
+        final ListView view = new ListView(this);
+        view.setDivider(null);
+        view.setPadding(5,5,5,5);
+        final ArrayAdapter<PhoneNumber> numbersAdapter = new PhoneNumberAdapter(this, R.layout.number_view, finalNumbers);
+        view.setAdapter(numbersAdapter);
+        view.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Object itemAtPosition = parent.getItemAtPosition(position);
+                PhoneNumber number = (PhoneNumber)itemAtPosition;
+                number.isSelected = true;
+                for(PhoneNumber otherNumber : finalNumbers) {
+                    if(!otherNumber.number.equals(number.number) && otherNumber.isSelected)
+                        otherNumber.isSelected = false;
+                }
+
+                _currentlyEditingContact.phoneNumber = number;
+
+                numbersAdapter.notifyDataSetChanged();
+            }
+        });
+
+        AlertDialog.Builder alert = new AlertDialog.Builder(this);
+        alert.setTitle("Select Number");
+        alert.setView(view);
+        alert.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
+        alert.setPositiveButton("Done", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                DataStorageHandler.SelectedContacts.add(_currentlyEditingContact);
+                _currentlyEditingContact.selected = true;
+                _contactAdapter.notifyDataSetChanged();
+                dialog.dismiss();
+            }
+        });
+        alert.show();
     }
 
     private void resetSortedContacts() {
         _sortedContacts.clear();
-        for(Contact c : _dataStore.AllContacts.values()) {
+        for(Contact c : DataStorageHandler.AllContacts.values()) {
             _sortedContacts.add(c);
         }
     }
@@ -179,7 +236,7 @@ public class CreateGroupActivity extends ActionBarActivity {
     }
 
     public void onSaveGroupClick() {
-        if(_dataStore.SelectedContacts.size() < 1){
+        if(DataStorageHandler.SelectedContacts.size() < 1){
             showMessage("Please select contacts to save");
             return;
         }
@@ -189,8 +246,8 @@ public class CreateGroupActivity extends ActionBarActivity {
     private void createGroup() {
         Group newContactGroup = new Group();
         newContactGroup.Name = _groupName;
-        newContactGroup.Contacts = new ArrayList<>(_dataStore.SelectedContacts);
-        _dataStore.saveContactGroup(newContactGroup);
+        newContactGroup.Contacts = new ArrayList<>(DataStorageHandler.SelectedContacts);
+        DataStorageHandler.saveContactGroup(newContactGroup);
 
         clearSelectedContacts();
         NavUtils.navigateUpFromSameTask(this);
@@ -208,7 +265,7 @@ public class CreateGroupActivity extends ActionBarActivity {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 String value = input.getText().toString();
-                if(value == null || value.isEmpty()) {
+                if(value.isEmpty()) {
                     showMessage("Please enter a name for this group");
                     return;
                 }
@@ -232,10 +289,10 @@ public class CreateGroupActivity extends ActionBarActivity {
     }
 
     private void clearSelectedContacts() {
-        for(Contact c : _dataStore.SelectedContacts) {
+        for(Contact c : DataStorageHandler.SelectedContacts) {
             c.selected = false;
         }
-        _dataStore.SelectedContacts.clear();
+        DataStorageHandler.SelectedContacts.clear();
         _contactAdapter.notifyDataSetChanged();
     }
 }

@@ -67,6 +67,8 @@
     <string name="text_message">Text Message</string>
     <string name="cloud_message">Cloud Message</string>
     <string name="done">DONE</string>
+    <string name="drawer_open">drawer open</string>
+    <string name="drawer_close">drawer close</string>
 
     <string-array name="CountryCodes" >
         <item>93,AF</item>

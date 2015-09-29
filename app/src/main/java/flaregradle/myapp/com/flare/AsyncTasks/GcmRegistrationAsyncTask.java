@@ -134,14 +134,14 @@ public class GcmRegistrationAsyncTask extends AsyncTask<Context, Void, String> {
             }*/
 
             // Register with notification hubs
-            NotificationsManager.handleNotifications(context, SENDER_ID, AzureNotificationsHandler.class);
+            /*NotificationsManager.handleNotifications(context, SENDER_ID, AzureNotificationsHandler.class);
             NotificationHub hub = new NotificationHub("flarenotifications",connection_string, context);
-            hub.register(regId,fullPhone);
+            hub.register(regId,fullPhone);*/
 
-            // Register with Parse push
-            //ParseInstallation installation = ParseInstallation.getCurrentInstallation();
-            //installation.put("RegId","Android"+regId);
-            //installation.save();
+            ParseInstallation installation = ParseInstallation.getCurrentInstallation();
+            installation.put("GCMSenderId",SENDER_ID);
+            installation.put("RegId",regId);
+            installation.save();
 
         } catch (Exception ex) {
             msg += " : " + ex.getMessage();

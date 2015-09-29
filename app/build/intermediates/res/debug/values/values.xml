@@ -506,6 +506,7 @@
     <item name="default_decline_textview" type="id">default decline textview</item>
     <item name="deleteGroup" type="id">delete group</item>
     <item name="dialogButtons" type="id">dialog buttons</item>
+    <item name="drawer_layout" type="id">drawer layout</item>
     <item name="editGroup" type="id">edit group</item>
     <item name="enter_code" type="id">enter code layout</item>
     <item name="error" type="id">error message</item>
@@ -531,6 +532,7 @@
     <!-- From: file:/Users/Karthik/Library/Mobile%20Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/res/values/ids.xml -->
     <eat-comment/>
     <item name="latitude" type="id">Latitude</item>
+    <item name="left_drawer" type="id">left drawer</item>
     <item name="loading" type="id">loading</item>
     <item name="location" type="id">Location</item>
     <item name="location_icon" type="id">location icon</item>
@@ -692,6 +694,8 @@
     <string name="default_flare_message">Default Flare Message</string>
     <string name="delete_group">Delete Group</string>
     <string name="done">DONE</string>
+    <string name="drawer_close">drawer close</string>
+    <string name="drawer_open">drawer open</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="edit_group">Edit Group</string>

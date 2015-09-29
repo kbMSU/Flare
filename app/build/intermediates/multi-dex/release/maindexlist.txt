@@ -22,6 +22,7 @@ com/google/ads/mediation/MediationBannerListener.class
 com/google/android/gms/location/FusedLocationProviderApi.class
 com/google/android/gms/ads/internal/zzl.class
 butterknife/BindDrawable.class
+flaregradle/myapp/com/Flare/Activities/LoadScreen$2.class
 com/microsoft/windowsazure/mobileservices/notifications/Registration.class
 com/google/common/collect/RegularImmutableMap$NonTerminalMapEntry.class
 android/support/multidex/MultiDexExtractor.class
@@ -157,6 +158,7 @@ android/support/v4/app/FragmentManagerImpl$3.class
 com/google/android/gms/drive/MetadataBuffer.class
 com/google/common/collect/ArrayTable$ArrayMap.class
 com/squareup/otto/Bus$2.class
+flaregradle/myapp/com/Flare/Activities/CreateGroupActivity$7.class
 android/support/v7/app/ActionBarActivity.class
 com/google/android/gms/internal/zzgh.class
 com/google/common/io/CharStreams.class
@@ -188,6 +190,7 @@ com/google/android/gms/location/LocationListener.class
 android/support/annotation/StringDef.class
 android/support/v4/app/NotificationCompat.class
 butterknife/OnTouch.class
+flaregradle/myapp/com/Flare/Activities/CreateGroupActivity$8.class
 com/google/common/reflect/TypeToken$TypeCollector$1.class
 com/google/common/cache/LocalCache$LocalManualCache.class
 com/google/android/gms/ads/internal/zzd$zzb.class
@@ -359,6 +362,7 @@ com/google/gson/annotations/Expose.class
 com/google/common/collect/TreeMultiset.class
 com/google/android/gms/ads/internal/overlay/zzc$zzc.class
 flaregradle/myapp/com/Flare/AsyncTasks/SendTwilioSmsTask.class
+flaregradle/myapp/com/Flare/Activities/LoadScreen$1.class
 com/google/android/gms/internal/zzdm.class
 com/google/android/gms/ads/mediation/customevent/CustomEventExtras.class
 com/google/android/gms/ads/internal/reward/mediation/client/zzb.class
@@ -604,6 +608,7 @@ com/google/android/gms/wearable/ChannelApi$ChannelListener.class
 android/support/v4/app/FragmentManagerImpl.class
 butterknife/OnTextChanged$Callback.class
 android/support/v7/app/ActionBar$Tab.class
+flaregradle/myapp/com/Flare/Activities/CreateGroupActivity$6.class
 com/google/android/gms/ads/internal/formats/zzc.class
 android/support/v7/internal/widget/TintTypedArray.class
 flaregradle/myapp/com/Flare/Activities/FlareHome.class
@@ -680,8 +685,8 @@ com/google/android/gms/ads/internal/zza.class
 com/google/android/gms/internal/zzen.class
 com/parse/ParseAnalytics.class
 com/google/common/io/CharSource.class
-com/parse/ParseObject.class
 com/google/android/gms/internal/zzaz.class
+com/parse/ParseObject.class
 butterknife/BindDimen.class
 com/google/android/gms/wearable/ChannelApi$OpenChannelResult.class
 com/google/android/gms/ads/internal/overlay/zzi.class

@@ -31,27 +31,27 @@ public class GcmIntentService extends IntentService {
     @Override
     protected void onHandleIntent(Intent intent) {
         Bundle extras = intent.getExtras();
-        //GoogleCloudMessaging gcm = GoogleCloudMessaging.getInstance(this);
+        GoogleCloudMessaging gcm = GoogleCloudMessaging.getInstance(this);
         // The getMessageType() intent parameter must be the intent you received
         // in your BroadcastReceiver.
-        //String messageType = gcm.getMessageType(intent);
+        String messageType = gcm.getMessageType(intent);
 
         if (extras != null && !extras.isEmpty()) {  // has effect of unparcelling Bundle
             // Since we're not using two way messaging, this is all we really to check for
-        //    if (GoogleCloudMessaging.MESSAGE_TYPE_MESSAGE.equals(messageType)) {
-                String type = extras.getString("type");
-                if(type == null) {
+            //if (GoogleCloudMessaging.MESSAGE_TYPE_MESSAGE.equals(messageType)) {
+                String type = extras.getString("type","unknown");
+                if(type.equals("unknown")) {
                     GcmBroadcastReceiver.completeWakefulIntent(intent);
                     return;
                 }
 
-                //if(type.equals("flare")) {
+                if(type.equals("flare")) {
                     handleFlare(extras);
-                //} else if(type.equals("response")) {
-                //    handleResponse(extras);
-                //}
-            }
-        //}
+                } else if(type.equals("response")) {
+                    handleResponse(extras);
+                }
+            //}
+        }
         GcmBroadcastReceiver.completeWakefulIntent(intent);
     }
 
@@ -131,5 +131,9 @@ public class GcmIntentService extends IntentService {
         // mId allows you to update the notification later on.
         NotificationManagerCompat mNotificationManager = NotificationManagerCompat.from(this);
         mNotificationManager.notify(phoneNumber, id, notification);
+    }
+
+    private void handleResponse(Bundle extras) {
+
     }
 }

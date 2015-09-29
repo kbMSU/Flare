@@ -103,5 +103,7 @@
     <item name="settings_list" type="id">Settings setup list</item>
     <item name="country_code" type="id">Country Code</item>
     <item name="location_icon" type="id">location icon</item>
+    <item name="drawer_layout" type="id">drawer layout</item>
+    <item name="left_drawer" type="id">left drawer</item>
 
 </resources>

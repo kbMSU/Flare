@@ -1,16 +1,22 @@
 package flaregradle.myapp.com.Flare.Activities;
 
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
 import android.os.Bundle;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ImageView;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -23,15 +29,12 @@ import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapFragment;
-import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.MarkerOptions;
 
 import java.util.List;
 import java.util.Locale;
 
-import flaregradle.myapp.com.Flare.AsyncTasks.FindFlareUsersTask;
 import flaregradle.myapp.com.Flare.Utilities.DataStorageHandler;
 
 public class FlareHome extends AppCompatActivity implements
@@ -40,6 +43,9 @@ public class FlareHome extends AppCompatActivity implements
     private Location _location;
     private Toast _message;
     private GoogleMap _map;
+    private DrawerLayout _drawerLayout;
+    private ListView _drawerList;
+    private ActionBarDrawerToggle _drawerToggle;
 
     private GoogleApiClient mGoogleApiClient;
     private LocationRequest mLocationRequest;
@@ -63,7 +69,7 @@ public class FlareHome extends AppCompatActivity implements
             @Override
             public void onCameraChange(CameraPosition cameraPosition) {
                 if (_location == null) {
-                    TextView view = (TextView)findViewById(R.id.searchLocationText);
+                    TextView view = (TextView) findViewById(R.id.searchLocationText);
                     view.setText("Unknown location");
                     return;
                 }
@@ -74,6 +80,70 @@ public class FlareHome extends AppCompatActivity implements
             }
         });
 
+        _drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+        _drawerList = (ListView) findViewById(R.id.left_drawer);
+
+        String[] drawerItems = new String[4];
+        drawerItems[0] = "Feedback";
+        drawerItems[1] = "Flare History";
+        drawerItems[2] = "Share";
+        drawerItems[3] = "Settings";
+
+        _drawerList.setAdapter(new ArrayAdapter<>(this,android.R.layout.simple_list_item_1, drawerItems));
+        _drawerToggle = new ActionBarDrawerToggle(this, _drawerLayout, R.string.drawer_open, R.string.drawer_close) {
+
+            /** Called when a drawer has settled in a completely closed state. */
+            public void onDrawerClosed(View view) {
+                super.onDrawerClosed(view);
+                invalidateOptionsMenu(); // creates call to onPrepareOptionsMenu()
+            }
+
+            /** Called when a drawer has settled in a completely open state. */
+            public void onDrawerOpened(View drawerView) {
+                super.onDrawerOpened(drawerView);
+                invalidateOptionsMenu(); // creates call to onPrepareOptionsMenu()
+            }
+        };
+        _drawerLayout.setDrawerListener(_drawerToggle);
+
+        _drawerList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                switch (position) {
+                    case 0:
+                        Intent email = new Intent(Intent.ACTION_SEND);
+                        email.putExtra(Intent.EXTRA_EMAIL, new String[] { "support@shoresideapps.com" });
+                        email.putExtra(Intent.EXTRA_SUBJECT, "Feedback");
+                        // need this to prompts email client only
+                        email.setType("message/rfc822");
+                        startActivity(Intent.createChooser(email, "Choose an Email client"));
+                        break;
+
+                    case 1:
+                        break;
+
+                    case 2:
+                        Intent shareIntent = new Intent();
+                        shareIntent.setAction(Intent.ACTION_SEND);
+                        shareIntent.putExtra(Intent.EXTRA_TEXT, "Download Flare at http://goo.gl/yO6nXj !");
+                        shareIntent.setType("text/plain");
+                        startActivity(Intent.createChooser(shareIntent, "Share"));
+                        break;
+
+                    case 3:
+                        Intent settingsIntent = new Intent(getApplicationContext(),SettingsActivity.class);
+                        startActivity(settingsIntent);
+                        break;
+                }
+            }
+        });
+
+        ActionBar supportActionBar = getSupportActionBar();
+        if(supportActionBar != null) {
+            supportActionBar.setDisplayHomeAsUpEnabled(true);
+            supportActionBar.setHomeButtonEnabled(true);
+        }
+
         // Set up the google api client
         buildGoogleApiClient();
 
@@ -82,6 +152,25 @@ public class FlareHome extends AppCompatActivity implements
 
         // Connect to the google api client
         mGoogleApiClient.connect();
+    }
+
+    @Override
+    public boolean onPrepareOptionsMenu(Menu menu) {
+        // If the nav drawer is open, hide action items related to the content view
+        return super.onPrepareOptionsMenu(menu);
+    }
+
+    @Override
+    protected void onPostCreate(Bundle savedInstanceState) {
+        super.onPostCreate(savedInstanceState);
+        // Sync the toggle state after onRestoreInstanceState has occurred.
+        _drawerToggle.syncState();
+    }
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+        _drawerToggle.onConfigurationChanged(newConfig);
     }
 
     // region Create Google Services Client
@@ -94,28 +183,23 @@ public class FlareHome extends AppCompatActivity implements
     }
     // endregion
 
-    // region State Change Updates
-    @Override
-     protected void onPause() {
-        super.onPause();
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-    }
-    // endregion
-
     // region Handle Menu
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(com.MyApp.Flare.R.menu.home_options_menu, menu);
+        //MenuInflater inflater = getMenuInflater();
+        //inflater.inflate(com.MyApp.Flare.R.menu.home_options_menu, menu);
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        // Pass the event to ActionBarDrawerToggle, if it returns
+        // true, then it has handled the app icon touch event
+        if (_drawerToggle.onOptionsItemSelected(item)) {
+            return true;
+        }
+        // Handle your other action bar items...
+
         switch (item.getItemId()) {
             case R.id.settings:
                 Intent settingsIntent = new Intent(this,SettingsActivity.class);
@@ -129,7 +213,6 @@ public class FlareHome extends AppCompatActivity implements
                 // need this to prompts email client only
                 email.setType("message/rfc822");
                 startActivity(Intent.createChooser(email, "Choose an Email client"));
-
                 return true;
 
             case R.id.share:

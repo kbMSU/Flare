@@ -1,7 +1,9 @@
 package flaregradle.myapp.com.Flare.Activities;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.ContentResolver;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -16,6 +18,7 @@ import com.parse.Parse;
 import com.parse.ParseAnalytics;
 import com.parse.ParseInstallation;
 import com.parse.ParseObject;
+import com.parse.ParsePushBroadcastReceiver;
 
 import flaregradle.myapp.com.Flare.AsyncTasks.FindFlareUsersTask;
 import flaregradle.myapp.com.Flare.AsyncTasks.GcmRegistrationAsyncTask;
@@ -35,8 +38,10 @@ public class LoadScreen extends Activity {
 
         // Set up Parse
         Parse.enableLocalDatastore(this);
+        Parse.setLogLevel(Parse.LOG_LEVEL_INFO);
         Parse.initialize(this, "INoehKZFskuQ6nJ383gzDshdhFHSre9lv5MQrZ7g", "9y6Dx6hqc28c4uyULtzOWrwb0Pmfi0Up3GXDzjpA");
         ParseInstallation.getCurrentInstallation().saveInBackground();
+        ParseAnalytics.trackAppOpenedInBackground(getIntent());
 
         // Load the progress bar
         _busyIndicator = (ProgressBar)findViewById(R.id.busyIndicator);
@@ -69,11 +74,42 @@ public class LoadScreen extends Activity {
     }
 
     public void finishedGettingContacts() {
-        findContactsWithFlare();
-        if(DataStorageHandler.IsPhoneNumberVerified()) {
-            phoneNumberIsVerified();
+        boolean result = DataStorageHandler.CanCheckContactsForFlare();
+        if(!result) {
+            if(DataStorageHandler.IsPhoneNumberVerified()) {
+                phoneNumberIsVerified();
+            } else {
+                verifyPhoneNumber();
+            }
         } else {
-            verifyPhoneNumber();
+            new AlertDialog.Builder(this)
+                .setTitle("Find friends with flare")
+                .setMessage("We can quickly find out if any of your friends has flare. We will need to check your contact list to do this, we promise " +
+                        "we don't store ANY private data")
+                .setPositiveButton("Accept", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        findContactsWithFlare();
+                        DataStorageHandler.SetCheckContactsForFlare(false);
+                        if (DataStorageHandler.IsPhoneNumberVerified()) {
+                            phoneNumberIsVerified();
+                        } else {
+                            verifyPhoneNumber();
+                        }
+                    }
+                })
+                .setNegativeButton("Decline", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        DataStorageHandler.SetCheckContactsForFlare(false);
+                        if (DataStorageHandler.IsPhoneNumberVerified()) {
+                            phoneNumberIsVerified();
+                        } else {
+                            verifyPhoneNumber();
+                        }
+                    }
+                })
+                .show();
         }
     }
 
