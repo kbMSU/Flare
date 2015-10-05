@@ -74,8 +74,11 @@ public class LoadScreen extends Activity {
     }
 
     public void finishedGettingContacts() {
-        boolean result = DataStorageHandler.CanCheckContactsForFlare();
-        if(!result) {
+        boolean haveAskedToCheckContactsWithFlare = DataStorageHandler.HaveAskedToCheckContactsWithFlare();
+        if(haveAskedToCheckContactsWithFlare) {
+            boolean canCheckContactsWithFlare = DataStorageHandler.CanCheckContactsForFlare();
+            if(canCheckContactsWithFlare)
+                findContactsWithFlare();
             if(DataStorageHandler.IsPhoneNumberVerified()) {
                 phoneNumberIsVerified();
             } else {
@@ -85,12 +88,13 @@ public class LoadScreen extends Activity {
             new AlertDialog.Builder(this)
                 .setTitle("Find friends with flare")
                 .setMessage("We can quickly find out if any of your friends has flare. We will need to check your contact list to do this, we promise " +
-                        "we don't store ANY private data")
+                        "we don't store or share ANY private data without your consent. Do you accept ?")
                 .setPositiveButton("Accept", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         findContactsWithFlare();
-                        DataStorageHandler.SetCheckContactsForFlare(false);
+                        DataStorageHandler.SetCanCheckContactsForFlare(true);
+                        DataStorageHandler.SetHaveAskedToCheckContactsWithFlare(true);
                         if (DataStorageHandler.IsPhoneNumberVerified()) {
                             phoneNumberIsVerified();
                         } else {
@@ -101,7 +105,8 @@ public class LoadScreen extends Activity {
                 .setNegativeButton("Decline", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        DataStorageHandler.SetCheckContactsForFlare(false);
+                        DataStorageHandler.SetCanCheckContactsForFlare(false);
+                        DataStorageHandler.SetHaveAskedToCheckContactsWithFlare(true);
                         if (DataStorageHandler.IsPhoneNumberVerified()) {
                             phoneNumberIsVerified();
                         } else {
@@ -125,11 +130,39 @@ public class LoadScreen extends Activity {
 
     private void phoneNumberIsVerified() {
         registerDevice();
-        moveToHomeScreen();
     }
 
     private void registerDevice(){
-        new GcmRegistrationAsyncTask().execute(this);
+        boolean haveWeAsked = DataStorageHandler.HaveAskedToSaveTheUsersInformation();
+        if(haveWeAsked) {
+            boolean canWeSave = DataStorageHandler.CanWeSaveTheUsersInformation();
+            if(canWeSave)
+                new GcmRegistrationAsyncTask().execute(this);
+            moveToHomeScreen();
+        } else {
+            new AlertDialog.Builder(this)
+                .setTitle("Let your friends find you")
+                .setMessage("We can let your friends see that you have flare. We will need to save your phone number to the cloud to do this " +
+                        "we don't store or share ANY private data without your consent. Do you accept ?")
+                .setPositiveButton("Accept", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        DataStorageHandler.SetCanWeSaveTheUsersInformation(true);
+                        DataStorageHandler.SetHaveAskedToSaveTheUsersInformation(true);
+                        new GcmRegistrationAsyncTask().execute(getApplicationContext());
+                        moveToHomeScreen();
+                    }
+                })
+                .setNegativeButton("Decline", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        DataStorageHandler.SetCanWeSaveTheUsersInformation(false);
+                        DataStorageHandler.SetHaveAskedToSaveTheUsersInformation(true);
+                        moveToHomeScreen();
+                    }
+                })
+                .show();
+        }
     }
 
     private void moveToHomeScreen() {

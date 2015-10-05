@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="flaregradle.myapp.com.Flare"
-    android:versionCode="45"
+    android:versionCode="46"
     android:versionName="2" >
 
     <uses-sdk
@@ -20,7 +20,6 @@
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
-    <uses-permission android:name="com.example.gcm.permission.C2D_MESSAGE" />
     <uses-permission android:name="android.permission.VIBRATE" />
 
     <uses-feature
@@ -28,8 +27,11 @@
         android:required="true" />
 
     <permission
-        android:name="com.example.gcm.permission.C2D_MESSAGE"
+        android:name="flaregradle.myapp.com.Flare.permission.C2D_MESSAGE"
         android:protectionLevel="signature" />
+
+    <uses-permission android:name="flaregradle.myapp.com.Flare.permission.C2D_MESSAGE" />
+
     <permission
         android:name="android.permission.READ_EXTERNAL_STORAGE"
         android:maxSdkVersion="18" />
@@ -113,17 +115,42 @@
                 android:value="flaregradle.myapp.com.Flare.Activities.FlareHome" />
         </activity>
 
+        <service android:name="com.parse.PushService" />
+
+        <receiver
+            android:name="flaregradle.myapp.com.Flare.Services.FlareBroadcastReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.parse.push.intent.RECEIVE" />
+                <action android:name="com.parse.push.intent.DELETE" />
+                <action android:name="com.parse.push.intent.OPEN" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.parse.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+<!--                   IMPORTANT: Change "com.parse.starter" to match your app's package name. -->
+                <category android:name="flaregradle.myapp.com.Flare" />
+            </intent-filter>
+        </receiver>
+
+        <!--
         <receiver
             android:name="flaregradle.myapp.com.Flare.Services.GcmBroadcastReceiver"
             android:permission="com.google.android.c2dm.permission.SEND" >
             <intent-filter>
                 <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
                 <category android:name="flaregradle.myapp.com.flare" />
             </intent-filter>
         </receiver>
 
         <service android:name="flaregradle.myapp.com.Flare.Services.GcmIntentService" />
+        -->
         <service android:name="flaregradle.myapp.com.Flare.Services.NotificationDeclineService" />
         <service android:name="flaregradle.myapp.com.Flare.Services.NotificationAcceptService" />
 
@@ -147,7 +174,7 @@
 
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
-            android:value="AIzaSyB-MGunwsr3DX2H70xAAse6VJ2S7hLu440" />
+            android:value="AIzaSyB-05hWM_Jk9m9XunzQkjsWmzK6S4NTdFY" />
 
         <!-- Debug key -->
         <!--

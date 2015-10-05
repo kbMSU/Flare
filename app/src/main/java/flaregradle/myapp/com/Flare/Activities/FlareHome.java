@@ -83,11 +83,10 @@ public class FlareHome extends AppCompatActivity implements
         _drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         _drawerList = (ListView) findViewById(R.id.left_drawer);
 
-        String[] drawerItems = new String[4];
+        String[] drawerItems = new String[3];
         drawerItems[0] = "Feedback";
-        drawerItems[1] = "Flare History";
-        drawerItems[2] = "Share";
-        drawerItems[3] = "Settings";
+        drawerItems[1] = "Share";
+        drawerItems[2] = "Settings";
 
         _drawerList.setAdapter(new ArrayAdapter<>(this,android.R.layout.simple_list_item_1, drawerItems));
         _drawerToggle = new ActionBarDrawerToggle(this, _drawerLayout, R.string.drawer_open, R.string.drawer_close) {
@@ -120,9 +119,6 @@ public class FlareHome extends AppCompatActivity implements
                         break;
 
                     case 1:
-                        break;
-
-                    case 2:
                         Intent shareIntent = new Intent();
                         shareIntent.setAction(Intent.ACTION_SEND);
                         shareIntent.putExtra(Intent.EXTRA_TEXT, "Download Flare at http://goo.gl/yO6nXj !");
@@ -130,7 +126,7 @@ public class FlareHome extends AppCompatActivity implements
                         startActivity(Intent.createChooser(shareIntent, "Share"));
                         break;
 
-                    case 3:
+                    case 2:
                         Intent settingsIntent = new Intent(getApplicationContext(),SettingsActivity.class);
                         startActivity(settingsIntent);
                         break;

@@ -40,10 +40,10 @@ public class GcmRegistrationAsyncTask extends AsyncTask<Context, Void, String> {
 
         String msg = "Device Registered";
         try {
-            if (gcm == null) {
+            /*if (gcm == null) {
                 gcm = GoogleCloudMessaging.getInstance(context);
             }
-            String regId = gcm.register(SENDER_ID);
+            String regId = gcm.register(SENDER_ID);*/
             String code = DataStorageHandler.getCountryCode();
             String phone = DataStorageHandler.getPhoneNumber();
             String fullPhone = code+phone;
@@ -51,12 +51,12 @@ public class GcmRegistrationAsyncTask extends AsyncTask<Context, Void, String> {
             // Lets see if this phone number or this device has been saved
             ParseQuery<ParseObject> query = ParseQuery.getQuery("Device").whereEqualTo("FullPhone",fullPhone);
             List<ParseObject> savedPhones = query.find();
-            ParseQuery<ParseObject> deviceQuery = ParseQuery.getQuery("Device").whereEqualTo("RegId", regId);
-            List<ParseObject> savedDevices = deviceQuery.find();
+            //ParseQuery<ParseObject> deviceQuery = ParseQuery.getQuery("Device").whereEqualTo("RegId", regId);
+            //List<ParseObject> savedDevices = deviceQuery.find();
 
             if(savedPhones == null || savedPhones.size() == 0) {
                 // This phone number has not been saved before, how about this device ?
-                if(savedDevices != null && savedDevices.size() > 0) {
+                /*if(savedDevices != null && savedDevices.size() > 0) {
                     // This device has been saved before , lets update it
                     ParseObject savedDevice = savedDevices.get(0);
                     savedDevice.put("FullPhone",fullPhone);
@@ -64,17 +64,17 @@ public class GcmRegistrationAsyncTask extends AsyncTask<Context, Void, String> {
                     savedDevice.put("Number", phone);
                     savedDevice.saveInBackground();
 
-                } else {
+                } else {*/
                     // This phone number has not been saved , neither has this device
                     ParseObject newDevice = new ParseObject("Device");
-                    newDevice.put("RegId", regId);
+                    //newDevice.put("RegId", regId);
                     newDevice.put("FullPhone", fullPhone);
                     newDevice.put("CountryCode", code);
                     newDevice.put("Number", phone);
                     newDevice.put("DeviceType","Android");
                     newDevice.saveInBackground();
                 }
-            } else {
+            /*} else {
                 ParseObject savedPhone = savedPhones.get(0);
                 // This phone has been registered before
                 if(savedDevices != null && savedDevices.size() > 0) {
@@ -86,7 +86,7 @@ public class GcmRegistrationAsyncTask extends AsyncTask<Context, Void, String> {
                         savedDevice.saveInBackground();
                     }
                 }
-            }
+            }*/
 
             /*MobileServiceClient client = new MobileServiceClient(
                     "https://flareservice.azure-mobile.net/",
@@ -139,8 +139,10 @@ public class GcmRegistrationAsyncTask extends AsyncTask<Context, Void, String> {
             hub.register(regId,fullPhone);*/
 
             ParseInstallation installation = ParseInstallation.getCurrentInstallation();
-            installation.put("GCMSenderId",SENDER_ID);
-            installation.put("RegId",regId);
+            //installation.put("GCMSenderId",SENDER_ID);
+            installation.put("FullPhone",fullPhone);
+            installation.put("Number",phone);
+            installation.put("CountryCode",code);
             installation.save();
 
         } catch (Exception ex) {

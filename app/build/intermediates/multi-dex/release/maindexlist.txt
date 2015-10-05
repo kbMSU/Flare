@@ -51,6 +51,7 @@ com/google/android/gms/ads/internal/purchase/zzl.class
 com/google/common/collect/Multimaps.class
 com/google/common/io/LittleEndianDataOutputStream.class
 flaregradle/myapp/com/Flare/Activities/GroupsActivity$1.class
+com/parse/PushService$ServiceLifecycleCallbacks.class
 com/google/common/reflect/TypeToInstanceMap.class
 com/google/android/gms/internal/zzgb.class
 android/support/multidex/MultiDexExtractor$1.class
@@ -66,6 +67,7 @@ android/support/v7/appcompat/R.class
 flaregradle/myapp/com/Flare/Activities/SendFlareActivity$4.class
 com/google/android/gms/maps/MapView.class
 com/google/android/gms/internal/zzgq.class
+com/parse/TaskStackBuilderHelper.class
 android/support/annotation/Nullable.class
 com/google/android/gms/ads/internal/purchase/zzc.class
 com/google/ads/AdSize.class
@@ -142,7 +144,9 @@ com/google/android/gms/internal/zzid.class
 android/support/v4/app/FragmentManagerImpl$2.class
 com/google/common/reflect/Types.class
 com/google/common/collect/ImmutableMultiset.class
+com/parse/ParsePushBroadcastReceiver.class
 com/google/common/reflect/MutableTypeToInstanceMap.class
+flaregradle/myapp/com/Flare/Activities/FlareHome$3.class
 com/google/common/collect/ImmutableCollection.class
 com/google/android/gms/internal/zzha$zza.class
 com/google/android/gms/maps/GoogleMap$CancelableCallback.class
@@ -173,6 +177,7 @@ com/google/common/io/Files.class
 com/google/android/gms/internal/zzfn.class
 android/support/v7/widget/ActionMenuView$LayoutParams.class
 flaregradle/myapp/com/Flare/Adapters/PhoneNumberAdapter.class
+com/parse/NotificationCompat$Builder$Style.class
 android/support/annotation/CallSuper.class
 com/google/android/gms/internal/zzeu.class
 com/google/android/gms/cast/Cast$CastApi$zza.class
@@ -199,7 +204,6 @@ com/google/android/gms/internal/zzk.class
 com/google/android/gms/wallet/CountrySpecification.class
 com/google/android/gms/internal/zzil.class
 com/parse/ParseUser.class
-android/support/v4/content/WakefulBroadcastReceiver.class
 android/support/v4/widget/SimpleCursorAdapter.class
 com/google/android/gms/internal/zzfo.class
 com/google/ads/mediation/AbstractAdViewAdapter.class
@@ -221,6 +225,7 @@ android/support/annotation/AnimatorRes.class
 android/support/v4/app/ActivityCompatHoneycomb.class
 com/google/android/gms/ads/internal/overlay/AdLauncherIntentInfoParcel.class
 android/support/annotation/BoolRes.class
+flaregradle/myapp/com/Flare/Services/FlareBroadcastReceiver.class
 com/squareup/otto/HandlerFinder$1.class
 flaregradle/myapp/com/Flare/Activities/GroupsActivity$2.class
 com/google/android/gms/internal/zzby.class
@@ -256,6 +261,7 @@ android/support/v4/app/NotificationCompat$WearableExtender.class
 com/google/android/gms/internal/zzie.class
 com/google/android/gms/common/annotation/KeepName.class
 com/google/android/gms/common/api/GoogleApiClient$ConnectionCallbacks.class
+com/parse/PLog.class
 com/google/common/collect/Iterables.class
 com/google/android/gms/ads/internal/request/zze.class
 com/google/android/gms/ads/internal/zzp.class
@@ -272,6 +278,7 @@ com/squareup/otto/Bus.class
 android/support/annotation/RequiresPermission.class
 com/google/android/gms/ads/internal/client/zzx$zza.class
 com/google/android/gms/wearable/ChannelApi.class
+com/parse/PushService$1.class
 com/google/common/base/Converter$ConverterComposition.class
 android/support/v4/app/NotificationCompat$Action.class
 com/google/android/gms/internal/zzdf.class
@@ -306,6 +313,8 @@ com/google/common/xml/package-info.class
 android/support/v4/app/BackStackRecord.class
 android/support/annotation/XmlRes.class
 com/google/common/collect/Ordering.class
+android/support/v4/widget/DrawerLayoutImpl.class
+com/parse/GCMService.class
 com/google/android/gms/internal/zzbq.class
 com/google/common/primitives/Doubles.class
 com/google/android/gms/internal/zzii.class
@@ -318,8 +327,10 @@ com/google/android/gms/internal/zzdq.class
 com/google/android/gms/ads/internal/util/client/VersionInfoParcel.class
 com/google/android/gms/internal/zzbx.class
 com/google/common/html/package-info.class
+flaregradle/myapp/com/Flare/Activities/LoadScreen$4.class
 com/google/android/gms/internal/zzfg.class
 com/google/android/gms/internal/zzgt.class
+flaregradle/myapp/com/Flare/Activities/VerifyPhoneActivity$2.class
 com/google/common/collect/Sets$FilteredNavigableSet.class
 com/google/android/gms/wearable/internal/GetConfigResponse.class
 com/google/android/gms/internal/zzbr.class
@@ -334,6 +345,7 @@ com/google/android/gms/ads/internal/request/AdResponseParcel.class
 android/support/v4/app/NotificationCompat$Builder.class
 com/google/common/collect/AbstractSortedMultiset.class
 com/google/common/base/Joiner.class
+flaregradle/myapp/com/Flare/Activities/LoadScreen$3.class
 butterknife/OnPageChange$Callback.class
 com/google/common/base/Converter.class
 com/google/ads/mediation/MediationInterstitialListener.class
@@ -348,6 +360,7 @@ com/google/android/gms/ads/internal/overlay/zzc$zzb.class
 com/google/android/gms/maps/StreetViewPanoramaFragment.class
 com/google/common/collect/Iterators.class
 com/google/common/io/BaseEncoding$StandardBaseEncoding.class
+flaregradle/myapp/com/Flare/Activities/VerifyPhoneActivity$3.class
 android/support/v4/app/FragmentManagerImpl$FragmentTag.class
 com/google/android/gms/internal/zzdn.class
 com/google/android/gms/internal/zzgv.class
@@ -403,6 +416,7 @@ flaregradle/myapp/com/Flare/Activities/GroupsActivity$3.class
 com/google/android/gms/internal/zzbd.class
 android/support/v4/widget/MaterialProgressDrawable$3.class
 com/google/android/gms/internal/zzif.class
+android/support/v4/widget/DrawerLayout.class
 flaregradle/myapp/com/Flare/Activities/SendFlareActivity$7.class
 com/google/common/base/Functions$IdentityFunction.class
 com/google/android/gms/internal/zzhc.class
@@ -428,6 +442,7 @@ com/google/android/gms/ads/internal/formats/zzd.class
 flaregradle/myapp/com/Flare/Activities/CreateGroupActivity$5.class
 com/squareup/otto/Bus$EventWithHandler.class
 butterknife/Bind.class
+com/parse/ParseNotificationManager.class
 android/support/v4/widget/MaterialProgressDrawable$ProgressDrawableSize.class
 com/google/android/gms/cast/Cast$CastOptions.class
 com/google/common/collect/ImmutableList.class
@@ -435,7 +450,7 @@ android/support/annotation/InterpolatorRes.class
 com/google/common/primitives/UnsignedInteger.class
 com/google/android/gms/plus/Account.class
 com/google/android/gms/analytics/internal/Command$1.class
-flaregradle/myapp/com/Flare/Services/GcmIntentService.class
+com/parse/PushService.class
 com/google/android/gms/analytics/Logger.class
 com/google/android/gms/maps/model/LatLng.class
 android/support/v4/app/FragmentState.class
@@ -450,6 +465,7 @@ flaregradle/myapp/com/Flare/Activities/SettingsSetup$2.class
 com/microsoft/windowsazure/mobileservices/notifications/GcmTemplateRegistration.class
 com/google/common/base/Optional.class
 android/support/v7/app/ActionBar$LayoutParams.class
+com/parse/NotificationCompat$Builder$BigTextStyle.class
 com/google/android/gms/internal/zzdh$zzd.class
 com/google/android/gms/analytics/HitBuilders$TransactionBuilder.class
 com/google/android/gms/analytics/internal/Command.class
@@ -536,6 +552,7 @@ com/google/android/gms/internal/zzhh.class
 com/google/android/gms/analytics/ecommerce/ProductAction.class
 com/google/common/io/ByteArrayDataOutput.class
 com/google/android/gms/games/achievement/Achievement.class
+com/parse/ParsePlugins$Android.class
 flaregradle/myapp/com/Flare/Activities/SendFlareActivity.class
 butterknife/OnPageChange.class
 com/google/android/gms/internal/zzbh.class
@@ -566,6 +583,7 @@ com/google/common/collect/Multisets.class
 android/support/v7/app/ActionBarDrawerToggle.class
 android/support/v7/app/ActionBar$OnMenuVisibilityListener.class
 com/google/android/gms/internal/zzfp.class
+com/parse/GcmRegistrar.class
 flaregradle/myapp/com/Flare/AsyncTasks/SendFlareAsyncTask.class
 com/google/android/gms/internal/zzdy.class
 com/google/common/collect/ImmutableListMultimap.class
@@ -587,6 +605,7 @@ com/google/common/collect/TreeRangeMap$SubRangeMap.class
 com/google/android/gms/auth/GoogleAuthUtil.class
 com/google/common/collect/DenseImmutableTable$ImmutableArrayMap.class
 com/google/android/gms/ads/internal/reward/mediation/client/RewardItemParcel.class
+com/parse/PushType.class
 com/google/android/gms/internal/zzcf.class
 android/support/v4/app/FragmentManagerImpl$4.class
 com/MyApp/Flare/R$menu.class
@@ -595,6 +614,7 @@ com/google/android/gms/internal/zzft.class
 com/google/android/gms/location/places/PlaceFilter.class
 android/support/v4/app/FragmentManagerState.class
 com/squareup/otto/Subscribe.class
+com/parse/ProxyService.class
 com/google/android/gms/ads/internal/client/SearchAdRequestParcel.class
 com/parse/Parse.class
 com/google/android/gms/ads/InterstitialAd.class
@@ -610,6 +630,7 @@ butterknife/OnTextChanged$Callback.class
 android/support/v7/app/ActionBar$Tab.class
 flaregradle/myapp/com/Flare/Activities/CreateGroupActivity$6.class
 com/google/android/gms/ads/internal/formats/zzc.class
+com/parse/NotificationCompat.class
 android/support/v7/internal/widget/TintTypedArray.class
 flaregradle/myapp/com/Flare/Activities/FlareHome.class
 android/support/v4/app/FragmentTransaction.class
@@ -638,6 +659,7 @@ flaregradle/myapp/com/Flare/Modules/EventsModule.class
 com/google/common/collect/ImmutableSortedMap.class
 flaregradle/myapp/com/Flare/Services/NotificationDeclineService.class
 com/google/common/base/Absent.class
+flaregradle/myapp/com/Flare/Activities/FlareHome$2.class
 com/google/android/gms/wallet/MaskedWallet.class
 com/google/android/gms/internal/zzeb.class
 com/google/android/gms/fitness/data/DataType.class
@@ -685,8 +707,8 @@ com/google/android/gms/ads/internal/zza.class
 com/google/android/gms/internal/zzen.class
 com/parse/ParseAnalytics.class
 com/google/common/io/CharSource.class
-com/google/android/gms/internal/zzaz.class
 com/parse/ParseObject.class
+com/google/android/gms/internal/zzaz.class
 butterknife/BindDimen.class
 com/google/android/gms/wearable/ChannelApi$OpenChannelResult.class
 com/google/android/gms/ads/internal/overlay/zzi.class
@@ -697,6 +719,7 @@ com/google/common/collect/ImmutableBiMap.class
 com/MyApp/Flare/R$string.class
 flaregradle/myapp/com/Flare/Activities/SendFlareActivity$5.class
 android/support/annotation/LayoutRes.class
+com/parse/ManifestInfo.class
 com/google/android/gms/internal/zzfw.class
 com/google/android/gms/dynamic/zzg.class
 com/google/common/collect/HashBiMap$BiEntry.class
@@ -728,6 +751,7 @@ com/google/android/gms/appindexing/AppIndexApi$ActionResult.class
 com/google/android/gms/common/data/AbstractDataBuffer.class
 android/support/annotation/Size.class
 flaregradle/myapp/com/Flare/Activities/SendFlareActivity$6.class
+com/parse/ParseCloud.class
 com/google/android/gms/internal/zzct.class
 android/support/v7/app/ActionBar$DisplayOptions.class
 com/google/android/gms/appindexing/AppIndexApi$AppIndexingLink.class
@@ -740,7 +764,6 @@ com/google/android/gms/wallet/WalletConstants.class
 android/support/v4/app/NavUtils.class
 com/google/common/collect/ImmutableRangeMap.class
 com/google/common/collect/Multisets$ImmutableEntry.class
-flaregradle/myapp/com/Flare/Services/GcmBroadcastReceiver.class
 flaregradle/myapp/com/Flare/AsyncTasks/GcmRegistrationAsyncTask.class
 butterknife/OnLongClick.class
 android/support/annotation/WorkerThread.class
@@ -772,6 +795,8 @@ com/google/android/gms/maps/SupportStreetViewPanoramaFragment.class
 com/google/common/base/Objects.class
 flaregradle/myapp/com/Flare/Activities/LoadScreen.class
 com/google/common/collect/ContiguousSet.class
+com/parse/GcmBroadcastReceiver.class
+com/parse/ServiceUtils.class
 butterknife/OnItemSelected$Callback.class
 com/google/android/gms/drive/DriveStatusCodes.class
 com/MyApp/Flare/R$array.class
@@ -784,3 +809,4 @@ android/support/v4/app/FragmentActivity$2.class
 com/google/android/gms/ads/internal/overlay/zzh.class
 flaregradle/myapp/com/Flare/Activities/SendFlareActivity$9.class
 com/google/android/gms/common/api/Result.class
+com/parse/PPNSUtil.class

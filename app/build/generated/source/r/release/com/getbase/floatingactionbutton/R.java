@@ -33,9 +33,9 @@ public final class R {
 		public static final int fab_bg_normal = 0x7f020068;
 	}
 	public static final class id {
-		public static final int fab_expand_menu_button = 0x7f0d0025;
-		public static final int mini = 0x7f0d0062;
-		public static final int normal = 0x7f0d0058;
+		public static final int fab_expand_menu_button = 0x7f0d0026;
+		public static final int mini = 0x7f0d0064;
+		public static final int normal = 0x7f0d005a;
 	}
 	public static final class styleable {
 		public static final int[] AddFloatingActionButton = { 0x7f010026 };

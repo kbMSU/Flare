@@ -9,6 +9,8 @@ import com.microsoft.windowsazure.mobileservices.MobileServiceList;
 import com.microsoft.windowsazure.mobileservices.table.MobileServiceTable;
 import com.microsoft.windowsazure.mobileservices.table.query.ExecutableQuery;
 import com.microsoft.windowsazure.mobileservices.table.query.Query;
+import com.parse.Parse;
+import com.parse.ParseInstallation;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
 
@@ -55,6 +57,13 @@ public class FindFlareUsersTask extends AsyncTask<Context,Void,Void> {
                     numbers.add(number);
                 }
             }
+
+            /*ParseQuery<ParseInstallation> numberQuery = ParseInstallation.getQuery().whereContainedIn("Number",numbers);
+            ParseQuery<ParseInstallation> fullPhoneQuery = ParseInstallation.getQuery().whereContainedIn("FullPhone",numbers);
+            List<ParseQuery<ParseInstallation>> queries = new ArrayList<>();
+            queries.add(numberQuery);
+            queries.add(fullPhoneQuery);
+            List<ParseInstallation> devices = fullPhoneQuery.find();*/
 
             ParseQuery<ParseObject> numberQuery = ParseQuery.getQuery("Device").whereContainedIn("Number",numbers);
             ParseQuery<ParseObject> fullPhoneQuery = ParseQuery.getQuery("Device").whereContainedIn("FullPhone",numbers);

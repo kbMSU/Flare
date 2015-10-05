@@ -38,6 +38,9 @@ public class DataStorageHandler {
     private static String _countryCode;
     private static String _phoneNumber;
     private static boolean _checkContactsWithFlare;
+    private static boolean _haveAskedToCheckContactsWithFlare;
+    private static boolean _haveAskedToSaveTheUsersInformation;
+    private static boolean _canWeSaveTheUsersInformation;
 
     public static SharedPreferences Preferences;
     public static TreeMap<String,Contact> AllContacts;
@@ -56,7 +59,10 @@ public class DataStorageHandler {
         _registered = Preferences.getBoolean("registered",false);
         _countryCode = Preferences.getString("countryCode", "");
         _phoneNumber = Preferences.getString("phoneNumber","");
-        _checkContactsWithFlare = Preferences.getBoolean("contactsWithFlare",true);
+        _checkContactsWithFlare = Preferences.getBoolean("checkContactsWithFlare", false);
+        _haveAskedToCheckContactsWithFlare = Preferences.getBoolean("haveAskedToCheckContactsWithFlare",false);
+        _canWeSaveTheUsersInformation = Preferences.getBoolean("canWeSaveTheUsersInformation",false);
+        _haveAskedToSaveTheUsersInformation = Preferences.getBoolean("haveAskedToSaveTheUsersInformation",false);
 
         // Get saved contact groups
         String json = Preferences.getString("SavedContactGroups", null);
@@ -169,7 +175,7 @@ public class DataStorageHandler {
 
         SharedPreferences.Editor editor = Preferences.edit();
         editor.putString("countryCode",_countryCode);
-        editor.putString("phoneNumber",_phoneNumber);
+        editor.putString("phoneNumber", _phoneNumber);
         editor.apply();
     }
 
@@ -207,7 +213,7 @@ public class DataStorageHandler {
     public static void SetPhoneNumberVerified() {
         _phoneNumberVerified = true;
         SharedPreferences.Editor editor = Preferences.edit();
-        editor.putBoolean("verified",_phoneNumberVerified);
+        editor.putBoolean("verified", _phoneNumberVerified);
         editor.apply();
     }
 
@@ -217,7 +223,7 @@ public class DataStorageHandler {
     public static void SetRegistered() {
         _registered = true;
         SharedPreferences.Editor editor = Preferences.edit();
-        editor.putBoolean("registered",_registered);
+        editor.putBoolean("registered", _registered);
         editor.apply();
     }
 
@@ -230,10 +236,33 @@ public class DataStorageHandler {
     }
 
     public static boolean CanCheckContactsForFlare() {return _checkContactsWithFlare; }
-    public static void SetCheckContactsForFlare(boolean val) {
+    public static void SetCanCheckContactsForFlare(boolean val) {
         _checkContactsWithFlare = val;
         SharedPreferences.Editor editor = Preferences.edit();
-        editor.putBoolean("contactsWithFlare",_checkContactsWithFlare);
+        editor.putBoolean("checkContactsWithFlare",_checkContactsWithFlare);
+        editor.apply();
+    }
+
+    public static boolean HaveAskedToCheckContactsWithFlare() {return _haveAskedToCheckContactsWithFlare; }
+    public static void SetHaveAskedToCheckContactsWithFlare(boolean val) {
+        _haveAskedToCheckContactsWithFlare = val;
+        SharedPreferences.Editor editor = Preferences.edit();
+        editor.putBoolean("haveAskedToCheckContactsWithFlare",_haveAskedToCheckContactsWithFlare);
+        editor.apply();
+    }
+    public static boolean CanWeSaveTheUsersInformation() {return _canWeSaveTheUsersInformation; }
+    public static void SetCanWeSaveTheUsersInformation(boolean val) {
+        _checkContactsWithFlare = val;
+        SharedPreferences.Editor editor = Preferences.edit();
+        editor.putBoolean("canWeSaveTheUsersInformation",_canWeSaveTheUsersInformation);
+        editor.apply();
+    }
+
+    public static boolean HaveAskedToSaveTheUsersInformation() {return _haveAskedToSaveTheUsersInformation; }
+    public static void SetHaveAskedToSaveTheUsersInformation(boolean val) {
+        _haveAskedToCheckContactsWithFlare = val;
+        SharedPreferences.Editor editor = Preferences.edit();
+        editor.putBoolean("haveAskedToSaveTheUsersInformation",_haveAskedToSaveTheUsersInformation);
         editor.apply();
     }
     //endregion

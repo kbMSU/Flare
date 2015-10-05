@@ -103,7 +103,7 @@
         </activity>
 
         <service android:name="com.parse.PushService" />
-        <receiver android:name="com.parse.ParsePushBroadcastReceiver"
+        <receiver android:name="flaregradle.myapp.com.Flare.Services.FlareBroadcastReceiver"
                   android:exported="false">
             <intent-filter>
                 <action android:name="com.parse.push.intent.RECEIVE" />
@@ -111,6 +111,20 @@
                 <action android:name="com.parse.push.intent.OPEN" />
             </intent-filter>
         </receiver>
+        <receiver android:name="com.parse.GcmBroadcastReceiver"
+                  android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <!--
+                  IMPORTANT: Change "com.parse.starter" to match your app's package name.
+                -->
+                <category android:name="flaregradle.myapp.com.Flare" />
+            </intent-filter>
+        </receiver>
+
+        <!--
         <receiver
             android:name="flaregradle.myapp.com.Flare.Services.GcmBroadcastReceiver"
             android:permission="com.google.android.c2dm.permission.SEND" >
@@ -121,16 +135,13 @@
             </intent-filter>
         </receiver>
 
-        <service android:name="flaregradle.myapp.com.Flare.Services.GcmIntentService" />
+        <service android:name="flaregradle.myapp.com.Flare.Services.GcmIntentService" /> -->
         <service android:name="flaregradle.myapp.com.Flare.Services.NotificationDeclineService" />
         <service android:name="flaregradle.myapp.com.Flare.Services.NotificationAcceptService" />
 
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
-
-        <meta-data android:name="com.parse.push.gcm_sender_id"
-                   android:value="id:97762557726" />;
 
         <!-- release key -->
 
@@ -148,7 +159,7 @@
 
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
-            android:value="AIzaSyB-MGunwsr3DX2H70xAAse6VJ2S7hLu440" />
+            android:value="AIzaSyB-05hWM_Jk9m9XunzQkjsWmzK6S4NTdFY" />
 
         <!-- Debug key -->
         <!--

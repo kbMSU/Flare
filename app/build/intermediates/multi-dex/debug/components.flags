@@ -56,15 +56,11 @@
     <init>();
 }
 
--keep class com.parse.ParsePushBroadcastReceiver {
+-keep class flaregradle.myapp.com.Flare.Services.FlareBroadcastReceiver {
     <init>();
 }
 
--keep class flaregradle.myapp.com.Flare.Services.GcmBroadcastReceiver {
-    <init>();
-}
-
--keep class flaregradle.myapp.com.Flare.Services.GcmIntentService {
+-keep class com.parse.GcmBroadcastReceiver {
     <init>();
 }
 

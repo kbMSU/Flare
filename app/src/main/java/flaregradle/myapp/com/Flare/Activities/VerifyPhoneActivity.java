@@ -1,6 +1,8 @@
 package flaregradle.myapp.com.Flare.Activities;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -224,12 +226,42 @@ public class VerifyPhoneActivity extends Activity {
     }
 
     public void onContinueSetup(View view) {
-        DataStorageHandler.savePhoneNumber(_countryCodeView.getText().toString(),_phoneNumberEntry.getText().toString());
+        DataStorageHandler.savePhoneNumber(_countryCodeView.getText().toString(), _phoneNumberEntry.getText().toString());
         registerPhone();
-        moveOntoSettingsSetup();
     }
 
     private void registerPhone() {
+        boolean haveWeAsked = DataStorageHandler.HaveAskedToSaveTheUsersInformation();
+        if(haveWeAsked) {
+            boolean canWeSave = DataStorageHandler.CanWeSaveTheUsersInformation();
+            if(canWeSave)
+                new GcmRegistrationAsyncTask().execute(this);
+            moveOntoSettingsSetup();
+        } else {
+            new AlertDialog.Builder(this)
+                    .setTitle("Let your friends find you")
+                    .setMessage("We can let your friends see that you have flare. We will need to save your phone number to the cloud to do this " +
+                            "we don't store or share ANY private data without your consent. Do you accept ?")
+                    .setPositiveButton("Accept", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            DataStorageHandler.SetCanWeSaveTheUsersInformation(true);
+                            DataStorageHandler.SetHaveAskedToSaveTheUsersInformation(true);
+                            new GcmRegistrationAsyncTask().execute(getApplicationContext());
+                            moveOntoSettingsSetup();
+                        }
+                })
+                    .setNegativeButton("Decline", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            DataStorageHandler.SetCanWeSaveTheUsersInformation(false);
+                            DataStorageHandler.SetHaveAskedToSaveTheUsersInformation(true);
+                            moveOntoSettingsSetup();
+                        }
+                    })
+                .show();
+        }
+
         new GcmRegistrationAsyncTask().execute(this);
     }
 

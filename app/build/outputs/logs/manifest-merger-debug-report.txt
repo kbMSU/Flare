@@ -320,7 +320,7 @@ service#com.parse.PushService
 ADDED from AndroidManifest.xml:105:9
 	android:name
 		ADDED from AndroidManifest.xml:105:18
-receiver#com.parse.ParsePushBroadcastReceiver
+receiver#flaregradle.myapp.com.Flare.Services.FlareBroadcastReceiver
 ADDED from AndroidManifest.xml:106:9
 	android:exported
 		ADDED from AndroidManifest.xml:107:19
@@ -340,40 +340,36 @@ action#com.parse.push.intent.OPEN
 ADDED from AndroidManifest.xml:111:17
 	android:name
 		ADDED from AndroidManifest.xml:111:25
-receiver#flaregradle.myapp.com.Flare.Services.GcmBroadcastReceiver
+receiver#com.parse.GcmBroadcastReceiver
 ADDED from AndroidManifest.xml:114:9
 	android:permission
-		ADDED from AndroidManifest.xml:116:13
+		ADDED from AndroidManifest.xml:115:19
 	android:name
-		ADDED from AndroidManifest.xml:115:13
-intent-filter#com.google.android.c2dm.intent.RECEIVE+com.google.android.c2dm.intent.REGISTRATION+flaregradle.myapp.com.flare
-ADDED from AndroidManifest.xml:117:13
+		ADDED from AndroidManifest.xml:114:19
+intent-filter#com.google.android.c2dm.intent.RECEIVE+com.google.android.c2dm.intent.REGISTRATION+flaregradle.myapp.com.Flare
+ADDED from AndroidManifest.xml:116:13
 action#com.google.android.c2dm.intent.RECEIVE
+ADDED from AndroidManifest.xml:117:17
+	android:name
+		ADDED from AndroidManifest.xml:117:25
+action#com.google.android.c2dm.intent.REGISTRATION
 ADDED from AndroidManifest.xml:118:17
 	android:name
 		ADDED from AndroidManifest.xml:118:25
-action#com.google.android.c2dm.intent.REGISTRATION
-ADDED from AndroidManifest.xml:119:17
+category#flaregradle.myapp.com.Flare
+ADDED from AndroidManifest.xml:123:17
 	android:name
-		ADDED from AndroidManifest.xml:119:25
-category#flaregradle.myapp.com.flare
-ADDED from AndroidManifest.xml:120:17
-	android:name
-		ADDED from AndroidManifest.xml:120:27
-service#flaregradle.myapp.com.Flare.Services.GcmIntentService
-ADDED from AndroidManifest.xml:124:9
-	android:name
-		ADDED from AndroidManifest.xml:124:18
+		ADDED from AndroidManifest.xml:123:27
 service#flaregradle.myapp.com.Flare.Services.NotificationDeclineService
-ADDED from AndroidManifest.xml:125:9
+ADDED from AndroidManifest.xml:139:9
 	android:name
-		ADDED from AndroidManifest.xml:125:18
+		ADDED from AndroidManifest.xml:139:18
 service#flaregradle.myapp.com.Flare.Services.NotificationAcceptService
-ADDED from AndroidManifest.xml:126:9
+ADDED from AndroidManifest.xml:140:9
 	android:name
-		ADDED from AndroidManifest.xml:126:18
+		ADDED from AndroidManifest.xml:140:18
 meta-data#com.google.android.gms.version
-ADDED from AndroidManifest.xml:128:9
+ADDED from AndroidManifest.xml:142:9
 MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
 MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
 MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
@@ -402,21 +398,15 @@ MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
 MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
 MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
 	android:value
-		ADDED from AndroidManifest.xml:130:13
+		ADDED from AndroidManifest.xml:144:13
 	android:name
-		ADDED from AndroidManifest.xml:129:13
-meta-data#com.parse.push.gcm_sender_id
-ADDED from AndroidManifest.xml:132:9
-	android:value
-		ADDED from AndroidManifest.xml:133:20
-	android:name
-		ADDED from AndroidManifest.xml:132:20
+		ADDED from AndroidManifest.xml:143:13
 meta-data#com.google.android.maps.v2.API_KEY
-ADDED from AndroidManifest.xml:149:9
+ADDED from AndroidManifest.xml:160:9
 	android:value
-		ADDED from AndroidManifest.xml:151:13
+		ADDED from AndroidManifest.xml:162:13
 	android:name
-		ADDED from AndroidManifest.xml:150:13
+		ADDED from AndroidManifest.xml:161:13
 uses-sdk
 INJECTED from AndroidManifest.xml:0:0 reason: use-sdk injection requested
 MERGED from com.android.support:multidex:1.0.1:18:5

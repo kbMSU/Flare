@@ -11,8 +11,9 @@
 -keep class com.google.android.gms.ads.AdActivity { <init>(); }
 -keep class flaregradle.myapp.com.Flare.Activities.VerifyPhoneActivity { <init>(); }
 -keep class flaregradle.myapp.com.Flare.Activities.SettingsSetup { <init>(); }
--keep class flaregradle.myapp.com.Flare.Services.GcmBroadcastReceiver { <init>(); }
--keep class flaregradle.myapp.com.Flare.Services.GcmIntentService { <init>(); }
+-keep class com.parse.PushService { <init>(); }
+-keep class flaregradle.myapp.com.Flare.Services.FlareBroadcastReceiver { <init>(); }
+-keep class com.parse.GcmBroadcastReceiver { <init>(); }
 -keep class flaregradle.myapp.com.Flare.Services.NotificationDeclineService { <init>(); }
 -keep class flaregradle.myapp.com.Flare.Services.NotificationAcceptService { <init>(); }
 -keep class com.google.android.gms.ads.purchase.InAppPurchaseActivity { <init>(); }
