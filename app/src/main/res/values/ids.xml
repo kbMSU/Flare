@@ -105,5 +105,7 @@
     <item name="location_icon" type="id">location icon</item>
     <item name="drawer_layout" type="id">drawer layout</item>
     <item name="left_drawer" type="id">left drawer</item>
+    <item name="select_find_friends" type="id">Select find friends</item>
+    <item name="select_allow_save" type="id">Select allow save</item>
 
 </resources>

@@ -554,7 +554,9 @@
     <item name="resend" type="id">resend code</item>
     <item name="saveGroup" type="id">save group</item>
     <item name="searchLocationText" type="id">search location text</item>
+    <item name="select_allow_save" type="id">Select allow save</item>
     <item name="select_cloud_message" type="id">Select cloud message for alternate flare</item>
+    <item name="select_find_friends" type="id">Select find friends</item>
     <item name="select_text_message" type="id">Select text message for alternate flare</item>
     <item name="sendFlareLayout" type="id">send flare layout</item>
     <item name="sendFlareScreen" type="id">send flare screen</item>

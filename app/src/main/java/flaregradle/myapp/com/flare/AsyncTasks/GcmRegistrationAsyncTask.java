@@ -2,6 +2,7 @@ package flaregradle.myapp.com.Flare.AsyncTasks;
 
 import android.content.Context;
 import android.os.AsyncTask;
+import android.widget.Toast;
 
 import com.google.android.gms.gcm.GoogleCloudMessaging;
 import com.microsoft.windowsazure.messaging.NotificationHub;
@@ -22,13 +23,16 @@ import flaregradle.myapp.com.Flare.Utilities.DataStorageHandler;
 
 public class GcmRegistrationAsyncTask extends AsyncTask<Context, Void, String> {
 
-    private GoogleCloudMessaging gcm;
+    /*private GoogleCloudMessaging gcm;
 
     // Google Developers Console project number
     private static final String SENDER_ID = "97762557726";
 
     // Azure connection string
     private static final String connection_string = "Endpoint=sb://flares.servicebus.windows.net/;SharedAccessKeyName=DefaultFullSharedAccessSignature;SharedAccessKey=+ofrbn1EiYh6j+bgD8z0w20G8oa781CctkemzeQITXU=";
+    */
+
+    private Context _context;
 
     public GcmRegistrationAsyncTask(){
     }
@@ -36,7 +40,7 @@ public class GcmRegistrationAsyncTask extends AsyncTask<Context, Void, String> {
     @Override
     protected String doInBackground(Context... params) {
 
-        Context context = params[0];
+        _context = params[0];
 
         String msg = "Device Registered";
         try {
@@ -47,6 +51,12 @@ public class GcmRegistrationAsyncTask extends AsyncTask<Context, Void, String> {
             String code = DataStorageHandler.getCountryCode();
             String phone = DataStorageHandler.getPhoneNumber();
             String fullPhone = code+phone;
+
+            ParseInstallation installation = ParseInstallation.getCurrentInstallation();
+            installation.put("FullPhone",fullPhone);
+            installation.put("Number",phone);
+            installation.put("CountryCode",code);
+            installation.save();
 
             // Lets see if this phone number or this device has been saved
             ParseQuery<ParseObject> query = ParseQuery.getQuery("Device").whereEqualTo("FullPhone",fullPhone);
@@ -138,13 +148,6 @@ public class GcmRegistrationAsyncTask extends AsyncTask<Context, Void, String> {
             NotificationHub hub = new NotificationHub("flarenotifications",connection_string, context);
             hub.register(regId,fullPhone);*/
 
-            ParseInstallation installation = ParseInstallation.getCurrentInstallation();
-            //installation.put("GCMSenderId",SENDER_ID);
-            installation.put("FullPhone",fullPhone);
-            installation.put("Number",phone);
-            installation.put("CountryCode",code);
-            installation.save();
-
         } catch (Exception ex) {
             msg += " : " + ex.getMessage();
         }
@@ -156,5 +159,8 @@ public class GcmRegistrationAsyncTask extends AsyncTask<Context, Void, String> {
     protected void onPostExecute(String msg) {
         if(msg.equals("Device Registered"))
             DataStorageHandler.SetRegistered();
+        else {
+            Toast.makeText(_context,msg,Toast.LENGTH_LONG).show();
+        }
     }
 }

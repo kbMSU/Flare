@@ -30,6 +30,10 @@ public class SettingsActivity extends AppCompatActivity {
     CheckBox textMessageCheckBox;
     @Bind(R.id.select_cloud_message)
     CheckBox cloudMessageCheckBox;
+    @Bind(R.id.select_allow_save)
+    CheckBox selectAllowSaveCheckBox;
+    @Bind(R.id.select_find_friends)
+    CheckBox selectFindFriendsCheckBox;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +43,8 @@ public class SettingsActivity extends AppCompatActivity {
 
         cloudMessageCheckBox.setChecked(DataStorageHandler.CanSendCloudMessage());
         textMessageCheckBox.setChecked(!DataStorageHandler.CanSendCloudMessage());
+        selectAllowSaveCheckBox.setChecked(DataStorageHandler.CanWeSaveTheUsersInformation());
+        selectFindFriendsCheckBox.setChecked(DataStorageHandler.CanCheckContactsForFlare());
 
         textMessageCheckBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -56,6 +62,19 @@ public class SettingsActivity extends AppCompatActivity {
                     textMessageCheckBox.setChecked(false);
                     DataStorageHandler.SetSendCloudMessage(true);
                 }
+            }
+        });
+
+        selectAllowSaveCheckBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                DataStorageHandler.SetCanWeSaveTheUsersInformation(isChecked);
+            }
+        });
+        selectFindFriendsCheckBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                DataStorageHandler.SetCanCheckContactsForFlare(isChecked);
             }
         });
 

@@ -252,7 +252,7 @@ public class DataStorageHandler {
     }
     public static boolean CanWeSaveTheUsersInformation() {return _canWeSaveTheUsersInformation; }
     public static void SetCanWeSaveTheUsersInformation(boolean val) {
-        _checkContactsWithFlare = val;
+        _canWeSaveTheUsersInformation = val;
         SharedPreferences.Editor editor = Preferences.edit();
         editor.putBoolean("canWeSaveTheUsersInformation",_canWeSaveTheUsersInformation);
         editor.apply();
@@ -260,7 +260,7 @@ public class DataStorageHandler {
 
     public static boolean HaveAskedToSaveTheUsersInformation() {return _haveAskedToSaveTheUsersInformation; }
     public static void SetHaveAskedToSaveTheUsersInformation(boolean val) {
-        _haveAskedToCheckContactsWithFlare = val;
+        _haveAskedToSaveTheUsersInformation = val;
         SharedPreferences.Editor editor = Preferences.edit();
         editor.putBoolean("haveAskedToSaveTheUsersInformation",_haveAskedToSaveTheUsersInformation);
         editor.apply();

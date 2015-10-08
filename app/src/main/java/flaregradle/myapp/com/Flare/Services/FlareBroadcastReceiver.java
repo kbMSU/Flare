@@ -19,6 +19,9 @@ import com.parse.ParsePushBroadcastReceiver;
 
 import org.json.JSONObject;
 
+import java.util.Collection;
+import java.util.Set;
+
 import flaregradle.myapp.com.Flare.DataItems.Contact;
 import flaregradle.myapp.com.Flare.Utilities.DataStorageHandler;
 
@@ -32,6 +35,7 @@ public class FlareBroadcastReceiver extends ParsePushBroadcastReceiver {
         Bundle extras = intent.getExtras();
 
         if (extras != null && !extras.isEmpty()) {
+            Set<String> keys = extras.keySet();
             String data = extras.getString("com.parse.Data");
             try {
                 JSONObject json = new JSONObject(data);
