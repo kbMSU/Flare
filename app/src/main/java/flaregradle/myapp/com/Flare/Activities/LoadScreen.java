@@ -36,13 +36,6 @@ public class LoadScreen extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_load_screen);
 
-        // Set up Parse
-        Parse.enableLocalDatastore(this);
-        Parse.setLogLevel(Parse.LOG_LEVEL_INFO);
-        Parse.initialize(this, "INoehKZFskuQ6nJ383gzDshdhFHSre9lv5MQrZ7g", "9y6Dx6hqc28c4uyULtzOWrwb0Pmfi0Up3GXDzjpA");
-        ParseInstallation.getCurrentInstallation().saveInBackground();
-        ParseAnalytics.trackAppOpenedInBackground(getIntent());
-
         // Load the progress bar
         _busyIndicator = (ProgressBar)findViewById(R.id.busyIndicator);
         _busyIndicator.setVisibility(View.VISIBLE);

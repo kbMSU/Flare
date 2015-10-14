@@ -9,7 +9,7 @@ package com.MyApp.Flare;
 
 public final class Manifest {
     public static final class permission {
-        public static final String C2D_MESSAGE="flaregradle.myapp.com.Flare.permission.C2D_MESSAGE";
+        public static final String C2D_MESSAGE="flaregradle.myapp.com.Flare.C2D_MESSAGE";
         public static final String READ_EXTERNAL_STORAGE="android.permission.READ_EXTERNAL_STORAGE";
     }
 }

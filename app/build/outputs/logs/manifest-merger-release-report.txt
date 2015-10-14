@@ -1,540 +1,649 @@
 -- Merging decision tree log ---
 manifest
-ADDED from AndroidManifest.xml:2:1
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:2:1-167:12
 	package
-		ADDED from AndroidManifest.xml:3:5
-		INJECTED from AndroidManifest.xml:0:0
-		INJECTED from AndroidManifest.xml:0:0
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:3:5-30
+		INJECTED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from AndroidManifest.xml:0:0
-		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from AndroidManifest.xml:2:11
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:2:11-69
 	android:versionCode
-		INJECTED from AndroidManifest.xml:0:0
-		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.INTERNET
-ADDED from AndroidManifest.xml:5:5
-MERGED from com.google.android.gms:play-services-ads:7.5.0:20:5
-MERGED from com.google.android.gms:play-services-analytics:7.5.0:21:5
-MERGED from com.google.android.gms:play-services-analytics:7.5.0:21:5
-MERGED from com.google.android.gms:play-services-appinvite:7.5.0:19:5
-MERGED from com.google.android.gms:play-services-maps:7.5.0:21:5
-MERGED from com.google.android.gms:play-services-maps:7.5.0:21:5
-MERGED from com.google.android.gms:play-services-maps:7.5.0:21:5
-MERGED from com.google.android.gms:play-services-wallet:7.5.0:20:5
-MERGED from com.google.android.gms:play-services-maps:7.5.0:21:5
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:5:5-67
+MERGED from [com.google.android.gms:play-services-ads:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.1.0/AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-analytics:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/8.1.0/AndroidManifest.xml:21:5-67
+MERGED from [com.google.android.gms:play-services-ads:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.1.0/AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-appinvite:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/8.1.0/AndroidManifest.xml:19:5-67
+MERGED from [com.google.android.gms:play-services-maps:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.1.0/AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-gcm:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/8.1.0/AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-maps:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.1.0/AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-maps:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.1.0/AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-measurement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-measurement/8.1.0/AndroidManifest.xml:21:5-67
+MERGED from [com.google.android.gms:play-services-analytics:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/8.1.0/AndroidManifest.xml:21:5-67
+MERGED from [com.google.android.gms:play-services-ads:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.1.0/AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-wallet:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/8.1.0/AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-maps:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.1.0/AndroidManifest.xml:21:5-66
 	android:name
-		ADDED from AndroidManifest.xml:5:22
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:5:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from AndroidManifest.xml:6:5
-MERGED from com.google.android.gms:play-services-ads:7.5.0:21:5
-MERGED from com.google.android.gms:play-services-analytics:7.5.0:22:5
-MERGED from com.google.android.gms:play-services-analytics:7.5.0:22:5
-MERGED from com.google.android.gms:play-services-maps:7.5.0:20:5
-MERGED from com.google.android.gms:play-services-maps:7.5.0:20:5
-MERGED from com.google.android.gms:play-services-maps:7.5.0:20:5
-MERGED from com.google.android.gms:play-services-nearby:7.5.0:19:5
-MERGED from com.google.android.gms:play-services-maps:7.5.0:20:5
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:6:5-79
+MERGED from [com.google.android.gms:play-services-ads:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.1.0/AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-analytics:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/8.1.0/AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.gms:play-services-ads:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.1.0/AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-maps:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.1.0/AndroidManifest.xml:20:5-78
+MERGED from [com.google.android.gms:play-services-maps:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.1.0/AndroidManifest.xml:20:5-78
+MERGED from [com.google.android.gms:play-services-maps:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.1.0/AndroidManifest.xml:20:5-78
+MERGED from [com.google.android.gms:play-services-measurement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-measurement/8.1.0/AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.gms:play-services-analytics:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/8.1.0/AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.gms:play-services-ads:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.1.0/AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-nearby:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/8.1.0/AndroidManifest.xml:19:5-79
+MERGED from [com.google.android.gms:play-services-maps:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.1.0/AndroidManifest.xml:20:5-78
 	android:name
-		ADDED from AndroidManifest.xml:6:22
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:6:22-76
 uses-permission#android.permission.SEND_SMS
-ADDED from AndroidManifest.xml:7:5
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:7:5-67
 	android:name
-		ADDED from AndroidManifest.xml:7:22
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:7:22-64
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from AndroidManifest.xml:8:5
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:8:5-79
 	android:name
-		ADDED from AndroidManifest.xml:8:22
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:8:22-76
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from AndroidManifest.xml:9:5
-MERGED from com.google.android.gms:play-services-maps:7.5.0:23:5
-MERGED from com.google.android.gms:play-services-maps:7.5.0:23:5
-MERGED from com.google.android.gms:play-services-maps:7.5.0:23:5
-MERGED from com.google.android.gms:play-services-maps:7.5.0:23:5
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:9:5-81
 	android:name
-		ADDED from AndroidManifest.xml:9:22
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:9:22-78
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from AndroidManifest.xml:10:5
-MERGED from com.google.android.gms:play-services-maps:7.5.0:22:5
-MERGED from com.google.android.gms:play-services-maps:7.5.0:22:5
-MERGED from com.google.android.gms:play-services-maps:7.5.0:22:5
-MERGED from com.google.android.gms:play-services-maps:7.5.0:22:5
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:10:5-81
+MERGED from [com.google.android.gms:play-services-maps:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.1.0/AndroidManifest.xml:22:5-80
+MERGED from [com.google.android.gms:play-services-maps:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.1.0/AndroidManifest.xml:22:5-80
+MERGED from [com.google.android.gms:play-services-maps:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.1.0/AndroidManifest.xml:22:5-80
+MERGED from [com.google.android.gms:play-services-maps:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.1.0/AndroidManifest.xml:22:5-80
 	android:name
-		ADDED from AndroidManifest.xml:10:22
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:10:22-78
 uses-permission#android.permission.READ_CONTACTS
-ADDED from AndroidManifest.xml:11:5
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:11:5-72
 	android:name
-		ADDED from AndroidManifest.xml:11:22
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:11:22-69
 uses-permission#com.google.android.providers.gsf.permission.READ_GSERVICES
-ADDED from AndroidManifest.xml:12:5
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:12:5-98
 	android:name
-		ADDED from AndroidManifest.xml:12:22
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:12:22-95
 uses-permission#android.permission.READ_PHONE_STATE
-ADDED from AndroidManifest.xml:13:5
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:13:5-75
 	android:name
-		ADDED from AndroidManifest.xml:13:22
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:13:22-72
 uses-permission#android.permission.GET_ACCOUNTS
-ADDED from AndroidManifest.xml:14:5
-MERGED from com.google.android.gms:play-services-wallet:7.5.0:21:5
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:14:5-71
+MERGED from [com.google.android.gms:play-services-wallet:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/8.1.0/AndroidManifest.xml:21:5-70
 	android:name
-		ADDED from AndroidManifest.xml:14:22
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:14:22-68
 uses-permission#android.permission.WAKE_LOCK
-ADDED from AndroidManifest.xml:15:5
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:15:5-68
+MERGED from [com.google.android.gms:play-services-measurement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-measurement/8.1.0/AndroidManifest.xml:24:5-67
 	android:name
-		ADDED from AndroidManifest.xml:15:22
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:15:22-65
 uses-permission#com.google.android.c2dm.permission.RECEIVE
-ADDED from AndroidManifest.xml:16:5
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:16:5-82
+MERGED from [com.google.android.gms:play-services-gcm:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/8.1.0/AndroidManifest.xml:21:5-82
 	android:name
-		ADDED from AndroidManifest.xml:16:22
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:16:22-79
 uses-permission#android.permission.VIBRATE
-ADDED from AndroidManifest.xml:17:5
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:17:5-66
 	android:name
-		ADDED from AndroidManifest.xml:17:22
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:17:22-63
 uses-feature#0x00020000
-ADDED from AndroidManifest.xml:19:5
-MERGED from com.google.android.gms:play-services-maps:7.5.0:24:5
-MERGED from com.google.android.gms:play-services-maps:7.5.0:24:5
-MERGED from com.google.android.gms:play-services-maps:7.5.0:24:5
-MERGED from com.google.android.gms:play-services-maps:7.5.0:24:5
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:19:5-21:35
+MERGED from [com.google.android.gms:play-services-maps:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.1.0/AndroidManifest.xml:23:5-25:33
+MERGED from [com.google.android.gms:play-services-maps:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.1.0/AndroidManifest.xml:23:5-25:33
+MERGED from [com.google.android.gms:play-services-maps:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.1.0/AndroidManifest.xml:23:5-25:33
+MERGED from [com.google.android.gms:play-services-maps:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.1.0/AndroidManifest.xml:23:5-25:33
 	android:glEsVersion
-		ADDED from AndroidManifest.xml:20:9
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:20:9-41
 	android:required
-		ADDED from AndroidManifest.xml:21:9
-permission#flaregradle.myapp.com.Flare.permission.C2D_MESSAGE
-ADDED from AndroidManifest.xml:23:5
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:21:9-32
+permission#flaregradle.myapp.com.Flare.C2D_MESSAGE
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:23:5-24:74
 	android:protectionLevel
-		ADDED from AndroidManifest.xml:25:9
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:23:17-52
 	android:name
-		ADDED from AndroidManifest.xml:24:9
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:24:17-71
 uses-permission#flaregradle.myapp.com.Flare.permission.C2D_MESSAGE
-ADDED from AndroidManifest.xml:26:5
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:25:5-90
 	android:name
-		ADDED from AndroidManifest.xml:26:22
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:25:22-87
 permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from AndroidManifest.xml:28:5
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:27:5-29:38
 	android:maxSdkVersion
-		ADDED from AndroidManifest.xml:30:9
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:29:9-35
 	android:name
-		ADDED from AndroidManifest.xml:29:9
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:28:9-64
 application
-ADDED from AndroidManifest.xml:32:5
-MERGED from com.android.support:appcompat-v7:22.2.1:22:5
-MERGED from com.android.support:support-v4:22.2.1:22:5
-MERGED from com.google.android.gms:play-services:7.5.0:19:5
-MERGED from com.google.android.gms:play-services-ads:7.5.0:24:5
-MERGED from com.google.android.gms:play-services-base:7.5.0:20:5
-MERGED from com.android.support:support-v4:22.2.1:22:5
-MERGED from com.google.android.gms:play-services-analytics:7.5.0:24:5
-MERGED from com.google.android.gms:play-services-base:7.5.0:20:5
-MERGED from com.android.support:support-v4:22.2.1:22:5
-MERGED from com.google.android.gms:play-services-analytics:7.5.0:24:5
-MERGED from com.google.android.gms:play-services-base:7.5.0:20:5
-MERGED from com.android.support:support-v4:22.2.1:22:5
-MERGED from com.google.android.gms:play-services-appindexing:7.5.0:19:5
-MERGED from com.google.android.gms:play-services-base:7.5.0:20:5
-MERGED from com.android.support:support-v4:22.2.1:22:5
-MERGED from com.google.android.gms:play-services-appinvite:7.5.0:20:5
-MERGED from com.google.android.gms:play-services-base:7.5.0:20:5
-MERGED from com.android.support:support-v4:22.2.1:22:5
-MERGED from com.google.android.gms:play-services-appstate:7.5.0:19:5
-MERGED from com.google.android.gms:play-services-base:7.5.0:20:5
-MERGED from com.android.support:support-v4:22.2.1:22:5
-MERGED from com.google.android.gms:play-services-base:7.5.0:20:5
-MERGED from com.android.support:support-v4:22.2.1:22:5
-MERGED from com.google.android.gms:play-services-cast:7.5.0:19:5
-MERGED from com.google.android.gms:play-services-base:7.5.0:20:5
-MERGED from com.android.support:support-v4:22.2.1:22:5
-MERGED from com.android.support:mediarouter-v7:22.0.0:22:5
-MERGED from com.android.support:appcompat-v7:22.2.1:22:5
-MERGED from com.android.support:support-v4:22.2.1:22:5
-MERGED from com.google.android.gms:play-services-drive:7.5.0:19:5
-MERGED from com.google.android.gms:play-services-base:7.5.0:20:5
-MERGED from com.android.support:support-v4:22.2.1:22:5
-MERGED from com.google.android.gms:play-services-fitness:7.5.0:19:5
-MERGED from com.google.android.gms:play-services-base:7.5.0:20:5
-MERGED from com.android.support:support-v4:22.2.1:22:5
-MERGED from com.google.android.gms:play-services-location:7.5.0:19:5
-MERGED from com.google.android.gms:play-services-base:7.5.0:20:5
-MERGED from com.android.support:support-v4:22.2.1:22:5
-MERGED from com.google.android.gms:play-services-maps:7.5.0:29:5
-MERGED from com.google.android.gms:play-services-base:7.5.0:20:5
-MERGED from com.android.support:support-v4:22.2.1:22:5
-MERGED from com.google.android.gms:play-services-games:7.5.0:19:5
-MERGED from com.google.android.gms:play-services-base:7.5.0:20:5
-MERGED from com.android.support:support-v4:22.2.1:22:5
-MERGED from com.google.android.gms:play-services-drive:7.5.0:19:5
-MERGED from com.google.android.gms:play-services-base:7.5.0:20:5
-MERGED from com.android.support:support-v4:22.2.1:22:5
-MERGED from com.google.android.gms:play-services-gcm:7.5.0:19:5
-MERGED from com.google.android.gms:play-services-base:7.5.0:20:5
-MERGED from com.android.support:support-v4:22.2.1:22:5
-MERGED from com.google.android.gms:play-services-identity:7.5.0:19:5
-MERGED from com.google.android.gms:play-services-base:7.5.0:20:5
-MERGED from com.android.support:support-v4:22.2.1:22:5
-MERGED from com.google.android.gms:play-services-location:7.5.0:19:5
-MERGED from com.google.android.gms:play-services-base:7.5.0:20:5
-MERGED from com.android.support:support-v4:22.2.1:22:5
-MERGED from com.google.android.gms:play-services-maps:7.5.0:29:5
-MERGED from com.google.android.gms:play-services-base:7.5.0:20:5
-MERGED from com.android.support:support-v4:22.2.1:22:5
-MERGED from com.google.android.gms:play-services-maps:7.5.0:29:5
-MERGED from com.google.android.gms:play-services-base:7.5.0:20:5
-MERGED from com.android.support:support-v4:22.2.1:22:5
-MERGED from com.google.android.gms:play-services-nearby:7.5.0:20:5
-MERGED from com.google.android.gms:play-services-base:7.5.0:20:5
-MERGED from com.android.support:support-v4:22.2.1:22:5
-MERGED from com.google.android.gms:play-services-panorama:7.5.0:19:5
-MERGED from com.google.android.gms:play-services-base:7.5.0:20:5
-MERGED from com.android.support:support-v4:22.2.1:22:5
-MERGED from com.google.android.gms:play-services-plus:7.5.0:19:5
-MERGED from com.google.android.gms:play-services-base:7.5.0:20:5
-MERGED from com.android.support:support-v4:22.2.1:22:5
-MERGED from com.google.android.gms:play-services-safetynet:7.5.0:19:5
-MERGED from com.google.android.gms:play-services-base:7.5.0:20:5
-MERGED from com.android.support:support-v4:22.2.1:22:5
-MERGED from com.google.android.gms:play-services-wallet:7.5.0:24:5
-MERGED from com.google.android.gms:play-services-base:7.5.0:20:5
-MERGED from com.android.support:support-v4:22.2.1:22:5
-MERGED from com.google.android.gms:play-services-identity:7.5.0:19:5
-MERGED from com.google.android.gms:play-services-base:7.5.0:20:5
-MERGED from com.android.support:support-v4:22.2.1:22:5
-MERGED from com.google.android.gms:play-services-maps:7.5.0:29:5
-MERGED from com.google.android.gms:play-services-base:7.5.0:20:5
-MERGED from com.android.support:support-v4:22.2.1:22:5
-MERGED from com.google.android.gms:play-services-wearable:7.5.0:19:5
-MERGED from com.google.android.gms:play-services-base:7.5.0:20:5
-MERGED from com.android.support:support-v4:22.2.1:22:5
-MERGED from com.android.support:support-v4:22.2.1:22:5
-MERGED from com.getbase:floatingactionbutton:1.1.0:12:5
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:31:5-165:19
+MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/8.1.0/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-ads:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.1.0/AndroidManifest.xml:24:5-32:19
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-appindexing:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.1.0/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-analytics:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/8.1.0/AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-ads:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.1.0/AndroidManifest.xml:24:5-32:19
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-appindexing:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.1.0/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-appindexing:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.1.0/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-appinvite:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/8.1.0/AndroidManifest.xml:20:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-appstate:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appstate/8.1.0/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-cast:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/8.1.0/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:mediarouter-v7:22.2.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-drive:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/8.1.0/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-fitness:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/8.1.0/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-location:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/8.1.0/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-maps:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.1.0/AndroidManifest.xml:28:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-games:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/8.1.0/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-drive:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/8.1.0/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-gcm:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/8.1.0/AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-identity:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/8.1.0/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-location:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/8.1.0/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-maps:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.1.0/AndroidManifest.xml:28:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-maps:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.1.0/AndroidManifest.xml:28:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-measurement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-measurement/8.1.0/AndroidManifest.xml:26:5-46:19
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-analytics:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/8.1.0/AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-ads:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.1.0/AndroidManifest.xml:24:5-32:19
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-appindexing:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.1.0/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-nearby:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/8.1.0/AndroidManifest.xml:20:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-panorama:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/8.1.0/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-plus:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/8.1.0/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-safetynet:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/8.1.0/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-vision:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-vision/8.1.0/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-identity:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/8.1.0/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-maps:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.1.0/AndroidManifest.xml:28:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-wearable:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/8.1.0/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:22:5-20
+MERGED from [com.getbase:floatingactionbutton:1.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.getbase/floatingactionbutton/1.1.0/AndroidManifest.xml:12:5-20
 	android:label
-		ADDED from AndroidManifest.xml:35:9
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:34:9-41
 	android:icon
-		ADDED from AndroidManifest.xml:34:9
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:33:9-42
 	android:theme
-		ADDED from AndroidManifest.xml:36:9
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:35:9-40
 	android:name
-		ADDED from AndroidManifest.xml:33:9
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:32:9-68
+meta-data#com.parse.APPLICATION_ID
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:37:9-39:72
+	android:value
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:39:13-69
+	android:name
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:38:13-52
+meta-data#com.parse.CLIENT_KEY
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:40:9-42:72
+	android:value
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:42:13-69
+	android:name
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:41:13-48
 activity#flaregradle.myapp.com.Flare.Activities.FlareHome
-ADDED from AndroidManifest.xml:37:9
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:44:9-49:20
 	android:screenOrientation
-		ADDED from AndroidManifest.xml:40:13
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:47:13-49
 	android:label
-		ADDED from AndroidManifest.xml:39:13
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:46:13-45
 	android:windowSoftInputMode
-		ADDED from AndroidManifest.xml:41:13
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:48:13-55
 	android:name
-		ADDED from AndroidManifest.xml:38:13
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:45:13-76
 activity#flaregradle.myapp.com.Flare.Activities.LoadScreen
-ADDED from AndroidManifest.xml:43:9
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:50:9-60:20
 	android:screenOrientation
-		ADDED from AndroidManifest.xml:48:13
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:55:13-49
 	android:label
-		ADDED from AndroidManifest.xml:46:13
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:53:13-45
 	android:noHistory
-		ADDED from AndroidManifest.xml:47:13
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:54:13-37
 	android:configChanges
-		ADDED from AndroidManifest.xml:45:13
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:52:13-74
 	android:name
-		ADDED from AndroidManifest.xml:44:13
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:51:13-77
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from AndroidManifest.xml:49:13
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:56:13-59:29
 action#android.intent.action.MAIN
-ADDED from AndroidManifest.xml:50:17
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:57:17-69
 	android:name
-		ADDED from AndroidManifest.xml:50:25
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:57:25-66
 category#android.intent.category.LAUNCHER
-ADDED from AndroidManifest.xml:51:17
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:58:17-77
 	android:name
-		ADDED from AndroidManifest.xml:51:27
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:58:27-74
 activity#flaregradle.myapp.com.Flare.Activities.SendFlareActivity
-ADDED from AndroidManifest.xml:54:9
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:61:9-69:20
 	android:label
-		ADDED from AndroidManifest.xml:56:13
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:63:13-56
 	android:parentActivityName
-		ADDED from AndroidManifest.xml:57:13
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:64:13-90
 	android:windowSoftInputMode
-		ADDED from AndroidManifest.xml:58:13
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:65:13-54
 	android:name
-		ADDED from AndroidManifest.xml:55:13
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:62:13-84
 meta-data#android.support.PARENT_ACTIVITY
-ADDED from AndroidManifest.xml:59:13
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:66:13-68:84
 	android:value
-		ADDED from AndroidManifest.xml:61:17
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:68:17-81
 	android:name
-		ADDED from AndroidManifest.xml:60:17
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:67:17-63
 activity#flaregradle.myapp.com.Flare.Activities.SettingsActivity
-ADDED from AndroidManifest.xml:63:9
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:70:9-77:20
 	android:label
-		ADDED from AndroidManifest.xml:65:13
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:72:13-60
 	android:parentActivityName
-		ADDED from AndroidManifest.xml:66:13
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:73:13-90
 	android:name
-		ADDED from AndroidManifest.xml:64:13
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:71:13-83
 activity#flaregradle.myapp.com.Flare.Activities.GroupsActivity
-ADDED from AndroidManifest.xml:71:9
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:78:9-85:20
 	android:label
-		ADDED from AndroidManifest.xml:73:13
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:80:13-58
 	android:parentActivityName
-		ADDED from AndroidManifest.xml:74:13
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:81:13-90
 	android:name
-		ADDED from AndroidManifest.xml:72:13
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:79:13-81
 activity#flaregradle.myapp.com.Flare.Activities.CreateGroupActivity
-ADDED from AndroidManifest.xml:79:9
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:86:9-91:20
 	android:label
-		ADDED from AndroidManifest.xml:81:13
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:88:13-64
 	android:parentActivityName
-		ADDED from AndroidManifest.xml:82:13
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:89:13-95
 	android:windowSoftInputMode
-		ADDED from AndroidManifest.xml:83:13
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:90:13-54
 	android:name
-		ADDED from AndroidManifest.xml:80:13
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:87:13-86
 activity#com.google.android.gms.ads.AdActivity
-ADDED from AndroidManifest.xml:85:9
-MERGED from com.google.android.gms:play-services-ads:7.5.0:26:9
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:92:9-95:64
+MERGED from [com.google.android.gms:play-services-ads:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.1.0/AndroidManifest.xml:26:9-29:64
+MERGED from [com.google.android.gms:play-services-ads:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.1.0/AndroidManifest.xml:26:9-29:64
+MERGED from [com.google.android.gms:play-services-ads:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.1.0/AndroidManifest.xml:26:9-29:64
 	android:configChanges
-		ADDED from AndroidManifest.xml:87:13
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:94:13-122
 	android:theme
-		ADDED from AndroidManifest.xml:88:13
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:95:13-61
 	android:name
-		ADDED from AndroidManifest.xml:86:13
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:93:13-65
 activity#flaregradle.myapp.com.Flare.Activities.VerifyPhoneActivity
-ADDED from AndroidManifest.xml:89:9
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:96:9-101:20
 	android:screenOrientation
-		ADDED from AndroidManifest.xml:93:13
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:100:13-49
 	android:label
-		ADDED from AndroidManifest.xml:92:13
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:99:13-45
 	android:configChanges
-		ADDED from AndroidManifest.xml:91:13
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:98:13-74
 	android:name
-		ADDED from AndroidManifest.xml:90:13
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:97:13-86
 activity#flaregradle.myapp.com.Flare.Activities.SettingsSetup
-ADDED from AndroidManifest.xml:96:9
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:102:9-109:20
 	android:label
-		ADDED from AndroidManifest.xml:98:13
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:104:13-66
 	android:parentActivityName
-		ADDED from AndroidManifest.xml:99:13
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:105:13-90
 	android:name
-		ADDED from AndroidManifest.xml:97:13
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:103:13-80
 service#com.parse.PushService
-ADDED from AndroidManifest.xml:105:9
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:111:9-57
 	android:name
-		ADDED from AndroidManifest.xml:105:18
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:111:18-54
 receiver#flaregradle.myapp.com.Flare.Services.FlareBroadcastReceiver
-ADDED from AndroidManifest.xml:106:9
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:112:9-119:20
 	android:exported
-		ADDED from AndroidManifest.xml:107:19
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:113:19-43
 	android:name
-		ADDED from AndroidManifest.xml:106:19
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:112:19-93
 intent-filter#com.parse.push.intent.DELETE+com.parse.push.intent.OPEN+com.parse.push.intent.RECEIVE
-ADDED from AndroidManifest.xml:108:13
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:114:13-118:29
 action#com.parse.push.intent.RECEIVE
-ADDED from AndroidManifest.xml:109:17
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:115:17-72
 	android:name
-		ADDED from AndroidManifest.xml:109:25
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:115:25-69
 action#com.parse.push.intent.DELETE
-ADDED from AndroidManifest.xml:110:17
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:116:17-71
 	android:name
-		ADDED from AndroidManifest.xml:110:25
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:116:25-68
 action#com.parse.push.intent.OPEN
-ADDED from AndroidManifest.xml:111:17
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:117:17-69
 	android:name
-		ADDED from AndroidManifest.xml:111:25
-receiver#flaregradle.myapp.com.Flare.Services.GcmBroadcastReceiver
-ADDED from AndroidManifest.xml:114:9
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:117:25-66
+receiver#com.parse.GcmBroadcastReceiver
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:120:9-131:20
 	android:permission
-		ADDED from AndroidManifest.xml:115:19
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:121:19-79
 	android:name
-		ADDED from AndroidManifest.xml:114:19
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:120:19-64
 intent-filter#com.google.android.c2dm.intent.RECEIVE+com.google.android.c2dm.intent.REGISTRATION+flaregradle.myapp.com.Flare
-ADDED from AndroidManifest.xml:116:13
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:122:13-130:29
 action#com.google.android.c2dm.intent.RECEIVE
-ADDED from AndroidManifest.xml:117:17
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:123:17-81
 	android:name
-		ADDED from AndroidManifest.xml:117:25
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:123:25-78
 action#com.google.android.c2dm.intent.REGISTRATION
-ADDED from AndroidManifest.xml:118:17
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:124:17-86
 	android:name
-		ADDED from AndroidManifest.xml:118:25
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:124:25-83
 category#flaregradle.myapp.com.Flare
-ADDED from AndroidManifest.xml:123:17
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:129:17-72
 	android:name
-		ADDED from AndroidManifest.xml:123:27
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:129:27-69
 service#flaregradle.myapp.com.Flare.Services.GcmIntentService
-ADDED from AndroidManifest.xml:138:9
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:133:9-89
 	android:name
-		ADDED from AndroidManifest.xml:138:18
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:133:18-86
 service#flaregradle.myapp.com.Flare.Services.NotificationDeclineService
-ADDED from AndroidManifest.xml:139:9
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:134:9-99
 	android:name
-		ADDED from AndroidManifest.xml:139:18
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:134:18-96
 service#flaregradle.myapp.com.Flare.Services.NotificationAcceptService
-ADDED from AndroidManifest.xml:140:9
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:135:9-98
 	android:name
-		ADDED from AndroidManifest.xml:140:18
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:135:18-95
 meta-data#com.google.android.gms.version
-ADDED from AndroidManifest.xml:142:9
-MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:137:9-139:69
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:21:9-23:69
 	android:value
-		ADDED from AndroidManifest.xml:144:13
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:139:13-66
 	android:name
-		ADDED from AndroidManifest.xml:143:13
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:138:13-58
 meta-data#com.google.android.maps.v2.API_KEY
-ADDED from AndroidManifest.xml:160:9
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:155:9-157:71
 	android:value
-		ADDED from AndroidManifest.xml:162:13
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:157:13-68
 	android:name
-		ADDED from AndroidManifest.xml:161:13
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:156:13-62
 uses-sdk
-INJECTED from AndroidManifest.xml:0:0 reason: use-sdk injection requested
-MERGED from com.android.support:multidex:1.0.1:18:5
-MERGED from com.android.support:appcompat-v7:22.2.1:20:5
-MERGED from com.android.support:support-v4:22.2.1:20:5
-MERGED from com.google.android.gms:play-services:7.5.0:18:5
-MERGED from com.google.android.gms:play-services-ads:7.5.0:23:5
-MERGED from com.google.android.gms:play-services-base:7.5.0:18:5
-MERGED from com.android.support:support-v4:22.2.1:20:5
-MERGED from com.google.android.gms:play-services-analytics:7.5.0:18:5
-MERGED from com.google.android.gms:play-services-base:7.5.0:18:5
-MERGED from com.android.support:support-v4:22.2.1:20:5
-MERGED from com.google.android.gms:play-services-analytics:7.5.0:18:5
-MERGED from com.google.android.gms:play-services-base:7.5.0:18:5
-MERGED from com.android.support:support-v4:22.2.1:20:5
-MERGED from com.google.android.gms:play-services-appindexing:7.5.0:18:5
-MERGED from com.google.android.gms:play-services-base:7.5.0:18:5
-MERGED from com.android.support:support-v4:22.2.1:20:5
-MERGED from com.google.android.gms:play-services-appinvite:7.5.0:18:5
-MERGED from com.google.android.gms:play-services-base:7.5.0:18:5
-MERGED from com.android.support:support-v4:22.2.1:20:5
-MERGED from com.google.android.gms:play-services-appstate:7.5.0:18:5
-MERGED from com.google.android.gms:play-services-base:7.5.0:18:5
-MERGED from com.android.support:support-v4:22.2.1:20:5
-MERGED from com.google.android.gms:play-services-base:7.5.0:18:5
-MERGED from com.android.support:support-v4:22.2.1:20:5
-MERGED from com.google.android.gms:play-services-cast:7.5.0:18:5
-MERGED from com.google.android.gms:play-services-base:7.5.0:18:5
-MERGED from com.android.support:support-v4:22.2.1:20:5
-MERGED from com.android.support:mediarouter-v7:22.0.0:20:5
-MERGED from com.android.support:appcompat-v7:22.2.1:20:5
-MERGED from com.android.support:support-v4:22.2.1:20:5
-MERGED from com.google.android.gms:play-services-drive:7.5.0:18:5
-MERGED from com.google.android.gms:play-services-base:7.5.0:18:5
-MERGED from com.android.support:support-v4:22.2.1:20:5
-MERGED from com.google.android.gms:play-services-fitness:7.5.0:18:5
-MERGED from com.google.android.gms:play-services-base:7.5.0:18:5
-MERGED from com.android.support:support-v4:22.2.1:20:5
-MERGED from com.google.android.gms:play-services-location:7.5.0:18:5
-MERGED from com.google.android.gms:play-services-base:7.5.0:18:5
-MERGED from com.android.support:support-v4:22.2.1:20:5
-MERGED from com.google.android.gms:play-services-maps:7.5.0:28:5
-MERGED from com.google.android.gms:play-services-base:7.5.0:18:5
-MERGED from com.android.support:support-v4:22.2.1:20:5
-MERGED from com.google.android.gms:play-services-games:7.5.0:18:5
-MERGED from com.google.android.gms:play-services-base:7.5.0:18:5
-MERGED from com.android.support:support-v4:22.2.1:20:5
-MERGED from com.google.android.gms:play-services-drive:7.5.0:18:5
-MERGED from com.google.android.gms:play-services-base:7.5.0:18:5
-MERGED from com.android.support:support-v4:22.2.1:20:5
-MERGED from com.google.android.gms:play-services-gcm:7.5.0:18:5
-MERGED from com.google.android.gms:play-services-base:7.5.0:18:5
-MERGED from com.android.support:support-v4:22.2.1:20:5
-MERGED from com.google.android.gms:play-services-identity:7.5.0:18:5
-MERGED from com.google.android.gms:play-services-base:7.5.0:18:5
-MERGED from com.android.support:support-v4:22.2.1:20:5
-MERGED from com.google.android.gms:play-services-location:7.5.0:18:5
-MERGED from com.google.android.gms:play-services-base:7.5.0:18:5
-MERGED from com.android.support:support-v4:22.2.1:20:5
-MERGED from com.google.android.gms:play-services-maps:7.5.0:28:5
-MERGED from com.google.android.gms:play-services-base:7.5.0:18:5
-MERGED from com.android.support:support-v4:22.2.1:20:5
-MERGED from com.google.android.gms:play-services-maps:7.5.0:28:5
-MERGED from com.google.android.gms:play-services-base:7.5.0:18:5
-MERGED from com.android.support:support-v4:22.2.1:20:5
-MERGED from com.google.android.gms:play-services-nearby:7.5.0:18:5
-MERGED from com.google.android.gms:play-services-base:7.5.0:18:5
-MERGED from com.android.support:support-v4:22.2.1:20:5
-MERGED from com.google.android.gms:play-services-panorama:7.5.0:18:5
-MERGED from com.google.android.gms:play-services-base:7.5.0:18:5
-MERGED from com.android.support:support-v4:22.2.1:20:5
-MERGED from com.google.android.gms:play-services-plus:7.5.0:18:5
-MERGED from com.google.android.gms:play-services-base:7.5.0:18:5
-MERGED from com.android.support:support-v4:22.2.1:20:5
-MERGED from com.google.android.gms:play-services-safetynet:7.5.0:18:5
-MERGED from com.google.android.gms:play-services-base:7.5.0:18:5
-MERGED from com.android.support:support-v4:22.2.1:20:5
-MERGED from com.google.android.gms:play-services-wallet:7.5.0:19:5
-MERGED from com.google.android.gms:play-services-base:7.5.0:18:5
-MERGED from com.android.support:support-v4:22.2.1:20:5
-MERGED from com.google.android.gms:play-services-identity:7.5.0:18:5
-MERGED from com.google.android.gms:play-services-base:7.5.0:18:5
-MERGED from com.android.support:support-v4:22.2.1:20:5
-MERGED from com.google.android.gms:play-services-maps:7.5.0:28:5
-MERGED from com.google.android.gms:play-services-base:7.5.0:18:5
-MERGED from com.android.support:support-v4:22.2.1:20:5
-MERGED from com.google.android.gms:play-services-wearable:7.5.0:18:5
-MERGED from com.google.android.gms:play-services-base:7.5.0:18:5
-MERGED from com.android.support:support-v4:22.2.1:20:5
-MERGED from com.android.support:support-v4:22.2.1:20:5
-MERGED from com.getbase:floatingactionbutton:1.1.0:8:5
+INJECTED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:multidex:1.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/multidex/1.0.1/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-ads:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.1.0/AndroidManifest.xml:23:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-appindexing:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-analytics:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-ads:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.1.0/AndroidManifest.xml:23:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-appindexing:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-appindexing:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-appinvite:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-appstate:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appstate/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-base:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-cast:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:mediarouter-v7:22.2.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-drive:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-fitness:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-location:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-maps:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.1.0/AndroidManifest.xml:27:5-42
+MERGED from [com.google.android.gms:play-services-base:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-games:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-drive:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-gcm:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-identity:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-location:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-maps:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.1.0/AndroidManifest.xml:27:5-42
+MERGED from [com.google.android.gms:play-services-base:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-maps:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.1.0/AndroidManifest.xml:27:5-42
+MERGED from [com.google.android.gms:play-services-base:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-measurement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-measurement/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-analytics:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-ads:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.1.0/AndroidManifest.xml:23:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-appindexing:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-nearby:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-panorama:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-plus:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-safetynet:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-vision:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-vision/8.1.0/AndroidManifest.xml:4:5-42
+MERGED from [com.google.android.gms:play-services-base:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-wallet:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/8.1.0/AndroidManifest.xml:19:5-42
+MERGED from [com.google.android.gms:play-services-base:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-identity:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-maps:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.1.0/AndroidManifest.xml:27:5-42
+MERGED from [com.google.android.gms:play-services-base:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-wearable:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:20:5-43
+MERGED from [com.getbase:floatingactionbutton:1.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.getbase/floatingactionbutton/1.1.0/AndroidManifest.xml:8:5-10:41
 	android:targetSdkVersion
-		INJECTED from AndroidManifest.xml:0:0
-		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from AndroidManifest.xml:0:0
-		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml
 activity#com.google.android.gms.ads.purchase.InAppPurchaseActivity
-ADDED from com.google.android.gms:play-services-ads:7.5.0:30:9
+ADDED from [com.google.android.gms:play-services-ads:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.1.0/AndroidManifest.xml:30:9-31:52
+MERGED from [com.google.android.gms:play-services-ads:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.1.0/AndroidManifest.xml:30:9-31:52
+MERGED from [com.google.android.gms:play-services-ads:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.1.0/AndroidManifest.xml:30:9-31:52
 	android:theme
-		ADDED from com.google.android.gms:play-services-ads:7.5.0:31:13
+		ADDED from [com.google.android.gms:play-services-ads:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.1.0/AndroidManifest.xml:31:13-50
 	android:name
-		ADDED from com.google.android.gms:play-services-ads:7.5.0:30:19
+		ADDED from [com.google.android.gms:play-services-ads:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.1.0/AndroidManifest.xml:30:19-91
 android:uses-permission#android.permission.READ_EXTERNAL_STORAGE
-IMPLIED from AndroidManifest.xml:2:1 reason: com.google.android.gms.maps requested WRITE_EXTERNAL_STORAGE
-uses-permission#android.permission.USE_CREDENTIALS
-ADDED from com.google.android.gms:play-services-wallet:7.5.0:22:5
-	android:name
-		ADDED from com.google.android.gms:play-services-wallet:7.5.0:22:22
-meta-data#com.google.android.gms.wallet.api.enabled
-ADDED from com.google.android.gms:play-services-wallet:7.5.0:25:9
-	android:value
-		ADDED from com.google.android.gms:play-services-wallet:7.5.0:27:13
-	android:name
-		ADDED from com.google.android.gms:play-services-wallet:7.5.0:26:13
-receiver#com.google.android.gms.wallet.EnableWalletOptimizationReceiver
-ADDED from com.google.android.gms:play-services-wallet:7.5.0:28:9
+IMPLIED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:2:1-167:12 reason: com.google.android.gms.maps requested WRITE_EXTERNAL_STORAGE
+provider#com.google.android.gms.measurement.AppMeasurementContentProvider
+ADDED from [com.google.android.gms:play-services-measurement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-measurement/8.1.0/AndroidManifest.xml:28:7-31:37
+	android:authorities
+		ADDED from [com.google.android.gms:play-services-measurement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-measurement/8.1.0/AndroidManifest.xml:29:11-76
 	android:exported
-		ADDED from com.google.android.gms:play-services-wallet:7.5.0:30:13
+		ADDED from [com.google.android.gms:play-services-measurement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-measurement/8.1.0/AndroidManifest.xml:31:11-35
 	android:name
-		ADDED from com.google.android.gms:play-services-wallet:7.5.0:29:13
-intent-filter#com.google.android.gms.wallet.ENABLE_WALLET_OPTIMIZATION
-ADDED from com.google.android.gms:play-services-wallet:7.5.0:31:13
-action#com.google.android.gms.wallet.ENABLE_WALLET_OPTIMIZATION
-ADDED from com.google.android.gms:play-services-wallet:7.5.0:32:17
+		ADDED from [com.google.android.gms:play-services-measurement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-measurement/8.1.0/AndroidManifest.xml:30:11-90
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.android.gms:play-services-measurement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-measurement/8.1.0/AndroidManifest.xml:33:7-39:18
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-measurement/8.1.0/AndroidManifest.xml:35:11-33
 	android:name
-		ADDED from com.google.android.gms:play-services-wallet:7.5.0:32:25
+		ADDED from [com.google.android.gms:play-services-measurement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-measurement/8.1.0/AndroidManifest.xml:34:11-83
+intent-filter#com.google.android.gms.measurement.UPLOAD
+ADDED from [com.google.android.gms:play-services-measurement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-measurement/8.1.0/AndroidManifest.xml:36:9-38:25
+action#com.google.android.gms.measurement.UPLOAD
+ADDED from [com.google.android.gms:play-services-measurement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-measurement/8.1.0/AndroidManifest.xml:37:11-77
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-measurement/8.1.0/AndroidManifest.xml:37:19-75
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.android.gms:play-services-measurement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-measurement/8.1.0/AndroidManifest.xml:41:7-44:37
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-measurement/8.1.0/AndroidManifest.xml:43:11-33
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-measurement/8.1.0/AndroidManifest.xml:44:11-35
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-measurement/8.1.0/AndroidManifest.xml:42:11-82
+uses-permission#android.permission.USE_CREDENTIALS
+ADDED from [com.google.android.gms:play-services-wallet:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/8.1.0/AndroidManifest.xml:22:5-73
+	android:name
+		ADDED from [com.google.android.gms:play-services-wallet:8.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/8.1.0/AndroidManifest.xml:22:22-71

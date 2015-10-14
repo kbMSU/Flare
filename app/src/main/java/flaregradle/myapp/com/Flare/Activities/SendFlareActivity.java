@@ -42,7 +42,6 @@ import flaregradle.myapp.com.Flare.Utilities.DataStorageHandler;
 public class SendFlareActivity extends AppCompatActivity implements ISendFlare {
 
     private Toast _message;
-    private DataStorageHandler _dataStore;
     private ListView _contactsView;
     private ArrayList<Contact> _sortedContacts;
     private String _latitude;
@@ -72,7 +71,7 @@ public class SendFlareActivity extends AppCompatActivity implements ISendFlare {
         _flareMessage = (EditText)findViewById(R.id.writeMessage);
 
         // Set up the contacts view
-        _dataStore = DataStorageHandler.getInstance();
+        DataStorageHandler.getInstance();
         _sortedContacts = new ArrayList<>(DataStorageHandler.AllContacts.values());
         _contactsView = (ListView)findViewById(com.MyApp.Flare.R.id.contactsHome);
         _contactAdapter = new ContactsAdapter(this,com.MyApp.Flare.R.layout.contact_item_view,_sortedContacts,false);

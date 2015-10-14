@@ -234,7 +234,7 @@ public class VerifyPhoneActivity extends Activity {
         boolean haveWeAsked = DataStorageHandler.HaveAskedToSaveTheUsersInformation();
         if(haveWeAsked) {
             boolean canWeSave = DataStorageHandler.CanWeSaveTheUsersInformation();
-            if(canWeSave)
+            if(canWeSave && !DataStorageHandler.IsRegistered())
                 new GcmRegistrationAsyncTask().execute(this);
             moveOntoSettingsSetup();
         } else {

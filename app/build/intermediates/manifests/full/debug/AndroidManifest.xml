@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="flaregradle.myapp.com.Flare"
-    android:versionCode="48"
-    android:versionName="2" >
+    android:versionCode="50"
+    android:versionName="2.1" >
 
     <uses-sdk
         android:minSdkVersion="16"
-        android:targetSdkVersion="22" />
+        android:targetSdkVersion="23" />
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -27,7 +27,7 @@
         android:required="true" />
 
     <permission
-        android:name="flaregradle.myapp.com.Flare.permission.C2D_MESSAGE"
+        android:name="flaregradle.myapp.com.Flare.C2D_MESSAGE"
         android:protectionLevel="signature" />
 
     <uses-permission android:name="flaregradle.myapp.com.Flare.permission.C2D_MESSAGE" />
@@ -36,17 +36,22 @@
         android:name="android.permission.READ_EXTERNAL_STORAGE"
         android:maxSdkVersion="18" />
 
-    <android:uses-permission
-        android:name="android.permission.READ_EXTERNAL_STORAGE"
-        android:maxSdkVersion="18" />
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <uses-permission android:name="android.permission.USE_CREDENTIALS" />
 
     <application
-        android:name="android.support.multidex.MultiDexApplication"
+        android:name="flaregradle.myapp.com.Flare.FlareApplication"
         android:icon="@drawable/app_icon"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.parse.APPLICATION_ID"
+            android:value="INoehKZFskuQ6nJ383gzDshdhFHSre9lv5MQrZ7g" />
+        <meta-data
+            android:name="com.parse.CLIENT_KEY"
+            android:value="9y6Dx6hqc28c4uyULtzOWrwb0Pmfi0Up3GXDzjpA" />
+
         <activity
             android:name="flaregradle.myapp.com.Flare.Activities.FlareHome"
             android:label="@string/app_name"
@@ -127,7 +132,7 @@
             </intent-filter>
         </receiver>
         <receiver
-            android:name="flaregradle.myapp.com.Flare.Services.GcmBroadcastReceiver"
+            android:name="com.parse.GcmBroadcastReceiver"
             android:permission="com.google.android.c2dm.permission.SEND" >
             <intent-filter>
                 <action android:name="com.google.android.c2dm.intent.RECEIVE" />
@@ -137,18 +142,6 @@
                 <category android:name="flaregradle.myapp.com.Flare" />
             </intent-filter>
         </receiver>
-
-        <!--
-        <receiver
-            android:name="flaregradle.myapp.com.Flare.Services.GcmBroadcastReceiver"
-            android:permission="com.google.android.c2dm.permission.SEND" >
-            <intent-filter>
-                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
-                <category android:name="flaregradle.myapp.com.flare" />
-            </intent-filter>
-        </receiver>
-        -->
 
         <service android:name="flaregradle.myapp.com.Flare.Services.GcmIntentService" />
         <service android:name="flaregradle.myapp.com.Flare.Services.NotificationDeclineService" />
@@ -186,17 +179,23 @@
             android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity"
             android:theme="@style/Theme.IAPTheme" />
 
-        <meta-data
-            android:name="com.google.android.gms.wallet.api.enabled"
-            android:value="true" />
+        <provider
+            android:name="com.google.android.gms.measurement.AppMeasurementContentProvider"
+            android:authorities="flaregradle.myapp.com.Flare.google_measurement_service"
+            android:exported="false" />
 
         <receiver
-            android:name="com.google.android.gms.wallet.EnableWalletOptimizationReceiver"
-            android:exported="false" >
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true" >
             <intent-filter>
-                <action android:name="com.google.android.gms.wallet.ENABLE_WALLET_OPTIMIZATION" />
+                <action android:name="com.google.android.gms.measurement.UPLOAD" />
             </intent-filter>
         </receiver>
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
     </application>
 
 </manifest>
