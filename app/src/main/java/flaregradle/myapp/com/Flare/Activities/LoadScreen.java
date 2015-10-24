@@ -19,10 +19,13 @@ import com.parse.ParseAnalytics;
 import com.parse.ParseInstallation;
 import com.parse.ParseObject;
 import com.parse.ParsePushBroadcastReceiver;
+import com.squareup.otto.Subscribe;
 
 import flaregradle.myapp.com.Flare.AsyncTasks.FindFlareUsersTask;
 import flaregradle.myapp.com.Flare.AsyncTasks.GcmRegistrationAsyncTask;
 import flaregradle.myapp.com.Flare.AsyncTasks.SetUpContactsTask;
+import flaregradle.myapp.com.Flare.Events.FindFlareSuccess;
+import flaregradle.myapp.com.Flare.Modules.EventsModule;
 import flaregradle.myapp.com.Flare.Utilities.ContactsHandler;
 import flaregradle.myapp.com.Flare.Utilities.DataStorageHandler;
 
@@ -44,8 +47,9 @@ public class LoadScreen extends Activity {
         _loading = (TextView)findViewById(R.id.loading);
         _loading.setText(R.string.loading);
 
-        setUpDataStore();
+        //setUpDataStore();
         setUpContacts();
+        EventsModule.Register(this);
     }
 
     private void setUpDataStore() {
@@ -62,8 +66,7 @@ public class LoadScreen extends Activity {
         Bitmap bitmap = BitmapFactory.decodeResource(getResources(), contactId);
         _contactsHandler.setDefaultImage(bitmap);
 
-        SetUpContactsTask task = new SetUpContactsTask(this,_contactsHandler);
-        task.execute(this);
+        new SetUpContactsTask(this,_contactsHandler).execute(getApplicationContext());
     }
 
     public void finishedGettingContacts() {
@@ -72,10 +75,12 @@ public class LoadScreen extends Activity {
             boolean canCheckContactsWithFlare = DataStorageHandler.CanCheckContactsForFlare();
             if(canCheckContactsWithFlare)
                 findContactsWithFlare();
-            if(DataStorageHandler.IsPhoneNumberVerified()) {
-                phoneNumberIsVerified();
-            } else {
-                verifyPhoneNumber();
+            else {
+                if(DataStorageHandler.IsPhoneNumberVerified()) {
+                    phoneNumberIsVerified();
+                } else {
+                    verifyPhoneNumber();
+                }
             }
         } else {
             new AlertDialog.Builder(this)
@@ -86,13 +91,6 @@ public class LoadScreen extends Activity {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         findContactsWithFlare();
-                        DataStorageHandler.SetCanCheckContactsForFlare(true);
-                        DataStorageHandler.SetHaveAskedToCheckContactsWithFlare(true);
-                        if (DataStorageHandler.IsPhoneNumberVerified()) {
-                            phoneNumberIsVerified();
-                        } else {
-                            verifyPhoneNumber();
-                        }
                     }
                 })
                 .setNegativeButton("Decline", new DialogInterface.OnClickListener() {
@@ -111,9 +109,18 @@ public class LoadScreen extends Activity {
         }
     }
 
+    @Subscribe public void FoundContactsWithFlare(FindFlareSuccess success) {
+        DataStorageHandler.SetCanCheckContactsForFlare(true);
+        DataStorageHandler.SetHaveAskedToCheckContactsWithFlare(true);
+        if (DataStorageHandler.IsPhoneNumberVerified()) {
+            phoneNumberIsVerified();
+        } else {
+            verifyPhoneNumber();
+        }
+    }
+
     private void findContactsWithFlare() {
-        FindFlareUsersTask findTask = new FindFlareUsersTask();
-        findTask.execute(this);
+        new FindFlareUsersTask().execute(getApplicationContext());
     }
 
     private void verifyPhoneNumber() {
@@ -130,7 +137,7 @@ public class LoadScreen extends Activity {
         if(haveWeAsked) {
             boolean canWeSave = DataStorageHandler.CanWeSaveTheUsersInformation();
             if(canWeSave)
-                new GcmRegistrationAsyncTask().execute(this);
+                new GcmRegistrationAsyncTask().execute(getApplicationContext());
             moveToHomeScreen();
         } else {
             new AlertDialog.Builder(this)

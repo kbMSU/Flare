@@ -319,7 +319,7 @@ public class SendFlareActivity extends AppCompatActivity implements ISendFlare {
         }
 
         if(contactsWithFlare.size() > 0)
-            new SendFlareAsyncTask(_latitude,_longitude,text,contactsWithFlare).execute(this);
+            new SendFlareAsyncTask(_latitude,_longitude,text,contactsWithFlare).execute(getApplicationContext());
 
         if(contactsWithoutFlare.size() > 0) {
             String body = text+" http://maps.google.com/?q="+_latitude+","+_longitude+"  "+"Sent from Flare";

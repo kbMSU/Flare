@@ -78,7 +78,7 @@ public class VerifyPhoneActivity extends Activity {
 
         countriesSetup();
         setInitialState();
-        eventsModule.Register(this);
+        EventsModule.Register(this);
     }
 
     @Subscribe public void TwilioMessageSent(TwilioSuccess success) {
@@ -235,7 +235,7 @@ public class VerifyPhoneActivity extends Activity {
         if(haveWeAsked) {
             boolean canWeSave = DataStorageHandler.CanWeSaveTheUsersInformation();
             if(canWeSave && !DataStorageHandler.IsRegistered())
-                new GcmRegistrationAsyncTask().execute(this);
+                new GcmRegistrationAsyncTask().execute(getApplicationContext());
             moveOntoSettingsSetup();
         } else {
             new AlertDialog.Builder(this)
@@ -262,7 +262,7 @@ public class VerifyPhoneActivity extends Activity {
                 .show();
         }
 
-        new GcmRegistrationAsyncTask().execute(this);
+        new GcmRegistrationAsyncTask().execute(getApplicationContext());
     }
 
     private void moveOntoSettingsSetup() {

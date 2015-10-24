@@ -43,6 +43,7 @@ public class FlareBroadcastReceiver extends ParsePushBroadcastReceiver {
                 JSONObject json = new JSONObject(data);
                 String type = json.getString("pushType");
                 if (type.equals("unknown")) {
+                    super.onPushReceive(context,intent);
                     return;
                 }
 
@@ -68,38 +69,65 @@ public class FlareBroadcastReceiver extends ParsePushBroadcastReceiver {
 
     @Override
     protected Notification getNotification(Context context, Intent intent) {
-        _context = context;
+        return super.getNotification(context,intent);
+
+        /*_context = context;
         Notification notification = new Notification();
         try {
-            JSONObject json = new JSONObject();
-            if(intent.hasExtra("com.parse.Data")) {
-                json = new JSONObject(intent.getStringExtra("com.parse.Data"));
-            } else if(intent.hasExtra("data")) {
-                json = new JSONObject(intent.getStringExtra("data"));
+
+            try {
+                Bundle extras = intent.getExtras();
+                if(extras == null) {
+                    Log.e("flare_data","intent has no extras");
+                } else {
+                    Set<String> keys = extras.keySet();
+                    for(String key : keys) {
+                        Log.i("key",key);
+                    }
+                }
+            } catch (Exception ex) {
+                Log.e("flare_data",ex.getMessage());
+                Log.e("flare_data","Has no extras");
             }
+
+            String str = intent.getStringExtra("com.parse.Data");
+
+            Log.i("flare_data","got data");
+            Log.i("flare_data",str);
+
+            JSONObject json = new JSONObject(str);
+
+            Log.i("flare_data","created json");
+
             String type = json.getString("pushType");
             if (type.equals("unknown")) {
+                Log.i("flare_data",type);
                 notification = super.getNotification(context,intent);
             }
 
             if (type.equals("flare")) {
+                Log.i("flare_data",type);
                 String phoneNumber = json.getString("phone");
                 String text = json.getString("text");
                 String latitude = json.getString("latitude");
                 String longitude = json.getString("longitude");
+                Log.i("flare_data","got info");
 
                 notification = getFlareNotification(phoneNumber, text, latitude, longitude);
             } else if (type.equals("response")) {
+                Log.i("flare_data",type);
                 String from = json.getString("phone");
                 String text = json.getString("text");
                 Boolean accepted = json.getBoolean("accepted");
+                Log.i("flare_data","got info");
 
                 notification = getResponseNotification(from, text, accepted);
             }
         } catch (Exception ex) {
+            Log.e("exception",ex.getMessage());
             Log.e("Flare_Bad_Data","Unable to parse data");
         }
-        return notification;
+        return notification;*/
     }
 
     private Notification getFlareNotification(String phoneNumber,String text,String latitude,String longitude) {
@@ -231,6 +259,12 @@ public class FlareBroadcastReceiver extends ParsePushBroadcastReceiver {
     }
 
     private void handleFlare(String phoneNumber,String text,String latitude,String longitude) {
+        DataStorageHandler.getInstance();
+        if(!DataStorageHandler.IsSetupComplete) {
+            DataStorageHandler.Preferences =  _context.getSharedPreferences("flaregradle.myapp.com.Flare_preferences", Context.MODE_PRIVATE);
+            DataStorageHandler.setupPreferences();
+        }
+
         Contact contact = DataStorageHandler.findContact(phoneNumber);
 
         String contentTitle = phoneNumber;
@@ -305,6 +339,14 @@ public class FlareBroadcastReceiver extends ParsePushBroadcastReceiver {
     }
 
     private void handleResponse(String from, String text, Boolean accepted) {
+        DataStorageHandler.getInstance();
+        if(!DataStorageHandler.IsSetupComplete) {
+            Log.i("Setup","Have to setup");
+            DataStorageHandler.Preferences =  _context.getSharedPreferences("flaregradle.myapp.com.Flare_preferences", Context.MODE_PRIVATE);
+            DataStorageHandler.setupPreferences();
+            Log.i("Setup","Setup complete");
+        }
+
         Contact contact = DataStorageHandler.findContact(from);
 
         String contentTitle = from;

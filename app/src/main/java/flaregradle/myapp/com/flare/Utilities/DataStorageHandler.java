@@ -48,6 +48,7 @@ public class DataStorageHandler {
     public static HashMap<String,Group> SavedContactGroups;
     public static HashMap<String,PhoneNumber> ContactNumbersWithFlare;
     public static Location CurrentLocation;
+    public static boolean IsSetupComplete;
 
     //region Setup
     public static void setupPreferences() {
@@ -81,6 +82,8 @@ public class DataStorageHandler {
             if(contacts != null)
                 ContactNumbersWithFlare = contacts;
         }
+
+        IsSetupComplete = true;
     }
 
     private static void wipeGroups() {

@@ -3,6 +3,7 @@ package flaregradle.myapp.com.Flare.AsyncTasks;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.util.Log;
+import android.widget.Toast;
 
 import com.microsoft.windowsazure.mobileservices.MobileServiceClient;
 import com.microsoft.windowsazure.mobileservices.MobileServiceList;
@@ -20,6 +21,9 @@ import java.util.List;
 import flaregradle.myapp.com.Flare.BackendItems.DeviceItem;
 import flaregradle.myapp.com.Flare.DataItems.Contact;
 import flaregradle.myapp.com.Flare.DataItems.PhoneNumber;
+import flaregradle.myapp.com.Flare.Events.FindFlareSuccess;
+import flaregradle.myapp.com.Flare.Interfaces.ICallBack;
+import flaregradle.myapp.com.Flare.Modules.EventsModule;
 import flaregradle.myapp.com.Flare.Utilities.DataStorageHandler;
 
 
@@ -71,8 +75,14 @@ public class FindFlareUsersTask extends AsyncTask<Context,Void,Void> {
 
         } catch (Exception ex) {
             Log.e("Find Flare Users",ex.getMessage());
+            Toast.makeText(params[0],ex.getMessage(),Toast.LENGTH_SHORT).show();
         }
 
         return null;
+    }
+
+    @Override
+    protected void onPostExecute(Void aVoid) {
+        EventsModule.Post(new FindFlareSuccess());
     }
 }

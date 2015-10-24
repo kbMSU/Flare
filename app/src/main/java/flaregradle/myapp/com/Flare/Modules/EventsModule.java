@@ -12,17 +12,17 @@ public class EventsModule {
         return eventsModule;
     }
 
-    Bus eventBus = new Bus();
+    static Bus eventBus = new Bus();
 
-    public void Post(Object event) {
+    public static void Post(Object event) {
         eventBus.post(event);
     }
 
-    public void Register(Object activity) {
+    public static void Register(Object activity) {
         eventBus.register(activity);
     }
 
-    public void UnRegister(Object activity) {
+    public static void UnRegister(Object activity) {
         eventBus.unregister(activity);
     }
 }
