@@ -36,10 +36,10 @@ public class FlareBroadcastReceiver extends ParsePushBroadcastReceiver {
         Bundle extras = intent.getExtras();
 
         if (extras != null && !extras.isEmpty()) {
-            Set<String> keys = extras.keySet();
-            //String data = extras.getString("data");
-            String data = extras.getString("com.parse.Data");
             try {
+                Set<String> keys = extras.keySet();
+                //String data = extras.getString("data");
+                String data = extras.getString("com.parse.Data");
                 JSONObject json = new JSONObject(data);
                 String type = json.getString("pushType");
                 if (type.equals("unknown")) {
@@ -62,6 +62,7 @@ public class FlareBroadcastReceiver extends ParsePushBroadcastReceiver {
                     handleResponse(from,text,accepted);
                 }
             } catch (Exception ex) {
+                super.onPushReceive(context,intent);
                 Log.e("Flare_Bad_Data","Unable to parse data");
             }
         }

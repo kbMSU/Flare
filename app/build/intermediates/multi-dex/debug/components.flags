@@ -80,6 +80,10 @@
     <init>();
 }
 
+-keep class com.google.android.gms.auth.api.signin.internal.SignInHubActivity {
+    <init>();
+}
+
 -keep class com.google.android.gms.measurement.AppMeasurementContentProvider {
     <init>();
 }

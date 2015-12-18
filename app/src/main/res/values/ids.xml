@@ -107,5 +107,6 @@
     <item name="left_drawer" type="id">left drawer</item>
     <item name="select_find_friends" type="id">Select find friends</item>
     <item name="select_allow_save" type="id">Select allow save</item>
+    <item name="left_drawer_list" type="id">left drawer item list</item>
 
 </resources>

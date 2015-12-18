@@ -22,6 +22,7 @@ import com.MyApp.Flare.R;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
+import com.parse.ParseObject;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -323,16 +324,33 @@ public class SendFlareActivity extends AppCompatActivity implements ISendFlare {
 
         if(contactsWithoutFlare.size() > 0) {
             String body = text+" http://maps.google.com/?q="+_latitude+","+_longitude+"  "+"Sent from Flare";
+
             if(DataStorageHandler.CanSendCloudMessage() && DataStorageHandler.IsRegistered()) {
                 List<String> numbers = new ArrayList<>();
                 for(PhoneNumber phone : contactsWithoutFlare) {
                     numbers.add(phone.number);
+
+                    ParseObject flare = new ParseObject("Flare");
+                    flare.put("From", DataStorageHandler.getCountryCode()+DataStorageHandler.getPhoneNumber());
+                    flare.put("To",phone.number);
+                    flare.put("Method","cloud");
+                    flare.put("Latitude",_latitude);
+                    flare.put("Longitude",_longitude);
+                    flare.saveInBackground();
                 }
                 new SendTwilioSmsTask(this,numbers,body).execute();
             } else {
                 for(PhoneNumber phone : contactsWithoutFlare) {
                     SmsManager m = SmsManager.getDefault();
                     m.sendTextMessage(phone.number,DataStorageHandler.getCountryCode()+DataStorageHandler.getPhoneNumber(),body,null,null);
+
+                    ParseObject flare = new ParseObject("Flare");
+                    flare.put("From",DataStorageHandler.getCountryCode()+DataStorageHandler.getPhoneNumber());
+                    flare.put("To",phone.number);
+                    flare.put("Method","sms");
+                    flare.put("Latitude",_latitude);
+                    flare.put("Longitude",_longitude);
+                    flare.saveInBackground();
                 }
             }
         }

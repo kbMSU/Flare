@@ -148,11 +148,11 @@
         <!--
         real release key
         AIzaSyB-05hWM_Jk9m9XunzQkjsWmzK6S4NTdFY
-        -->
+        -->c
 
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
-            android:value="AIzaSyB-05hWM_Jk9m9XunzQkjsWmzK6S4NTdFY" />
+            android:value="AIzaSyB-MGunwsr3DX2H70xAAse6VJ2S7hLu440" />
 
         <!-- Debug key -->
         <!--

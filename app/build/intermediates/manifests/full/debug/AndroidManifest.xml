@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="flaregradle.myapp.com.Flare"
-    android:versionCode="53"
-    android:versionName="2.1.1" >
+    android:versionCode="55"
+    android:versionName="2.1.2" >
 
     <uses-sdk
         android:minSdkVersion="16"
@@ -35,8 +35,6 @@
     <permission
         android:name="android.permission.READ_EXTERNAL_STORAGE"
         android:maxSdkVersion="18" />
-
-    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <uses-permission android:name="android.permission.USE_CREDENTIALS" />
 
@@ -164,10 +162,10 @@
         real release key
         AIzaSyB-05hWM_Jk9m9XunzQkjsWmzK6S4NTdFY
         -->
-
+c
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
-            android:value="AIzaSyB-05hWM_Jk9m9XunzQkjsWmzK6S4NTdFY" />
+            android:value="AIzaSyB-MGunwsr3DX2H70xAAse6VJ2S7hLu440" />
 
         <!-- Debug key -->
         <!--
@@ -178,6 +176,11 @@
         <activity
             android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity"
             android:theme="@style/Theme.IAPTheme" />
+        <activity
+            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
         <provider
             android:name="com.google.android.gms.measurement.AppMeasurementContentProvider"

@@ -9,6 +9,7 @@ import com.google.gson.JsonElement;
 import com.microsoft.windowsazure.mobileservices.MobileServiceClient;
 import com.parse.FunctionCallback;
 import com.parse.ParseCloud;
+import com.parse.ParseObject;
 
 import java.text.ParseException;
 import java.util.ArrayList;
@@ -18,6 +19,7 @@ import java.util.List;
 import flaregradle.myapp.com.Flare.Events.TwilioError;
 import flaregradle.myapp.com.Flare.Events.TwilioSuccess;
 import flaregradle.myapp.com.Flare.Modules.EventsModule;
+import flaregradle.myapp.com.Flare.Utilities.DataStorageHandler;
 
 public class SendTwilioSmsTask extends AsyncTask<Void,Void,Void> {
     private EventsModule eventsModule = EventsModule.getInstance();
@@ -53,8 +55,8 @@ public class SendTwilioSmsTask extends AsyncTask<Void,Void,Void> {
         super.onPostExecute(aVoid);
 
         if(exception != null)
-             eventsModule.Post(new TwilioError(exception));
+             EventsModule.Post(new TwilioError(exception));
         else
-            eventsModule.Post(new TwilioSuccess());
+            EventsModule.Post(new TwilioSuccess());
     }
 }

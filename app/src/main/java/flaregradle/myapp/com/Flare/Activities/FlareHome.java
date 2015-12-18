@@ -16,6 +16,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -45,6 +46,7 @@ public class FlareHome extends AppCompatActivity implements
     private GoogleMap _map;
     private DrawerLayout _drawerLayout;
     private ListView _drawerList;
+    private LinearLayout _drawer;
     private ActionBarDrawerToggle _drawerToggle;
 
     private GoogleApiClient mGoogleApiClient;
@@ -64,13 +66,12 @@ public class FlareHome extends AppCompatActivity implements
         _map.setMyLocationEnabled(false);
         _map.getUiSettings().setMyLocationButtonEnabled(false);
         _map.getUiSettings().setMapToolbarEnabled(false);
-
         _map.setOnCameraChangeListener(new GoogleMap.OnCameraChangeListener() {
             @Override
             public void onCameraChange(CameraPosition cameraPosition) {
                 if (_location == null) {
                     TextView view = (TextView) findViewById(R.id.searchLocationText);
-                    view.setText("Unknown location");
+                    view.setText(R.string.unknown_location);
                     return;
                 }
 
@@ -80,8 +81,10 @@ public class FlareHome extends AppCompatActivity implements
             }
         });
 
+        // Set the drawer
         _drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-        _drawerList = (ListView) findViewById(R.id.left_drawer);
+        _drawer = (LinearLayout) findViewById(R.id.left_drawer);
+        _drawerList = (ListView) findViewById(R.id.left_drawer_list);
 
         String[] drawerItems = new String[3];
         drawerItems[0] = "Feedback";
@@ -104,7 +107,6 @@ public class FlareHome extends AppCompatActivity implements
             }
         };
         _drawerLayout.setDrawerListener(_drawerToggle);
-
         _drawerList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -134,6 +136,7 @@ public class FlareHome extends AppCompatActivity implements
             }
         });
 
+        // Set action bar
         ActionBar supportActionBar = getSupportActionBar();
         if(supportActionBar != null) {
             supportActionBar.setDisplayHomeAsUpEnabled(true);
@@ -178,14 +181,6 @@ public class FlareHome extends AppCompatActivity implements
                 .build();
     }
     // endregion
-
-    // region Handle Menu
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        //MenuInflater inflater = getMenuInflater();
-        //inflater.inflate(com.MyApp.Flare.R.menu.home_options_menu, menu);
-        return true;
-    }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -247,12 +242,10 @@ public class FlareHome extends AppCompatActivity implements
     }
     // endregion
 
-    // region Show Toast
     private void showMessage(String text){
         _message.setText(text);
         _message.show();
     }
-    // endregion
 
     // region Google Service Connection Call-Backs
     @Override
@@ -310,11 +303,6 @@ public class FlareHome extends AppCompatActivity implements
             return;
 
         DataStorageHandler.CurrentLocation = _location;
-
-        //MarkerOptions currentLocationMarker = new MarkerOptions().position(new LatLng(_location.getLatitude(), _location.getLongitude()));
-        //currentLocationMarker.icon(BitmapDescriptorFactory.fromResource(R.drawable.half_size_location_marker));
-        //currentLocationMarker.draggable(true);
-
         try
         {
             Geocoder geocoder = new Geocoder(this, Locale.getDefault());
@@ -332,7 +320,6 @@ public class FlareHome extends AppCompatActivity implements
         }
 
         _map.clear();
-        //_map.addMarker(currentLocationMarker);
         _map.setMyLocationEnabled(true);
     }
 

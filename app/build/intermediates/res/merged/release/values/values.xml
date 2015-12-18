@@ -787,7 +787,7 @@
     <string name="title_activity_settings_setup">Setup</string>
     <string name="title_activity_test">TestActivity</string>
     <string name="title_activity_verify_phone">VerifyPhoneActivity</string>
-    <string name="version">Version 2.1.1</string>
+    <string name="version">Version 2.1.2</string>
     <!-- From: file:/Users/Karthik/Library/Mobile%20Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/8.1.0/res/values/wallet_strings.xml -->
     <eat-comment/>
     <string name="wallet_buy_button_place_holder">Buy with Google</string>
