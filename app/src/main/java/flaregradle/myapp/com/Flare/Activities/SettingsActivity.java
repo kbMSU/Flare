@@ -1,17 +1,18 @@
 package flaregradle.myapp.com.Flare.Activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.ToggleButton;
+import android.widget.Toast;
 
 import com.MyApp.Flare.R;
 
@@ -34,12 +35,24 @@ public class SettingsActivity extends AppCompatActivity {
     CheckBox selectAllowSaveCheckBox;
     @Bind(R.id.select_find_friends)
     CheckBox selectFindFriendsCheckBox;
+    @Bind(R.id.current_phone_number)
+    TextView currentPhoneNumberTextView;
+    @Bind(R.id.update_phone_number)
+    ImageView updateCurrentNumberButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
         ButterKnife.bind(this);
+
+        if(DataStorageHandler.IsRegistered())
+            currentPhoneNumberTextView.setText(DataStorageHandler.getPhoneNumber());
+        else {
+            currentPhoneNumberTextView.setText("NOT REGISTERED");
+            currentPhoneNumberTextView.setClickable(false);
+            updateCurrentNumberButton.setVisibility(View.GONE);
+        }
 
         cloudMessageCheckBox.setChecked(DataStorageHandler.CanSendCloudMessage());
         textMessageCheckBox.setChecked(!DataStorageHandler.CanSendCloudMessage());
@@ -137,5 +150,10 @@ public class SettingsActivity extends AppCompatActivity {
             _acceptResponseTextView.setVisibility(View.VISIBLE);
             _acceptResponsetEditText.setVisibility(View.GONE);
         }
+    }
+
+    public void onUpdatePhoneNumberClick(View v) {
+        Intent updatePhoneIntent = new Intent(this, UpdatePhone.class);
+        startActivity(updatePhoneIntent);
     }
 }

@@ -1,12 +1,9 @@
 package flaregradle.myapp.com.Flare.Activities;
 
 import android.app.Activity;
-import android.app.AlertDialog;
-import android.content.DialogInterface;
-import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
-import android.util.Pair;
+import android.support.v4.app.NavUtils;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -19,9 +16,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.MyApp.Flare.R;
-import com.google.common.util.concurrent.ListenableFuture;
-import com.google.gson.JsonElement;
-import com.microsoft.windowsazure.mobileservices.MobileServiceClient;
+import com.parse.ParseInstallation;
 import com.squareup.otto.Subscribe;
 
 import java.util.ArrayList;
@@ -31,15 +26,16 @@ import java.util.Locale;
 import java.util.Random;
 import java.util.TreeSet;
 
-import flaregradle.myapp.com.Flare.AsyncTasks.FindFlareUsersTask;
-import flaregradle.myapp.com.Flare.AsyncTasks.GcmRegistrationAsyncTask;
 import flaregradle.myapp.com.Flare.AsyncTasks.SendTwilioSmsTask;
+import flaregradle.myapp.com.Flare.AsyncTasks.UpdatePhoneNumberAsyncTask;
+import flaregradle.myapp.com.Flare.Events.ParseError;
+import flaregradle.myapp.com.Flare.Events.ParseSaveDataSuccess;
 import flaregradle.myapp.com.Flare.Events.TwilioError;
 import flaregradle.myapp.com.Flare.Events.TwilioSuccess;
 import flaregradle.myapp.com.Flare.Modules.EventsModule;
 import flaregradle.myapp.com.Flare.Utilities.DataStorageHandler;
 
-public class VerifyPhoneActivity extends Activity {
+public class UpdatePhone extends Activity {
 
     private EventsModule eventsModule = EventsModule.getInstance();
 
@@ -61,7 +57,8 @@ public class VerifyPhoneActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_verify_phone);
+        setContentView(R.layout.activity_update_phone);
+        getActionBar().setDisplayHomeAsUpEnabled(true);
 
         _countryCodeView = (TextView)findViewById(R.id.country_code);
         _phoneNumberEntry = (EditText)findViewById(R.id.phone);
@@ -81,12 +78,35 @@ public class VerifyPhoneActivity extends Activity {
         EventsModule.Register(this);
     }
 
-    @Subscribe public void TwilioMessageSent(TwilioSuccess success) {
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            // Respond to the action bar's Up/Home button
+            case android.R.id.home:
+                NavUtils.navigateUpFromSameTask(this);
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Subscribe
+    public void TwilioMessageSent(TwilioSuccess success) {
         setReceivedCode();
     }
 
-    @Subscribe public void TwilioError(TwilioError error) {
+    @Subscribe
+    public void TwilioError(TwilioError error) {
         setErrorVerifying();
+    }
+
+    @Subscribe
+    public void ParseError(ParseError error) {
+        errorSavingPhoneToCloud(error.getException());
+    }
+
+    @Subscribe
+    public void ParseSuccess(ParseSaveDataSuccess success) {
+        savedPhoneToCloud();
     }
 
     private void countriesSetup() {
@@ -191,8 +211,7 @@ public class VerifyPhoneActivity extends Activity {
     public void onVerifyCode(View view) {
         String code = _codeEntry.getText().toString();
         if(code.equals(_code)) {
-            DataStorageHandler.SetPhoneNumberVerified();
-            verificationSuccessful();
+            savePhoneNumberToCloud();
         } else {
             setInvalidCode();
         }
@@ -200,6 +219,22 @@ public class VerifyPhoneActivity extends Activity {
 
     private void setInvalidCode() {
         _submitErrorMessage.setVisibility(View.VISIBLE);
+    }
+
+    private void savePhoneNumberToCloud() {
+        String countryCode = _countryCodeView.getText().toString();
+        String phoneNumber = _phoneNumberEntry.getText().toString();
+        UpdatePhoneNumberAsyncTask updateTask = new UpdatePhoneNumberAsyncTask(countryCode,phoneNumber);
+        updateTask.execute(this);
+    }
+
+    private void savedPhoneToCloud() {
+        DataStorageHandler.savePhoneNumber(_countryCodeView.getText().toString(), _phoneNumberEntry.getText().toString());
+        verificationSuccessful();
+    }
+
+    private void errorSavingPhoneToCloud(Exception ex) {
+        Toast.makeText(this,"Uh oh, there was a problem updating your phone number",Toast.LENGTH_LONG);
     }
 
     private void verificationSuccessful() {
@@ -226,47 +261,7 @@ public class VerifyPhoneActivity extends Activity {
     }
 
     public void onContinueSetup(View view) {
-        DataStorageHandler.savePhoneNumber(_countryCodeView.getText().toString(), _phoneNumberEntry.getText().toString());
-        registerPhone();
+        NavUtils.navigateUpFromSameTask(this);
     }
 
-    private void registerPhone() {
-        boolean haveWeAsked = DataStorageHandler.HaveAskedToSaveTheUsersInformation();
-        if(haveWeAsked) {
-            boolean canWeSave = DataStorageHandler.CanWeSaveTheUsersInformation();
-            if(canWeSave && !DataStorageHandler.IsRegistered())
-                new GcmRegistrationAsyncTask().execute(getApplicationContext());
-            moveOntoSettingsSetup();
-        } else {
-            new AlertDialog.Builder(this)
-                    .setTitle("Let your friends find you")
-                    .setMessage("We can let your friends see that you have flare. We will need to save your phone number to the cloud to do this " +
-                            "we don't store or share ANY private data without your consent. Do you accept ?")
-                    .setPositiveButton("Accept", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            DataStorageHandler.SetCanWeSaveTheUsersInformation(true);
-                            DataStorageHandler.SetHaveAskedToSaveTheUsersInformation(true);
-                            new GcmRegistrationAsyncTask().execute(getApplicationContext());
-                            moveOntoSettingsSetup();
-                        }
-                })
-                    .setNegativeButton("Decline", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            DataStorageHandler.SetCanWeSaveTheUsersInformation(false);
-                            DataStorageHandler.SetHaveAskedToSaveTheUsersInformation(true);
-                            moveOntoSettingsSetup();
-                        }
-                    })
-                .show();
-        }
-
-        //new GcmRegistrationAsyncTask().execute(getApplicationContext());
-    }
-
-    private void moveOntoSettingsSetup() {
-        Intent intent = new Intent(this,SettingsSetup.class);
-        startActivity(intent);
-    }
 }

@@ -70,8 +70,11 @@
     <string name="drawer_open">drawer open</string>
     <string name="drawer_close">drawer close</string>
     <string name="unknown_location">Unknown location</string>
+    <string name="everything_is_great">Everything is great !</string>
+    <string name="we_have_a_problem">We have a problem</string>
+    <string name="fix_the_problem">Fix it</string>
 
-    <string-array name="CountryCodes" >
+    <string-array name="CountryCodes">
         <item>93,AF</item>
         <item>355,AL</item>
         <item>213,DZ</item>
@@ -279,6 +282,7 @@
         <item>260,ZM</item>
         <item>263,ZW</item>
     </string-array>
+    <string name="title_activity_update_phone">Update Phone</string>
 
 
 </resources>

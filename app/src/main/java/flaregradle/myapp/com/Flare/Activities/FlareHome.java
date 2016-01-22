@@ -36,6 +36,7 @@ import com.google.android.gms.maps.model.LatLng;
 import java.util.List;
 import java.util.Locale;
 
+import flaregradle.myapp.com.Flare.Modules.EventsModule;
 import flaregradle.myapp.com.Flare.Utilities.DataStorageHandler;
 
 public class FlareHome extends AppCompatActivity implements
@@ -46,7 +47,6 @@ public class FlareHome extends AppCompatActivity implements
     private GoogleMap _map;
     private DrawerLayout _drawerLayout;
     private ListView _drawerList;
-    private LinearLayout _drawer;
     private ActionBarDrawerToggle _drawerToggle;
 
     private GoogleApiClient mGoogleApiClient;
@@ -83,7 +83,6 @@ public class FlareHome extends AppCompatActivity implements
 
         // Set the drawer
         _drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-        _drawer = (LinearLayout) findViewById(R.id.left_drawer);
         _drawerList = (ListView) findViewById(R.id.left_drawer_list);
 
         String[] drawerItems = new String[3];
@@ -151,6 +150,9 @@ public class FlareHome extends AppCompatActivity implements
 
         // Connect to the google api client
         mGoogleApiClient.connect();
+
+        // Register for events
+        EventsModule.Register(this);
     }
 
     @Override
@@ -217,7 +219,6 @@ public class FlareHome extends AppCompatActivity implements
 
         return super.onOptionsItemSelected(item);
     }
-    // endregion
 
     // region Button Clicks
     public void onUpdateLocationClick(View v) {
@@ -240,12 +241,11 @@ public class FlareHome extends AppCompatActivity implements
         sendFlareIntent.putExtra("longitude", String.valueOf(_location.getLongitude()));
         startActivity(sendFlareIntent);
     }
-    // endregion
 
-    private void showMessage(String text){
-        _message.setText(text);
-        _message.show();
+    public void onFixTheProblemClick(View v) {
+
     }
+    // endregion
 
     // region Google Service Connection Call-Backs
     @Override
@@ -334,4 +334,9 @@ public class FlareHome extends AppCompatActivity implements
         _map.animateCamera(CameraUpdateFactory.zoomTo(15), 2000, null);
     }
     // endregion
+
+    private void showMessage(String text){
+        _message.setText(text);
+        _message.show();
+    }
 }

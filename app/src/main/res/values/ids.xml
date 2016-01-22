@@ -108,5 +108,13 @@
     <item name="select_find_friends" type="id">Select find friends</item>
     <item name="select_allow_save" type="id">Select allow save</item>
     <item name="left_drawer_list" type="id">left drawer item list</item>
+    <item name="drawer_connected" type="id">drawer connected to server</item>
+    <item name="drawer_not_connected" type="id">drawer not connected to server</item>
+    <item name="drawer_all_clear" type="id">drawer all clear</item>
+    <item name="drawer_issues" type="id">drawer issues</item>
+    <item name="drawer_register_issue" type="id">drawer register issue</item>
+    <item name="drawer_find_friends_issue" type="id">drawer find friends issue</item>
+    <item name="current_phone_number" type="id">Current phone number</item>
+    <item name="update_phone_number" type="id">update phone number</item>
 
 </resources>
