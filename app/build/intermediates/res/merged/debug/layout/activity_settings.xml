@@ -34,6 +34,43 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
+                android:text="Your phone number"
+                android:paddingTop="20dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:text="1111111111"
+                    android:clickable="true"
+                    android:id="@id/current_phone_number"
+                    android:onClick="onUpdatePhoneNumberClick"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="top"
+                    android:clickable="true"
+                    android:src="@drawable/write_icon"
+                    android:id="@id/update_phone_number"
+                    android:onClick="onUpdatePhoneNumberClick"/>
+
+            </RelativeLayout>
+
+            <View android:background="#ffffff" android:layout_width = "fill_parent" android:layout_height="1dip"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
                 android:text="Saving data to cloud"
                 android:paddingTop="20dp"/>
 
@@ -60,6 +97,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
+                        android:textColor="@color/greyLight"
                         android:text="We can see if any of your friends have flare. This will involve checking if any of the people in your contacts are on our cloud. We do not store ANY private data without your consent."/>
 
                 </LinearLayout>
@@ -97,6 +135,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
+                        android:textColor="@color/greyLight"
                         android:text="You can allow your friends to find you on flare. This will involve saving your phone number to our cloud. We do not store ANY private data without your consent."/>
 
                 </LinearLayout>

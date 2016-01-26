@@ -19,6 +19,7 @@ public class UpdatePhoneNumberAsyncTask extends AsyncTask<Context,Void,Void> {
     private String _countryCode;
     private String _phoneNumber;
     private String _fullPhone;
+    private Exception _exception;
 
     public UpdatePhoneNumberAsyncTask(String countryCode,String phoneNumber) {
         _countryCode = countryCode;
@@ -39,18 +40,29 @@ public class UpdatePhoneNumberAsyncTask extends AsyncTask<Context,Void,Void> {
 
             String oldPhone = DataStorageHandler.getCountryCode()+DataStorageHandler.getPhoneNumber();
             ParseQuery<ParseObject> query = ParseQuery.getQuery("Device").whereEqualTo("FullPhone",oldPhone);
-            ParseObject savedPhone = query.getFirst();
+            ParseObject savedPhone = query.find().get(0);
             savedPhone.put("FullPhone", _fullPhone);
             savedPhone.put("CountryCode", _countryCode);
             savedPhone.put("Number", _phoneNumber);
             savedPhone.save();
 
         } catch (Exception ex) {
-            EventsModule.Post(new ParseError(ex));
+            _exception = ex;
         }
 
-        EventsModule.Post(new ParseSaveDataSuccess());
 
         return null;
+    }
+
+    @Override
+    protected void onPostExecute(Void aVoid) {
+        super.onPostExecute(aVoid);
+
+        if(_exception != null) {
+            EventsModule.Post(new ParseError(_exception));
+        } else {
+            EventsModule.Post(new ParseSaveDataSuccess());
+        }
+
     }
 }

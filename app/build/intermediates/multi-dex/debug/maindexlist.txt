@@ -253,6 +253,7 @@ com/google/common/io/Files.class
 com/google/android/gms/common/api/Status.class
 com/google/android/gms/internal/zzfn.class
 android/support/v7/widget/ActionMenuView$LayoutParams.class
+flaregradle/myapp/com/Flare/Activities/UpdatePhone.class
 com/google/android/gms/common/api/Api$ApiOptions.class
 android/support/v4/media/MediaBrowserCompat$MediaBrowserImplBase.class
 flaregradle/myapp/com/Flare/Adapters/PhoneNumberAdapter.class
@@ -425,6 +426,7 @@ com/google/android/gms/ads/internal/request/zzg.class
 android/support/v4/app/SuperNotCalledException.class
 com/google/android/gms/internal/zzdm$zza.class
 flaregradle/myapp/com/Flare/DataItems/PhoneNumber.class
+flaregradle/myapp/com/Flare/Activities/UpdatePhone$1.class
 flaregradle/myapp/com/Flare/Utilities/DataStorageHandler.class
 com/google/android/gms/internal/zzig.class
 com/google/android/gms/wearable/CapabilityApi$NodeFilterType.class
@@ -499,6 +501,7 @@ com/google/common/collect/AbstractSortedMultiset.class
 android/support/v4/media/MediaBrowserCompat.class
 com/google/android/gms/internal/zzly.class
 com/google/android/gms/auth/api/credentials/CredentialRequest.class
+-keep class flaregradle.myapp.com.Flare.Activities.UpdatePhone { <init>(); }
 com/google/common/base/Joiner.class
 flaregradle/myapp/com/Flare/Activities/LoadScreen$3.class
 butterknife/OnPageChange$Callback.class
@@ -546,6 +549,7 @@ com/google/android/gms/drive/DriveApi.class
 com/google/android/gms/ads/mediation/customevent/CustomEventExtras.class
 android/support/v4/view/ViewCompatEclairMr1.class
 com/google/android/gms/ads/internal/reward/mediation/client/zzb.class
+flaregradle/myapp/com/Flare/AsyncTasks/UpdatePhoneNumberAsyncTask.class
 com/google/android/gms/location/internal/LocationRequestInternal.class
 com/google/android/gms/common/internal/safeparcel/SafeParcelable.class
 com/google/common/collect/GwtTransient.class
@@ -781,6 +785,7 @@ com/google/android/gms/internal/zzhh.class
 com/google/common/io/ByteArrayDataOutput.class
 com/google/android/gms/analytics/ecommerce/ProductAction.class
 com/google/android/gms/games/achievement/Achievement.class
+flaregradle/myapp/com/Flare/Events/ParseError.class
 com/parse/ParsePlugins$Android.class
 flaregradle/myapp/com/Flare/Activities/SendFlareActivity.class
 butterknife/OnPageChange.class

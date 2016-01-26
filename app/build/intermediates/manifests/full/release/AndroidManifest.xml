@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="flaregradle.myapp.com.Flare"
-    android:versionCode="55"
-    android:versionName="2.1.2" >
+    android:versionCode="56"
+    android:versionName="2.1.3" >
 
     <uses-sdk
         android:minSdkVersion="16"
@@ -35,8 +35,6 @@
     <permission
         android:name="android.permission.READ_EXTERNAL_STORAGE"
         android:maxSdkVersion="18" />
-
-    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <uses-permission android:name="android.permission.USE_CREDENTIALS" />
 
@@ -119,6 +117,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="flaregradle.myapp.com.Flare.Activities.FlareHome" />
         </activity>
+        <activity
+            android:name="flaregradle.myapp.com.Flare.Activities.UpdatePhone"
+            android:label="@string/title_activity_update_phone"
+            android:parentActivityName="flaregradle.myapp.com.Flare.Activities.SettingsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="flaregradle.myapp.com.Flare.Activities.SettingsActivity" />
+        </activity>
 
         <service android:name="com.parse.PushService" />
 
@@ -138,7 +144,7 @@
                 <action android:name="com.google.android.c2dm.intent.RECEIVE" />
                 <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
 
-<!--                   IMPORTANT: Change "com.parse.starter" to match your app's package name. -->
+                <!-- IMPORTANT: Change "com.parse.starter" to match your app's package name. -->
                 <category android:name="flaregradle.myapp.com.Flare" />
             </intent-filter>
         </receiver>
@@ -164,7 +170,7 @@
         real release key
         AIzaSyB-05hWM_Jk9m9XunzQkjsWmzK6S4NTdFY
         -->
-c
+
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
             android:value="AIzaSyB-05hWM_Jk9m9XunzQkjsWmzK6S4NTdFY" />
@@ -178,6 +184,11 @@ c
         <activity
             android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity"
             android:theme="@style/Theme.IAPTheme" />
+        <activity
+            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
         <provider
             android:name="com.google.android.gms.measurement.AppMeasurementContentProvider"

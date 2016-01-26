@@ -1,7 +1,10 @@
 package flaregradle.myapp.com.Flare.Activities;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
@@ -15,9 +18,16 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.MyApp.Flare.R;
+import com.squareup.otto.Subscribe;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import flaregradle.myapp.com.Flare.AsyncTasks.FindFlareUsersTask;
+import flaregradle.myapp.com.Flare.AsyncTasks.GcmRegistrationAsyncTask;
+import flaregradle.myapp.com.Flare.Events.FindFlareError;
+import flaregradle.myapp.com.Flare.Events.FindFlareSuccess;
+import flaregradle.myapp.com.Flare.Events.RegistrationError;
+import flaregradle.myapp.com.Flare.Events.RegistrationSuccess;
 import flaregradle.myapp.com.Flare.Utilities.DataStorageHandler;
 
 public class SettingsActivity extends AppCompatActivity {
@@ -40,6 +50,12 @@ public class SettingsActivity extends AppCompatActivity {
     @Bind(R.id.update_phone_number)
     ImageView updateCurrentNumberButton;
 
+    private AlertDialog _registerAlert;
+    private AlertDialog _findFriendsAlert;
+    private AlertDialog _errorAlert;
+    private AlertDialog _findFriendsSuccessAlert;
+    private AlertDialog _registerSuccessAlert;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,6 +75,49 @@ public class SettingsActivity extends AppCompatActivity {
         selectAllowSaveCheckBox.setChecked(DataStorageHandler.CanWeSaveTheUsersInformation());
         selectFindFriendsCheckBox.setChecked(DataStorageHandler.CanCheckContactsForFlare());
 
+        _registerAlert = new AlertDialog.Builder(this)
+                            .setTitle("Register")
+                            .setMessage("Hold on. We are telling the cloud about you")
+                            .create();
+
+        _findFriendsAlert = new AlertDialog.Builder(this)
+                .setTitle("Find friends")
+                .setMessage("Hold on. We are asking the cloud about your friends")
+                .create();
+
+        _errorAlert = new AlertDialog.Builder(this)
+                .setTitle("Error")
+                .setMessage("Uh oh, something went wrong with your connection to the cloud")
+                .setNeutralButton("Ok", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        _errorAlert.cancel();
+                    }
+                })
+                .create();
+
+        _findFriendsSuccessAlert = new AlertDialog.Builder(this)
+                .setTitle("Success")
+                .setMessage("Alright ! We found all your friends who are on the cloud")
+                .setNeutralButton("Ok", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        _findFriendsSuccessAlert.cancel();
+                    }
+                })
+                .create();
+
+        _registerSuccessAlert = new AlertDialog.Builder(this)
+                .setTitle("Success")
+                .setMessage("Alright ! Our cloud knows about you know")
+                .setNeutralButton("Ok", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        _registerSuccessAlert.cancel();
+                    }
+                })
+                .create();
+
         textMessageCheckBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
@@ -68,6 +127,7 @@ public class SettingsActivity extends AppCompatActivity {
                 }
             }
         });
+
         cloudMessageCheckBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
@@ -81,13 +141,25 @@ public class SettingsActivity extends AppCompatActivity {
         selectAllowSaveCheckBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                DataStorageHandler.SetCanWeSaveTheUsersInformation(isChecked);
+                if(!DataStorageHandler.IsRegistered() && isChecked) {
+                    new GcmRegistrationAsyncTask().execute(getApplicationContext());
+                    _registerAlert.show();
+                } else {
+                    DataStorageHandler.SetCanWeSaveTheUsersInformation(isChecked);
+                }
+                DataStorageHandler.SetHaveAskedToSaveTheUsersInformation(true);
             }
         });
         selectFindFriendsCheckBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                DataStorageHandler.SetCanCheckContactsForFlare(isChecked);
+                if(!DataStorageHandler.CanCheckContactsForFlare() && isChecked) {
+                    new FindFlareUsersTask().execute(getApplicationContext());
+                    _findFriendsAlert.show();
+                } else {
+                    DataStorageHandler.SetCanCheckContactsForFlare(isChecked);
+                }
+                DataStorageHandler.SetHaveAskedToCheckContactsWithFlare(isChecked);
             }
         });
 
@@ -103,6 +175,30 @@ public class SettingsActivity extends AppCompatActivity {
         _acceptResponseTextView.setText(DataStorageHandler.GetDefaultAcceptResponse());
         _acceptResponsetEditText.setText(DataStorageHandler.GetDefaultAcceptResponse());
         _acceptResponsetEditText.setVisibility(View.GONE);
+    }
+
+    @Subscribe public void SuccessfullyRegistered(RegistrationSuccess success) {
+        DataStorageHandler.SetCanWeSaveTheUsersInformation(true);
+        _registerAlert.cancel();
+        _registerSuccessAlert.show();
+    }
+
+    @Subscribe public void FailedToRegister(RegistrationError error) {
+        DataStorageHandler.SetCanWeSaveTheUsersInformation(false);
+        _registerAlert.cancel();
+        _errorAlert.show();
+    }
+
+    @Subscribe public void FoundYourFriends(FindFlareSuccess success) {
+        DataStorageHandler.SetCanCheckContactsForFlare(true);
+        _findFriendsAlert.cancel();
+        _findFriendsSuccessAlert.show();
+    }
+
+    @Subscribe public void FailedToFindFriends(FindFlareError error) {
+        DataStorageHandler.SetCanCheckContactsForFlare(false);
+        _findFriendsAlert.cancel();
+        _errorAlert.show();
     }
 
     @Override

@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.telephony.TelephonyManager;
 import android.view.View;
 import android.widget.ProgressBar;
@@ -24,7 +25,10 @@ import com.squareup.otto.Subscribe;
 import flaregradle.myapp.com.Flare.AsyncTasks.FindFlareUsersTask;
 import flaregradle.myapp.com.Flare.AsyncTasks.GcmRegistrationAsyncTask;
 import flaregradle.myapp.com.Flare.AsyncTasks.SetUpContactsTask;
+import flaregradle.myapp.com.Flare.Events.FindFlareError;
 import flaregradle.myapp.com.Flare.Events.FindFlareSuccess;
+import flaregradle.myapp.com.Flare.Events.RegistrationError;
+import flaregradle.myapp.com.Flare.Events.RegistrationSuccess;
 import flaregradle.myapp.com.Flare.Modules.EventsModule;
 import flaregradle.myapp.com.Flare.Utilities.ContactsHandler;
 import flaregradle.myapp.com.Flare.Utilities.DataStorageHandler;
@@ -91,6 +95,7 @@ public class LoadScreen extends Activity {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         findContactsWithFlare();
+                        dialog.cancel();
                     }
                 })
                 .setNegativeButton("Decline", new DialogInterface.OnClickListener() {
@@ -103,10 +108,15 @@ public class LoadScreen extends Activity {
                         } else {
                             verifyPhoneNumber();
                         }
+                        dialog.cancel();
                     }
                 })
                 .show();
         }
+    }
+
+    private void findContactsWithFlare() {
+        new FindFlareUsersTask().execute(getApplicationContext());
     }
 
     @Subscribe public void FoundContactsWithFlare(FindFlareSuccess success) {
@@ -119,8 +129,23 @@ public class LoadScreen extends Activity {
         }
     }
 
-    private void findContactsWithFlare() {
-        new FindFlareUsersTask().execute(getApplicationContext());
+    @Subscribe public void ErrorFindingContactsWithFlare(FindFlareError error) {
+        DataStorageHandler.SetCanCheckContactsForFlare(false);
+        DataStorageHandler.SetHaveAskedToCheckContactsWithFlare(true);
+        new AlertDialog.Builder(this)
+                .setTitle("Error")
+                .setMessage("Something went wrong with the connection to the cloud ! You can try to find your friends again from the settings page")
+                .setNeutralButton("Ok", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        if (DataStorageHandler.IsPhoneNumberVerified()) {
+                            phoneNumberIsVerified();
+                        } else {
+                            verifyPhoneNumber();
+                        }
+                        dialog.cancel();
+                    }
+                }).show();
     }
 
     private void verifyPhoneNumber() {
@@ -138,7 +163,8 @@ public class LoadScreen extends Activity {
             boolean canWeSave = DataStorageHandler.CanWeSaveTheUsersInformation();
             if(canWeSave)
                 new GcmRegistrationAsyncTask().execute(getApplicationContext());
-            moveToHomeScreen();
+            else
+                moveToHomeScreen();
         } else {
             new AlertDialog.Builder(this)
                 .setTitle("Let your friends find you")
@@ -147,10 +173,8 @@ public class LoadScreen extends Activity {
                 .setPositiveButton("Accept", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        DataStorageHandler.SetCanWeSaveTheUsersInformation(true);
-                        DataStorageHandler.SetHaveAskedToSaveTheUsersInformation(true);
                         new GcmRegistrationAsyncTask().execute(getApplicationContext());
-                        moveToHomeScreen();
+                        dialog.cancel();
                     }
                 })
                 .setNegativeButton("Decline", new DialogInterface.OnClickListener() {
@@ -159,10 +183,32 @@ public class LoadScreen extends Activity {
                         DataStorageHandler.SetCanWeSaveTheUsersInformation(false);
                         DataStorageHandler.SetHaveAskedToSaveTheUsersInformation(true);
                         moveToHomeScreen();
+                        dialog.cancel();
                     }
                 })
                 .show();
         }
+    }
+
+    @Subscribe public void RegisteredSuccessfully(RegistrationSuccess success) {
+        DataStorageHandler.SetCanWeSaveTheUsersInformation(true);
+        DataStorageHandler.SetHaveAskedToSaveTheUsersInformation(true);
+        moveToHomeScreen();
+    }
+
+    @Subscribe public void ErrorRegistering(RegistrationError error) {
+        DataStorageHandler.SetCanWeSaveTheUsersInformation(false);
+        DataStorageHandler.SetHaveAskedToSaveTheUsersInformation(true);
+        new AlertDialog.Builder(this)
+                .setTitle("Error")
+                .setMessage("Something went wrong with your connection to the cloud ! You can try to register again from the settings page")
+                .setNeutralButton("Ok", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        moveToHomeScreen();
+                        dialog.cancel();
+                    }
+                }).show();
     }
 
     private void moveToHomeScreen() {

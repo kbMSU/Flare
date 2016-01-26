@@ -11,6 +11,7 @@
 -keep class com.google.android.gms.ads.AdActivity { <init>(); }
 -keep class flaregradle.myapp.com.Flare.Activities.VerifyPhoneActivity { <init>(); }
 -keep class flaregradle.myapp.com.Flare.Activities.SettingsSetup { <init>(); }
+-keep class flaregradle.myapp.com.Flare.Activities.UpdatePhone { <init>(); }
 -keep class com.parse.PushService { <init>(); }
 -keep class flaregradle.myapp.com.Flare.Services.FlareBroadcastReceiver { <init>(); }
 -keep class com.parse.GcmBroadcastReceiver { <init>(); }
@@ -18,6 +19,7 @@
 -keep class flaregradle.myapp.com.Flare.Services.NotificationDeclineService { <init>(); }
 -keep class flaregradle.myapp.com.Flare.Services.NotificationAcceptService { <init>(); }
 -keep class com.google.android.gms.ads.purchase.InAppPurchaseActivity { <init>(); }
+-keep class com.google.android.gms.auth.api.signin.internal.SignInHubActivity { <init>(); }
 -keep class com.google.android.gms.measurement.AppMeasurementContentProvider { <init>(); }
 -keep class com.google.android.gms.measurement.AppMeasurementReceiver { <init>(); }
 -keep class com.google.android.gms.measurement.AppMeasurementService { <init>(); }

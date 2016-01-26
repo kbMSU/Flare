@@ -34,6 +34,8 @@ import java.util.TreeSet;
 import flaregradle.myapp.com.Flare.AsyncTasks.FindFlareUsersTask;
 import flaregradle.myapp.com.Flare.AsyncTasks.GcmRegistrationAsyncTask;
 import flaregradle.myapp.com.Flare.AsyncTasks.SendTwilioSmsTask;
+import flaregradle.myapp.com.Flare.Events.RegistrationError;
+import flaregradle.myapp.com.Flare.Events.RegistrationSuccess;
 import flaregradle.myapp.com.Flare.Events.TwilioError;
 import flaregradle.myapp.com.Flare.Events.TwilioSuccess;
 import flaregradle.myapp.com.Flare.Modules.EventsModule;
@@ -236,7 +238,8 @@ public class VerifyPhoneActivity extends Activity {
             boolean canWeSave = DataStorageHandler.CanWeSaveTheUsersInformation();
             if(canWeSave && !DataStorageHandler.IsRegistered())
                 new GcmRegistrationAsyncTask().execute(getApplicationContext());
-            moveOntoSettingsSetup();
+            else
+                moveOntoSettingsSetup();
         } else {
             new AlertDialog.Builder(this)
                     .setTitle("Let your friends find you")
@@ -248,21 +251,41 @@ public class VerifyPhoneActivity extends Activity {
                             DataStorageHandler.SetCanWeSaveTheUsersInformation(true);
                             DataStorageHandler.SetHaveAskedToSaveTheUsersInformation(true);
                             new GcmRegistrationAsyncTask().execute(getApplicationContext());
-                            moveOntoSettingsSetup();
+                            dialog.cancel();
                         }
-                })
+                    })
                     .setNegativeButton("Decline", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
                             DataStorageHandler.SetCanWeSaveTheUsersInformation(false);
                             DataStorageHandler.SetHaveAskedToSaveTheUsersInformation(true);
                             moveOntoSettingsSetup();
+                            dialog.cancel();
                         }
                     })
-                .show();
+                    .show();
         }
+    }
 
-        //new GcmRegistrationAsyncTask().execute(getApplicationContext());
+    @Subscribe public void RegisteredSuccessfully(RegistrationSuccess success) {
+        DataStorageHandler.SetCanWeSaveTheUsersInformation(true);
+        DataStorageHandler.SetHaveAskedToSaveTheUsersInformation(true);
+        moveOntoSettingsSetup();
+    }
+
+    @Subscribe public void ErrorRegistering(RegistrationError error) {
+        DataStorageHandler.SetCanWeSaveTheUsersInformation(false);
+        DataStorageHandler.SetHaveAskedToSaveTheUsersInformation(true);
+        new AlertDialog.Builder(this)
+                .setTitle("Error")
+                .setMessage("Something went wrong with the cloud ! You can try to register again from the settings page")
+                .setNeutralButton("Ok", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        moveOntoSettingsSetup();
+                        dialog.cancel();
+                    }
+                }).show();
     }
 
     private void moveOntoSettingsSetup() {

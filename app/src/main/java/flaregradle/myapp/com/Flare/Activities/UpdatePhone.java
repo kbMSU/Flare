@@ -58,7 +58,7 @@ public class UpdatePhone extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_update_phone);
-        getActionBar().setDisplayHomeAsUpEnabled(true);
+        //getActionBar().setDisplayHomeAsUpEnabled(true);
 
         _countryCodeView = (TextView)findViewById(R.id.country_code);
         _phoneNumberEntry = (EditText)findViewById(R.id.phone);

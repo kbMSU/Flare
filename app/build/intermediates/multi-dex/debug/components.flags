@@ -52,6 +52,10 @@
     <init>();
 }
 
+-keep class flaregradle.myapp.com.Flare.Activities.UpdatePhone {
+    <init>();
+}
+
 -keep class com.parse.PushService {
     <init>();
 }

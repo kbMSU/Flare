@@ -21,6 +21,7 @@ import java.util.List;
 import flaregradle.myapp.com.Flare.BackendItems.DeviceItem;
 import flaregradle.myapp.com.Flare.DataItems.Contact;
 import flaregradle.myapp.com.Flare.DataItems.PhoneNumber;
+import flaregradle.myapp.com.Flare.Events.FindFlareError;
 import flaregradle.myapp.com.Flare.Events.FindFlareSuccess;
 import flaregradle.myapp.com.Flare.Interfaces.ICallBack;
 import flaregradle.myapp.com.Flare.Modules.EventsModule;
@@ -28,9 +29,12 @@ import flaregradle.myapp.com.Flare.Utilities.DataStorageHandler;
 
 
 public class FindFlareUsersTask extends AsyncTask<Context,Void,Void> {
+    private Exception _exception;
+    private Context _context;
 
     @Override
     protected Void doInBackground(Context... params) {
+        _context = params[0];
         try {
             List<String> numbers = new ArrayList<>();
             for(Contact c : DataStorageHandler.AllContacts.values()) {
@@ -75,7 +79,7 @@ public class FindFlareUsersTask extends AsyncTask<Context,Void,Void> {
 
         } catch (Exception ex) {
             Log.e("Find Flare Users",ex.getMessage());
-            Toast.makeText(params[0],ex.getMessage(),Toast.LENGTH_SHORT).show();
+            _exception = ex;
         }
 
         return null;
@@ -83,6 +87,11 @@ public class FindFlareUsersTask extends AsyncTask<Context,Void,Void> {
 
     @Override
     protected void onPostExecute(Void aVoid) {
-        EventsModule.Post(new FindFlareSuccess());
+        if(_exception == null) {
+            EventsModule.Post(new FindFlareSuccess());
+        } else {
+            Toast.makeText(_context,_exception.getMessage(),Toast.LENGTH_SHORT).show();
+            EventsModule.Post(new FindFlareError(_exception));
+        }
     }
 }
