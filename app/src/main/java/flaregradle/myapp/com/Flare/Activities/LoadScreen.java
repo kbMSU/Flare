@@ -53,6 +53,17 @@ public class LoadScreen extends Activity {
 
         //setUpDataStore();
         setUpContacts();
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        EventsModule.UnRegister(this);
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
         EventsModule.Register(this);
     }
 

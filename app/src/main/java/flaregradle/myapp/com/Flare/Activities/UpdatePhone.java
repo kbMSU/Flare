@@ -75,6 +75,17 @@ public class UpdatePhone extends Activity {
 
         countriesSetup();
         setInitialState();
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        EventsModule.UnRegister(this);
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
         EventsModule.Register(this);
     }
 

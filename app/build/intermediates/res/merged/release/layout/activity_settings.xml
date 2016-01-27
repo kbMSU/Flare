@@ -186,6 +186,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
+                        android:textColor="@color/greyLight"
                         android:text="@string/sms_setting_explanation"/>
 
                 </LinearLayout>
@@ -223,6 +224,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
+                        android:textColor="@color/greyLight"
                         android:text="@string/cloud_message_explanation"/>
 
                 </LinearLayout>

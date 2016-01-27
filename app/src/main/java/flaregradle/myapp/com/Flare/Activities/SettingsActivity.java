@@ -28,6 +28,7 @@ import flaregradle.myapp.com.Flare.Events.FindFlareError;
 import flaregradle.myapp.com.Flare.Events.FindFlareSuccess;
 import flaregradle.myapp.com.Flare.Events.RegistrationError;
 import flaregradle.myapp.com.Flare.Events.RegistrationSuccess;
+import flaregradle.myapp.com.Flare.Modules.EventsModule;
 import flaregradle.myapp.com.Flare.Utilities.DataStorageHandler;
 
 public class SettingsActivity extends AppCompatActivity {
@@ -91,7 +92,7 @@ public class SettingsActivity extends AppCompatActivity {
                 .setNeutralButton("Ok", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        _errorAlert.cancel();
+                        dialog.cancel();
                     }
                 })
                 .create();
@@ -102,7 +103,7 @@ public class SettingsActivity extends AppCompatActivity {
                 .setNeutralButton("Ok", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        _findFriendsSuccessAlert.cancel();
+                        dialog.cancel();
                     }
                 })
                 .create();
@@ -113,7 +114,7 @@ public class SettingsActivity extends AppCompatActivity {
                 .setNeutralButton("Ok", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        _registerSuccessAlert.cancel();
+                        dialog.cancel();
                     }
                 })
                 .create();
@@ -175,6 +176,18 @@ public class SettingsActivity extends AppCompatActivity {
         _acceptResponseTextView.setText(DataStorageHandler.GetDefaultAcceptResponse());
         _acceptResponsetEditText.setText(DataStorageHandler.GetDefaultAcceptResponse());
         _acceptResponsetEditText.setVisibility(View.GONE);
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        EventsModule.UnRegister(this);
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        EventsModule.Register(this);
     }
 
     @Subscribe public void SuccessfullyRegistered(RegistrationSuccess success) {

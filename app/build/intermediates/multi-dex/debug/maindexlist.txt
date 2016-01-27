@@ -74,6 +74,7 @@ com/google/android/gms/wallet/fragment/WalletFragmentStyle$Dimension.class
 com/google/android/gms/wallet/fragment/WalletLogoImageType.class
 com/google/android/gms/wearable/CapabilityApi$RemoveLocalCapabilityResult.class
 com/parse/PushService$ServiceLifecycleCallbacks.class
+flaregradle/myapp/com/Flare/Activities/SettingsActivity$6.class
 com/google/common/reflect/TypeToInstanceMap.class
 com/google/android/gms/internal/zzbp.class
 com/google/android/gms/ads/internal/client/zzl.class
@@ -296,11 +297,13 @@ com/google/android/gms/internal/zzil.class
     void attachBaseContext(android.content.Context);
 android/support/v4/media/MediaBrowserCompat$MediaItem$1.class
 com/parse/ParseUser.class
+flaregradle/myapp/com/Flare/Activities/VerifyPhoneActivity$4.class
 com/google/android/gms/appinvite/AppInviteInvitation$IntentBuilder.class
 android/support/v4/widget/SimpleCursorAdapter.class
 com/google/android/gms/internal/zzfo.class
 com/google/android/gms/wearable/NodeApi.class
 com/google/android/gms/internal/zzbo.class
+flaregradle/myapp/com/Flare/Events/EventError.class
 com/google/ads/mediation/AbstractAdViewAdapter.class
 android/support/v4/app/LoaderManagerImpl.class
 com/google/android/gms/internal/zzgr.class
@@ -378,6 +381,7 @@ com/google/android/gms/internal/zzfh.class
 android/support/v4/app/NotificationCompat$WearableExtender.class
 com/google/android/gms/internal/zzie.class
 com/google/android/gms/common/annotation/KeepName.class
+flaregradle/myapp/com/Flare/Activities/LoadScreen$6.class
 com/parse/PLog.class
 com/google/android/gms/common/api/GoogleApiClient$ConnectionCallbacks.class
 com/google/common/collect/Iterables.class
@@ -451,6 +455,7 @@ com/microsoft/windowsazure/mobileservices/notifications/GcmNativeRegistration.cl
 com/google/android/gms/internal/zzbw.class
 android/support/v4/view/ViewCompatHC.class
 com/parse/EventuallyPin.class
+flaregradle/myapp/com/Flare/Activities/LoadScreen$5.class
 android/support/annotation/StyleRes.class
 com/google/common/xml/package-info.class
 android/support/v4/app/BackStackRecord.class
@@ -872,6 +877,7 @@ com/google/common/collect/DenseImmutableTable$ImmutableArrayMap.class
 com/google/android/gms/ads/internal/reward/mediation/client/RewardItemParcel.class
 com/parse/PushType.class
 com/google/android/gms/internal/zzcf.class
+flaregradle/myapp/com/Flare/Activities/SettingsActivity$7.class
 android/support/v4/app/FragmentManagerImpl$4.class
 com/MyApp/Flare/R$menu.class
 com/google/android/gms/internal/zzhu.class
@@ -983,6 +989,7 @@ com/google/android/gms/common/api/Releasable.class
 com/google/android/gms/wallet/Payments.class
 flaregradle/myapp/com/Flare/Activities/SendFlareActivity$3.class
 com/google/android/gms/R$style.class
+flaregradle/myapp/com/Flare/Activities/SettingsActivity$5.class
 com/google/android/gms/wallet/fragment/WalletFragmentStyle$LogoImageType.class
 com/google/gson/annotations/Until.class
 com/google/android/gms/auth/api/signin/GoogleSignInAccount.class

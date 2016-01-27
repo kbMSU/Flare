@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:2:1-178:12
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:2:1-179:12
 	package
 		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:2:11-36
 		INJECTED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml
@@ -89,34 +89,38 @@ uses-permission#android.permission.VIBRATE
 ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:17:5-65
 	android:name
 		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:17:22-63
+uses-permission#com.android.vending.BILLING
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:18:5-66
+	android:name
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:18:22-64
 uses-feature#0x00020000
-ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:19:5-21:34
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:20:5-22:34
 MERGED from [com.google.android.gms:play-services-maps:8.3.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.3.0/AndroidManifest.xml:22:5-24:33
 MERGED from [com.google.android.gms:play-services-maps:8.3.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.3.0/AndroidManifest.xml:22:5-24:33
 MERGED from [com.google.android.gms:play-services-maps:8.3.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.3.0/AndroidManifest.xml:22:5-24:33
 MERGED from [com.google.android.gms:play-services-maps:8.3.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.3.0/AndroidManifest.xml:22:5-24:33
 	android:glEsVersion
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:20:9-41
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:21:9-41
 	android:required
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:21:9-32
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:22:9-32
 permission#flaregradle.myapp.com.Flare.C2D_MESSAGE
-ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:23:5-25:46
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:24:5-26:46
 	android:protectionLevel
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:25:9-44
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:26:9-44
 	android:name
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:24:9-63
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:25:9-63
 uses-permission#flaregradle.myapp.com.Flare.permission.C2D_MESSAGE
-ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:27:5-89
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:28:5-89
 	android:name
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:27:22-87
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:28:22-87
 permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:29:5-31:37
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:30:5-32:37
 	android:maxSdkVersion
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:31:9-35
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:32:9-35
 	android:name
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:30:9-64
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:31:9-64
 application
-ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:33:5-176:19
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:34:5-177:19
 MERGED from [com.android.support:appcompat-v7:23.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services:8.3.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/8.3.0/AndroidManifest.xml:19:5-20
@@ -216,192 +220,192 @@ MERGED from [com.android.support:support-v4:23.1.0] /Users/Karthik/Library/Mobil
 MERGED from [com.android.support:support-v4:23.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/AndroidManifest.xml:22:5-20
 MERGED from [com.getbase:floatingactionbutton:1.1.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.getbase/floatingactionbutton/1.1.0/AndroidManifest.xml:12:5-20
 	android:label
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:36:9-41
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:37:9-41
 	android:icon
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:35:9-42
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:36:9-42
 	android:theme
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:37:9-40
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:38:9-40
 	android:name
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:34:9-68
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:35:9-68
 meta-data#com.parse.APPLICATION_ID
-ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:38:9-40:71
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:39:9-41:71
 	android:value
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:40:13-69
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:41:13-69
 	android:name
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:39:13-52
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:40:13-52
 meta-data#com.parse.CLIENT_KEY
-ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:41:9-43:71
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:42:9-44:71
 	android:value
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:43:13-69
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:44:13-69
 	android:name
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:42:13-48
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:43:13-48
 activity#flaregradle.myapp.com.Flare.Activities.FlareHome
-ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:45:9-50:20
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:46:9-51:20
 	android:screenOrientation
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:48:13-49
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:49:13-49
 	android:label
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:47:13-45
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:48:13-45
 	android:windowSoftInputMode
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:49:13-55
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:50:13-55
 	android:name
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:46:13-76
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:47:13-76
 activity#flaregradle.myapp.com.Flare.Activities.LoadScreen
-ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:51:9-62:20
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:52:9-63:20
 	android:screenOrientation
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:56:13-49
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:57:13-49
 	android:label
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:54:13-45
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:55:13-45
 	android:noHistory
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:55:13-37
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:56:13-37
 	android:configChanges
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:53:13-74
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:54:13-74
 	android:name
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:52:13-77
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:53:13-77
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:57:13-61:29
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:58:13-62:29
 action#android.intent.action.MAIN
-ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:58:17-68
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:59:17-68
 	android:name
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:58:25-66
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:59:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:60:17-76
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:61:17-76
 	android:name
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:60:27-74
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:61:27-74
 activity#flaregradle.myapp.com.Flare.Activities.SendFlareActivity
-ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:63:9-71:20
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:64:9-72:20
 	android:label
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:65:13-56
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:66:13-56
 	android:parentActivityName
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:66:13-90
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:67:13-90
 	android:windowSoftInputMode
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:67:13-54
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:68:13-54
 	android:name
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:64:13-84
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:65:13-84
 meta-data#android.support.PARENT_ACTIVITY
-ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:68:13-70:83
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:69:13-71:83
 	android:value
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:70:17-81
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:71:17-81
 	android:name
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:69:17-63
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:70:17-63
 activity#flaregradle.myapp.com.Flare.Activities.SettingsActivity
-ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:72:9-79:20
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:73:9-80:20
 	android:label
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:74:13-60
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:75:13-60
 	android:parentActivityName
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:75:13-90
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:76:13-90
 	android:name
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:73:13-83
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:74:13-83
 activity#flaregradle.myapp.com.Flare.Activities.GroupsActivity
-ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:80:9-87:20
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:81:9-88:20
 	android:label
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:82:13-58
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:83:13-58
 	android:parentActivityName
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:83:13-90
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:84:13-90
 	android:name
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:81:13-81
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:82:13-81
 activity#flaregradle.myapp.com.Flare.Activities.CreateGroupActivity
-ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:88:9-93:20
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:89:9-94:20
 	android:label
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:90:13-64
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:91:13-64
 	android:parentActivityName
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:91:13-95
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:92:13-95
 	android:windowSoftInputMode
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:92:13-54
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:93:13-54
 	android:name
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:89:13-86
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:90:13-86
 activity#com.google.android.gms.ads.AdActivity
-ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:94:9-97:63
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:95:9-98:63
 MERGED from [com.google.android.gms:play-services-ads:8.3.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.3.0/AndroidManifest.xml:26:9-29:64
 	android:configChanges
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:96:13-122
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:97:13-122
 	android:theme
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:97:13-61
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:98:13-61
 	android:name
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:95:13-65
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:96:13-65
 activity#flaregradle.myapp.com.Flare.Activities.VerifyPhoneActivity
-ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:98:9-103:20
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:99:9-104:20
 	android:screenOrientation
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:102:13-49
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:103:13-49
 	android:label
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:101:13-45
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:102:13-45
 	android:configChanges
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:100:13-74
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:101:13-74
 	android:name
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:99:13-86
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:100:13-86
 activity#flaregradle.myapp.com.Flare.Activities.SettingsSetup
-ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:104:9-111:20
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:105:9-112:20
 	android:label
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:106:13-66
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:107:13-66
 	android:parentActivityName
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:107:13-90
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:108:13-90
 	android:name
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:105:13-80
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:106:13-80
 activity#flaregradle.myapp.com.Flare.Activities.UpdatePhone
-ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:112:9-119:20
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:113:9-120:20
 	android:label
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:114:13-64
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:115:13-64
 	android:parentActivityName
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:115:13-97
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:116:13-97
 	android:name
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:113:13-78
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:114:13-78
 service#com.parse.PushService
-ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:121:9-56
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:122:9-56
 	android:name
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:121:18-54
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:122:18-54
 receiver#flaregradle.myapp.com.Flare.Services.FlareBroadcastReceiver
-ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:123:9-131:20
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:124:9-132:20
 	android:exported
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:125:13-37
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:126:13-37
 	android:name
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:124:13-87
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:125:13-87
 intent-filter#com.parse.push.intent.DELETE+com.parse.push.intent.OPEN+com.parse.push.intent.RECEIVE
-ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:126:13-130:29
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:127:13-131:29
 action#com.parse.push.intent.RECEIVE
-ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:127:17-71
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:128:17-71
 	android:name
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:127:25-69
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:128:25-69
 action#com.parse.push.intent.DELETE
-ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:128:17-70
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:129:17-70
 	android:name
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:128:25-68
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:129:25-68
 action#com.parse.push.intent.OPEN
-ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:129:17-68
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:130:17-68
 	android:name
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:129:25-66
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:130:25-66
 receiver#com.parse.GcmBroadcastReceiver
-ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:132:9-142:20
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:133:9-143:20
 	android:permission
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:134:13-73
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:135:13-73
 	android:name
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:133:13-58
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:134:13-58
 intent-filter#com.google.android.c2dm.intent.RECEIVE+com.google.android.c2dm.intent.REGISTRATION+flaregradle.myapp.com.Flare
-ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:135:13-141:29
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:136:13-142:29
 action#com.google.android.c2dm.intent.RECEIVE
-ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:136:17-80
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:137:17-80
 	android:name
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:136:25-78
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:137:25-78
 action#com.google.android.c2dm.intent.REGISTRATION
-ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:137:17-85
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:138:17-85
 	android:name
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:137:25-83
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:138:25-83
 category#flaregradle.myapp.com.Flare
-ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:140:17-71
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:141:17-71
 	android:name
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:140:27-69
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:141:27-69
 service#flaregradle.myapp.com.Flare.Services.GcmIntentService
-ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:144:9-88
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:145:9-88
 	android:name
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:144:18-86
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:145:18-86
 service#flaregradle.myapp.com.Flare.Services.NotificationDeclineService
-ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:145:9-98
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:146:9-98
 	android:name
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:145:18-96
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:146:18-96
 service#flaregradle.myapp.com.Flare.Services.NotificationAcceptService
-ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:146:9-97
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:147:9-97
 	android:name
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:146:18-95
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:147:18-95
 meta-data#com.google.android.gms.version
-ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:148:9-150:68
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:149:9-151:68
 MERGED from [com.google.android.gms:play-services-basement:8.3.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.3.0/AndroidManifest.xml:21:9-23:69
 MERGED from [com.google.android.gms:play-services-basement:8.3.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.3.0/AndroidManifest.xml:21:9-23:69
 MERGED from [com.google.android.gms:play-services-basement:8.3.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.3.0/AndroidManifest.xml:21:9-23:69
@@ -434,15 +438,15 @@ MERGED from [com.google.android.gms:play-services-basement:8.3.0] /Users/Karthik
 MERGED from [com.google.android.gms:play-services-basement:8.3.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.3.0/AndroidManifest.xml:21:9-23:69
 MERGED from [com.google.android.gms:play-services-basement:8.3.0] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.3.0/AndroidManifest.xml:21:9-23:69
 	android:value
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:150:13-66
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:151:13-66
 	android:name
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:149:13-58
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:150:13-58
 meta-data#com.google.android.maps.v2.API_KEY
-ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:166:9-168:70
+ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:167:9-169:70
 	android:value
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:168:13-68
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:169:13-68
 	android:name
-		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:167:13-62
+		ADDED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml:168:13-62
 uses-sdk
 INJECTED from /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:multidex:1.0.1] /Users/Karthik/Library/Mobile Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.android.support/multidex/1.0.1/AndroidManifest.xml:18:5-42
