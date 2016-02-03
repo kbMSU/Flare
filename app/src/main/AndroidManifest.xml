@@ -118,6 +118,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="flaregradle.myapp.com.Flare.Activities.SettingsActivity"/>
         </activity>
+        <activity
+            android:name="flaregradle.myapp.com.Flare.Activities.UpgradeActivity"
+            android:label="@string/title_activity_upgrade"
+            android:parentActivityName="flaregradle.myapp.com.Flare.Activities.FlareHome">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="flaregradle.myapp.com.Flare.Activities.FlareHome"/>
+        </activity>
 
         <service android:name="com.parse.PushService"/>
 
@@ -137,7 +145,7 @@
                 <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
                 <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
 
-                <!--                   IMPORTANT: Change "com.parse.starter" to match your app's package name. -->
+                <!-- IMPORTANT: Change "com.parse.starter" to match your app's package name. -->
                 <category android:name="flaregradle.myapp.com.Flare"/>
             </intent-filter>
         </receiver>

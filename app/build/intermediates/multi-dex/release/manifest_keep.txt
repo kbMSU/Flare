@@ -12,6 +12,7 @@
 -keep class flaregradle.myapp.com.Flare.Activities.VerifyPhoneActivity { <init>(); }
 -keep class flaregradle.myapp.com.Flare.Activities.SettingsSetup { <init>(); }
 -keep class flaregradle.myapp.com.Flare.Activities.UpdatePhone { <init>(); }
+-keep class flaregradle.myapp.com.Flare.Activities.UpgradeActivity { <init>(); }
 -keep class com.parse.PushService { <init>(); }
 -keep class flaregradle.myapp.com.Flare.Services.FlareBroadcastReceiver { <init>(); }
 -keep class com.parse.GcmBroadcastReceiver { <init>(); }

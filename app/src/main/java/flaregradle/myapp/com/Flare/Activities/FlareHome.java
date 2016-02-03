@@ -1,11 +1,16 @@
 package flaregradle.myapp.com.Flare.Activities;
 
+import android.app.AlertDialog;
+import android.content.ComponentName;
+import android.content.Context;
 import android.content.Intent;
+import android.content.ServiceConnection;
 import android.content.res.Configuration;
 import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
 import android.os.Bundle;
+import android.os.IBinder;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -22,6 +27,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.MyApp.Flare.R;
+import com.android.vending.billing.IInAppBillingService;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationListener;
@@ -32,10 +38,15 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
+import com.squareup.otto.Subscribe;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
+import flaregradle.myapp.com.Flare.AsyncTasks.QueryPurchasedItemsTask;
+import flaregradle.myapp.com.Flare.Events.QueryPurchasedItemsError;
+import flaregradle.myapp.com.Flare.Events.QueryPurchasedItemsSuccess;
 import flaregradle.myapp.com.Flare.Modules.EventsModule;
 import flaregradle.myapp.com.Flare.Utilities.DataStorageHandler;
 
@@ -47,6 +58,8 @@ public class FlareHome extends AppCompatActivity implements
     private GoogleMap _map;
     private DrawerLayout _drawerLayout;
     private ListView _drawerList;
+    private ArrayAdapter<String> _drawerAdapter;
+    private String[] _drawerItems;
     private ActionBarDrawerToggle _drawerToggle;
 
     private GoogleApiClient mGoogleApiClient;
@@ -85,12 +98,21 @@ public class FlareHome extends AppCompatActivity implements
         _drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         _drawerList = (ListView) findViewById(R.id.left_drawer_list);
 
-        String[] drawerItems = new String[3];
-        drawerItems[0] = "Feedback";
-        drawerItems[1] = "Share";
-        drawerItems[2] = "Settings";
+        boolean upgraded = DataStorageHandler.HavePurchasedAdFreeUpgrade();
 
-        _drawerList.setAdapter(new ArrayAdapter<>(this,android.R.layout.simple_list_item_1, drawerItems));
+        if(!upgraded) {
+            _drawerItems = new String[4];
+            _drawerItems[3] = "Upgrade !";
+        }
+        else
+            _drawerItems = new String[3];
+
+        _drawerItems[0] = "Feedback";
+        _drawerItems[1] = "Share";
+        _drawerItems[2] = "Settings";
+
+        _drawerAdapter = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1, _drawerItems);
+        _drawerList.setAdapter(_drawerAdapter);
         _drawerToggle = new ActionBarDrawerToggle(this, _drawerLayout, R.string.drawer_open, R.string.drawer_close) {
 
             /** Called when a drawer has settled in a completely closed state. */
@@ -131,6 +153,11 @@ public class FlareHome extends AppCompatActivity implements
                         Intent settingsIntent = new Intent(getApplicationContext(),SettingsActivity.class);
                         startActivity(settingsIntent);
                         break;
+
+                    case 3:
+                        Intent upgradeIntent = new Intent(getApplicationContext(),UpgradeActivity.class);
+                        startActivity(upgradeIntent);
+                        break;
                 }
             }
         });
@@ -150,8 +177,17 @@ public class FlareHome extends AppCompatActivity implements
 
         // Connect to the google api client
         mGoogleApiClient.connect();
+    }
 
-        // Register for events
+    @Override
+    public void onPause() {
+        super.onPause();
+        EventsModule.UnRegister(this);
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
         EventsModule.Register(this);
     }
 

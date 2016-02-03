@@ -22,6 +22,7 @@ import org.json.JSONObject;
 import java.util.Set;
 
 import flaregradle.myapp.com.Flare.DataItems.Contact;
+import flaregradle.myapp.com.Flare.Utilities.ContactsHandler;
 import flaregradle.myapp.com.Flare.Utilities.DataStorageHandler;
 
 public class FlareBroadcastReceiver extends ParsePushBroadcastReceiver {
@@ -261,9 +262,15 @@ public class FlareBroadcastReceiver extends ParsePushBroadcastReceiver {
 
     private void handleFlare(String phoneNumber,String text,String latitude,String longitude) {
         DataStorageHandler.getInstance();
-        if(!DataStorageHandler.IsSetupComplete) {
+        if(DataStorageHandler.AllContacts.isEmpty()) {
             DataStorageHandler.Preferences =  _context.getSharedPreferences("flaregradle.myapp.com.Flare_preferences", Context.MODE_PRIVATE);
             DataStorageHandler.setupPreferences();
+
+            ContactsHandler _contactsHandler = new ContactsHandler(_context.getContentResolver());
+            int contactId = _context.getResources().getIdentifier("person", "drawable", _context.getPackageName());
+            Bitmap bitmap = BitmapFactory.decodeResource(_context.getResources(), contactId);
+            _contactsHandler.setDefaultImage(bitmap);
+            DataStorageHandler.AllContacts = _contactsHandler.getContacts();
         }
 
         Contact contact = DataStorageHandler.findContact(phoneNumber);
@@ -341,11 +348,15 @@ public class FlareBroadcastReceiver extends ParsePushBroadcastReceiver {
 
     private void handleResponse(String from, String text, Boolean accepted) {
         DataStorageHandler.getInstance();
-        if(!DataStorageHandler.IsSetupComplete) {
-            Log.i("Setup","Have to setup");
+        if(DataStorageHandler.AllContacts.isEmpty()) {
             DataStorageHandler.Preferences =  _context.getSharedPreferences("flaregradle.myapp.com.Flare_preferences", Context.MODE_PRIVATE);
             DataStorageHandler.setupPreferences();
-            Log.i("Setup","Setup complete");
+
+            ContactsHandler _contactsHandler = new ContactsHandler(_context.getContentResolver());
+            int contactId = _context.getResources().getIdentifier("person", "drawable", _context.getPackageName());
+            Bitmap bitmap = BitmapFactory.decodeResource(_context.getResources(), contactId);
+            _contactsHandler.setDefaultImage(bitmap);
+            DataStorageHandler.AllContacts = _contactsHandler.getContacts();
         }
 
         Contact contact = DataStorageHandler.findContact(from);

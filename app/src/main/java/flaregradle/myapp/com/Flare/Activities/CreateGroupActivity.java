@@ -59,7 +59,7 @@ public class CreateGroupActivity extends ActionBarActivity {
         }
 
         // Set up the toast message
-        _message = Toast.makeText(getApplicationContext(),"",Toast.LENGTH_SHORT);
+        _message = Toast.makeText(getApplicationContext(), "", Toast.LENGTH_SHORT);
 
         // Set up the contacts view
         _dataStore = DataStorageHandler.getInstance();
@@ -82,12 +82,11 @@ public class CreateGroupActivity extends ActionBarActivity {
             public void onTextChanged(CharSequence charSequence, int i, int i2, int i3) {
                 _sortedContacts.clear();
 
-                if(charSequence == null || charSequence.length() == 0){
+                if (charSequence == null || charSequence.length() == 0) {
                     resetSortedContacts();
-                }
-                else{
-                    for (Contact c : _dataStore.AllContacts.values()){
-                        if(c.name.toLowerCase().contains(charSequence.toString().toLowerCase())){
+                } else {
+                    for (Contact c : _dataStore.AllContacts.values()) {
+                        if (c.name.toLowerCase().contains(charSequence.toString().toLowerCase())) {
                             _sortedContacts.add(c);
                         } else if (c.phoneNumber.Contains(charSequence.toString())) {
                             _sortedContacts.add(c);
@@ -132,18 +131,20 @@ public class CreateGroupActivity extends ActionBarActivity {
             }
         });
 
-        // Setup the ad
-        final AdView mAdView = (AdView) findViewById(R.id.groupsAdView);
-        AdRequest.Builder adRequest = new AdRequest.Builder();
-        if(DataStorageHandler.CurrentLocation != null)
-            adRequest.setLocation(DataStorageHandler.CurrentLocation);
-        mAdView.setAdListener(new AdListener() {
-            @Override
-            public void onAdLoaded() {
-                mAdView.setVisibility(View.VISIBLE);
-            }
-        });
-        mAdView.loadAd(adRequest.build());
+        if(!DataStorageHandler.HavePurchasedAdFreeUpgrade()) {
+            // Setup the ad
+            final AdView mAdView = (AdView) findViewById(R.id.groupsAdView);
+            AdRequest.Builder adRequest = new AdRequest.Builder();
+            if(DataStorageHandler.CurrentLocation != null)
+                adRequest.setLocation(DataStorageHandler.CurrentLocation);
+            mAdView.setAdListener(new AdListener() {
+                @Override
+                public void onAdLoaded() {
+                    mAdView.setVisibility(View.VISIBLE);
+                }
+            });
+            mAdView.loadAd(adRequest.build());
+        }
     }
 
     @Override

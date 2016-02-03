@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="flaregradle.myapp.com.Flare"
-    android:versionCode="58"
-    android:versionName="2.1.5" >
+    android:versionCode="59"
+    android:versionName="2.1.6" >
 
     <uses-sdk
         android:minSdkVersion="16"
@@ -125,6 +125,14 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="flaregradle.myapp.com.Flare.Activities.SettingsActivity" />
+        </activity>
+        <activity
+            android:name="flaregradle.myapp.com.Flare.Activities.UpgradeActivity"
+            android:label="@string/title_activity_upgrade"
+            android:parentActivityName="flaregradle.myapp.com.Flare.Activities.FlareHome" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="flaregradle.myapp.com.Flare.Activities.FlareHome" />
         </activity>
 
         <service android:name="com.parse.PushService" />

@@ -56,6 +56,10 @@
     <init>();
 }
 
+-keep class flaregradle.myapp.com.Flare.Activities.UpgradeActivity {
+    <init>();
+}
+
 -keep class com.parse.PushService {
     <init>();
 }

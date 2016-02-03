@@ -3,6 +3,7 @@ package flaregradle.myapp.com.Flare.Utilities;
 import android.content.SharedPreferences;
 import android.location.Location;
 
+import com.android.vending.billing.IInAppBillingService;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
@@ -41,6 +42,7 @@ public class DataStorageHandler {
     private static boolean _haveAskedToCheckContactsWithFlare;
     private static boolean _haveAskedToSaveTheUsersInformation;
     private static boolean _canWeSaveTheUsersInformation;
+    private static boolean _havePurchasedAdFreeUpgrade;
 
     public static SharedPreferences Preferences;
     public static TreeMap<String,Contact> AllContacts;
@@ -49,6 +51,7 @@ public class DataStorageHandler {
     public static HashMap<String,PhoneNumber> ContactNumbersWithFlare;
     public static Location CurrentLocation;
     public static boolean IsSetupComplete;
+    public static IInAppBillingService BillingService;
 
     //region Setup
     public static void setupPreferences() {
@@ -64,6 +67,7 @@ public class DataStorageHandler {
         _haveAskedToCheckContactsWithFlare = Preferences.getBoolean("haveAskedToCheckContactsWithFlare",false);
         _canWeSaveTheUsersInformation = Preferences.getBoolean("canWeSaveTheUsersInformation",false);
         _haveAskedToSaveTheUsersInformation = Preferences.getBoolean("haveAskedToSaveTheUsersInformation",false);
+        _havePurchasedAdFreeUpgrade = Preferences.getBoolean("havePurchasedAdFreeUpgrade",false);
 
         // Get saved contact groups
         String json = Preferences.getString("SavedContactGroups", null);
@@ -266,6 +270,14 @@ public class DataStorageHandler {
         _haveAskedToSaveTheUsersInformation = val;
         SharedPreferences.Editor editor = Preferences.edit();
         editor.putBoolean("haveAskedToSaveTheUsersInformation",_haveAskedToSaveTheUsersInformation);
+        editor.apply();
+    }
+
+    public static boolean HavePurchasedAdFreeUpgrade() {return _havePurchasedAdFreeUpgrade;}
+    public static void SetHavePurchasedAdFreeUpgrade(boolean val) {
+        _havePurchasedAdFreeUpgrade = val;
+        SharedPreferences.Editor editor = Preferences.edit();
+        editor.putBoolean("havePurchasedAdFreeUpgrade",_havePurchasedAdFreeUpgrade);
         editor.apply();
     }
     //endregion

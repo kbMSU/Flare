@@ -2,12 +2,16 @@ package flaregradle.myapp.com.Flare.Activities;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.ComponentName;
 import android.content.ContentResolver;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.ServiceConnection;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
+import android.os.IBinder;
 import android.provider.ContactsContract;
 import android.telephony.TelephonyManager;
 import android.view.View;
@@ -15,6 +19,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.MyApp.Flare.R;
+import com.android.vending.billing.IInAppBillingService;
 import com.parse.Parse;
 import com.parse.ParseAnalytics;
 import com.parse.ParseInstallation;
@@ -22,11 +27,16 @@ import com.parse.ParseObject;
 import com.parse.ParsePushBroadcastReceiver;
 import com.squareup.otto.Subscribe;
 
+import java.util.ArrayList;
+
 import flaregradle.myapp.com.Flare.AsyncTasks.FindFlareUsersTask;
 import flaregradle.myapp.com.Flare.AsyncTasks.GcmRegistrationAsyncTask;
+import flaregradle.myapp.com.Flare.AsyncTasks.QueryPurchasedItemsTask;
 import flaregradle.myapp.com.Flare.AsyncTasks.SetUpContactsTask;
 import flaregradle.myapp.com.Flare.Events.FindFlareError;
 import flaregradle.myapp.com.Flare.Events.FindFlareSuccess;
+import flaregradle.myapp.com.Flare.Events.QueryPurchasedItemsError;
+import flaregradle.myapp.com.Flare.Events.QueryPurchasedItemsSuccess;
 import flaregradle.myapp.com.Flare.Events.RegistrationError;
 import flaregradle.myapp.com.Flare.Events.RegistrationSuccess;
 import flaregradle.myapp.com.Flare.Modules.EventsModule;
@@ -37,6 +47,23 @@ public class LoadScreen extends Activity {
 
     private ProgressBar _busyIndicator;
     private TextView _loading;
+
+    IInAppBillingService mService;
+
+    ServiceConnection mServiceConn = new ServiceConnection() {
+        @Override
+        public void onServiceDisconnected(ComponentName name) {
+            mService = null;
+        }
+
+        @Override
+        public void onServiceConnected(ComponentName name,
+                                       IBinder service) {
+            mService = IInAppBillingService.Stub.asInterface(service);
+            DataStorageHandler.BillingService = mService;
+            loadPurchases();
+        }
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,8 +78,7 @@ public class LoadScreen extends Activity {
         _loading = (TextView)findViewById(R.id.loading);
         _loading.setText(R.string.loading);
 
-        //setUpDataStore();
-        setUpContacts();
+        connectToBilling();
     }
 
     @Override
@@ -67,10 +93,38 @@ public class LoadScreen extends Activity {
         EventsModule.Register(this);
     }
 
-    private void setUpDataStore() {
-        DataStorageHandler.getInstance();
-        DataStorageHandler.Preferences = getPreferences(MODE_PRIVATE);
-        DataStorageHandler.setupPreferences();
+    private void connectToBilling() {
+        Intent serviceIntent = new Intent("com.android.vending.billing.InAppBillingService.BIND");
+        serviceIntent.setPackage("com.android.vending");
+        bindService(serviceIntent, mServiceConn, Context.BIND_AUTO_CREATE);
+    }
+
+    private void loadPurchases() {
+        new QueryPurchasedItemsTask().execute(this);
+    }
+
+    @Subscribe
+    public void GotPurchasedItems(QueryPurchasedItemsSuccess success) {
+        ArrayList<String> items = success.getPurchasedItems();
+        boolean found = false;
+        for(String item : items) {
+            if(item.equals("ad-free upgrade")) {
+                DataStorageHandler.SetHavePurchasedAdFreeUpgrade(true);
+                found = true;
+                break;
+            }
+        }
+        if(!found)
+            DataStorageHandler.SetHavePurchasedAdFreeUpgrade(false);
+
+        setUpContacts();
+    }
+
+    @Subscribe
+    public void ErrorGettingPurchasedItems(QueryPurchasedItemsError error) {
+        DataStorageHandler.SetHavePurchasedAdFreeUpgrade(false);
+
+        setUpContacts();
     }
 
     private void setUpContacts() {

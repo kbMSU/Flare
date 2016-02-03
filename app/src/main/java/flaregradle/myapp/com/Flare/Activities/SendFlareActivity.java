@@ -119,26 +119,23 @@ public class SendFlareActivity extends AppCompatActivity implements ISendFlare {
         _contactsView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-            Object itemAtPosition = adapterView.getItemAtPosition(i);
-            Contact contact = (Contact) itemAtPosition;
+                Object itemAtPosition = adapterView.getItemAtPosition(i);
+                Contact contact = (Contact) itemAtPosition;
 
-            if(!contact.selected)
-            {
-                if(contact.allPhoneNumbers != null && contact.allPhoneNumbers.size() > 1) {
-                    _currentlyEditingContact = contact;
-                    showSelectNumber(contact.allPhoneNumbers);
+                if (!contact.selected) {
+                    if (contact.allPhoneNumbers != null && contact.allPhoneNumbers.size() > 1) {
+                        _currentlyEditingContact = contact;
+                        showSelectNumber(contact.allPhoneNumbers);
+                    } else {
+                        DataStorageHandler.SelectedContacts.add(contact);
+                        contact.selected = true;
+                    }
+                } else {
+                    DataStorageHandler.SelectedContacts.remove(contact);
+                    contact.selected = false;
                 }
-                else {
-                    DataStorageHandler.SelectedContacts.add(contact);
-                    contact.selected = true;
-                }
-            }
-            else {
-                DataStorageHandler.SelectedContacts.remove(contact);
-                contact.selected = false;
-            }
 
-            _contactAdapter.notifyDataSetChanged();
+                _contactAdapter.notifyDataSetChanged();
             }
         });
 
@@ -146,17 +143,19 @@ public class SendFlareActivity extends AppCompatActivity implements ISendFlare {
         _busyIndicator = (ProgressBar)findViewById(R.id.busyIndicator);
         _busyIndicator.setVisibility(View.GONE);
 
-        // Load the ad
-        _interstitialAd = new InterstitialAd(this);
-        _interstitialAd.setAdUnitId("ca-app-pub-9978131204593610/9323499682");
-        _interstitialAd.setAdListener(new AdListener() {
-            @Override
-            public void onAdClosed() {
-                requestNewInterstitial();
-                finish();
-            }
-        });
-        requestNewInterstitial();
+        if(!DataStorageHandler.HavePurchasedAdFreeUpgrade()) {
+            // Load the ad
+            _interstitialAd = new InterstitialAd(this);
+            _interstitialAd.setAdUnitId("ca-app-pub-9978131204593610/9323499682");
+            _interstitialAd.setAdListener(new AdListener() {
+                @Override
+                public void onAdClosed() {
+                    requestNewInterstitial();
+                    finish();
+                }
+            });
+            requestNewInterstitial();
+        }
     }
 
     private void requestNewInterstitial() {
@@ -374,6 +373,9 @@ public class SendFlareActivity extends AppCompatActivity implements ISendFlare {
     }
 
     public void showFullPageAd() {
+        if(DataStorageHandler.HavePurchasedAdFreeUpgrade())
+            return;
+
         if(_interstitialAd.isLoaded())
             _interstitialAd.show();
     }

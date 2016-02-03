@@ -116,5 +116,6 @@
     <item name="drawer_find_friends_issue" type="id">drawer find friends issue</item>
     <item name="current_phone_number" type="id">Current phone number</item>
     <item name="update_phone_number" type="id">update phone number</item>
+    <item name="busy_overlay" type="id">busy overlay</item>
 
 </resources>

@@ -122,18 +122,20 @@ public class GroupsActivity extends ActionBarActivity {
             }
         });
 
-        // Setup the ad
-        final AdView mAdView = (AdView) findViewById(R.id.groupsAdView);
-        AdRequest.Builder adRequest = new AdRequest.Builder();
-        if(_dataStore.CurrentLocation != null)
-            adRequest.setLocation(_dataStore.CurrentLocation);
-        mAdView.setAdListener(new AdListener() {
-            @Override
-            public void onAdLoaded() {
-                mAdView.setVisibility(View.VISIBLE);
-            }
-        });
-        mAdView.loadAd(adRequest.build());
+        if(!DataStorageHandler.HavePurchasedAdFreeUpgrade()) {
+            // Setup the ad
+            final AdView mAdView = (AdView) findViewById(R.id.groupsAdView);
+            AdRequest.Builder adRequest = new AdRequest.Builder();
+            if(_dataStore.CurrentLocation != null)
+                adRequest.setLocation(_dataStore.CurrentLocation);
+            mAdView.setAdListener(new AdListener() {
+                @Override
+                public void onAdLoaded() {
+                    mAdView.setVisibility(View.VISIBLE);
+                }
+            });
+            mAdView.loadAd(adRequest.build());
+        }
     }
 
     @Override

@@ -80,6 +80,10 @@
     <init>();
 }
 
+-keep class flaregradle.myapp.com.Flare.Activities.UpgradeActivity {
+    <init>();
+}
+
 -keep class com.google.android.gms.ads.purchase.InAppPurchaseActivity {
     <init>();
 }

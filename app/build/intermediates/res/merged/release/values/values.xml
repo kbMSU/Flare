@@ -510,6 +510,7 @@
     <item name="alternateFlareText" type="id">alternate flare text</item>
     <item name="broadcast" type="id">Broadcast</item>
     <item name="busyIndicator" type="id">busy indicator</item>
+    <item name="busy_overlay" type="id">busy overlay</item>
     <!-- From: file:/Users/Karthik/Library/Mobile%20Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/8.3.0/res/values/cast_ids.xml -->
     <eat-comment/>
     <item name="cast_notification_id" type="id"/>
@@ -813,9 +814,10 @@
     <string name="title_activity_settings_setup">Setup</string>
     <string name="title_activity_test">TestActivity</string>
     <string name="title_activity_update_phone">Update Phone</string>
+    <string name="title_activity_upgrade">Upgrade</string>
     <string name="title_activity_verify_phone">VerifyPhoneActivity</string>
     <string name="unknown_location">Unknown location</string>
-    <string name="version">Version 2.1.5</string>
+    <string name="version">Version 2.1.6</string>
     <!-- From: file:/Users/Karthik/Library/Mobile%20Documents/com~apple~CloudDocs/FlareRepo/Flare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/8.3.0/res/values/wallet_strings.xml -->
     <eat-comment/>
     <string name="wallet_buy_button_place_holder">Buy with Google</string>

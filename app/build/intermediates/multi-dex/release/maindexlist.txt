@@ -1,4 +1,5 @@
 
+flaregradle/myapp/com/Flare/AsyncTasks/QueryPurchasedItemsTask.class
 com/google/android/gms/internal/zzbz.class
 com/google/android/gms/internal/zzho.class
 android/support/annotation/VisibleForTesting.class
@@ -54,6 +55,7 @@ com/google/android/gms/ads/internal/purchase/GInAppPurchaseManagerInfoParcel.cla
 com/google/common/cache/RemovalNotification.class
 com/google/android/gms/common/SignInButton$ColorScheme.class
 com/google/android/gms/ads/internal/overlay/zzk.class
+-keep class flaregradle.myapp.com.Flare.Activities.UpgradeActivity { <init>(); }
 com/google/android/gms/internal/zzek.class
 android/support/v4/app/FragmentActivity.class
 android/support/multidex/MultiDex.class
@@ -140,6 +142,7 @@ com/google/common/annotations/VisibleForTesting.class
 com/google/android/gms/internal/zzea.class
 android/support/v4/view/ViewCompat$MarshmallowViewCompatImpl.class
 android/support/annotation/BinderThread.class
+flaregradle/myapp/com/Flare/Activities/LoadScreen$7.class
 flaregradle/myapp/com/Flare/Services/NotificationAcceptService.class
 com/google/android/gms/internal/zzfi.class
 com/google/android/gms/ads/doubleclick/PublisherAdRequest$Builder.class
@@ -379,6 +382,7 @@ android/support/v4/media/session/PlaybackStateCompat$Actions.class
 android/support/v4/view/ViewCompat.class
 com/google/android/gms/internal/zzfh.class
 android/support/v4/app/NotificationCompat$WearableExtender.class
+com/android/vending/billing/IInAppBillingService.class
 com/google/android/gms/internal/zzie.class
 com/google/android/gms/common/annotation/KeepName.class
 flaregradle/myapp/com/Flare/Activities/LoadScreen$6.class
@@ -476,6 +480,7 @@ com/google/android/gms/internal/zzdq.class
 com/google/common/html/package-info.class
 com/google/android/gms/internal/zzbx.class
 com/google/android/gms/ads/internal/util/client/VersionInfoParcel.class
+com/android/vending/billing/IInAppBillingService$Stub.class
 flaregradle/myapp/com/Flare/Activities/LoadScreen$4.class
 com/google/android/gms/internal/zzfg.class
 com/google/android/gms/internal/zzgt.class
@@ -805,6 +810,7 @@ flaregradle/myapp/com/Flare/Interfaces/ICallBack.class
 com/google/android/gms/internal/zziy.class
 android/support/v4/widget/DrawerLayout$DrawerListener.class
 com/squareup/otto/DeadEvent.class
+flaregradle/myapp/com/Flare/Events/QueryPurchasedItemsSuccess.class
 com/google/android/gms/internal/zzev.class
 android/support/v4/media/MediaDescriptionCompat.class
 android/support/v4/media/session/MediaSessionCompat$QueueItem.class
@@ -1033,6 +1039,7 @@ com/google/android/gms/internal/zzfw.class
 com/google/android/gms/dynamic/zzg.class
 com/google/common/collect/HashBiMap$BiEntry.class
 com/google/common/io/ByteSource.class
+flaregradle/myapp/com/Flare/Activities/UpgradeActivity.class
 android/support/v4/app/Fragment.class
 com/google/android/gms/clearcut/zza.class
 com/google/ads/mediation/MediationServerParameters.class
