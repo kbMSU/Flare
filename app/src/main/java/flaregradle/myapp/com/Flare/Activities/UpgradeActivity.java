@@ -74,12 +74,4 @@ public class UpgradeActivity extends Activity {
         }
     }
 
-    private void isBusy() {
-        findViewById(R.id.busy_overlay).setVisibility(View.VISIBLE);
-    }
-
-    private void isNotBusy() {
-        findViewById(R.id.busy_overlay).setVisibility(View.GONE);
-    }
-
 }
