@@ -26,6 +26,8 @@ import java.util.Locale;
 import java.util.Random;
 import java.util.TreeSet;
 
+import butterknife.Bind;
+import butterknife.ButterKnife;
 import flaregradle.myapp.com.Flare.AsyncTasks.SendTwilioSmsTask;
 import flaregradle.myapp.com.Flare.AsyncTasks.UpdatePhoneNumberAsyncTask;
 import flaregradle.myapp.com.Flare.Events.ParseError;
@@ -37,20 +39,19 @@ import flaregradle.myapp.com.Flare.Utilities.DataStorageHandler;
 
 public class UpdatePhone extends Activity {
 
-    private EventsModule eventsModule = EventsModule.getInstance();
+    @Bind(R.id.verify_phone) LinearLayout _verifyPhoneLayout;
+    @Bind(R.id.enter_code) LinearLayout _enterCodeLayout;
+    @Bind(R.id.continue_setup) LinearLayout _continueLayout;
 
-    private LinearLayout _verifyPhoneLayout;
-    private LinearLayout _enterCodeLayout;
-    private LinearLayout _continueLayout;
+    @Bind(R.id.country_code) TextView _countryCodeView;
+    @Bind(R.id.phone) EditText _phoneNumberEntry;
+    @Bind(R.id.code) EditText _codeEntry;
+    @Bind(R.id.error) TextView _verifyErrorMessage;
+    @Bind(R.id.submit_error) TextView _submitErrorMessage;
+    @Bind(R.id.verify_button) Button _verifyButton;
+    @Bind(R.id.progress_circular) ProgressBar _progressBar;
+    @Bind(R.id.countries) Spinner _countryList;
 
-    private TextView _countryCodeView;
-    private EditText _phoneNumberEntry;
-    private EditText _codeEntry;
-    private TextView _verifyErrorMessage;
-    private TextView _submitErrorMessage;
-    private Button _verifyButton;
-    private ProgressBar _progressBar;
-    private Spinner _countryList;
     private String _code;
     private HashMap<String,String> _countryMap;
 
@@ -58,20 +59,7 @@ public class UpdatePhone extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_update_phone);
-        //getActionBar().setDisplayHomeAsUpEnabled(true);
-
-        _countryCodeView = (TextView)findViewById(R.id.country_code);
-        _phoneNumberEntry = (EditText)findViewById(R.id.phone);
-        _codeEntry = (EditText)findViewById(R.id.code);
-        _verifyButton = (Button)findViewById(R.id.verify_button);
-        _progressBar = (ProgressBar)findViewById(R.id.progress_circular);
-        _verifyErrorMessage = (TextView)findViewById(R.id.error);
-        _submitErrorMessage = (TextView)findViewById(R.id.submit_error);
-        _countryList = (Spinner)findViewById(R.id.countries);
-
-        _verifyPhoneLayout = (LinearLayout)findViewById(R.id.verify_phone);
-        _enterCodeLayout = (LinearLayout)findViewById(R.id.enter_code);
-        _continueLayout = (LinearLayout)findViewById(R.id.continue_setup);
+        ButterKnife.bind(this);
 
         countriesSetup();
         setInitialState();
@@ -235,8 +223,19 @@ public class UpdatePhone extends Activity {
     private void savePhoneNumberToCloud() {
         String countryCode = _countryCodeView.getText().toString();
         String phoneNumber = _phoneNumberEntry.getText().toString();
-        UpdatePhoneNumberAsyncTask updateTask = new UpdatePhoneNumberAsyncTask(countryCode,phoneNumber);
-        updateTask.execute(this);
+
+        ParseInstallation installation = ParseInstallation.getCurrentInstallation();
+        installation.put("CountryCode",countryCode);
+        installation.put("Number",phoneNumber);
+        installation.put("FullPhone",countryCode+phoneNumber);
+        installation.saveInBackground();
+
+        if (DataStorageHandler.CanWeSaveTheUsersInformation()) {
+            UpdatePhoneNumberAsyncTask updateTask = new UpdatePhoneNumberAsyncTask(countryCode,phoneNumber);
+            updateTask.execute(this);
+        } else {
+            savedPhoneToCloud();
+        }
     }
 
     private void savedPhoneToCloud() {

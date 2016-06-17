@@ -55,4 +55,4 @@
             android:layout_gravity="center_vertical"
             android:id="@id/contact_has_flare"/>
 
-</LinearLayout><!-- From: file:/Users/Karthik/Library/Mobile%20Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/res/layout/contact_item_view.xml -->
+</LinearLayout>

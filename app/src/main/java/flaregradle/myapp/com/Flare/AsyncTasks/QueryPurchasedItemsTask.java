@@ -13,9 +13,6 @@ import flaregradle.myapp.com.Flare.Events.QueryPurchasedItemsSuccess;
 import flaregradle.myapp.com.Flare.Modules.EventsModule;
 import flaregradle.myapp.com.Flare.Utilities.DataStorageHandler;
 
-/**
- * Created by Karthik on 1/30/16.
- */
 public class QueryPurchasedItemsTask extends AsyncTask<Context, Void, Void> {
 
     private IInAppBillingService _service;

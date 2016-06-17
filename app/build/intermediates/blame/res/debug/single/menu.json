@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "/Users/Karthik/Documents/FlareRepo/Flare/app/build/intermediates/res/merged/debug/menu/menu_send_flare.xml",
+        "source": "/Users/Karthik/Documents/FlareRepo/Flare/app/src/main/res/menu/menu_send_flare.xml"
+    },
+    {
+        "merged": "/Users/Karthik/Documents/FlareRepo/Flare/app/build/intermediates/res/merged/debug/menu/home_options_menu.xml",
+        "source": "/Users/Karthik/Documents/FlareRepo/Flare/app/src/main/res/menu/home_options_menu.xml"
+    },
+    {
+        "merged": "/Users/Karthik/Documents/FlareRepo/Flare/app/build/intermediates/res/merged/debug/menu/groups_context_menu.xml",
+        "source": "/Users/Karthik/Documents/FlareRepo/Flare/app/src/main/res/menu/groups_context_menu.xml"
+    },
+    {
+        "merged": "/Users/Karthik/Documents/FlareRepo/Flare/app/build/intermediates/res/merged/debug/menu/menu_settings.xml",
+        "source": "/Users/Karthik/Documents/FlareRepo/Flare/app/src/main/res/menu/menu_settings.xml"
+    },
+    {
+        "merged": "/Users/Karthik/Documents/FlareRepo/Flare/app/build/intermediates/res/merged/debug/menu/menu_groups.xml",
+        "source": "/Users/Karthik/Documents/FlareRepo/Flare/app/src/main/res/menu/menu_groups.xml"
+    },
+    {
+        "merged": "/Users/Karthik/Documents/FlareRepo/Flare/app/build/intermediates/res/merged/debug/menu/menu_settings_setup.xml",
+        "source": "/Users/Karthik/Documents/FlareRepo/Flare/app/src/main/res/menu/menu_settings_setup.xml"
+    },
+    {
+        "merged": "/Users/Karthik/Documents/FlareRepo/Flare/app/build/intermediates/res/merged/debug/menu/menu_create_group.xml",
+        "source": "/Users/Karthik/Documents/FlareRepo/Flare/app/src/main/res/menu/menu_create_group.xml"
+    }
+]

@@ -19,6 +19,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.MyApp.Flare.R;
+import com.google.common.annotations.Beta;
 import com.google.common.util.concurrent.ListenableFuture;
 import com.google.gson.JsonElement;
 import com.microsoft.windowsazure.mobileservices.MobileServiceClient;
@@ -31,6 +32,8 @@ import java.util.Locale;
 import java.util.Random;
 import java.util.TreeSet;
 
+import butterknife.Bind;
+import butterknife.ButterKnife;
 import flaregradle.myapp.com.Flare.AsyncTasks.FindFlareUsersTask;
 import flaregradle.myapp.com.Flare.AsyncTasks.GcmRegistrationAsyncTask;
 import flaregradle.myapp.com.Flare.AsyncTasks.SendTwilioSmsTask;
@@ -43,40 +46,27 @@ import flaregradle.myapp.com.Flare.Utilities.DataStorageHandler;
 
 public class VerifyPhoneActivity extends Activity {
 
-    private EventsModule eventsModule = EventsModule.getInstance();
+    @Bind(R.id.verify_phone) LinearLayout _verifyPhoneLayout;
+    @Bind(R.id.enter_code) LinearLayout _enterCodeLayout;
+    @Bind(R.id.continue_setup) LinearLayout _continueLayout;
 
-    private LinearLayout _verifyPhoneLayout;
-    private LinearLayout _enterCodeLayout;
-    private LinearLayout _continueLayout;
+    @Bind(R.id.country_code) TextView _countryCodeView;
+    @Bind(R.id.phone) EditText _phoneNumberEntry;
+    @Bind(R.id.code) EditText _codeEntry;
+    @Bind(R.id.error) TextView _verifyErrorMessage;
+    @Bind(R.id.submit_error) TextView _submitErrorMessage;
+    @Bind(R.id.verify_button) Button _verifyButton;
+    @Bind(R.id.progress_circular) ProgressBar _progressBar;
+    @Bind(R.id.countries) Spinner _countryList;
 
-    private TextView _countryCodeView;
-    private EditText _phoneNumberEntry;
-    private EditText _codeEntry;
-    private TextView _verifyErrorMessage;
-    private TextView _submitErrorMessage;
-    private Button _verifyButton;
-    private ProgressBar _progressBar;
-    private Spinner _countryList;
-    private String _code;
-    private HashMap<String,String> _countryMap;
+    String _code;
+    HashMap<String,String> _countryMap;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_verify_phone);
-
-        _countryCodeView = (TextView)findViewById(R.id.country_code);
-        _phoneNumberEntry = (EditText)findViewById(R.id.phone);
-        _codeEntry = (EditText)findViewById(R.id.code);
-        _verifyButton = (Button)findViewById(R.id.verify_button);
-        _progressBar = (ProgressBar)findViewById(R.id.progress_circular);
-        _verifyErrorMessage = (TextView)findViewById(R.id.error);
-        _submitErrorMessage = (TextView)findViewById(R.id.submit_error);
-        _countryList = (Spinner)findViewById(R.id.countries);
-
-        _verifyPhoneLayout = (LinearLayout)findViewById(R.id.verify_phone);
-        _enterCodeLayout = (LinearLayout)findViewById(R.id.enter_code);
-        _continueLayout = (LinearLayout)findViewById(R.id.continue_setup);
+        ButterKnife.bind(this);
 
         countriesSetup();
         setInitialState();
@@ -244,52 +234,39 @@ public class VerifyPhoneActivity extends Activity {
     }
 
     private void registerPhone() {
-        boolean haveWeAsked = DataStorageHandler.HaveAskedToSaveTheUsersInformation();
-        if(haveWeAsked) {
-            boolean canWeSave = DataStorageHandler.CanWeSaveTheUsersInformation();
-            if(canWeSave && !DataStorageHandler.IsRegistered())
-                new GcmRegistrationAsyncTask().execute(getApplicationContext());
-            else
-                moveOntoSettingsSetup();
-        } else {
-            new AlertDialog.Builder(this)
-                    .setTitle("Let your friends find you")
-                    .setMessage("We can let your friends see that you have flare. We will need to save your phone number to the cloud to do this " +
-                            "we don't store or share ANY private data without your consent. Do you accept ?")
-                    .setPositiveButton("Accept", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            DataStorageHandler.SetCanWeSaveTheUsersInformation(true);
-                            DataStorageHandler.SetHaveAskedToSaveTheUsersInformation(true);
-                            new GcmRegistrationAsyncTask().execute(getApplicationContext());
-                            dialog.cancel();
-                        }
-                    })
-                    .setNegativeButton("Decline", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            DataStorageHandler.SetCanWeSaveTheUsersInformation(false);
-                            DataStorageHandler.SetHaveAskedToSaveTheUsersInformation(true);
-                            moveOntoSettingsSetup();
-                            dialog.cancel();
-                        }
-                    })
-                    .show();
-        }
+        new AlertDialog.Builder(this)
+                .setTitle("Let your friends find you")
+                .setMessage("We can let your friends see that you have flare. We will need to save your phone number to the cloud to do this"
+                        + ". Do you accept ?")
+                .setPositiveButton("Accept", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        DataStorageHandler.SetCanWeSaveTheUsersInformation(true);
+                        DataStorageHandler.SetHaveAskedToSaveTheUsersInformation(true);
+                        new GcmRegistrationAsyncTask().execute(getApplicationContext());
+                        dialog.cancel();
+                    }
+                })
+                .setNegativeButton("Decline", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        DataStorageHandler.SetCanWeSaveTheUsersInformation(false);
+                        DataStorageHandler.SetHaveAskedToSaveTheUsersInformation(true);
+                        moveOntoSettingsSetup();
+                        dialog.cancel();
+                    }
+                })
+                .show();
     }
 
     @Subscribe public void RegisteredSuccessfully(RegistrationSuccess success) {
-        DataStorageHandler.SetCanWeSaveTheUsersInformation(true);
-        DataStorageHandler.SetHaveAskedToSaveTheUsersInformation(true);
         moveOntoSettingsSetup();
     }
 
     @Subscribe public void ErrorRegistering(RegistrationError error) {
-        DataStorageHandler.SetCanWeSaveTheUsersInformation(false);
-        DataStorageHandler.SetHaveAskedToSaveTheUsersInformation(true);
         new AlertDialog.Builder(this)
                 .setTitle("Error")
-                .setMessage("Something went wrong with the cloud ! You can try to register again from the settings page")
+                .setMessage("We could not register you with the cloud. We will keep trying")
                 .setNeutralButton("Ok", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {

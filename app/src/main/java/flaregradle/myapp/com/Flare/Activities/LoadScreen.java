@@ -8,23 +8,15 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.ServiceConnection;
-import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.os.IBinder;
-import android.provider.ContactsContract;
-import android.telephony.TelephonyManager;
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.MyApp.Flare.R;
 import com.android.vending.billing.IInAppBillingService;
-import com.parse.Parse;
-import com.parse.ParseAnalytics;
-import com.parse.ParseInstallation;
-import com.parse.ParseObject;
-import com.parse.ParsePushBroadcastReceiver;
 import com.squareup.otto.Subscribe;
 
 import java.util.ArrayList;
@@ -33,6 +25,8 @@ import flaregradle.myapp.com.Flare.AsyncTasks.FindFlareUsersTask;
 import flaregradle.myapp.com.Flare.AsyncTasks.GcmRegistrationAsyncTask;
 import flaregradle.myapp.com.Flare.AsyncTasks.QueryPurchasedItemsTask;
 import flaregradle.myapp.com.Flare.AsyncTasks.SetUpContactsTask;
+import flaregradle.myapp.com.Flare.Events.FindContactsFailure;
+import flaregradle.myapp.com.Flare.Events.FindContactsSuccess;
 import flaregradle.myapp.com.Flare.Events.FindFlareError;
 import flaregradle.myapp.com.Flare.Events.FindFlareSuccess;
 import flaregradle.myapp.com.Flare.Events.QueryPurchasedItemsError;
@@ -42,11 +36,9 @@ import flaregradle.myapp.com.Flare.Events.RegistrationSuccess;
 import flaregradle.myapp.com.Flare.Modules.EventsModule;
 import flaregradle.myapp.com.Flare.Utilities.ContactsHandler;
 import flaregradle.myapp.com.Flare.Utilities.DataStorageHandler;
+import flaregradle.myapp.com.Flare.Utilities.PermissionHandler;
 
 public class LoadScreen extends Activity {
-
-    private ProgressBar _busyIndicator;
-    private TextView _loading;
 
     IInAppBillingService mService;
 
@@ -71,12 +63,20 @@ public class LoadScreen extends Activity {
         setContentView(R.layout.activity_load_screen);
 
         // Load the progress bar
-        _busyIndicator = (ProgressBar)findViewById(R.id.busyIndicator);
+        ProgressBar _busyIndicator = (ProgressBar) findViewById(R.id.busyIndicator);
         _busyIndicator.setVisibility(View.VISIBLE);
 
         // Set loading message
-        _loading = (TextView)findViewById(R.id.loading);
+        TextView _loading = (TextView) findViewById(R.id.loading);
         _loading.setText(R.string.loading);
+
+        // Set the default contact image
+        int contactId = getResources().getIdentifier("person", "drawable", getPackageName());
+        DataStorageHandler.DefaultContactImage = BitmapFactory.decodeResource(getResources(), contactId);
+
+        if (!DataStorageHandler.CanSendCloudMessage() && !PermissionHandler.canSendSms(this)) {
+            DataStorageHandler.SetSendCloudMessage(true);
+        }
 
         connectToBilling();
     }
@@ -128,94 +128,71 @@ public class LoadScreen extends Activity {
     }
 
     private void setUpContacts() {
+
+        // TEMP : REMOVE ALL ADS
+        DataStorageHandler.SetHavePurchasedAdFreeUpgrade(true);
+        //////
+
         ContentResolver cr = getContentResolver();
-
         ContactsHandler _contactsHandler = new ContactsHandler(cr);
-        int contactId = getResources().getIdentifier("person", "drawable", getPackageName());
-        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), contactId);
-        _contactsHandler.setDefaultImage(bitmap);
 
-        new SetUpContactsTask(this,_contactsHandler).execute(getApplicationContext());
-    }
-
-    public void finishedGettingContacts() {
-        boolean haveAskedToCheckContactsWithFlare = DataStorageHandler.HaveAskedToCheckContactsWithFlare();
-        if(haveAskedToCheckContactsWithFlare) {
-            boolean canCheckContactsWithFlare = DataStorageHandler.CanCheckContactsForFlare();
-            if(canCheckContactsWithFlare)
-                findContactsWithFlare();
-            else {
-                if(DataStorageHandler.IsPhoneNumberVerified()) {
-                    phoneNumberIsVerified();
-                } else {
-                    verifyPhoneNumber();
-                }
-            }
-        } else {
-            new AlertDialog.Builder(this)
-                .setTitle("Find friends with flare")
-                .setMessage("We can quickly find out if any of your friends has flare. We will need to check your contact list to do this, we promise " +
-                        "we don't store or share ANY private data without your consent. Do you accept ?")
-                .setPositiveButton("Accept", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        findContactsWithFlare();
-                        dialog.cancel();
-                    }
-                })
-                .setNegativeButton("Decline", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        DataStorageHandler.SetCanCheckContactsForFlare(false);
-                        DataStorageHandler.SetHaveAskedToCheckContactsWithFlare(true);
-                        if (DataStorageHandler.IsPhoneNumberVerified()) {
-                            phoneNumberIsVerified();
-                        } else {
-                            verifyPhoneNumber();
-                        }
-                        dialog.cancel();
-                    }
-                })
-                .show();
-        }
-    }
-
-    private void findContactsWithFlare() {
-        new FindFlareUsersTask().execute(getApplicationContext());
-    }
-
-    @Subscribe public void FoundContactsWithFlare(FindFlareSuccess success) {
-        DataStorageHandler.SetCanCheckContactsForFlare(true);
-        DataStorageHandler.SetHaveAskedToCheckContactsWithFlare(true);
-        if (DataStorageHandler.IsPhoneNumberVerified()) {
-            phoneNumberIsVerified();
+        if(PermissionHandler.canRetrieveContacts(this)) {
+            new SetUpContactsTask(_contactsHandler).execute(getApplicationContext());
         } else {
             verifyPhoneNumber();
         }
     }
 
-    @Subscribe public void ErrorFindingContactsWithFlare(FindFlareError error) {
-        DataStorageHandler.SetCanCheckContactsForFlare(false);
-        DataStorageHandler.SetHaveAskedToCheckContactsWithFlare(true);
+    @Subscribe public void FoundContacts(FindContactsSuccess success) {
+        findContactsWithFlare();
+    }
+
+    @Subscribe public void ErrorFindingContacts(FindContactsFailure failure) {
         new AlertDialog.Builder(this)
                 .setTitle("Error")
-                .setMessage("Something went wrong with the connection to the cloud ! You can try to find your friends again from the settings page")
+                .setMessage("We could not find your contacts. We will keep trying")
                 .setNeutralButton("Ok", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        if (DataStorageHandler.IsPhoneNumberVerified()) {
-                            phoneNumberIsVerified();
-                        } else {
-                            verifyPhoneNumber();
-                        }
+                        verifyPhoneNumber();
+                        dialog.cancel();
+                    }
+                }).show();
+    }
+
+    private void findContactsWithFlare() {
+        boolean canCheckContactsWithFlare = DataStorageHandler.CanCheckContactsForFlare();
+        if(canCheckContactsWithFlare) {
+            new FindFlareUsersTask().execute(getApplicationContext());
+        } else {
+            verifyPhoneNumber();
+        }
+    }
+
+    @Subscribe public void FoundContactsWithFlare(FindFlareSuccess success) {
+        verifyPhoneNumber();
+    }
+
+    @Subscribe public void ErrorFindingContactsWithFlare(FindFlareError error) {
+        new AlertDialog.Builder(this)
+                .setTitle("Error")
+                .setMessage("We could not find which of your contacts had flare. We will keep trying")
+                .setNeutralButton("Ok", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        verifyPhoneNumber();
                         dialog.cancel();
                     }
                 }).show();
     }
 
     private void verifyPhoneNumber() {
-        Intent intent = new Intent(this,VerifyPhoneActivity.class);
-        startActivity(intent);
+        if (DataStorageHandler.IsPhoneNumberVerified()) {
+            phoneNumberIsVerified();
+        } else {
+            Intent intent = new Intent(this,VerifyPhoneActivity.class);
+            startActivity(intent);
+        }
     }
 
     private void phoneNumberIsVerified() {
@@ -223,57 +200,29 @@ public class LoadScreen extends Activity {
     }
 
     private void registerDevice(){
-        boolean haveWeAsked = DataStorageHandler.HaveAskedToSaveTheUsersInformation();
-        if(haveWeAsked) {
-            boolean canWeSave = DataStorageHandler.CanWeSaveTheUsersInformation();
-            if(canWeSave)
-                new GcmRegistrationAsyncTask().execute(getApplicationContext());
-            else
-                moveToHomeScreen();
-        } else {
-            new AlertDialog.Builder(this)
-                .setTitle("Let your friends find you")
-                .setMessage("We can let your friends see that you have flare. We will need to save your phone number to the cloud to do this " +
-                        "we don't store or share ANY private data without your consent. Do you accept ?")
-                .setPositiveButton("Accept", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        new GcmRegistrationAsyncTask().execute(getApplicationContext());
-                        dialog.cancel();
-                    }
-                })
-                .setNegativeButton("Decline", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        DataStorageHandler.SetCanWeSaveTheUsersInformation(false);
-                        DataStorageHandler.SetHaveAskedToSaveTheUsersInformation(true);
-                        moveToHomeScreen();
-                        dialog.cancel();
-                    }
-                })
-                .show();
-        }
+        boolean canWeSave = DataStorageHandler.CanWeSaveTheUsersInformation();
+        if(canWeSave)
+            new GcmRegistrationAsyncTask().execute(getApplicationContext());
+        else
+            moveToHomeScreen();
     }
 
     @Subscribe public void RegisteredSuccessfully(RegistrationSuccess success) {
-        DataStorageHandler.SetCanWeSaveTheUsersInformation(true);
-        DataStorageHandler.SetHaveAskedToSaveTheUsersInformation(true);
         moveToHomeScreen();
     }
 
     @Subscribe public void ErrorRegistering(RegistrationError error) {
-        DataStorageHandler.SetCanWeSaveTheUsersInformation(false);
-        DataStorageHandler.SetHaveAskedToSaveTheUsersInformation(true);
         new AlertDialog.Builder(this)
                 .setTitle("Error")
-                .setMessage("Something went wrong with your connection to the cloud ! You can try to register again from the settings page")
+                .setMessage("We could not register you with our cloud. We will keep trying")
                 .setNeutralButton("Ok", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         moveToHomeScreen();
                         dialog.cancel();
                     }
-                }).show();
+                })
+                .show();
     }
 
     private void moveToHomeScreen() {

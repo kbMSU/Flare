@@ -1,6 +1,7 @@
 package flaregradle.myapp.com.Flare.Utilities;
 
 import android.content.SharedPreferences;
+import android.graphics.Bitmap;
 import android.location.Location;
 
 import com.android.vending.billing.IInAppBillingService;
@@ -25,7 +26,6 @@ public class DataStorageHandler {
             AllContacts = new TreeMap<>();
             SelectedContacts = new ArrayList<>();
             SavedContactGroups = new HashMap<>();
-            ContactNumbersWithFlare = new HashMap<>();
         }
         return instance;
     }
@@ -48,10 +48,10 @@ public class DataStorageHandler {
     public static TreeMap<String,Contact> AllContacts;
     public static ArrayList<Contact> SelectedContacts;
     public static HashMap<String,Group> SavedContactGroups;
-    public static HashMap<String,PhoneNumber> ContactNumbersWithFlare;
     public static Location CurrentLocation;
     public static boolean IsSetupComplete;
     public static IInAppBillingService BillingService;
+    public static Bitmap DefaultContactImage;
 
     //region Setup
     public static void setupPreferences() {
@@ -76,15 +76,6 @@ public class DataStorageHandler {
             HashMap<String,Group> groups = gson.fromJson(json,new TypeToken<HashMap<String,Group>>(){}.getType());
             if(groups != null)
                 SavedContactGroups = groups;
-        }
-
-        // Get contacts with flare
-        String contactsWithFlare = Preferences.getString("ContactsWithFlare", null);
-        if(contactsWithFlare != null) {
-            Gson gson = new Gson();
-            HashMap<String,PhoneNumber> contacts = gson.fromJson(contactsWithFlare,new TypeToken<HashMap<String,PhoneNumber>>(){}.getType());
-            if(contacts != null)
-                ContactNumbersWithFlare = contacts;
         }
 
         IsSetupComplete = true;
@@ -118,23 +109,11 @@ public class DataStorageHandler {
         return null;
     }
 
-    public static boolean doesNumberHaveFlare(String phone) {
-        return ContactNumbersWithFlare.containsKey(phone);
-    }
-
     public static void writeGroupsToPreferences() {
         Gson gson = new Gson();
         String json = gson.toJson(SavedContactGroups);
         SharedPreferences.Editor editor = Preferences.edit();
         editor.putString("SavedContactGroups", json);
-        editor.apply();
-    }
-
-    private static void writeContactsWithFlareToPreferences() {
-        Gson gson = new Gson();
-        String json = gson.toJson(ContactNumbersWithFlare);
-        SharedPreferences.Editor editor = Preferences.edit();
-        editor.putString("ContactsWithFlare", json);
         editor.apply();
     }
 
@@ -149,16 +128,6 @@ public class DataStorageHandler {
     public static void deleteContactGroup(String groupName) {
         SavedContactGroups.remove(groupName);
         writeGroupsToPreferences();
-    }
-
-    public static void saveContactNumbersWithFlare(PhoneNumber number) {
-        ContactNumbersWithFlare.put(number.number, number);
-        writeContactsWithFlareToPreferences();
-    }
-
-    public static void deleteContactNumbersWithFlare(PhoneNumber number) {
-        ContactNumbersWithFlare.remove(number.number);
-        writeContactsWithFlareToPreferences();
     }
 
     public static Integer getNotificationId() {
@@ -229,6 +198,12 @@ public class DataStorageHandler {
     }
     public static void SetRegistered() {
         _registered = true;
+        SharedPreferences.Editor editor = Preferences.edit();
+        editor.putBoolean("registered", _registered);
+        editor.apply();
+    }
+    public static void SetNotRegistered() {
+        _registered = false;
         SharedPreferences.Editor editor = Preferences.edit();
         editor.putBoolean("registered", _registered);
         editor.apply();

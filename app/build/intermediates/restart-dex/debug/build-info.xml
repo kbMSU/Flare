@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="armeabi-v7a,armeabi"
+    api-level="23"
+    density="xxhdpi"
+    format="7"
+    timestamp="96602914241514"
+    token="3926764165343073054" >
+
+    <task
+        name="javac"
+        duration="575" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="270" />
+    <task
+        name="verifier"
+        duration="120" />
+
+    <artifact
+        location="/Users/Karthik/Documents/FlareRepo/Flare/app/build/outputs/apk/app-debug.apk"
+        type="MAIN" />
+
+    <build timestamp="96602914241514" >
+        <artifact
+            location="/Users/Karthik/Documents/FlareRepo/Flare/app/build/outputs/apk/app-debug.apk"
+            type="MAIN" />
+    </build>
+
+</instant-run>

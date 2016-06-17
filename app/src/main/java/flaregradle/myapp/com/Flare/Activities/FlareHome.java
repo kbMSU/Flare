@@ -1,33 +1,30 @@
 package flaregradle.myapp.com.Flare.Activities;
 
 import android.app.AlertDialog;
-import android.content.ComponentName;
-import android.content.Context;
+import android.content.ContentResolver;
+import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.ServiceConnection;
+import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
 import android.os.Bundle;
-import android.os.IBinder;
+import android.support.annotation.NonNull;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.MyApp.Flare.R;
-import com.android.vending.billing.IInAppBillingService;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationListener;
@@ -40,15 +37,18 @@ import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.squareup.otto.Subscribe;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
-import flaregradle.myapp.com.Flare.AsyncTasks.QueryPurchasedItemsTask;
-import flaregradle.myapp.com.Flare.Events.QueryPurchasedItemsError;
-import flaregradle.myapp.com.Flare.Events.QueryPurchasedItemsSuccess;
+import butterknife.Bind;
+import butterknife.ButterKnife;
+import flaregradle.myapp.com.Flare.AsyncTasks.SetUpContactsTask;
+import flaregradle.myapp.com.Flare.Events.FindContactsFailure;
+import flaregradle.myapp.com.Flare.Events.FindContactsSuccess;
 import flaregradle.myapp.com.Flare.Modules.EventsModule;
+import flaregradle.myapp.com.Flare.Utilities.ContactsHandler;
 import flaregradle.myapp.com.Flare.Utilities.DataStorageHandler;
+import flaregradle.myapp.com.Flare.Utilities.PermissionHandler;
 
 public class FlareHome extends AppCompatActivity implements
         GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, LocationListener {
@@ -56,35 +56,40 @@ public class FlareHome extends AppCompatActivity implements
     private Location _location;
     private Toast _message;
     private GoogleMap _map;
-    private DrawerLayout _drawerLayout;
-    private ListView _drawerList;
     private ArrayAdapter<String> _drawerAdapter;
     private String[] _drawerItems;
     private ActionBarDrawerToggle _drawerToggle;
-
     private GoogleApiClient mGoogleApiClient;
     private LocationRequest mLocationRequest;
+    private AlertDialog _gettingContactsAlert;
+    private AlertDialog _errorGettingContactsAlert;
+
+    private final int READ_CONTACTS_REQUEST = 1;
+    private final int LOCATION_REQUEST = 2;
+
+    @Bind(R.id.searchLocationText) TextView _searchLocationText;
+    @Bind(R.id.drawer_layout) DrawerLayout _drawerLayout;
+    @Bind(R.id.left_drawer_list) ListView _drawerList;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(com.MyApp.Flare.R.layout.main);
+        ButterKnife.bind(this);
 
         // Set up the toast message
         _message = Toast.makeText(getApplicationContext(), "", Toast.LENGTH_SHORT);
 
         // Get the map
-        _map =((MapFragment)getFragmentManager().findFragmentById(com.MyApp.Flare.R.id.map)).getMap();
+        _map = ((MapFragment) getFragmentManager().findFragmentById(com.MyApp.Flare.R.id.map)).getMap();
         _map.getUiSettings().setZoomControlsEnabled(false);
-        _map.setMyLocationEnabled(false);
         _map.getUiSettings().setMyLocationButtonEnabled(false);
         _map.getUiSettings().setMapToolbarEnabled(false);
         _map.setOnCameraChangeListener(new GoogleMap.OnCameraChangeListener() {
             @Override
             public void onCameraChange(CameraPosition cameraPosition) {
                 if (_location == null) {
-                    TextView view = (TextView) findViewById(R.id.searchLocationText);
-                    view.setText(R.string.unknown_location);
+                    _searchLocationText.setText(R.string.unknown_location);
                     return;
                 }
 
@@ -94,10 +99,26 @@ public class FlareHome extends AppCompatActivity implements
             }
         });
 
-        // Set the drawer
-        _drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-        _drawerList = (ListView) findViewById(R.id.left_drawer_list);
+        _map.setMyLocationEnabled(false);
 
+        // Set the alerts
+        _gettingContactsAlert = new AlertDialog.Builder(this)
+                .setTitle("")
+                .setMessage("Getting contacts ...")
+                .create();
+
+        _errorGettingContactsAlert = new AlertDialog.Builder(this)
+                .setTitle("Error")
+                .setMessage("There was a problem getting your contacts")
+                .setNeutralButton("Ok", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                    }
+                })
+                .create();
+
+        // Set the drawer
         boolean upgraded = DataStorageHandler.HavePurchasedAdFreeUpgrade();
 
         if(!upgraded) {
@@ -177,23 +198,27 @@ public class FlareHome extends AppCompatActivity implements
 
         // Connect to the google api client
         mGoogleApiClient.connect();
+
+        // Ask permission for location
+        if(!PermissionHandler.canRetrieveLocation(this)) {
+            PermissionHandler.requestLocationPermission(this,LOCATION_REQUEST);
+        }
     }
 
     @Override
     public void onPause() {
-        super.onPause();
         EventsModule.UnRegister(this);
+        super.onPause();
     }
 
     @Override
     public void onResume() {
-        super.onResume();
         EventsModule.Register(this);
+        super.onResume();
     }
 
     @Override
     public boolean onPrepareOptionsMenu(Menu menu) {
-        // If the nav drawer is open, hide action items related to the content view
         return super.onPrepareOptionsMenu(menu);
     }
 
@@ -256,6 +281,22 @@ public class FlareHome extends AppCompatActivity implements
         return super.onOptionsItemSelected(item);
     }
 
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        switch (requestCode) {
+            case READ_CONTACTS_REQUEST:
+                if (grantResults.length != 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                    getContacts();
+                }
+
+            case LOCATION_REQUEST:
+                if (grantResults.length != 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                    updateLocation(LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient));
+                }
+                break;
+        }
+    }
+
     // region Button Clicks
     public void onUpdateLocationClick(View v) {
         updateLocation(LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient));
@@ -267,15 +308,7 @@ public class FlareHome extends AppCompatActivity implements
     }
 
     public void onSendFlareClick(View v) {
-        if(_location == null) {
-            showMessage("Unable to acquire your location");
-            return;
-        }
-
-        Intent sendFlareIntent = new Intent(this, SendFlareActivity.class);
-        sendFlareIntent.putExtra("latitude", String.valueOf(_location.getLatitude()));
-        sendFlareIntent.putExtra("longitude", String.valueOf(_location.getLongitude()));
-        startActivity(sendFlareIntent);
+        sendFlare();
     }
 
     public void onFixTheProblemClick(View v) {
@@ -297,7 +330,7 @@ public class FlareHome extends AppCompatActivity implements
 
     @Override
     public void onConnectionFailed(ConnectionResult connectionResult) {
-
+        Toast.makeText(getApplicationContext(),"Connection to Google Play Services failed",Toast.LENGTH_SHORT).show();
     }
     // endregion
 
@@ -345,8 +378,7 @@ public class FlareHome extends AppCompatActivity implements
             List<Address> addresses = geocoder.getFromLocation(_location.getLatitude(), _location.getLongitude(), 1);
             if(addresses.size() > 0) {
                 Address likelyLocation = addresses.get(0);
-                TextView view = (TextView)findViewById(R.id.searchLocationText);
-                view.setText(likelyLocation.getAddressLine(0));
+                _searchLocationText.setText(likelyLocation.getAddressLine(0));
             }
         }
         catch(Exception ex)
@@ -374,5 +406,39 @@ public class FlareHome extends AppCompatActivity implements
     private void showMessage(String text){
         _message.setText(text);
         _message.show();
+    }
+
+    private void sendFlare() {
+        if(!PermissionHandler.canRetrieveContacts(this)) {
+            PermissionHandler.requestContactsPermission(this,READ_CONTACTS_REQUEST);
+            return;
+        }
+
+        if(_location == null) {
+            showMessage("Unable to acquire your location");
+            return;
+        }
+
+        Intent sendFlareIntent = new Intent(this, SendFlareActivity.class);
+        sendFlareIntent.putExtra("latitude", String.valueOf(_location.getLatitude()));
+        sendFlareIntent.putExtra("longitude", String.valueOf(_location.getLongitude()));
+        startActivity(sendFlareIntent);
+    }
+
+    private void getContacts() {
+        ContentResolver _contentResolver = getContentResolver();
+        ContactsHandler handler = new ContactsHandler(_contentResolver);
+        _gettingContactsAlert.show();
+        new SetUpContactsTask(handler).execute(getApplicationContext());
+    }
+
+    @Subscribe public void SuccessfullyGotContacts(FindContactsSuccess success) {
+        _gettingContactsAlert.cancel();
+        sendFlare();
+    }
+
+    @Subscribe public void ErrorGettingContacts(FindContactsFailure failure) {
+        _gettingContactsAlert.cancel();
+        _errorGettingContactsAlert.show();
     }
 }

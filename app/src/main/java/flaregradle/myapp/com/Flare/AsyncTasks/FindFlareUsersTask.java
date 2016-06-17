@@ -53,7 +53,6 @@ public class FindFlareUsersTask extends AsyncTask<Context,Void,Void> {
             for(Contact c : DataStorageHandler.AllContacts.values()) {
                 boolean hasFlare = false;
                 for (PhoneNumber phone : c.allPhoneNumbers) {
-                    boolean isSavedAsHasFlare = DataStorageHandler.doesNumberHaveFlare(phone.number);
                     boolean result = false;
                     for (ParseObject item : devices) {
                         if (item.getString("FullPhone").contains(phone.number)) {
@@ -64,14 +63,8 @@ public class FindFlareUsersTask extends AsyncTask<Context,Void,Void> {
                     if (result) {
                         hasFlare = true;
                         phone.hasFlare = true;
-                        if (!isSavedAsHasFlare) {
-                            DataStorageHandler.saveContactNumbersWithFlare(phone);
-                        }
                     } else {
                         phone.hasFlare = false;
-                        if (isSavedAsHasFlare) {
-                            DataStorageHandler.deleteContactNumbersWithFlare(phone);
-                        }
                     }
                 }
                 c.hasFlare = hasFlare;
@@ -90,7 +83,6 @@ public class FindFlareUsersTask extends AsyncTask<Context,Void,Void> {
         if(_exception == null) {
             EventsModule.Post(new FindFlareSuccess());
         } else {
-            Toast.makeText(_context,_exception.getMessage(),Toast.LENGTH_SHORT).show();
             EventsModule.Post(new FindFlareError(_exception));
         }
     }

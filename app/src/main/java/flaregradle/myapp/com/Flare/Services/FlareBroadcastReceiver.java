@@ -268,8 +268,7 @@ public class FlareBroadcastReceiver extends ParsePushBroadcastReceiver {
 
             ContactsHandler _contactsHandler = new ContactsHandler(_context.getContentResolver());
             int contactId = _context.getResources().getIdentifier("person", "drawable", _context.getPackageName());
-            Bitmap bitmap = BitmapFactory.decodeResource(_context.getResources(), contactId);
-            _contactsHandler.setDefaultImage(bitmap);
+            DataStorageHandler.DefaultContactImage = BitmapFactory.decodeResource(_context.getResources(), contactId);
             DataStorageHandler.AllContacts = _contactsHandler.getContacts();
         }
 
@@ -354,8 +353,7 @@ public class FlareBroadcastReceiver extends ParsePushBroadcastReceiver {
 
             ContactsHandler _contactsHandler = new ContactsHandler(_context.getContentResolver());
             int contactId = _context.getResources().getIdentifier("person", "drawable", _context.getPackageName());
-            Bitmap bitmap = BitmapFactory.decodeResource(_context.getResources(), contactId);
-            _contactsHandler.setDefaultImage(bitmap);
+            DataStorageHandler.DefaultContactImage = BitmapFactory.decodeResource(_context.getResources(), contactId);
             DataStorageHandler.AllContacts = _contactsHandler.getContacts();
         }
 

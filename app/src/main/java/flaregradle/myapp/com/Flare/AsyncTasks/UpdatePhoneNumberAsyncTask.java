@@ -32,12 +32,6 @@ public class UpdatePhoneNumberAsyncTask extends AsyncTask<Context,Void,Void> {
         _context = params[0];
 
         try {
-            ParseInstallation installation = ParseInstallation.getCurrentInstallation();
-            installation.put("CountryCode",_countryCode);
-            installation.put("Number",_phoneNumber);
-            installation.put("FullPhone",_fullPhone);
-            installation.save();
-
             String oldPhone = DataStorageHandler.getCountryCode()+DataStorageHandler.getPhoneNumber();
             ParseQuery<ParseObject> query = ParseQuery.getQuery("Device").whereEqualTo("FullPhone",oldPhone);
             ParseObject savedPhone = query.find().get(0);
@@ -45,11 +39,9 @@ public class UpdatePhoneNumberAsyncTask extends AsyncTask<Context,Void,Void> {
             savedPhone.put("CountryCode", _countryCode);
             savedPhone.put("Number", _phoneNumber);
             savedPhone.save();
-
         } catch (Exception ex) {
             _exception = ex;
         }
-
 
         return null;
     }

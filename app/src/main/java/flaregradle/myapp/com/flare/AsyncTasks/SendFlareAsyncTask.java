@@ -23,7 +23,10 @@ import java.util.List;
 import flaregradle.myapp.com.Flare.BackendItems.DeviceItem;
 import flaregradle.myapp.com.Flare.DataItems.Contact;
 import flaregradle.myapp.com.Flare.DataItems.PhoneNumber;
+import flaregradle.myapp.com.Flare.Events.SendFlareError;
+import flaregradle.myapp.com.Flare.Events.SendFlareSuccess;
 import flaregradle.myapp.com.Flare.Interfaces.ISendFlare;
+import flaregradle.myapp.com.Flare.Modules.EventsModule;
 import flaregradle.myapp.com.Flare.Utilities.DataStorageHandler;
 
 public class SendFlareAsyncTask extends AsyncTask<Context,Void,String> {
@@ -31,6 +34,7 @@ public class SendFlareAsyncTask extends AsyncTask<Context,Void,String> {
     private String _longitude;
     private String _message;
     private ArrayList<PhoneNumber> _contactNumbers;
+    private Exception _exception = null;
 
     public SendFlareAsyncTask(String latitude,
                               String longitude,
@@ -63,8 +67,18 @@ public class SendFlareAsyncTask extends AsyncTask<Context,Void,String> {
 
         } catch (Exception e) {
             Log.e("SEND_FLARE_ASYNC_TASK", "Failed to send notification - " + e.getMessage());
+            _exception = e;
         }
 
         return msg;
+    }
+
+    @Override
+    protected void onPostExecute(String s) {
+        if (_exception == null) {
+            EventsModule.Post(new SendFlareSuccess());
+        } else {
+            EventsModule.Post(new SendFlareError());
+        }
     }
 }

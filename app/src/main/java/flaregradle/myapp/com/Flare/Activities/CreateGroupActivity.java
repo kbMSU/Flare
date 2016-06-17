@@ -1,10 +1,12 @@
 package flaregradle.myapp.com.Flare.Activities;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.support.v4.app.NavUtils;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.Menu;
@@ -23,34 +25,47 @@ import com.MyApp.Flare.R;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.squareup.otto.Subscribe;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import butterknife.Bind;
+import butterknife.ButterKnife;
 import flaregradle.myapp.com.Flare.Adapters.ContactsAdapter;
 import flaregradle.myapp.com.Flare.Adapters.PhoneNumberAdapter;
+import flaregradle.myapp.com.Flare.AsyncTasks.FindFlareUsersTask;
 import flaregradle.myapp.com.Flare.DataItems.Contact;
 import flaregradle.myapp.com.Flare.DataItems.Group;
 import flaregradle.myapp.com.Flare.DataItems.PhoneNumber;
+import flaregradle.myapp.com.Flare.Events.FindFlareError;
+import flaregradle.myapp.com.Flare.Events.FindFlareSuccess;
+import flaregradle.myapp.com.Flare.Modules.EventsModule;
 import flaregradle.myapp.com.Flare.Utilities.DataStorageHandler;
 
 
-public class CreateGroupActivity extends ActionBarActivity {
+public class CreateGroupActivity extends AppCompatActivity {
 
     private Toast _message;
-    private DataStorageHandler _dataStore;
-    private ListView _contactsView;
     private ArrayList<Contact> _sortedContacts;
     private ArrayAdapter _contactAdapter;
-    private EditText _phoneText;
     private String _groupName;
     private Contact _currentlyEditingContact;
+    private AlertDialog _findingFriendsWithFlareAlert;
+    private AlertDialog _errorFindingFriendsWithFlareAlert;
+    private Activity _thisActivity;
+
+    @Bind(R.id.contactsHome) ListView _contactsView;
+    @Bind(R.id.phone) EditText _phoneText;
+    @Bind(R.id.groupsAdView) AdView mAdView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_group);
+        ButterKnife.bind(this);
+        _thisActivity = this;
 
         // If edit group , get the group name
         Bundle extras = getIntent().getExtras();
@@ -62,15 +77,12 @@ public class CreateGroupActivity extends ActionBarActivity {
         _message = Toast.makeText(getApplicationContext(), "", Toast.LENGTH_SHORT);
 
         // Set up the contacts view
-        _dataStore = DataStorageHandler.getInstance();
-        _sortedContacts = new ArrayList<>(_dataStore.AllContacts.values());
-        _contactsView = (ListView)findViewById(com.MyApp.Flare.R.id.contactsHome);
+        _sortedContacts = new ArrayList<>(DataStorageHandler.AllContacts.values());
         _contactAdapter = new ContactsAdapter(this,com.MyApp.Flare.R.layout.contact_item_view,_sortedContacts,false);
         _contactsView.setAdapter(_contactAdapter);
         _contactsView.setDivider(null);
 
         // Set up the listener for text
-        _phoneText = (EditText)findViewById(com.MyApp.Flare.R.id.phone);
         _phoneText.clearFocus();
         _phoneText.addTextChangedListener(new TextWatcher() {
             @Override
@@ -85,7 +97,7 @@ public class CreateGroupActivity extends ActionBarActivity {
                 if (charSequence == null || charSequence.length() == 0) {
                     resetSortedContacts();
                 } else {
-                    for (Contact c : _dataStore.AllContacts.values()) {
+                    for (Contact c : DataStorageHandler.AllContacts.values()) {
                         if (c.name.toLowerCase().contains(charSequence.toString().toLowerCase())) {
                             _sortedContacts.add(c);
                         } else if (c.phoneNumber.Contains(charSequence.toString())) {
@@ -133,7 +145,6 @@ public class CreateGroupActivity extends ActionBarActivity {
 
         if(!DataStorageHandler.HavePurchasedAdFreeUpgrade()) {
             // Setup the ad
-            final AdView mAdView = (AdView) findViewById(R.id.groupsAdView);
             AdRequest.Builder adRequest = new AdRequest.Builder();
             if(DataStorageHandler.CurrentLocation != null)
                 adRequest.setLocation(DataStorageHandler.CurrentLocation);
@@ -145,20 +156,76 @@ public class CreateGroupActivity extends ActionBarActivity {
             });
             mAdView.loadAd(adRequest.build());
         }
+
+        _findingFriendsWithFlareAlert = new AlertDialog.Builder(this)
+                .setTitle("")
+                .setMessage("Finding friends with flare ...")
+                .create();
+
+        _errorFindingFriendsWithFlareAlert = new AlertDialog.Builder(this)
+                .setTitle("Error")
+                .setMessage("Something went wrong, we could not find your friends with flare")
+                .setNeutralButton("Ok", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                    }
+                })
+                .create();
+
+        if (!DataStorageHandler.HaveAskedToCheckContactsWithFlare()) {
+            AlertDialog alert = new AlertDialog.Builder(this)
+                    .setTitle("")
+                    .setMessage("We can see if any of your friends have flare. We need to check your contacts phone numbers against our " +
+                            "cloud to do this. Do we have your permission ?")
+                    .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            DataStorageHandler.SetCanCheckContactsForFlare(true);
+                            _findingFriendsWithFlareAlert.show();
+                            new FindFlareUsersTask().execute(_thisActivity);
+                        }
+                    })
+                    .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            DataStorageHandler.SetCanCheckContactsForFlare(false);
+                        }
+                    })
+                    .create();
+            alert.show();
+            DataStorageHandler.SetHaveAskedToCheckContactsWithFlare(true);
+        }
     }
 
     @Override
-    protected void onStop()
-    {
+    protected void onStop() {
         clearSelectedContacts();
         super.onStop();
     }
 
     @Override
-    protected void onPause()
-    {
+    protected void onPause() {
+        EventsModule.UnRegister(this);
         clearSelectedContacts();
         super.onPause();
+    }
+
+    @Override
+    protected void onResume() {
+        EventsModule.Register(this);
+        super.onResume();
+    }
+
+    @Subscribe public void FindFlareSuccess(FindFlareSuccess success) {
+        _findingFriendsWithFlareAlert.cancel();
+        _sortedContacts = new ArrayList<>(DataStorageHandler.AllContacts.values());
+        _contactAdapter.notifyDataSetChanged();
+    }
+
+    @Subscribe public void FindFlareError(FindFlareError error) {
+        _findingFriendsWithFlareAlert.cancel();
+        _errorFindingFriendsWithFlareAlert.show();
     }
 
     private void showSelectNumber(List<PhoneNumber> numbers) {

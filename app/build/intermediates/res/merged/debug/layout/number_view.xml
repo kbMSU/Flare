@@ -31,4 +31,4 @@
         android:layout_gravity="center_vertical"
         android:id="@id/phoneNumberHasFlare"/>
 
-</LinearLayout><!-- From: file:/Users/Karthik/Library/Mobile%20Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/res/layout/number_view.xml -->
+</LinearLayout>

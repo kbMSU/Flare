@@ -1,5 +1,6 @@
 package flaregradle.myapp.com.Flare.Activities;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
@@ -23,42 +24,56 @@ import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
 import com.parse.ParseObject;
+import com.squareup.otto.Subscribe;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import butterknife.Bind;
+import butterknife.ButterKnife;
 import flaregradle.myapp.com.Flare.Adapters.ContactsAdapter;
 import flaregradle.myapp.com.Flare.Adapters.PhoneNumberAdapter;
+import flaregradle.myapp.com.Flare.AsyncTasks.FindFlareUsersTask;
 import flaregradle.myapp.com.Flare.AsyncTasks.SendFlareAsyncTask;
 import flaregradle.myapp.com.Flare.AsyncTasks.SendTwilioSmsTask;
 import flaregradle.myapp.com.Flare.DataItems.Contact;
 import flaregradle.myapp.com.Flare.DataItems.Group;
 import flaregradle.myapp.com.Flare.DataItems.PhoneNumber;
 import flaregradle.myapp.com.Flare.Dialogs.AlternateFlareOptionsDialog;
+import flaregradle.myapp.com.Flare.Events.FindFlareError;
+import flaregradle.myapp.com.Flare.Events.FindFlareSuccess;
 import flaregradle.myapp.com.Flare.Interfaces.ISendFlare;
+import flaregradle.myapp.com.Flare.Modules.EventsModule;
 import flaregradle.myapp.com.Flare.Utilities.DataStorageHandler;
+import flaregradle.myapp.com.Flare.Utilities.PermissionHandler;
 
 
 public class SendFlareActivity extends AppCompatActivity implements ISendFlare {
 
     private Toast _message;
-    private ListView _contactsView;
     private ArrayList<Contact> _sortedContacts;
     private String _latitude;
     private String _longitude;
-    private EditText _flareMessage;
     private ArrayAdapter _contactAdapter;
-    private EditText _phoneText;
-    private ProgressBar _busyIndicator;
     private InterstitialAd _interstitialAd;
     private String _groupName;
     private Contact _currentlyEditingContact;
+    private Activity _thisActivity;
+    private AlertDialog _findingFriendsWithFlareAlert;
+    private AlertDialog _errorFindingFriendsWithFlareAlert;
+
+    @Bind(R.id.contactsHome) ListView _contactsView;
+    @Bind(R.id.writeMessage) EditText _flareMessage;
+    @Bind(R.id.phone) EditText _phoneText;
+    @Bind(R.id.busyIndicator) ProgressBar _busyIndicator;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_send_flare);
+        ButterKnife.bind(this);
+        _thisActivity = this;
 
         // Get the location from the bundle
         Bundle extras = getIntent().getExtras();
@@ -68,19 +83,14 @@ public class SendFlareActivity extends AppCompatActivity implements ISendFlare {
         // Set up the toast message
         _message = Toast.makeText(getApplicationContext(),"",Toast.LENGTH_SHORT);
 
-        // Set up the flare message view
-        _flareMessage = (EditText)findViewById(R.id.writeMessage);
-
         // Set up the contacts view
         DataStorageHandler.getInstance();
         _sortedContacts = new ArrayList<>(DataStorageHandler.AllContacts.values());
-        _contactsView = (ListView)findViewById(com.MyApp.Flare.R.id.contactsHome);
         _contactAdapter = new ContactsAdapter(this,com.MyApp.Flare.R.layout.contact_item_view,_sortedContacts,false);
         _contactsView.setAdapter(_contactAdapter);
         _contactsView.setDivider(null);
 
         // Set up the listener for text
-        _phoneText = (EditText)findViewById(com.MyApp.Flare.R.id.phone);
         _phoneText.clearFocus();
         _phoneText.addTextChangedListener(new TextWatcher() {
             @Override
@@ -140,7 +150,6 @@ public class SendFlareActivity extends AppCompatActivity implements ISendFlare {
         });
 
         // Load the progress bar
-        _busyIndicator = (ProgressBar)findViewById(R.id.busyIndicator);
         _busyIndicator.setVisibility(View.GONE);
 
         if(!DataStorageHandler.HavePurchasedAdFreeUpgrade()) {
@@ -155,6 +164,46 @@ public class SendFlareActivity extends AppCompatActivity implements ISendFlare {
                 }
             });
             requestNewInterstitial();
+        }
+
+        _findingFriendsWithFlareAlert = new AlertDialog.Builder(this)
+                .setTitle("")
+                .setMessage("Finding friends with flare ...")
+                .create();
+
+        _errorFindingFriendsWithFlareAlert = new AlertDialog.Builder(this)
+                .setTitle("Error")
+                .setMessage("Something went wrong, we could not find your friends with flare")
+                .setNeutralButton("Ok", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                    }
+                })
+                .create();
+
+        if (!DataStorageHandler.HaveAskedToCheckContactsWithFlare()) {
+            AlertDialog alert = new AlertDialog.Builder(this)
+                    .setTitle("")
+                    .setMessage("We can see if any of your friends have flare. We need to check your contacts phone numbers against our " +
+                            "cloud to do this. Do we have your permission ?")
+                    .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            DataStorageHandler.SetCanCheckContactsForFlare(true);
+                            _findingFriendsWithFlareAlert.show();
+                            new FindFlareUsersTask().execute(_thisActivity);
+                        }
+                    })
+                    .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            DataStorageHandler.SetCanCheckContactsForFlare(false);
+                        }
+                    })
+                    .create();
+            alert.show();
+            DataStorageHandler.SetHaveAskedToCheckContactsWithFlare(true);
         }
     }
 
@@ -211,17 +260,34 @@ public class SendFlareActivity extends AppCompatActivity implements ISendFlare {
     }
 
     @Override
-    protected void onStop()
-    {
+    protected void onStop() {
         clearSelectedContacts();
         super.onStop();
     }
 
     @Override
-    protected void onPause()
-    {
+    protected void onPause() {
+        EventsModule.UnRegister(this);
         clearSelectedContacts();
         super.onPause();
+    }
+
+    @Override
+    protected void onResume() {
+        EventsModule.Register(this);
+        super.onResume();
+    }
+
+    @Subscribe
+    public void FindFlareSuccess(FindFlareSuccess success) {
+        _findingFriendsWithFlareAlert.cancel();
+        _sortedContacts = new ArrayList<>(DataStorageHandler.AllContacts.values());
+        _contactAdapter.notifyDataSetChanged();
+    }
+
+    @Subscribe public void FindFlareError(FindFlareError error) {
+        _findingFriendsWithFlareAlert.cancel();
+        _errorFindingFriendsWithFlareAlert.show();
     }
 
     private void resetSortedContacts() {
@@ -298,6 +364,10 @@ public class SendFlareActivity extends AppCompatActivity implements ISendFlare {
     }
 
     public void onSendClick(View v) {
+        if (!DataStorageHandler.CanSendCloudMessage() && !PermissionHandler.canSendSms(this)) {
+            DataStorageHandler.SetSendCloudMessage(true);
+        }
+
         if(DataStorageHandler.SelectedContacts == null || DataStorageHandler.SelectedContacts.size() == 0){
             showMessage("You have not selected any contacts");
             return;
@@ -311,7 +381,7 @@ public class SendFlareActivity extends AppCompatActivity implements ISendFlare {
         ArrayList<PhoneNumber> contactsWithoutFlare = new ArrayList<>();
 
         for(Contact phone : DataStorageHandler.SelectedContacts) {
-            if(phone.phoneNumber.hasFlare && DataStorageHandler.IsRegistered()) {
+            if(phone.phoneNumber.hasFlare) {
                 contactsWithFlare.add(phone.phoneNumber);
             } else {
                 contactsWithoutFlare.add(phone.phoneNumber);
@@ -324,32 +394,16 @@ public class SendFlareActivity extends AppCompatActivity implements ISendFlare {
         if(contactsWithoutFlare.size() > 0) {
             String body = text+" http://maps.google.com/?q="+_latitude+","+_longitude+"  "+"Sent from Flare";
 
-            if(DataStorageHandler.CanSendCloudMessage() && DataStorageHandler.IsRegistered()) {
+            if(DataStorageHandler.CanSendCloudMessage()) {
                 List<String> numbers = new ArrayList<>();
                 for(PhoneNumber phone : contactsWithoutFlare) {
                     numbers.add(phone.number);
-
-                    ParseObject flare = new ParseObject("Flare");
-                    flare.put("From", DataStorageHandler.getCountryCode()+DataStorageHandler.getPhoneNumber());
-                    flare.put("To",phone.number);
-                    flare.put("Method","cloud");
-                    flare.put("Latitude",_latitude);
-                    flare.put("Longitude",_longitude);
-                    flare.saveInBackground();
                 }
                 new SendTwilioSmsTask(this,numbers,body).execute();
             } else {
                 for(PhoneNumber phone : contactsWithoutFlare) {
                     SmsManager m = SmsManager.getDefault();
                     m.sendTextMessage(phone.number,DataStorageHandler.getCountryCode()+DataStorageHandler.getPhoneNumber(),body,null,null);
-
-                    ParseObject flare = new ParseObject("Flare");
-                    flare.put("From",DataStorageHandler.getCountryCode()+DataStorageHandler.getPhoneNumber());
-                    flare.put("To",phone.number);
-                    flare.put("Method","sms");
-                    flare.put("Latitude",_latitude);
-                    flare.put("Longitude",_longitude);
-                    flare.saveInBackground();
                 }
             }
         }
@@ -385,9 +439,9 @@ public class SendFlareActivity extends AppCompatActivity implements ISendFlare {
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
-            showFullPageAd();
-            clearSelectedContacts();
-            showMessage("Message sent");
+                showFullPageAd();
+                clearSelectedContacts();
+                showMessage("Message sent");
             }
         });
     }
@@ -400,7 +454,6 @@ public class SendFlareActivity extends AppCompatActivity implements ISendFlare {
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
-
                 AlternateFlareOptionsDialog dialog = new AlternateFlareOptionsDialog(current);
                 dialog.SetData(_latitude,_longitude,message,current,numbers);
                 dialog.show();

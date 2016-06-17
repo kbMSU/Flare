@@ -11,4 +11,4 @@
         android:id="@id/busyIndicator"
         style="?android:attr/progressBarStyle"/>
 
-</LinearLayout><!-- From: file:/Users/Karthik/Library/Mobile%20Documents/com~apple~CloudDocs/FlareRepo/Flare/app/src/main/res/layout/is_busy_view.xml -->
+</LinearLayout>

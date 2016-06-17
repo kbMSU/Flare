@@ -18,6 +18,8 @@ import com.parse.ParseQuery;
 import java.util.HashMap;
 import java.util.List;
 
+import flaregradle.myapp.com.Flare.DataItems.Contact;
+import flaregradle.myapp.com.Flare.DataItems.PhoneNumber;
 import flaregradle.myapp.com.Flare.Events.RegistrationError;
 import flaregradle.myapp.com.Flare.Events.RegistrationSuccess;
 import flaregradle.myapp.com.Flare.Modules.EventsModule;
@@ -59,6 +61,12 @@ public class GcmRegistrationAsyncTask extends AsyncTask<Context, Void, String> {
                 newDevice.put("Number", phone);
                 newDevice.put("DeviceType","Android");
                 newDevice.saveInBackground();
+            } else {
+                ParseObject device = savedPhones.get(0);
+                if(!device.getString("DeviceType").equals("Android")) {
+                    device.put("DeviceType","Android");
+                }
+                device.saveInBackground();
             }
         } catch (Exception ex) {
             _exception = ex;
@@ -71,10 +79,30 @@ public class GcmRegistrationAsyncTask extends AsyncTask<Context, Void, String> {
     protected void onPostExecute(String msg) {
         if(_exception == null) {
             DataStorageHandler.SetRegistered();
+
+            String code = DataStorageHandler.getCountryCode();
+            String number = DataStorageHandler.getPhoneNumber();
+            String fullPhone = code+number;
+            for(Contact contact : DataStorageHandler.AllContacts.values()) {
+                for(PhoneNumber num : contact.allPhoneNumbers) {
+                    if(num.number.equals(number) || num.number.equals(fullPhone)) {
+                        markContactAsHavingFlare(contact);
+                        break;
+                    }
+                }
+            }
+
             EventsModule.Post(new RegistrationSuccess());
         } else {
-            Toast.makeText(_context,_exception.getMessage(),Toast.LENGTH_LONG).show();
             EventsModule.Post(new RegistrationError(_exception));
+        }
+    }
+
+    private void markContactAsHavingFlare(Contact contact) {
+        contact.hasFlare = true;
+        contact.phoneNumber.hasFlare = true;
+        for(PhoneNumber phone : contact.allPhoneNumbers) {
+            phone.hasFlare = true;
         }
     }
 }
